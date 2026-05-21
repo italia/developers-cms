@@ -74,7 +74,6 @@ export const WebinarItem: CollectionConfig = {
     {
       name: 'localizedSlugs',
       type: 'json',
-      hidden: true,
     }
   ],
 }

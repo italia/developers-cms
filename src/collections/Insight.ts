@@ -72,7 +72,6 @@ export const Insight: CollectionConfig = {
     {
       name: 'localizedSlugs',
       type: 'json',
-      hidden: true,
     }
   ],
 }

@@ -84,7 +84,6 @@ export const StoryItem: CollectionConfig = {
     {
       name: 'localizedSlugs',
       type: 'json',
-      hidden: true,
     }
   ],
 }

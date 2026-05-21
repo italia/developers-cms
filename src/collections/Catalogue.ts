@@ -49,7 +49,6 @@ export const Catalogue: CollectionConfig = {
     {
       name: 'localizedSlugs',
       type: 'json',
-      hidden: true,
     }
   ],
 }

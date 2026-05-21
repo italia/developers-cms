@@ -57,7 +57,6 @@ export const Page: CollectionConfig = {
     {
       name: 'localizedSlugs',
       type: 'json',
-      hidden: true,
     }
   ],
 }
