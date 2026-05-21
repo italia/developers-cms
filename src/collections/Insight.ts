@@ -15,6 +15,14 @@ export const Insight: CollectionConfig = {
     useAsTitle: 'title',
     defaultColumns: ['title', 'slug', 'topic', 'updatedAt'],
   },
+  hooks: {
+    beforeRead: [
+      ({ doc }) => {
+        doc.localizedSlugs = JSON.stringify(doc.slug);
+        return doc;
+      },
+    ],
+  },
   fields: [
     {
       name: 'parent',
@@ -61,5 +69,10 @@ export const Insight: CollectionConfig = {
       localized: true,
     },
     seoField(),
+    {
+      name: 'localizedSlugs',
+      type: 'json',
+      hidden: true,
+    }
   ],
 }

@@ -9,6 +9,14 @@ export const Article: CollectionConfig = {
     useAsTitle: 'title',
     defaultColumns: ['title', 'slug', 'updatedAt'],
   },
+  hooks: {
+    beforeRead: [
+      ({ doc }) => {
+        doc.localizedSlugs = JSON.stringify(doc.slug);
+        return doc;
+      },
+    ],
+  },
   fields: [
     {
       name: 'parent',
@@ -64,5 +72,10 @@ export const Article: CollectionConfig = {
       localized: true,
     },
     seoField(),
+    {
+      name: 'localizedSlugs',
+      type: 'json',
+      hidden: true,
+    }
   ],
 }

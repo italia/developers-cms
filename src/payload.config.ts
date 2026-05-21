@@ -44,7 +44,15 @@ import { SidebarForArticle } from './globals/SidebarForArticle'
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
+const allowedOrigins = [
+  'http://localhost:3000',
+  'http://localhost:4321',
+  process.env.SITE_URL,
+].filter(Boolean) as string[]
+
 export default buildConfig({
+  cors: allowedOrigins,
+  csrf: allowedOrigins,
   admin: {
     user: Users.slug,
     importMap: {
@@ -98,6 +106,7 @@ export default buildConfig({
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
   db: postgresAdapter({
+    // idType: 'uuid',
     pool: {
       connectionString: process.env.DATABASE_URL || '',
     },

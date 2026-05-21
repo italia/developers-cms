@@ -175,6 +175,9 @@ export interface User {
   id: number;
   updatedAt: string;
   createdAt: string;
+  enableAPIKey?: boolean | null;
+  apiKey?: string | null;
+  apiKeyIndex?: string | null;
   email: string;
   resetPasswordToken?: string | null;
   resetPasswordExpiration?: string | null;
@@ -1134,6 +1137,15 @@ export interface Page {
     description?: string | null;
     image?: (number | null) | Media;
   };
+  localizedSlugs?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1206,6 +1218,15 @@ export interface Article {
     description?: string | null;
     image?: (number | null) | Media;
   };
+  localizedSlugs?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1716,6 +1737,15 @@ export interface Insight {
     description?: string | null;
     image?: (number | null) | Media;
   };
+  localizedSlugs?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1977,6 +2007,15 @@ export interface WebinarItem {
     description?: string | null;
     image?: (number | null) | Media;
   };
+  localizedSlugs?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -2626,6 +2665,15 @@ export interface StoryItem {
     description?: string | null;
     image?: (number | null) | Media;
   };
+  localizedSlugs?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -2793,6 +2841,15 @@ export interface Catalogue {
     description?: string | null;
     image?: (number | null) | Media;
   };
+  localizedSlugs?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -2953,6 +3010,9 @@ export interface PayloadMigration {
 export interface UsersSelect<T extends boolean = true> {
   updatedAt?: T;
   createdAt?: T;
+  enableAPIKey?: T;
+  apiKey?: T;
+  apiKeyIndex?: T;
   email?: T;
   resetPasswordToken?: T;
   resetPasswordExpiration?: T;
@@ -3750,6 +3810,7 @@ export interface PagesSelect<T extends boolean = true> {
         description?: T;
         image?: T;
       };
+  localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -3785,6 +3846,7 @@ export interface ArticlesSelect<T extends boolean = true> {
         description?: T;
         image?: T;
       };
+  localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -4177,6 +4239,7 @@ export interface InsightsSelect<T extends boolean = true> {
         description?: T;
         image?: T;
       };
+  localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -4385,6 +4448,7 @@ export interface WebinarItemsSelect<T extends boolean = true> {
         description?: T;
         image?: T;
       };
+  localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -4890,6 +4954,7 @@ export interface StoryItemsSelect<T extends boolean = true> {
         description?: T;
         image?: T;
       };
+  localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -5031,6 +5096,7 @@ export interface CataloguesSelect<T extends boolean = true> {
         description?: T;
         image?: T;
       };
+  localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;
 }

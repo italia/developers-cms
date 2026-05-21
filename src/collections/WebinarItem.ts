@@ -11,6 +11,14 @@ export const WebinarItem: CollectionConfig = {
     useAsTitle: 'title',
     defaultColumns: ['title', 'slug', 'date', 'updatedAt'],
   },
+  hooks: {
+    beforeRead: [
+      ({ doc }) => {
+        doc.localizedSlugs = JSON.stringify(doc.slug);
+        return doc;
+      },
+    ],
+  },
   fields: [
     {
       name: 'slug',
@@ -63,5 +71,10 @@ export const WebinarItem: CollectionConfig = {
       localized: true,
     },
     seoField(),
+    {
+      name: 'localizedSlugs',
+      type: 'json',
+      hidden: true,
+    }
   ],
 }

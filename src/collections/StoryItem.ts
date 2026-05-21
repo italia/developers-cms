@@ -19,6 +19,14 @@ export const StoryItem: CollectionConfig = {
     useAsTitle: 'title',
     defaultColumns: ['title', 'slug', 'topic', 'dateOfPublication', 'updatedAt'],
   },
+  hooks: {
+    beforeRead: [
+      ({ doc }) => {
+        doc.localizedSlugs = JSON.stringify(doc.slug);
+        return doc;
+      },
+    ],
+  },
   fields: [
     {
       name: 'parent',
@@ -73,5 +81,10 @@ export const StoryItem: CollectionConfig = {
       localized: true,
     },
     seoField(),
+    {
+      name: 'localizedSlugs',
+      type: 'json',
+      hidden: true,
+    }
   ],
 }
