@@ -40,6 +40,7 @@ import { Homepage } from './globals/Homepage'
 import { Search } from './globals/Search'
 import { GlobalSetting } from './globals/GlobalSetting'
 import { SidebarForArticle } from './globals/SidebarForArticle'
+import { SeoDefault } from './globals/SeoDefault'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -99,6 +100,7 @@ export default buildConfig({
     Search,
     GlobalSetting,
     SidebarForArticle,
+    SeoDefault,
   ],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',

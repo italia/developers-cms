@@ -131,6 +131,7 @@ export interface Config {
     search: Search;
     'global-setting': GlobalSetting;
     'sidebar-for-article': SidebarForArticle;
+    'seo-default': SeoDefault;
   };
   globalsSelect: {
     layout: LayoutSelect<false> | LayoutSelect<true>;
@@ -138,6 +139,7 @@ export interface Config {
     search: SearchSelect<false> | SearchSelect<true>;
     'global-setting': GlobalSettingSelect<false> | GlobalSettingSelect<true>;
     'sidebar-for-article': SidebarForArticleSelect<false> | SidebarForArticleSelect<true>;
+    'seo-default': SeoDefaultSelect<false> | SeoDefaultSelect<true>;
   };
   locale: 'it' | 'en';
   widgets: {
@@ -6232,6 +6234,39 @@ export interface SidebarForArticle {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "seo-default".
+ */
+export interface SeoDefault {
+  id: number;
+  /**
+   * Used as og:site_name and as fallback brand name
+   */
+  siteName: string;
+  /**
+   * Page title used when a record has no SEO title
+   */
+  fallbackTitle: string;
+  /**
+   * Meta description used when a record has no SEO description
+   */
+  fallbackDescription: string;
+  /**
+   * Appended to every page title, e.g. " | My Site"
+   */
+  titleSuffix?: string | null;
+  /**
+   * Default social card image (og:image / twitter:image)
+   */
+  ogImage: number | Media;
+  /**
+   * Site favicon (.ico, .png or .svg)
+   */
+  favicon: number | Media;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "layout_select".
  */
 export interface LayoutSelect<T extends boolean = true> {
@@ -6959,6 +6994,21 @@ export interface SidebarForArticleSelect<T extends boolean = true> {
               blockName?: T;
             };
       };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "seo-default_select".
+ */
+export interface SeoDefaultSelect<T extends boolean = true> {
+  siteName?: T;
+  fallbackTitle?: T;
+  fallbackDescription?: T;
+  titleSuffix?: T;
+  ogImage?: T;
+  favicon?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;
