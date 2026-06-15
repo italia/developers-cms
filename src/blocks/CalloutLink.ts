@@ -12,7 +12,7 @@ export const CalloutLink: Block = {
     },
     {
       name: 'paragraph',
-      type: 'textarea',
+      type: 'richText',
       required: true,
     },
     {

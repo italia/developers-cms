@@ -11,7 +11,7 @@ export const ListCollection: Block = {
     },
     {
       name: 'paragraph',
-      type: 'textarea',
+      type: 'richText',
     },
     {
       name: 'content',

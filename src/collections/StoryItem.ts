@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { seoField } from '../fields/seoField'
 import { Hero } from '../blocks/Hero'
 import { FaqSection } from '../blocks/FaqSection'
@@ -41,6 +42,12 @@ export const StoryItem: CollectionConfig = {
       localized: true,
     },
     {
+      name: 'paragraph',
+      type: 'richText',
+      editor: lexicalEditor(),
+      localized: true,
+    },
+    {
       name: 'articleClassification',
       type: 'relationship',
       relationTo: 'story-classes',
@@ -64,6 +71,10 @@ export const StoryItem: CollectionConfig = {
       name: 'dateOfPublication',
       type: 'date',
       localized: true,
+    },
+    {
+      name: 'storyType',
+      type: 'text',
     },
     {
       name: 'image',

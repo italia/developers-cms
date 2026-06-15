@@ -6,7 +6,7 @@ export const Blockquote: Block = {
   fields: [
     {
       name: 'paragraph',
-      type: 'textarea',
+      type: 'richText',
       required: true,
     },
     {

@@ -11,7 +11,7 @@ export const ListItem: Block = {
     },
     {
       name: 'paragraph',
-      type: 'textarea',
+      type: 'richText',
       required: true,
     },
   ],

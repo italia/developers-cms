@@ -11,7 +11,7 @@ export const CatalogueTab: Block = {
     },
     {
       name: 'paragraph',
-      type: 'textarea',
+      type: 'richText',
       required: true,
     },
     {

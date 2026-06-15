@@ -1,4 +1,5 @@
 import type { Block } from 'payload'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { InternalLink } from './InternalLink'
 import { ExternalLink } from './ExternalLink'
 
@@ -13,7 +14,8 @@ export const TextBlock: Block = {
     },
     {
       name: 'paragraph',
-      type: 'textarea',
+      type: 'richText',
+      editor: lexicalEditor(),
       required: true,
     },
     {

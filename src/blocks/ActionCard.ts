@@ -23,7 +23,7 @@ export const ActionCard: Block = {
     },
     {
       name: 'paragraph',
-      type: 'textarea',
+      type: 'richText',
       required: true,
     },
     {

@@ -12,7 +12,7 @@ export const TopicFilter: Block = {
     },
     {
       name: 'paragraph',
-      type: 'textarea',
+      type: 'richText',
       required: true,
     },
     {

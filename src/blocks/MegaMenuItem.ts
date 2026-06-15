@@ -29,7 +29,7 @@ export const MegaMenuItem: Block = {
     },
     {
       name: 'caption',
-      type: 'textarea',
+      type: 'richText',
       required: true,
     },
     {

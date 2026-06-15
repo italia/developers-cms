@@ -1,4 +1,5 @@
 import type { GlobalConfig } from 'payload'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { ExternalLink } from '../blocks/ExternalLink'
 
 export const GlobalSetting: GlobalConfig = {
@@ -25,7 +26,8 @@ export const GlobalSetting: GlobalConfig = {
     },
     {
       name: 'paragraph',
-      type: 'textarea',
+      type: 'richText',
+      editor: lexicalEditor(),
       localized: true,
     },
     {

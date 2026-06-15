@@ -30,7 +30,7 @@ export const CardLinkList: Block = {
     },
     {
       name: 'paragraph',
-      type: 'textarea',
+      type: 'richText',
     },
     {
       name: 'listContent',

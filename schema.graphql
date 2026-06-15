@@ -1,102 +1,102 @@
 type Query {
-  User(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): User
+  User(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): User
   Users(draft: Boolean, where: User_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): Users
   countUsers(draft: Boolean, trash: Boolean, where: User_where, locale: LocaleInputType): countUsers
-  docAccessUser(id: Int!): usersDocAccess
+  docAccessUser(id: String!): usersDocAccess
   meUser: usersMe
   initializedUser: Boolean
-  Media(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): Media
+  Media(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): Media
   allMedia(draft: Boolean, where: Media_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): allMedia
   countallMedia(draft: Boolean, trash: Boolean, where: Media_where, locale: LocaleInputType): countallMedia
-  docAccessMedia(id: Int!): mediaDocAccess
-  ArticleTopic(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): ArticleTopic
+  docAccessMedia(id: String!): mediaDocAccess
+  ArticleTopic(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): ArticleTopic
   ArticleTopics(draft: Boolean, where: ArticleTopic_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): ArticleTopics
   countArticleTopics(draft: Boolean, trash: Boolean, where: ArticleTopic_where, locale: LocaleInputType): countArticleTopics
-  docAccessArticleTopic(id: Int!): article_topicsDocAccess
-  NewsTopic(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): NewsTopic
+  docAccessArticleTopic(id: String!): article_topicsDocAccess
+  NewsTopic(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): NewsTopic
   NewsTopics(draft: Boolean, where: NewsTopic_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): NewsTopics
   countNewsTopics(draft: Boolean, trash: Boolean, where: NewsTopic_where, locale: LocaleInputType): countNewsTopics
-  docAccessNewsTopic(id: Int!): news_topicsDocAccess
-  StoryTopic(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): StoryTopic
+  docAccessNewsTopic(id: String!): news_topicsDocAccess
+  StoryTopic(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): StoryTopic
   StoryTopics(draft: Boolean, where: StoryTopic_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): StoryTopics
   countStoryTopics(draft: Boolean, trash: Boolean, where: StoryTopic_where, locale: LocaleInputType): countStoryTopics
-  docAccessStoryTopic(id: Int!): story_topicsDocAccess
-  InsightTopic(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): InsightTopic
+  docAccessStoryTopic(id: String!): story_topicsDocAccess
+  InsightTopic(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): InsightTopic
   InsightTopics(draft: Boolean, where: InsightTopic_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): InsightTopics
   countInsightTopics(draft: Boolean, trash: Boolean, where: InsightTopic_where, locale: LocaleInputType): countInsightTopics
-  docAccessInsightTopic(id: Int!): insight_topicsDocAccess
-  ResourceTopic(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): ResourceTopic
+  docAccessInsightTopic(id: String!): insight_topicsDocAccess
+  ResourceTopic(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): ResourceTopic
   ResourceTopics(draft: Boolean, where: ResourceTopic_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): ResourceTopics
   countResourceTopics(draft: Boolean, trash: Boolean, where: ResourceTopic_where, locale: LocaleInputType): countResourceTopics
-  docAccessResourceTopic(id: Int!): resource_topicsDocAccess
-  WebinarTopic(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): WebinarTopic
+  docAccessResourceTopic(id: String!): resource_topicsDocAccess
+  WebinarTopic(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): WebinarTopic
   WebinarTopics(draft: Boolean, where: WebinarTopic_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): WebinarTopics
   countWebinarTopics(draft: Boolean, trash: Boolean, where: WebinarTopic_where, locale: LocaleInputType): countWebinarTopics
-  docAccessWebinarTopic(id: Int!): webinar_topicsDocAccess
-  MacroTopic(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): MacroTopic
+  docAccessWebinarTopic(id: String!): webinar_topicsDocAccess
+  MacroTopic(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): MacroTopic
   MacroTopics(draft: Boolean, where: MacroTopic_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): MacroTopics
   countMacroTopics(draft: Boolean, trash: Boolean, where: MacroTopic_where, locale: LocaleInputType): countMacroTopics
-  docAccessMacroTopic(id: Int!): macro_topicsDocAccess
-  StoryClass(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): StoryClass
+  docAccessMacroTopic(id: String!): macro_topicsDocAccess
+  StoryClass(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): StoryClass
   StoryClasses(draft: Boolean, where: StoryClass_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): StoryClasses
   countStoryClasses(draft: Boolean, trash: Boolean, where: StoryClass_where, locale: LocaleInputType): countStoryClasses
-  docAccessStoryClass(id: Int!): story_classesDocAccess
-  WebinarAuthor(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): WebinarAuthor
+  docAccessStoryClass(id: String!): story_classesDocAccess
+  WebinarAuthor(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): WebinarAuthor
   WebinarAuthors(draft: Boolean, where: WebinarAuthor_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): WebinarAuthors
   countWebinarAuthors(draft: Boolean, trash: Boolean, where: WebinarAuthor_where, locale: LocaleInputType): countWebinarAuthors
-  docAccessWebinarAuthor(id: Int!): webinar_authorsDocAccess
-  ChartElement(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): ChartElement
+  docAccessWebinarAuthor(id: String!): webinar_authorsDocAccess
+  ChartElement(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): ChartElement
   ChartElements(draft: Boolean, where: ChartElement_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): ChartElements
   countChartElements(draft: Boolean, trash: Boolean, where: ChartElement_where, locale: LocaleInputType): countChartElements
-  docAccessChartElement(id: Int!): chart_elementsDocAccess
-  KpiElement(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): KpiElement
+  docAccessChartElement(id: String!): chart_elementsDocAccess
+  KpiElement(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): KpiElement
   KpiElements(draft: Boolean, where: KpiElement_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): KpiElements
   countKpiElements(draft: Boolean, trash: Boolean, where: KpiElement_where, locale: LocaleInputType): countKpiElements
-  docAccessKpiElement(id: Int!): kpi_elementsDocAccess
-  NewsItem(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): NewsItem
+  docAccessKpiElement(id: String!): kpi_elementsDocAccess
+  NewsItem(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): NewsItem
   NewsItems(draft: Boolean, where: NewsItem_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): NewsItems
   countNewsItems(draft: Boolean, trash: Boolean, where: NewsItem_where, locale: LocaleInputType): countNewsItems
-  docAccessNewsItem(id: Int!): news_itemsDocAccess
-  Resource(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): Resource
+  docAccessNewsItem(id: String!): news_itemsDocAccess
+  Resource(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): Resource
   Resources(draft: Boolean, where: Resource_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): Resources
   countResources(draft: Boolean, trash: Boolean, where: Resource_where, locale: LocaleInputType): countResources
-  docAccessResource(id: Int!): resourcesDocAccess
-  Page(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): Page
+  docAccessResource(id: String!): resourcesDocAccess
+  Page(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): Page
   Pages(draft: Boolean, where: Page_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): Pages
   countPages(draft: Boolean, trash: Boolean, where: Page_where, locale: LocaleInputType): countPages
-  docAccessPage(id: Int!): pagesDocAccess
-  Article(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): Article
+  docAccessPage(id: String!): pagesDocAccess
+  Article(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): Article
   Articles(draft: Boolean, where: Article_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): Articles
   countArticles(draft: Boolean, trash: Boolean, where: Article_where, locale: LocaleInputType): countArticles
-  docAccessArticle(id: Int!): articlesDocAccess
-  Insight(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): Insight
+  docAccessArticle(id: String!): articlesDocAccess
+  Insight(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): Insight
   Insights(draft: Boolean, where: Insight_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): Insights
   countInsights(draft: Boolean, trash: Boolean, where: Insight_where, locale: LocaleInputType): countInsights
-  docAccessInsight(id: Int!): insightsDocAccess
-  WebinarItem(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): WebinarItem
+  docAccessInsight(id: String!): insightsDocAccess
+  WebinarItem(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): WebinarItem
   WebinarItems(draft: Boolean, where: WebinarItem_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): WebinarItems
   countWebinarItems(draft: Boolean, trash: Boolean, where: WebinarItem_where, locale: LocaleInputType): countWebinarItems
-  docAccessWebinarItem(id: Int!): webinar_itemsDocAccess
-  StoryItem(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): StoryItem
+  docAccessWebinarItem(id: String!): webinar_itemsDocAccess
+  StoryItem(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): StoryItem
   StoryItems(draft: Boolean, where: StoryItem_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): StoryItems
   countStoryItems(draft: Boolean, trash: Boolean, where: StoryItem_where, locale: LocaleInputType): countStoryItems
-  docAccessStoryItem(id: Int!): story_itemsDocAccess
-  Catalogue(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): Catalogue
+  docAccessStoryItem(id: String!): story_itemsDocAccess
+  Catalogue(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): Catalogue
   Catalogues(draft: Boolean, where: Catalogue_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): Catalogues
   countCatalogues(draft: Boolean, trash: Boolean, where: Catalogue_where, locale: LocaleInputType): countCatalogues
-  docAccessCatalogue(id: Int!): cataloguesDocAccess
-  PayloadKv(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): PayloadKv
+  docAccessCatalogue(id: String!): cataloguesDocAccess
+  PayloadKv(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): PayloadKv
   PayloadKvs(draft: Boolean, where: PayloadKv_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): PayloadKvs
   countPayloadKvs(draft: Boolean, trash: Boolean, where: PayloadKv_where, locale: LocaleInputType): countPayloadKvs
-  docAccessPayloadKv(id: Int!): payload_kvDocAccess
-  PayloadLockedDocument(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): PayloadLockedDocument
+  docAccessPayloadKv(id: String!): payload_kvDocAccess
+  PayloadLockedDocument(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): PayloadLockedDocument
   PayloadLockedDocuments(draft: Boolean, where: PayloadLockedDocument_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): PayloadLockedDocuments
   countPayloadLockedDocuments(draft: Boolean, trash: Boolean, where: PayloadLockedDocument_where, locale: LocaleInputType): countPayloadLockedDocuments
-  docAccessPayloadLockedDocument(id: Int!): payload_locked_documentsDocAccess
-  PayloadPreference(id: Int!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): PayloadPreference
+  docAccessPayloadLockedDocument(id: String!): payload_locked_documentsDocAccess
+  PayloadPreference(id: String!, draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean, trash: Boolean): PayloadPreference
   PayloadPreferences(draft: Boolean, where: PayloadPreference_where, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, limit: Int, page: Int, pagination: Boolean, select: Boolean, sort: String, trash: Boolean): PayloadPreferences
   countPayloadPreferences(draft: Boolean, trash: Boolean, where: PayloadPreference_where, locale: LocaleInputType): countPayloadPreferences
-  docAccessPayloadPreference(id: Int!): payload_preferencesDocAccess
+  docAccessPayloadPreference(id: String!): payload_preferencesDocAccess
   Layout(draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean): Layout
   docAccessLayout: layoutDocAccess
   Homepage(draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean): Homepage
@@ -107,11 +107,13 @@ type Query {
   docAccessGlobalSetting: global_settingDocAccess
   SidebarForArticle(draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean): SidebarForArticle
   docAccessSidebarForArticle: sidebar_for_articleDocAccess
+  SeoDefault(draft: Boolean, fallbackLocale: FallbackLocaleInputType, locale: LocaleInputType, select: Boolean): SeoDefault
+  docAccessSeoDefault: seo_defaultDocAccess
   Access: Access
 }
 
 type User {
-  id: Int!
+  id: String!
   updatedAt: DateTime
   createdAt: DateTime
   enableAPIKey: Boolean
@@ -263,12 +265,13 @@ input User_sessions__expiresAt_operator {
 }
 
 input User_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -575,7 +578,7 @@ type usersMe {
 }
 
 type Media {
-  id: Int!
+  id: String!
   alt: String!
   updatedAt: DateTime
   createdAt: DateTime
@@ -749,12 +752,13 @@ input Media_focalY_operator {
 }
 
 input Media_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -1118,7 +1122,7 @@ type MediaDeleteDocAccess {
 }
 
 type ArticleTopic {
-  id: Int!
+  id: String!
   label: String
   updatedAt: DateTime
   createdAt: DateTime
@@ -1180,12 +1184,13 @@ input ArticleTopic_createdAt_operator {
 }
 
 input ArticleTopic_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -1315,7 +1320,7 @@ type ArticleTopicsDeleteDocAccess {
 }
 
 type NewsTopic {
-  id: Int!
+  id: String!
   label: String
   updatedAt: DateTime
   createdAt: DateTime
@@ -1377,12 +1382,13 @@ input NewsTopic_createdAt_operator {
 }
 
 input NewsTopic_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -1512,7 +1518,7 @@ type NewsTopicsDeleteDocAccess {
 }
 
 type StoryTopic {
-  id: Int!
+  id: String!
   label: String
   updatedAt: DateTime
   createdAt: DateTime
@@ -1574,12 +1580,13 @@ input StoryTopic_createdAt_operator {
 }
 
 input StoryTopic_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -1709,7 +1716,7 @@ type StoryTopicsDeleteDocAccess {
 }
 
 type InsightTopic {
-  id: Int!
+  id: String!
   label: String
   updatedAt: DateTime
   createdAt: DateTime
@@ -1771,12 +1778,13 @@ input InsightTopic_createdAt_operator {
 }
 
 input InsightTopic_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -1906,7 +1914,7 @@ type InsightTopicsDeleteDocAccess {
 }
 
 type ResourceTopic {
-  id: Int!
+  id: String!
   label: String
   updatedAt: DateTime
   createdAt: DateTime
@@ -1968,12 +1976,13 @@ input ResourceTopic_createdAt_operator {
 }
 
 input ResourceTopic_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -2103,7 +2112,7 @@ type ResourceTopicsDeleteDocAccess {
 }
 
 type WebinarTopic {
-  id: Int!
+  id: String!
   label: String
   updatedAt: DateTime
   createdAt: DateTime
@@ -2165,12 +2174,13 @@ input WebinarTopic_createdAt_operator {
 }
 
 input WebinarTopic_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -2300,7 +2310,7 @@ type WebinarTopicsDeleteDocAccess {
 }
 
 type MacroTopic {
-  id: Int!
+  id: String!
   label: String
   updatedAt: DateTime
   createdAt: DateTime
@@ -2362,12 +2372,13 @@ input MacroTopic_createdAt_operator {
 }
 
 input MacroTopic_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -2497,8 +2508,9 @@ type MacroTopicsDeleteDocAccess {
 }
 
 type StoryClass {
-  id: Int!
+  id: String!
   label: String
+  sort: String
   updatedAt: DateTime
   createdAt: DateTime
 }
@@ -2519,6 +2531,7 @@ type StoryClasses {
 
 input StoryClass_where {
   label: StoryClass_label_operator
+  sort: StoryClass_sort_operator
   updatedAt: StoryClass_updatedAt_operator
   createdAt: StoryClass_createdAt_operator
   id: StoryClass_id_operator
@@ -2534,6 +2547,17 @@ input StoryClass_label_operator {
   in: [String]
   not_in: [String]
   all: [String]
+}
+
+input StoryClass_sort_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
 }
 
 input StoryClass_updatedAt_operator {
@@ -2559,17 +2583,19 @@ input StoryClass_createdAt_operator {
 }
 
 input StoryClass_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
 input StoryClass_where_and {
   label: StoryClass_label_operator
+  sort: StoryClass_sort_operator
   updatedAt: StoryClass_updatedAt_operator
   createdAt: StoryClass_createdAt_operator
   id: StoryClass_id_operator
@@ -2579,6 +2605,7 @@ input StoryClass_where_and {
 
 input StoryClass_where_or {
   label: StoryClass_label_operator
+  sort: StoryClass_sort_operator
   updatedAt: StoryClass_updatedAt_operator
   createdAt: StoryClass_createdAt_operator
   id: StoryClass_id_operator
@@ -2600,6 +2627,7 @@ type story_classesDocAccess {
 
 type StoryClassesDocAccessFields {
   label: StoryClassesDocAccessFields_label
+  sort: StoryClassesDocAccessFields_sort
   updatedAt: StoryClassesDocAccessFields_updatedAt
   createdAt: StoryClassesDocAccessFields_createdAt
 }
@@ -2624,6 +2652,29 @@ type StoryClassesDocAccessFields_label_Update {
 }
 
 type StoryClassesDocAccessFields_label_Delete {
+  permission: Boolean!
+}
+
+type StoryClassesDocAccessFields_sort {
+  create: StoryClassesDocAccessFields_sort_Create
+  read: StoryClassesDocAccessFields_sort_Read
+  update: StoryClassesDocAccessFields_sort_Update
+  delete: StoryClassesDocAccessFields_sort_Delete
+}
+
+type StoryClassesDocAccessFields_sort_Create {
+  permission: Boolean!
+}
+
+type StoryClassesDocAccessFields_sort_Read {
+  permission: Boolean!
+}
+
+type StoryClassesDocAccessFields_sort_Update {
+  permission: Boolean!
+}
+
+type StoryClassesDocAccessFields_sort_Delete {
   permission: Boolean!
 }
 
@@ -2694,7 +2745,7 @@ type StoryClassesDeleteDocAccess {
 }
 
 type WebinarAuthor {
-  id: Int!
+  id: String!
   name: String!
   photo(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
   role: String
@@ -2784,12 +2835,13 @@ input WebinarAuthor_createdAt_operator {
 }
 
 input WebinarAuthor_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -2971,7 +3023,7 @@ type WebinarAuthorsDeleteDocAccess {
 }
 
 type ChartElement {
-  id: Int!
+  id: String!
   title: String!
   chartData: JSON
   updatedAt: DateTime
@@ -3045,12 +3097,13 @@ input ChartElement_createdAt_operator {
 }
 
 input ChartElement_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -3206,7 +3259,7 @@ type ChartElementsDeleteDocAccess {
 }
 
 type KpiElement {
-  id: Int!
+  id: String!
   title: String!
   value: String
   valuePrefix: String
@@ -3218,17 +3271,9 @@ type KpiElement {
   percentage: String
   footerText: String
   openDataPath: String
-  bg: KpiElement_bg
+  backgroundColor: String
   updatedAt: DateTime
   createdAt: DateTime
-}
-
-enum KpiElement_bg {
-  default
-  lighter
-  primary_light
-  primary
-  dark
 }
 
 type KpiElements {
@@ -3257,7 +3302,7 @@ input KpiElement_where {
   percentage: KpiElement_percentage_operator
   footerText: KpiElement_footerText_operator
   openDataPath: KpiElement_openDataPath_operator
-  bg: KpiElement_bg_operator
+  backgroundColor: KpiElement_backgroundColor_operator
   updatedAt: KpiElement_updatedAt_operator
   createdAt: KpiElement_createdAt_operator
   id: KpiElement_id_operator
@@ -3380,21 +3425,15 @@ input KpiElement_openDataPath_operator {
   exists: Boolean
 }
 
-input KpiElement_bg_operator {
-  equals: KpiElement_bg_Input
-  not_equals: KpiElement_bg_Input
-  in: [KpiElement_bg_Input]
-  not_in: [KpiElement_bg_Input]
-  all: [KpiElement_bg_Input]
+input KpiElement_backgroundColor_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
-}
-
-enum KpiElement_bg_Input {
-  default
-  lighter
-  primary_light
-  primary
-  dark
 }
 
 input KpiElement_updatedAt_operator {
@@ -3420,12 +3459,13 @@ input KpiElement_createdAt_operator {
 }
 
 input KpiElement_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -3441,7 +3481,7 @@ input KpiElement_where_and {
   percentage: KpiElement_percentage_operator
   footerText: KpiElement_footerText_operator
   openDataPath: KpiElement_openDataPath_operator
-  bg: KpiElement_bg_operator
+  backgroundColor: KpiElement_backgroundColor_operator
   updatedAt: KpiElement_updatedAt_operator
   createdAt: KpiElement_createdAt_operator
   id: KpiElement_id_operator
@@ -3461,7 +3501,7 @@ input KpiElement_where_or {
   percentage: KpiElement_percentage_operator
   footerText: KpiElement_footerText_operator
   openDataPath: KpiElement_openDataPath_operator
-  bg: KpiElement_bg_operator
+  backgroundColor: KpiElement_backgroundColor_operator
   updatedAt: KpiElement_updatedAt_operator
   createdAt: KpiElement_createdAt_operator
   id: KpiElement_id_operator
@@ -3493,7 +3533,7 @@ type KpiElementsDocAccessFields {
   percentage: KpiElementsDocAccessFields_percentage
   footerText: KpiElementsDocAccessFields_footerText
   openDataPath: KpiElementsDocAccessFields_openDataPath
-  bg: KpiElementsDocAccessFields_bg
+  backgroundColor: KpiElementsDocAccessFields_backgroundColor
   updatedAt: KpiElementsDocAccessFields_updatedAt
   createdAt: KpiElementsDocAccessFields_createdAt
 }
@@ -3751,26 +3791,26 @@ type KpiElementsDocAccessFields_openDataPath_Delete {
   permission: Boolean!
 }
 
-type KpiElementsDocAccessFields_bg {
-  create: KpiElementsDocAccessFields_bg_Create
-  read: KpiElementsDocAccessFields_bg_Read
-  update: KpiElementsDocAccessFields_bg_Update
-  delete: KpiElementsDocAccessFields_bg_Delete
+type KpiElementsDocAccessFields_backgroundColor {
+  create: KpiElementsDocAccessFields_backgroundColor_Create
+  read: KpiElementsDocAccessFields_backgroundColor_Read
+  update: KpiElementsDocAccessFields_backgroundColor_Update
+  delete: KpiElementsDocAccessFields_backgroundColor_Delete
 }
 
-type KpiElementsDocAccessFields_bg_Create {
+type KpiElementsDocAccessFields_backgroundColor_Create {
   permission: Boolean!
 }
 
-type KpiElementsDocAccessFields_bg_Read {
+type KpiElementsDocAccessFields_backgroundColor_Read {
   permission: Boolean!
 }
 
-type KpiElementsDocAccessFields_bg_Update {
+type KpiElementsDocAccessFields_backgroundColor_Update {
   permission: Boolean!
 }
 
-type KpiElementsDocAccessFields_bg_Delete {
+type KpiElementsDocAccessFields_backgroundColor_Delete {
   permission: Boolean!
 }
 
@@ -3841,10 +3881,10 @@ type KpiElementsDeleteDocAccess {
 }
 
 type NewsItem {
-  id: Int!
+  id: String!
   title: String
   link: String
-  paragraph: String
+  paragraph(depth: Int): JSON
   topic(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): NewsTopic
   dateOfPublication: DateTime
   image(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
@@ -3901,10 +3941,10 @@ input NewsItem_link_operator {
 }
 
 input NewsItem_paragraph_operator {
-  equals: String
-  not_equals: String
-  like: String
-  contains: String
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
 }
 
 input NewsItem_topic_operator {
@@ -3956,12 +3996,13 @@ input NewsItem_createdAt_operator {
 }
 
 input NewsItem_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -4221,7 +4262,7 @@ type NewsItemsDeleteDocAccess {
 }
 
 type Resource {
-  id: Int!
+  id: String!
   resource: [Resource_Resource!]
   category(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): [ResourceTopic!]
   typeResource(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): ResourceTopic
@@ -4313,12 +4354,13 @@ input Resource_createdAt_operator {
 }
 
 input Resource_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -4498,7 +4540,7 @@ type ResourcesDeleteDocAccess {
 }
 
 type Page {
-  id: Int!
+  id: String!
   title: String
   slug: String
   content: [Page_Content!]
@@ -4564,16 +4606,16 @@ enum InternalLink_LinkTo_RelationTo {
 union InternalLink_LinkTo = Page | Article | Insight | WebinarItem | StoryItem | Catalogue
 
 type Article {
-  id: Int!
+  id: String!
   parent(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Page
   title: String
-  paragraph: String
+  paragraph(depth: Int): JSON
   slug: String
   image(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
   content(depth: Int): JSON
   topics: [Article_Topics!]
   descriptionTitle: String
-  description: String
+  description(depth: Int): JSON
   seo: Article_Seo
   localizedSlugs: JSON
   updatedAt: DateTime
@@ -4613,12 +4655,12 @@ type Article_Seo {
 }
 
 type Insight {
-  id: Int!
+  id: String!
   parent(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Page
   title: String
   image(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
   slug: String
-  abstract: String
+  abstract(depth: Int): JSON
   content: [Insight_Content!]
   topic(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): InsightTopic
   seo: Insight_Seo
@@ -4754,13 +4796,15 @@ type StoryTab {
 }
 
 type StoryItem {
-  id: Int!
+  id: String!
   parent(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Page
   title: String
+  paragraph(depth: Int): JSON
   articleClassification(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): StoryClass
   slug: String
   topic(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): StoryTopic
   dateOfPublication: DateTime
+  storyType: String
   image(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
   content: [StoryItem_Content!]
   seo: StoryItem_Seo
@@ -4909,14 +4953,15 @@ enum ListCollection_Content_RelationTo {
 union ListCollection_Content = Article | Insight | WebinarItem | StoryItem | Page
 
 type WebinarItem {
-  id: Int!
+  id: String!
   slug: String
   title: String
-  paragraph: String
+  paragraph(depth: Int): JSON
   parent(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Page
   date: DateTime
   content: [WebinarItem_Content!]
   image(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
+  eventBody(depth: Int): JSON
   topic(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): WebinarTopic
   seo: WebinarItem_Seo
   localizedSlugs: JSON
@@ -5185,7 +5230,7 @@ enum LinkBlock_Link_RelationTo {
 union LinkBlock_Link = Page | Article | Insight | WebinarItem | StoryItem | Catalogue
 
 type Catalogue {
-  id: Int!
+  id: String!
   title: String
   parent(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Page
   slug: String
@@ -5393,6 +5438,7 @@ input Page_where {
   seo__title: Page_seo__title_operator
   seo__description: Page_seo__description_operator
   seo__image: Page_seo__image_operator
+  localizedSlugs: Page_localizedSlugs_operator
   updatedAt: Page_updatedAt_operator
   createdAt: Page_createdAt_operator
   id: Page_id_operator
@@ -5448,6 +5494,16 @@ input Page_seo__image_operator {
   exists: Boolean
 }
 
+input Page_localizedSlugs_operator {
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
+  within: JSON
+  intersects: JSON
+  exists: Boolean
+}
+
 input Page_updatedAt_operator {
   equals: DateTime
   not_equals: DateTime
@@ -5471,12 +5527,13 @@ input Page_createdAt_operator {
 }
 
 input Page_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -5486,6 +5543,7 @@ input Page_where_and {
   seo__title: Page_seo__title_operator
   seo__description: Page_seo__description_operator
   seo__image: Page_seo__image_operator
+  localizedSlugs: Page_localizedSlugs_operator
   updatedAt: Page_updatedAt_operator
   createdAt: Page_createdAt_operator
   id: Page_id_operator
@@ -5499,6 +5557,7 @@ input Page_where_or {
   seo__title: Page_seo__title_operator
   seo__description: Page_seo__description_operator
   seo__image: Page_seo__image_operator
+  localizedSlugs: Page_localizedSlugs_operator
   updatedAt: Page_updatedAt_operator
   createdAt: Page_createdAt_operator
   id: Page_id_operator
@@ -5523,6 +5582,7 @@ type PagesDocAccessFields {
   slug: PagesDocAccessFields_slug
   content: PagesDocAccessFields_content
   seo: PagesDocAccessFields_seo
+  localizedSlugs: PagesDocAccessFields_localizedSlugs
   updatedAt: PagesDocAccessFields_updatedAt
   createdAt: PagesDocAccessFields_createdAt
 }
@@ -5695,6 +5755,29 @@ type PagesDocAccessFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type PagesDocAccessFields_localizedSlugs {
+  create: PagesDocAccessFields_localizedSlugs_Create
+  read: PagesDocAccessFields_localizedSlugs_Read
+  update: PagesDocAccessFields_localizedSlugs_Update
+  delete: PagesDocAccessFields_localizedSlugs_Delete
+}
+
+type PagesDocAccessFields_localizedSlugs_Create {
+  permission: Boolean!
+}
+
+type PagesDocAccessFields_localizedSlugs_Read {
+  permission: Boolean!
+}
+
+type PagesDocAccessFields_localizedSlugs_Update {
+  permission: Boolean!
+}
+
+type PagesDocAccessFields_localizedSlugs_Delete {
+  permission: Boolean!
+}
+
 type PagesDocAccessFields_updatedAt {
   create: PagesDocAccessFields_updatedAt_Create
   read: PagesDocAccessFields_updatedAt_Read
@@ -5787,6 +5870,7 @@ input Article_where {
   seo__title: Article_seo__title_operator
   seo__description: Article_seo__description_operator
   seo__image: Article_seo__image_operator
+  localizedSlugs: Article_localizedSlugs_operator
   updatedAt: Article_updatedAt_operator
   createdAt: Article_createdAt_operator
   id: Article_id_operator
@@ -5814,10 +5898,10 @@ input Article_title_operator {
 }
 
 input Article_paragraph_operator {
-  equals: String
-  not_equals: String
-  like: String
-  contains: String
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
   exists: Boolean
 }
 
@@ -5860,10 +5944,10 @@ input Article_descriptionTitle_operator {
 }
 
 input Article_description_operator {
-  equals: String
-  not_equals: String
-  like: String
-  contains: String
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
   exists: Boolean
 }
 
@@ -5895,6 +5979,16 @@ input Article_seo__image_operator {
   exists: Boolean
 }
 
+input Article_localizedSlugs_operator {
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
+  within: JSON
+  intersects: JSON
+  exists: Boolean
+}
+
 input Article_updatedAt_operator {
   equals: DateTime
   not_equals: DateTime
@@ -5918,12 +6012,13 @@ input Article_createdAt_operator {
 }
 
 input Article_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -5939,6 +6034,7 @@ input Article_where_and {
   seo__title: Article_seo__title_operator
   seo__description: Article_seo__description_operator
   seo__image: Article_seo__image_operator
+  localizedSlugs: Article_localizedSlugs_operator
   updatedAt: Article_updatedAt_operator
   createdAt: Article_createdAt_operator
   id: Article_id_operator
@@ -5958,6 +6054,7 @@ input Article_where_or {
   seo__title: Article_seo__title_operator
   seo__description: Article_seo__description_operator
   seo__image: Article_seo__image_operator
+  localizedSlugs: Article_localizedSlugs_operator
   updatedAt: Article_updatedAt_operator
   createdAt: Article_createdAt_operator
   id: Article_id_operator
@@ -5988,6 +6085,7 @@ type ArticlesDocAccessFields {
   descriptionTitle: ArticlesDocAccessFields_descriptionTitle
   description: ArticlesDocAccessFields_description
   seo: ArticlesDocAccessFields_seo
+  localizedSlugs: ArticlesDocAccessFields_localizedSlugs
   updatedAt: ArticlesDocAccessFields_updatedAt
   createdAt: ArticlesDocAccessFields_createdAt
 }
@@ -6298,6 +6396,29 @@ type ArticlesDocAccessFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type ArticlesDocAccessFields_localizedSlugs {
+  create: ArticlesDocAccessFields_localizedSlugs_Create
+  read: ArticlesDocAccessFields_localizedSlugs_Read
+  update: ArticlesDocAccessFields_localizedSlugs_Update
+  delete: ArticlesDocAccessFields_localizedSlugs_Delete
+}
+
+type ArticlesDocAccessFields_localizedSlugs_Create {
+  permission: Boolean!
+}
+
+type ArticlesDocAccessFields_localizedSlugs_Read {
+  permission: Boolean!
+}
+
+type ArticlesDocAccessFields_localizedSlugs_Update {
+  permission: Boolean!
+}
+
+type ArticlesDocAccessFields_localizedSlugs_Delete {
+  permission: Boolean!
+}
+
 type ArticlesDocAccessFields_updatedAt {
   create: ArticlesDocAccessFields_updatedAt_Create
   read: ArticlesDocAccessFields_updatedAt_Read
@@ -6388,6 +6509,7 @@ input Insight_where {
   seo__title: Insight_seo__title_operator
   seo__description: Insight_seo__description_operator
   seo__image: Insight_seo__image_operator
+  localizedSlugs: Insight_localizedSlugs_operator
   updatedAt: Insight_updatedAt_operator
   createdAt: Insight_createdAt_operator
   id: Insight_id_operator
@@ -6433,10 +6555,10 @@ input Insight_slug_operator {
 }
 
 input Insight_abstract_operator {
-  equals: String
-  not_equals: String
-  like: String
-  contains: String
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
 }
 
 input Insight_topic_operator {
@@ -6476,6 +6598,16 @@ input Insight_seo__image_operator {
   exists: Boolean
 }
 
+input Insight_localizedSlugs_operator {
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
+  within: JSON
+  intersects: JSON
+  exists: Boolean
+}
+
 input Insight_updatedAt_operator {
   equals: DateTime
   not_equals: DateTime
@@ -6499,12 +6631,13 @@ input Insight_createdAt_operator {
 }
 
 input Insight_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -6518,6 +6651,7 @@ input Insight_where_and {
   seo__title: Insight_seo__title_operator
   seo__description: Insight_seo__description_operator
   seo__image: Insight_seo__image_operator
+  localizedSlugs: Insight_localizedSlugs_operator
   updatedAt: Insight_updatedAt_operator
   createdAt: Insight_createdAt_operator
   id: Insight_id_operator
@@ -6535,6 +6669,7 @@ input Insight_where_or {
   seo__title: Insight_seo__title_operator
   seo__description: Insight_seo__description_operator
   seo__image: Insight_seo__image_operator
+  localizedSlugs: Insight_localizedSlugs_operator
   updatedAt: Insight_updatedAt_operator
   createdAt: Insight_createdAt_operator
   id: Insight_id_operator
@@ -6563,6 +6698,7 @@ type InsightsDocAccessFields {
   content: InsightsDocAccessFields_content
   topic: InsightsDocAccessFields_topic
   seo: InsightsDocAccessFields_seo
+  localizedSlugs: InsightsDocAccessFields_localizedSlugs
   updatedAt: InsightsDocAccessFields_updatedAt
   createdAt: InsightsDocAccessFields_createdAt
 }
@@ -6827,6 +6963,29 @@ type InsightsDocAccessFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type InsightsDocAccessFields_localizedSlugs {
+  create: InsightsDocAccessFields_localizedSlugs_Create
+  read: InsightsDocAccessFields_localizedSlugs_Read
+  update: InsightsDocAccessFields_localizedSlugs_Update
+  delete: InsightsDocAccessFields_localizedSlugs_Delete
+}
+
+type InsightsDocAccessFields_localizedSlugs_Create {
+  permission: Boolean!
+}
+
+type InsightsDocAccessFields_localizedSlugs_Read {
+  permission: Boolean!
+}
+
+type InsightsDocAccessFields_localizedSlugs_Update {
+  permission: Boolean!
+}
+
+type InsightsDocAccessFields_localizedSlugs_Delete {
+  permission: Boolean!
+}
+
 type InsightsDocAccessFields_updatedAt {
   create: InsightsDocAccessFields_updatedAt_Create
   read: InsightsDocAccessFields_updatedAt_Read
@@ -6914,10 +7073,12 @@ input WebinarItem_where {
   parent: WebinarItem_parent_operator
   date: WebinarItem_date_operator
   image: WebinarItem_image_operator
+  eventBody: WebinarItem_eventBody_operator
   topic: WebinarItem_topic_operator
   seo__title: WebinarItem_seo__title_operator
   seo__description: WebinarItem_seo__description_operator
   seo__image: WebinarItem_seo__image_operator
+  localizedSlugs: WebinarItem_localizedSlugs_operator
   updatedAt: WebinarItem_updatedAt_operator
   createdAt: WebinarItem_createdAt_operator
   id: WebinarItem_id_operator
@@ -6946,10 +7107,10 @@ input WebinarItem_title_operator {
 }
 
 input WebinarItem_paragraph_operator {
-  equals: String
-  not_equals: String
-  like: String
-  contains: String
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
 }
 
 input WebinarItem_parent_operator {
@@ -6977,6 +7138,14 @@ input WebinarItem_image_operator {
   in: [JSON]
   not_in: [JSON]
   all: [JSON]
+}
+
+input WebinarItem_eventBody_operator {
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
+  exists: Boolean
 }
 
 input WebinarItem_topic_operator {
@@ -7015,6 +7184,16 @@ input WebinarItem_seo__image_operator {
   exists: Boolean
 }
 
+input WebinarItem_localizedSlugs_operator {
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
+  within: JSON
+  intersects: JSON
+  exists: Boolean
+}
+
 input WebinarItem_updatedAt_operator {
   equals: DateTime
   not_equals: DateTime
@@ -7038,12 +7217,13 @@ input WebinarItem_createdAt_operator {
 }
 
 input WebinarItem_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -7054,10 +7234,12 @@ input WebinarItem_where_and {
   parent: WebinarItem_parent_operator
   date: WebinarItem_date_operator
   image: WebinarItem_image_operator
+  eventBody: WebinarItem_eventBody_operator
   topic: WebinarItem_topic_operator
   seo__title: WebinarItem_seo__title_operator
   seo__description: WebinarItem_seo__description_operator
   seo__image: WebinarItem_seo__image_operator
+  localizedSlugs: WebinarItem_localizedSlugs_operator
   updatedAt: WebinarItem_updatedAt_operator
   createdAt: WebinarItem_createdAt_operator
   id: WebinarItem_id_operator
@@ -7072,10 +7254,12 @@ input WebinarItem_where_or {
   parent: WebinarItem_parent_operator
   date: WebinarItem_date_operator
   image: WebinarItem_image_operator
+  eventBody: WebinarItem_eventBody_operator
   topic: WebinarItem_topic_operator
   seo__title: WebinarItem_seo__title_operator
   seo__description: WebinarItem_seo__description_operator
   seo__image: WebinarItem_seo__image_operator
+  localizedSlugs: WebinarItem_localizedSlugs_operator
   updatedAt: WebinarItem_updatedAt_operator
   createdAt: WebinarItem_createdAt_operator
   id: WebinarItem_id_operator
@@ -7103,8 +7287,10 @@ type WebinarItemsDocAccessFields {
   date: WebinarItemsDocAccessFields_date
   content: WebinarItemsDocAccessFields_content
   image: WebinarItemsDocAccessFields_image
+  eventBody: WebinarItemsDocAccessFields_eventBody
   topic: WebinarItemsDocAccessFields_topic
   seo: WebinarItemsDocAccessFields_seo
+  localizedSlugs: WebinarItemsDocAccessFields_localizedSlugs
   updatedAt: WebinarItemsDocAccessFields_updatedAt
   createdAt: WebinarItemsDocAccessFields_createdAt
 }
@@ -7270,6 +7456,29 @@ type WebinarItemsDocAccessFields_image_Delete {
   permission: Boolean!
 }
 
+type WebinarItemsDocAccessFields_eventBody {
+  create: WebinarItemsDocAccessFields_eventBody_Create
+  read: WebinarItemsDocAccessFields_eventBody_Read
+  update: WebinarItemsDocAccessFields_eventBody_Update
+  delete: WebinarItemsDocAccessFields_eventBody_Delete
+}
+
+type WebinarItemsDocAccessFields_eventBody_Create {
+  permission: Boolean!
+}
+
+type WebinarItemsDocAccessFields_eventBody_Read {
+  permission: Boolean!
+}
+
+type WebinarItemsDocAccessFields_eventBody_Update {
+  permission: Boolean!
+}
+
+type WebinarItemsDocAccessFields_eventBody_Delete {
+  permission: Boolean!
+}
+
 type WebinarItemsDocAccessFields_topic {
   create: WebinarItemsDocAccessFields_topic_Create
   read: WebinarItemsDocAccessFields_topic_Read
@@ -7392,6 +7601,29 @@ type WebinarItemsDocAccessFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type WebinarItemsDocAccessFields_localizedSlugs {
+  create: WebinarItemsDocAccessFields_localizedSlugs_Create
+  read: WebinarItemsDocAccessFields_localizedSlugs_Read
+  update: WebinarItemsDocAccessFields_localizedSlugs_Update
+  delete: WebinarItemsDocAccessFields_localizedSlugs_Delete
+}
+
+type WebinarItemsDocAccessFields_localizedSlugs_Create {
+  permission: Boolean!
+}
+
+type WebinarItemsDocAccessFields_localizedSlugs_Read {
+  permission: Boolean!
+}
+
+type WebinarItemsDocAccessFields_localizedSlugs_Update {
+  permission: Boolean!
+}
+
+type WebinarItemsDocAccessFields_localizedSlugs_Delete {
+  permission: Boolean!
+}
+
 type WebinarItemsDocAccessFields_updatedAt {
   create: WebinarItemsDocAccessFields_updatedAt_Create
   read: WebinarItemsDocAccessFields_updatedAt_Read
@@ -7475,14 +7707,17 @@ type StoryItems {
 input StoryItem_where {
   parent: StoryItem_parent_operator
   title: StoryItem_title_operator
+  paragraph: StoryItem_paragraph_operator
   articleClassification: StoryItem_articleClassification_operator
   slug: StoryItem_slug_operator
   topic: StoryItem_topic_operator
   dateOfPublication: StoryItem_dateOfPublication_operator
+  storyType: StoryItem_storyType_operator
   image: StoryItem_image_operator
   seo__title: StoryItem_seo__title_operator
   seo__description: StoryItem_seo__description_operator
   seo__image: StoryItem_seo__image_operator
+  localizedSlugs: StoryItem_localizedSlugs_operator
   updatedAt: StoryItem_updatedAt_operator
   createdAt: StoryItem_createdAt_operator
   id: StoryItem_id_operator
@@ -7507,6 +7742,14 @@ input StoryItem_title_operator {
   in: [String]
   not_in: [String]
   all: [String]
+}
+
+input StoryItem_paragraph_operator {
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
+  exists: Boolean
 }
 
 input StoryItem_articleClassification_operator {
@@ -7547,6 +7790,17 @@ input StoryItem_dateOfPublication_operator {
   exists: Boolean
 }
 
+input StoryItem_storyType_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
 input StoryItem_image_operator {
   equals: JSON
   not_equals: JSON
@@ -7583,6 +7837,16 @@ input StoryItem_seo__image_operator {
   exists: Boolean
 }
 
+input StoryItem_localizedSlugs_operator {
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
+  within: JSON
+  intersects: JSON
+  exists: Boolean
+}
+
 input StoryItem_updatedAt_operator {
   equals: DateTime
   not_equals: DateTime
@@ -7606,26 +7870,30 @@ input StoryItem_createdAt_operator {
 }
 
 input StoryItem_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
 input StoryItem_where_and {
   parent: StoryItem_parent_operator
   title: StoryItem_title_operator
+  paragraph: StoryItem_paragraph_operator
   articleClassification: StoryItem_articleClassification_operator
   slug: StoryItem_slug_operator
   topic: StoryItem_topic_operator
   dateOfPublication: StoryItem_dateOfPublication_operator
+  storyType: StoryItem_storyType_operator
   image: StoryItem_image_operator
   seo__title: StoryItem_seo__title_operator
   seo__description: StoryItem_seo__description_operator
   seo__image: StoryItem_seo__image_operator
+  localizedSlugs: StoryItem_localizedSlugs_operator
   updatedAt: StoryItem_updatedAt_operator
   createdAt: StoryItem_createdAt_operator
   id: StoryItem_id_operator
@@ -7636,14 +7904,17 @@ input StoryItem_where_and {
 input StoryItem_where_or {
   parent: StoryItem_parent_operator
   title: StoryItem_title_operator
+  paragraph: StoryItem_paragraph_operator
   articleClassification: StoryItem_articleClassification_operator
   slug: StoryItem_slug_operator
   topic: StoryItem_topic_operator
   dateOfPublication: StoryItem_dateOfPublication_operator
+  storyType: StoryItem_storyType_operator
   image: StoryItem_image_operator
   seo__title: StoryItem_seo__title_operator
   seo__description: StoryItem_seo__description_operator
   seo__image: StoryItem_seo__image_operator
+  localizedSlugs: StoryItem_localizedSlugs_operator
   updatedAt: StoryItem_updatedAt_operator
   createdAt: StoryItem_createdAt_operator
   id: StoryItem_id_operator
@@ -7666,13 +7937,16 @@ type story_itemsDocAccess {
 type StoryItemsDocAccessFields {
   parent: StoryItemsDocAccessFields_parent
   title: StoryItemsDocAccessFields_title
+  paragraph: StoryItemsDocAccessFields_paragraph
   articleClassification: StoryItemsDocAccessFields_articleClassification
   slug: StoryItemsDocAccessFields_slug
   topic: StoryItemsDocAccessFields_topic
   dateOfPublication: StoryItemsDocAccessFields_dateOfPublication
+  storyType: StoryItemsDocAccessFields_storyType
   image: StoryItemsDocAccessFields_image
   content: StoryItemsDocAccessFields_content
   seo: StoryItemsDocAccessFields_seo
+  localizedSlugs: StoryItemsDocAccessFields_localizedSlugs
   updatedAt: StoryItemsDocAccessFields_updatedAt
   createdAt: StoryItemsDocAccessFields_createdAt
 }
@@ -7720,6 +7994,29 @@ type StoryItemsDocAccessFields_title_Update {
 }
 
 type StoryItemsDocAccessFields_title_Delete {
+  permission: Boolean!
+}
+
+type StoryItemsDocAccessFields_paragraph {
+  create: StoryItemsDocAccessFields_paragraph_Create
+  read: StoryItemsDocAccessFields_paragraph_Read
+  update: StoryItemsDocAccessFields_paragraph_Update
+  delete: StoryItemsDocAccessFields_paragraph_Delete
+}
+
+type StoryItemsDocAccessFields_paragraph_Create {
+  permission: Boolean!
+}
+
+type StoryItemsDocAccessFields_paragraph_Read {
+  permission: Boolean!
+}
+
+type StoryItemsDocAccessFields_paragraph_Update {
+  permission: Boolean!
+}
+
+type StoryItemsDocAccessFields_paragraph_Delete {
   permission: Boolean!
 }
 
@@ -7812,6 +8109,29 @@ type StoryItemsDocAccessFields_dateOfPublication_Update {
 }
 
 type StoryItemsDocAccessFields_dateOfPublication_Delete {
+  permission: Boolean!
+}
+
+type StoryItemsDocAccessFields_storyType {
+  create: StoryItemsDocAccessFields_storyType_Create
+  read: StoryItemsDocAccessFields_storyType_Read
+  update: StoryItemsDocAccessFields_storyType_Update
+  delete: StoryItemsDocAccessFields_storyType_Delete
+}
+
+type StoryItemsDocAccessFields_storyType_Create {
+  permission: Boolean!
+}
+
+type StoryItemsDocAccessFields_storyType_Read {
+  permission: Boolean!
+}
+
+type StoryItemsDocAccessFields_storyType_Update {
+  permission: Boolean!
+}
+
+type StoryItemsDocAccessFields_storyType_Delete {
   permission: Boolean!
 }
 
@@ -7960,6 +8280,29 @@ type StoryItemsDocAccessFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type StoryItemsDocAccessFields_localizedSlugs {
+  create: StoryItemsDocAccessFields_localizedSlugs_Create
+  read: StoryItemsDocAccessFields_localizedSlugs_Read
+  update: StoryItemsDocAccessFields_localizedSlugs_Update
+  delete: StoryItemsDocAccessFields_localizedSlugs_Delete
+}
+
+type StoryItemsDocAccessFields_localizedSlugs_Create {
+  permission: Boolean!
+}
+
+type StoryItemsDocAccessFields_localizedSlugs_Read {
+  permission: Boolean!
+}
+
+type StoryItemsDocAccessFields_localizedSlugs_Update {
+  permission: Boolean!
+}
+
+type StoryItemsDocAccessFields_localizedSlugs_Delete {
+  permission: Boolean!
+}
+
 type StoryItemsDocAccessFields_updatedAt {
   create: StoryItemsDocAccessFields_updatedAt_Create
   read: StoryItemsDocAccessFields_updatedAt_Read
@@ -8047,6 +8390,7 @@ input Catalogue_where {
   seo__title: Catalogue_seo__title_operator
   seo__description: Catalogue_seo__description_operator
   seo__image: Catalogue_seo__image_operator
+  localizedSlugs: Catalogue_localizedSlugs_operator
   updatedAt: Catalogue_updatedAt_operator
   createdAt: Catalogue_createdAt_operator
   id: Catalogue_id_operator
@@ -8111,6 +8455,16 @@ input Catalogue_seo__image_operator {
   exists: Boolean
 }
 
+input Catalogue_localizedSlugs_operator {
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
+  within: JSON
+  intersects: JSON
+  exists: Boolean
+}
+
 input Catalogue_updatedAt_operator {
   equals: DateTime
   not_equals: DateTime
@@ -8134,12 +8488,13 @@ input Catalogue_createdAt_operator {
 }
 
 input Catalogue_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -8150,6 +8505,7 @@ input Catalogue_where_and {
   seo__title: Catalogue_seo__title_operator
   seo__description: Catalogue_seo__description_operator
   seo__image: Catalogue_seo__image_operator
+  localizedSlugs: Catalogue_localizedSlugs_operator
   updatedAt: Catalogue_updatedAt_operator
   createdAt: Catalogue_createdAt_operator
   id: Catalogue_id_operator
@@ -8164,6 +8520,7 @@ input Catalogue_where_or {
   seo__title: Catalogue_seo__title_operator
   seo__description: Catalogue_seo__description_operator
   seo__image: Catalogue_seo__image_operator
+  localizedSlugs: Catalogue_localizedSlugs_operator
   updatedAt: Catalogue_updatedAt_operator
   createdAt: Catalogue_createdAt_operator
   id: Catalogue_id_operator
@@ -8189,6 +8546,7 @@ type CataloguesDocAccessFields {
   slug: CataloguesDocAccessFields_slug
   content: CataloguesDocAccessFields_content
   seo: CataloguesDocAccessFields_seo
+  localizedSlugs: CataloguesDocAccessFields_localizedSlugs
   updatedAt: CataloguesDocAccessFields_updatedAt
   createdAt: CataloguesDocAccessFields_createdAt
 }
@@ -8384,6 +8742,29 @@ type CataloguesDocAccessFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type CataloguesDocAccessFields_localizedSlugs {
+  create: CataloguesDocAccessFields_localizedSlugs_Create
+  read: CataloguesDocAccessFields_localizedSlugs_Read
+  update: CataloguesDocAccessFields_localizedSlugs_Update
+  delete: CataloguesDocAccessFields_localizedSlugs_Delete
+}
+
+type CataloguesDocAccessFields_localizedSlugs_Create {
+  permission: Boolean!
+}
+
+type CataloguesDocAccessFields_localizedSlugs_Read {
+  permission: Boolean!
+}
+
+type CataloguesDocAccessFields_localizedSlugs_Update {
+  permission: Boolean!
+}
+
+type CataloguesDocAccessFields_localizedSlugs_Delete {
+  permission: Boolean!
+}
+
 type CataloguesDocAccessFields_updatedAt {
   create: CataloguesDocAccessFields_updatedAt_Create
   read: CataloguesDocAccessFields_updatedAt_Read
@@ -8451,7 +8832,7 @@ type CataloguesDeleteDocAccess {
 }
 
 type PayloadKv {
-  id: Int!
+  id: String!
   key: String!
   data: JSON!
 }
@@ -8498,12 +8879,13 @@ input PayloadKv_data_operator {
 }
 
 input PayloadKv_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -8607,7 +8989,7 @@ type PayloadKvDeleteDocAccess {
 }
 
 type PayloadLockedDocument {
-  id: Int!
+  id: String!
   document(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): PayloadLockedDocument_Document_Relationship
   globalSlug: String
   user(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): PayloadLockedDocument_User_Relationship
@@ -8754,12 +9136,13 @@ input PayloadLockedDocument_createdAt_operator {
 }
 
 input PayloadLockedDocument_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -8941,7 +9324,7 @@ type PayloadLockedDocumentsDeleteDocAccess {
 }
 
 type PayloadPreference {
-  id: Int!
+  id: String!
   user(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): PayloadPreference_User_Relationship
   key: String
   value: JSON
@@ -9038,12 +9421,13 @@ input PayloadPreference_createdAt_operator {
 }
 
 input PayloadPreference_id_operator {
-  equals: Int
-  not_equals: Int
-  greater_than_equal: Int
-  greater_than: Int
-  less_than_equal: Int
-  less_than: Int
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
   exists: Boolean
 }
 
@@ -9226,7 +9610,7 @@ type PayloadPreferencesDeleteDocAccess {
 
 type Layout {
   variant: String!
-  heading: String
+  heading(depth: Int): JSON
   logoSelect: String!
   organizations: [Layout_Organizations!]
   listNavbarBrand: [Layout_ListNavbarBrand!]
@@ -10383,7 +10767,7 @@ type GlobalSetting {
   lastUpdateLabel: String
   title: String
   links: [GlobalSetting_Links!]
-  paragraph: String
+  paragraph(depth: Int): JSON
   siteName: String
   image(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
   labelCta: String
@@ -10836,6 +11220,228 @@ type SidebarForArticleUpdateDocAccess {
   where: JSONObject
 }
 
+type SeoDefault {
+  siteName: String
+  fallbackTitle: String
+  fallbackDescription: String
+  titleSuffix: String
+  ogImage(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
+  favicon(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
+  updatedAt: DateTime
+  createdAt: DateTime
+}
+
+type seo_defaultDocAccess {
+  fields: SeoDefaultDocAccessFields
+  read: SeoDefaultReadDocAccess
+  update: SeoDefaultUpdateDocAccess
+}
+
+type SeoDefaultDocAccessFields {
+  siteName: SeoDefaultDocAccessFields_siteName
+  fallbackTitle: SeoDefaultDocAccessFields_fallbackTitle
+  fallbackDescription: SeoDefaultDocAccessFields_fallbackDescription
+  titleSuffix: SeoDefaultDocAccessFields_titleSuffix
+  ogImage: SeoDefaultDocAccessFields_ogImage
+  favicon: SeoDefaultDocAccessFields_favicon
+  updatedAt: SeoDefaultDocAccessFields_updatedAt
+  createdAt: SeoDefaultDocAccessFields_createdAt
+}
+
+type SeoDefaultDocAccessFields_siteName {
+  create: SeoDefaultDocAccessFields_siteName_Create
+  read: SeoDefaultDocAccessFields_siteName_Read
+  update: SeoDefaultDocAccessFields_siteName_Update
+  delete: SeoDefaultDocAccessFields_siteName_Delete
+}
+
+type SeoDefaultDocAccessFields_siteName_Create {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_siteName_Read {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_siteName_Update {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_siteName_Delete {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_fallbackTitle {
+  create: SeoDefaultDocAccessFields_fallbackTitle_Create
+  read: SeoDefaultDocAccessFields_fallbackTitle_Read
+  update: SeoDefaultDocAccessFields_fallbackTitle_Update
+  delete: SeoDefaultDocAccessFields_fallbackTitle_Delete
+}
+
+type SeoDefaultDocAccessFields_fallbackTitle_Create {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_fallbackTitle_Read {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_fallbackTitle_Update {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_fallbackTitle_Delete {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_fallbackDescription {
+  create: SeoDefaultDocAccessFields_fallbackDescription_Create
+  read: SeoDefaultDocAccessFields_fallbackDescription_Read
+  update: SeoDefaultDocAccessFields_fallbackDescription_Update
+  delete: SeoDefaultDocAccessFields_fallbackDescription_Delete
+}
+
+type SeoDefaultDocAccessFields_fallbackDescription_Create {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_fallbackDescription_Read {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_fallbackDescription_Update {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_fallbackDescription_Delete {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_titleSuffix {
+  create: SeoDefaultDocAccessFields_titleSuffix_Create
+  read: SeoDefaultDocAccessFields_titleSuffix_Read
+  update: SeoDefaultDocAccessFields_titleSuffix_Update
+  delete: SeoDefaultDocAccessFields_titleSuffix_Delete
+}
+
+type SeoDefaultDocAccessFields_titleSuffix_Create {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_titleSuffix_Read {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_titleSuffix_Update {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_titleSuffix_Delete {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_ogImage {
+  create: SeoDefaultDocAccessFields_ogImage_Create
+  read: SeoDefaultDocAccessFields_ogImage_Read
+  update: SeoDefaultDocAccessFields_ogImage_Update
+  delete: SeoDefaultDocAccessFields_ogImage_Delete
+}
+
+type SeoDefaultDocAccessFields_ogImage_Create {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_ogImage_Read {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_ogImage_Update {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_ogImage_Delete {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_favicon {
+  create: SeoDefaultDocAccessFields_favicon_Create
+  read: SeoDefaultDocAccessFields_favicon_Read
+  update: SeoDefaultDocAccessFields_favicon_Update
+  delete: SeoDefaultDocAccessFields_favicon_Delete
+}
+
+type SeoDefaultDocAccessFields_favicon_Create {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_favicon_Read {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_favicon_Update {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_favicon_Delete {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_updatedAt {
+  create: SeoDefaultDocAccessFields_updatedAt_Create
+  read: SeoDefaultDocAccessFields_updatedAt_Read
+  update: SeoDefaultDocAccessFields_updatedAt_Update
+  delete: SeoDefaultDocAccessFields_updatedAt_Delete
+}
+
+type SeoDefaultDocAccessFields_updatedAt_Create {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_updatedAt_Read {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_updatedAt_Update {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_updatedAt_Delete {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_createdAt {
+  create: SeoDefaultDocAccessFields_createdAt_Create
+  read: SeoDefaultDocAccessFields_createdAt_Read
+  update: SeoDefaultDocAccessFields_createdAt_Update
+  delete: SeoDefaultDocAccessFields_createdAt_Delete
+}
+
+type SeoDefaultDocAccessFields_createdAt_Create {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_createdAt_Read {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_createdAt_Update {
+  permission: Boolean!
+}
+
+type SeoDefaultDocAccessFields_createdAt_Delete {
+  permission: Boolean!
+}
+
+type SeoDefaultReadDocAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
+type SeoDefaultUpdateDocAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
 type Access {
   canAccessAdmin: Boolean!
   users: usersAccess
@@ -10867,6 +11473,7 @@ type Access {
   search: searchAccess
   global_setting: global_settingAccess
   sidebar_for_article: sidebar_for_articleAccess
+  seo_default: seo_defaultAccess
 }
 
 type usersAccess {
@@ -12176,6 +12783,7 @@ type story_classesAccess {
 
 type StoryClassesFields {
   label: StoryClassesFields_label
+  sort: StoryClassesFields_sort
   updatedAt: StoryClassesFields_updatedAt
   createdAt: StoryClassesFields_createdAt
 }
@@ -12200,6 +12808,29 @@ type StoryClassesFields_label_Update {
 }
 
 type StoryClassesFields_label_Delete {
+  permission: Boolean!
+}
+
+type StoryClassesFields_sort {
+  create: StoryClassesFields_sort_Create
+  read: StoryClassesFields_sort_Read
+  update: StoryClassesFields_sort_Update
+  delete: StoryClassesFields_sort_Delete
+}
+
+type StoryClassesFields_sort_Create {
+  permission: Boolean!
+}
+
+type StoryClassesFields_sort_Read {
+  permission: Boolean!
+}
+
+type StoryClassesFields_sort_Update {
+  permission: Boolean!
+}
+
+type StoryClassesFields_sort_Delete {
   permission: Boolean!
 }
 
@@ -12567,7 +13198,7 @@ type KpiElementsFields {
   percentage: KpiElementsFields_percentage
   footerText: KpiElementsFields_footerText
   openDataPath: KpiElementsFields_openDataPath
-  bg: KpiElementsFields_bg
+  backgroundColor: KpiElementsFields_backgroundColor
   updatedAt: KpiElementsFields_updatedAt
   createdAt: KpiElementsFields_createdAt
 }
@@ -12825,26 +13456,26 @@ type KpiElementsFields_openDataPath_Delete {
   permission: Boolean!
 }
 
-type KpiElementsFields_bg {
-  create: KpiElementsFields_bg_Create
-  read: KpiElementsFields_bg_Read
-  update: KpiElementsFields_bg_Update
-  delete: KpiElementsFields_bg_Delete
+type KpiElementsFields_backgroundColor {
+  create: KpiElementsFields_backgroundColor_Create
+  read: KpiElementsFields_backgroundColor_Read
+  update: KpiElementsFields_backgroundColor_Update
+  delete: KpiElementsFields_backgroundColor_Delete
 }
 
-type KpiElementsFields_bg_Create {
+type KpiElementsFields_backgroundColor_Create {
   permission: Boolean!
 }
 
-type KpiElementsFields_bg_Read {
+type KpiElementsFields_backgroundColor_Read {
   permission: Boolean!
 }
 
-type KpiElementsFields_bg_Update {
+type KpiElementsFields_backgroundColor_Update {
   permission: Boolean!
 }
 
-type KpiElementsFields_bg_Delete {
+type KpiElementsFields_backgroundColor_Delete {
   permission: Boolean!
 }
 
@@ -13301,6 +13932,7 @@ type PagesFields {
   slug: PagesFields_slug
   content: PagesFields_content
   seo: PagesFields_seo
+  localizedSlugs: PagesFields_localizedSlugs
   updatedAt: PagesFields_updatedAt
   createdAt: PagesFields_createdAt
 }
@@ -13473,6 +14105,29 @@ type PagesFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type PagesFields_localizedSlugs {
+  create: PagesFields_localizedSlugs_Create
+  read: PagesFields_localizedSlugs_Read
+  update: PagesFields_localizedSlugs_Update
+  delete: PagesFields_localizedSlugs_Delete
+}
+
+type PagesFields_localizedSlugs_Create {
+  permission: Boolean!
+}
+
+type PagesFields_localizedSlugs_Read {
+  permission: Boolean!
+}
+
+type PagesFields_localizedSlugs_Update {
+  permission: Boolean!
+}
+
+type PagesFields_localizedSlugs_Delete {
+  permission: Boolean!
+}
+
 type PagesFields_updatedAt {
   create: PagesFields_updatedAt_Create
   read: PagesFields_updatedAt_Read
@@ -13558,6 +14213,7 @@ type ArticlesFields {
   descriptionTitle: ArticlesFields_descriptionTitle
   description: ArticlesFields_description
   seo: ArticlesFields_seo
+  localizedSlugs: ArticlesFields_localizedSlugs
   updatedAt: ArticlesFields_updatedAt
   createdAt: ArticlesFields_createdAt
 }
@@ -13868,6 +14524,29 @@ type ArticlesFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type ArticlesFields_localizedSlugs {
+  create: ArticlesFields_localizedSlugs_Create
+  read: ArticlesFields_localizedSlugs_Read
+  update: ArticlesFields_localizedSlugs_Update
+  delete: ArticlesFields_localizedSlugs_Delete
+}
+
+type ArticlesFields_localizedSlugs_Create {
+  permission: Boolean!
+}
+
+type ArticlesFields_localizedSlugs_Read {
+  permission: Boolean!
+}
+
+type ArticlesFields_localizedSlugs_Update {
+  permission: Boolean!
+}
+
+type ArticlesFields_localizedSlugs_Delete {
+  permission: Boolean!
+}
+
 type ArticlesFields_updatedAt {
   create: ArticlesFields_updatedAt_Create
   read: ArticlesFields_updatedAt_Read
@@ -13951,6 +14630,7 @@ type InsightsFields {
   content: InsightsFields_content
   topic: InsightsFields_topic
   seo: InsightsFields_seo
+  localizedSlugs: InsightsFields_localizedSlugs
   updatedAt: InsightsFields_updatedAt
   createdAt: InsightsFields_createdAt
 }
@@ -14215,6 +14895,29 @@ type InsightsFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type InsightsFields_localizedSlugs {
+  create: InsightsFields_localizedSlugs_Create
+  read: InsightsFields_localizedSlugs_Read
+  update: InsightsFields_localizedSlugs_Update
+  delete: InsightsFields_localizedSlugs_Delete
+}
+
+type InsightsFields_localizedSlugs_Create {
+  permission: Boolean!
+}
+
+type InsightsFields_localizedSlugs_Read {
+  permission: Boolean!
+}
+
+type InsightsFields_localizedSlugs_Update {
+  permission: Boolean!
+}
+
+type InsightsFields_localizedSlugs_Delete {
+  permission: Boolean!
+}
+
 type InsightsFields_updatedAt {
   create: InsightsFields_updatedAt_Create
   read: InsightsFields_updatedAt_Read
@@ -14297,8 +15000,10 @@ type WebinarItemsFields {
   date: WebinarItemsFields_date
   content: WebinarItemsFields_content
   image: WebinarItemsFields_image
+  eventBody: WebinarItemsFields_eventBody
   topic: WebinarItemsFields_topic
   seo: WebinarItemsFields_seo
+  localizedSlugs: WebinarItemsFields_localizedSlugs
   updatedAt: WebinarItemsFields_updatedAt
   createdAt: WebinarItemsFields_createdAt
 }
@@ -14464,6 +15169,29 @@ type WebinarItemsFields_image_Delete {
   permission: Boolean!
 }
 
+type WebinarItemsFields_eventBody {
+  create: WebinarItemsFields_eventBody_Create
+  read: WebinarItemsFields_eventBody_Read
+  update: WebinarItemsFields_eventBody_Update
+  delete: WebinarItemsFields_eventBody_Delete
+}
+
+type WebinarItemsFields_eventBody_Create {
+  permission: Boolean!
+}
+
+type WebinarItemsFields_eventBody_Read {
+  permission: Boolean!
+}
+
+type WebinarItemsFields_eventBody_Update {
+  permission: Boolean!
+}
+
+type WebinarItemsFields_eventBody_Delete {
+  permission: Boolean!
+}
+
 type WebinarItemsFields_topic {
   create: WebinarItemsFields_topic_Create
   read: WebinarItemsFields_topic_Read
@@ -14586,6 +15314,29 @@ type WebinarItemsFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type WebinarItemsFields_localizedSlugs {
+  create: WebinarItemsFields_localizedSlugs_Create
+  read: WebinarItemsFields_localizedSlugs_Read
+  update: WebinarItemsFields_localizedSlugs_Update
+  delete: WebinarItemsFields_localizedSlugs_Delete
+}
+
+type WebinarItemsFields_localizedSlugs_Create {
+  permission: Boolean!
+}
+
+type WebinarItemsFields_localizedSlugs_Read {
+  permission: Boolean!
+}
+
+type WebinarItemsFields_localizedSlugs_Update {
+  permission: Boolean!
+}
+
+type WebinarItemsFields_localizedSlugs_Delete {
+  permission: Boolean!
+}
+
 type WebinarItemsFields_updatedAt {
   create: WebinarItemsFields_updatedAt_Create
   read: WebinarItemsFields_updatedAt_Read
@@ -14663,13 +15414,16 @@ type story_itemsAccess {
 type StoryItemsFields {
   parent: StoryItemsFields_parent
   title: StoryItemsFields_title
+  paragraph: StoryItemsFields_paragraph
   articleClassification: StoryItemsFields_articleClassification
   slug: StoryItemsFields_slug
   topic: StoryItemsFields_topic
   dateOfPublication: StoryItemsFields_dateOfPublication
+  storyType: StoryItemsFields_storyType
   image: StoryItemsFields_image
   content: StoryItemsFields_content
   seo: StoryItemsFields_seo
+  localizedSlugs: StoryItemsFields_localizedSlugs
   updatedAt: StoryItemsFields_updatedAt
   createdAt: StoryItemsFields_createdAt
 }
@@ -14717,6 +15471,29 @@ type StoryItemsFields_title_Update {
 }
 
 type StoryItemsFields_title_Delete {
+  permission: Boolean!
+}
+
+type StoryItemsFields_paragraph {
+  create: StoryItemsFields_paragraph_Create
+  read: StoryItemsFields_paragraph_Read
+  update: StoryItemsFields_paragraph_Update
+  delete: StoryItemsFields_paragraph_Delete
+}
+
+type StoryItemsFields_paragraph_Create {
+  permission: Boolean!
+}
+
+type StoryItemsFields_paragraph_Read {
+  permission: Boolean!
+}
+
+type StoryItemsFields_paragraph_Update {
+  permission: Boolean!
+}
+
+type StoryItemsFields_paragraph_Delete {
   permission: Boolean!
 }
 
@@ -14809,6 +15586,29 @@ type StoryItemsFields_dateOfPublication_Update {
 }
 
 type StoryItemsFields_dateOfPublication_Delete {
+  permission: Boolean!
+}
+
+type StoryItemsFields_storyType {
+  create: StoryItemsFields_storyType_Create
+  read: StoryItemsFields_storyType_Read
+  update: StoryItemsFields_storyType_Update
+  delete: StoryItemsFields_storyType_Delete
+}
+
+type StoryItemsFields_storyType_Create {
+  permission: Boolean!
+}
+
+type StoryItemsFields_storyType_Read {
+  permission: Boolean!
+}
+
+type StoryItemsFields_storyType_Update {
+  permission: Boolean!
+}
+
+type StoryItemsFields_storyType_Delete {
   permission: Boolean!
 }
 
@@ -14957,6 +15757,29 @@ type StoryItemsFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type StoryItemsFields_localizedSlugs {
+  create: StoryItemsFields_localizedSlugs_Create
+  read: StoryItemsFields_localizedSlugs_Read
+  update: StoryItemsFields_localizedSlugs_Update
+  delete: StoryItemsFields_localizedSlugs_Delete
+}
+
+type StoryItemsFields_localizedSlugs_Create {
+  permission: Boolean!
+}
+
+type StoryItemsFields_localizedSlugs_Read {
+  permission: Boolean!
+}
+
+type StoryItemsFields_localizedSlugs_Update {
+  permission: Boolean!
+}
+
+type StoryItemsFields_localizedSlugs_Delete {
+  permission: Boolean!
+}
+
 type StoryItemsFields_updatedAt {
   create: StoryItemsFields_updatedAt_Create
   read: StoryItemsFields_updatedAt_Read
@@ -15037,6 +15860,7 @@ type CataloguesFields {
   slug: CataloguesFields_slug
   content: CataloguesFields_content
   seo: CataloguesFields_seo
+  localizedSlugs: CataloguesFields_localizedSlugs
   updatedAt: CataloguesFields_updatedAt
   createdAt: CataloguesFields_createdAt
 }
@@ -15229,6 +16053,29 @@ type CataloguesFields_seo_image_Update {
 }
 
 type CataloguesFields_seo_image_Delete {
+  permission: Boolean!
+}
+
+type CataloguesFields_localizedSlugs {
+  create: CataloguesFields_localizedSlugs_Create
+  read: CataloguesFields_localizedSlugs_Read
+  update: CataloguesFields_localizedSlugs_Update
+  delete: CataloguesFields_localizedSlugs_Delete
+}
+
+type CataloguesFields_localizedSlugs_Create {
+  permission: Boolean!
+}
+
+type CataloguesFields_localizedSlugs_Read {
+  permission: Boolean!
+}
+
+type CataloguesFields_localizedSlugs_Update {
+  permission: Boolean!
+}
+
+type CataloguesFields_localizedSlugs_Delete {
   permission: Boolean!
 }
 
@@ -17054,10 +17901,221 @@ type SidebarForArticleUpdateAccess {
   where: JSONObject
 }
 
+type seo_defaultAccess {
+  fields: SeoDefaultFields
+  read: SeoDefaultReadAccess
+  update: SeoDefaultUpdateAccess
+}
+
+type SeoDefaultFields {
+  siteName: SeoDefaultFields_siteName
+  fallbackTitle: SeoDefaultFields_fallbackTitle
+  fallbackDescription: SeoDefaultFields_fallbackDescription
+  titleSuffix: SeoDefaultFields_titleSuffix
+  ogImage: SeoDefaultFields_ogImage
+  favicon: SeoDefaultFields_favicon
+  updatedAt: SeoDefaultFields_updatedAt
+  createdAt: SeoDefaultFields_createdAt
+}
+
+type SeoDefaultFields_siteName {
+  create: SeoDefaultFields_siteName_Create
+  read: SeoDefaultFields_siteName_Read
+  update: SeoDefaultFields_siteName_Update
+  delete: SeoDefaultFields_siteName_Delete
+}
+
+type SeoDefaultFields_siteName_Create {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_siteName_Read {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_siteName_Update {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_siteName_Delete {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_fallbackTitle {
+  create: SeoDefaultFields_fallbackTitle_Create
+  read: SeoDefaultFields_fallbackTitle_Read
+  update: SeoDefaultFields_fallbackTitle_Update
+  delete: SeoDefaultFields_fallbackTitle_Delete
+}
+
+type SeoDefaultFields_fallbackTitle_Create {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_fallbackTitle_Read {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_fallbackTitle_Update {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_fallbackTitle_Delete {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_fallbackDescription {
+  create: SeoDefaultFields_fallbackDescription_Create
+  read: SeoDefaultFields_fallbackDescription_Read
+  update: SeoDefaultFields_fallbackDescription_Update
+  delete: SeoDefaultFields_fallbackDescription_Delete
+}
+
+type SeoDefaultFields_fallbackDescription_Create {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_fallbackDescription_Read {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_fallbackDescription_Update {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_fallbackDescription_Delete {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_titleSuffix {
+  create: SeoDefaultFields_titleSuffix_Create
+  read: SeoDefaultFields_titleSuffix_Read
+  update: SeoDefaultFields_titleSuffix_Update
+  delete: SeoDefaultFields_titleSuffix_Delete
+}
+
+type SeoDefaultFields_titleSuffix_Create {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_titleSuffix_Read {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_titleSuffix_Update {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_titleSuffix_Delete {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_ogImage {
+  create: SeoDefaultFields_ogImage_Create
+  read: SeoDefaultFields_ogImage_Read
+  update: SeoDefaultFields_ogImage_Update
+  delete: SeoDefaultFields_ogImage_Delete
+}
+
+type SeoDefaultFields_ogImage_Create {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_ogImage_Read {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_ogImage_Update {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_ogImage_Delete {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_favicon {
+  create: SeoDefaultFields_favicon_Create
+  read: SeoDefaultFields_favicon_Read
+  update: SeoDefaultFields_favicon_Update
+  delete: SeoDefaultFields_favicon_Delete
+}
+
+type SeoDefaultFields_favicon_Create {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_favicon_Read {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_favicon_Update {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_favicon_Delete {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_updatedAt {
+  create: SeoDefaultFields_updatedAt_Create
+  read: SeoDefaultFields_updatedAt_Read
+  update: SeoDefaultFields_updatedAt_Update
+  delete: SeoDefaultFields_updatedAt_Delete
+}
+
+type SeoDefaultFields_updatedAt_Create {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_updatedAt_Read {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_updatedAt_Update {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_updatedAt_Delete {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_createdAt {
+  create: SeoDefaultFields_createdAt_Create
+  read: SeoDefaultFields_createdAt_Read
+  update: SeoDefaultFields_createdAt_Update
+  delete: SeoDefaultFields_createdAt_Delete
+}
+
+type SeoDefaultFields_createdAt_Create {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_createdAt_Read {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_createdAt_Update {
+  permission: Boolean!
+}
+
+type SeoDefaultFields_createdAt_Delete {
+  permission: Boolean!
+}
+
+type SeoDefaultReadAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
+type SeoDefaultUpdateAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
 type Mutation {
   createUser(data: mutationUserInput!, draft: Boolean, locale: LocaleInputType): User
-  updateUser(id: Int!, autosave: Boolean, data: mutationUserUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): User
-  deleteUser(id: Int!, trash: Boolean): User
+  updateUser(id: String!, autosave: Boolean, data: mutationUserUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): User
+  deleteUser(id: String!, trash: Boolean): User
   refreshTokenUser: usersRefreshedUser
   logoutUser(allSessions: Boolean): String
   unlockUser(email: String!): Boolean!
@@ -17066,102 +18124,103 @@ type Mutation {
   resetPasswordUser(password: String, token: String): usersResetPassword
   verifyEmailUser(token: String): Boolean
   createMedia(data: mutationMediaInput!, draft: Boolean, locale: LocaleInputType): Media
-  updateMedia(id: Int!, autosave: Boolean, data: mutationMediaUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): Media
-  deleteMedia(id: Int!, trash: Boolean): Media
-  duplicateMedia(id: Int!, data: mutationMediaInput!): Media
+  updateMedia(id: String!, autosave: Boolean, data: mutationMediaUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): Media
+  deleteMedia(id: String!, trash: Boolean): Media
+  duplicateMedia(id: String!, data: mutationMediaInput!): Media
   createArticleTopic(data: mutationArticleTopicInput!, draft: Boolean, locale: LocaleInputType): ArticleTopic
-  updateArticleTopic(id: Int!, autosave: Boolean, data: mutationArticleTopicUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): ArticleTopic
-  deleteArticleTopic(id: Int!, trash: Boolean): ArticleTopic
-  duplicateArticleTopic(id: Int!, data: mutationArticleTopicInput!): ArticleTopic
+  updateArticleTopic(id: String!, autosave: Boolean, data: mutationArticleTopicUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): ArticleTopic
+  deleteArticleTopic(id: String!, trash: Boolean): ArticleTopic
+  duplicateArticleTopic(id: String!, data: mutationArticleTopicInput!): ArticleTopic
   createNewsTopic(data: mutationNewsTopicInput!, draft: Boolean, locale: LocaleInputType): NewsTopic
-  updateNewsTopic(id: Int!, autosave: Boolean, data: mutationNewsTopicUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): NewsTopic
-  deleteNewsTopic(id: Int!, trash: Boolean): NewsTopic
-  duplicateNewsTopic(id: Int!, data: mutationNewsTopicInput!): NewsTopic
+  updateNewsTopic(id: String!, autosave: Boolean, data: mutationNewsTopicUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): NewsTopic
+  deleteNewsTopic(id: String!, trash: Boolean): NewsTopic
+  duplicateNewsTopic(id: String!, data: mutationNewsTopicInput!): NewsTopic
   createStoryTopic(data: mutationStoryTopicInput!, draft: Boolean, locale: LocaleInputType): StoryTopic
-  updateStoryTopic(id: Int!, autosave: Boolean, data: mutationStoryTopicUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): StoryTopic
-  deleteStoryTopic(id: Int!, trash: Boolean): StoryTopic
-  duplicateStoryTopic(id: Int!, data: mutationStoryTopicInput!): StoryTopic
+  updateStoryTopic(id: String!, autosave: Boolean, data: mutationStoryTopicUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): StoryTopic
+  deleteStoryTopic(id: String!, trash: Boolean): StoryTopic
+  duplicateStoryTopic(id: String!, data: mutationStoryTopicInput!): StoryTopic
   createInsightTopic(data: mutationInsightTopicInput!, draft: Boolean, locale: LocaleInputType): InsightTopic
-  updateInsightTopic(id: Int!, autosave: Boolean, data: mutationInsightTopicUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): InsightTopic
-  deleteInsightTopic(id: Int!, trash: Boolean): InsightTopic
-  duplicateInsightTopic(id: Int!, data: mutationInsightTopicInput!): InsightTopic
+  updateInsightTopic(id: String!, autosave: Boolean, data: mutationInsightTopicUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): InsightTopic
+  deleteInsightTopic(id: String!, trash: Boolean): InsightTopic
+  duplicateInsightTopic(id: String!, data: mutationInsightTopicInput!): InsightTopic
   createResourceTopic(data: mutationResourceTopicInput!, draft: Boolean, locale: LocaleInputType): ResourceTopic
-  updateResourceTopic(id: Int!, autosave: Boolean, data: mutationResourceTopicUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): ResourceTopic
-  deleteResourceTopic(id: Int!, trash: Boolean): ResourceTopic
-  duplicateResourceTopic(id: Int!, data: mutationResourceTopicInput!): ResourceTopic
+  updateResourceTopic(id: String!, autosave: Boolean, data: mutationResourceTopicUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): ResourceTopic
+  deleteResourceTopic(id: String!, trash: Boolean): ResourceTopic
+  duplicateResourceTopic(id: String!, data: mutationResourceTopicInput!): ResourceTopic
   createWebinarTopic(data: mutationWebinarTopicInput!, draft: Boolean, locale: LocaleInputType): WebinarTopic
-  updateWebinarTopic(id: Int!, autosave: Boolean, data: mutationWebinarTopicUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): WebinarTopic
-  deleteWebinarTopic(id: Int!, trash: Boolean): WebinarTopic
-  duplicateWebinarTopic(id: Int!, data: mutationWebinarTopicInput!): WebinarTopic
+  updateWebinarTopic(id: String!, autosave: Boolean, data: mutationWebinarTopicUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): WebinarTopic
+  deleteWebinarTopic(id: String!, trash: Boolean): WebinarTopic
+  duplicateWebinarTopic(id: String!, data: mutationWebinarTopicInput!): WebinarTopic
   createMacroTopic(data: mutationMacroTopicInput!, draft: Boolean, locale: LocaleInputType): MacroTopic
-  updateMacroTopic(id: Int!, autosave: Boolean, data: mutationMacroTopicUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): MacroTopic
-  deleteMacroTopic(id: Int!, trash: Boolean): MacroTopic
-  duplicateMacroTopic(id: Int!, data: mutationMacroTopicInput!): MacroTopic
+  updateMacroTopic(id: String!, autosave: Boolean, data: mutationMacroTopicUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): MacroTopic
+  deleteMacroTopic(id: String!, trash: Boolean): MacroTopic
+  duplicateMacroTopic(id: String!, data: mutationMacroTopicInput!): MacroTopic
   createStoryClass(data: mutationStoryClassInput!, draft: Boolean, locale: LocaleInputType): StoryClass
-  updateStoryClass(id: Int!, autosave: Boolean, data: mutationStoryClassUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): StoryClass
-  deleteStoryClass(id: Int!, trash: Boolean): StoryClass
-  duplicateStoryClass(id: Int!, data: mutationStoryClassInput!): StoryClass
+  updateStoryClass(id: String!, autosave: Boolean, data: mutationStoryClassUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): StoryClass
+  deleteStoryClass(id: String!, trash: Boolean): StoryClass
+  duplicateStoryClass(id: String!, data: mutationStoryClassInput!): StoryClass
   createWebinarAuthor(data: mutationWebinarAuthorInput!, draft: Boolean, locale: LocaleInputType): WebinarAuthor
-  updateWebinarAuthor(id: Int!, autosave: Boolean, data: mutationWebinarAuthorUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): WebinarAuthor
-  deleteWebinarAuthor(id: Int!, trash: Boolean): WebinarAuthor
-  duplicateWebinarAuthor(id: Int!, data: mutationWebinarAuthorInput!): WebinarAuthor
+  updateWebinarAuthor(id: String!, autosave: Boolean, data: mutationWebinarAuthorUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): WebinarAuthor
+  deleteWebinarAuthor(id: String!, trash: Boolean): WebinarAuthor
+  duplicateWebinarAuthor(id: String!, data: mutationWebinarAuthorInput!): WebinarAuthor
   createChartElement(data: mutationChartElementInput!, draft: Boolean, locale: LocaleInputType): ChartElement
-  updateChartElement(id: Int!, autosave: Boolean, data: mutationChartElementUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): ChartElement
-  deleteChartElement(id: Int!, trash: Boolean): ChartElement
-  duplicateChartElement(id: Int!, data: mutationChartElementInput!): ChartElement
+  updateChartElement(id: String!, autosave: Boolean, data: mutationChartElementUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): ChartElement
+  deleteChartElement(id: String!, trash: Boolean): ChartElement
+  duplicateChartElement(id: String!, data: mutationChartElementInput!): ChartElement
   createKpiElement(data: mutationKpiElementInput!, draft: Boolean, locale: LocaleInputType): KpiElement
-  updateKpiElement(id: Int!, autosave: Boolean, data: mutationKpiElementUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): KpiElement
-  deleteKpiElement(id: Int!, trash: Boolean): KpiElement
-  duplicateKpiElement(id: Int!, data: mutationKpiElementInput!): KpiElement
+  updateKpiElement(id: String!, autosave: Boolean, data: mutationKpiElementUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): KpiElement
+  deleteKpiElement(id: String!, trash: Boolean): KpiElement
+  duplicateKpiElement(id: String!, data: mutationKpiElementInput!): KpiElement
   createNewsItem(data: mutationNewsItemInput!, draft: Boolean, locale: LocaleInputType): NewsItem
-  updateNewsItem(id: Int!, autosave: Boolean, data: mutationNewsItemUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): NewsItem
-  deleteNewsItem(id: Int!, trash: Boolean): NewsItem
-  duplicateNewsItem(id: Int!, data: mutationNewsItemInput!): NewsItem
+  updateNewsItem(id: String!, autosave: Boolean, data: mutationNewsItemUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): NewsItem
+  deleteNewsItem(id: String!, trash: Boolean): NewsItem
+  duplicateNewsItem(id: String!, data: mutationNewsItemInput!): NewsItem
   createResource(data: mutationResourceInput!, draft: Boolean, locale: LocaleInputType): Resource
-  updateResource(id: Int!, autosave: Boolean, data: mutationResourceUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): Resource
-  deleteResource(id: Int!, trash: Boolean): Resource
-  duplicateResource(id: Int!, data: mutationResourceInput!): Resource
+  updateResource(id: String!, autosave: Boolean, data: mutationResourceUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): Resource
+  deleteResource(id: String!, trash: Boolean): Resource
+  duplicateResource(id: String!, data: mutationResourceInput!): Resource
   createPage(data: mutationPageInput!, draft: Boolean, locale: LocaleInputType): Page
-  updatePage(id: Int!, autosave: Boolean, data: mutationPageUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): Page
-  deletePage(id: Int!, trash: Boolean): Page
-  duplicatePage(id: Int!, data: mutationPageInput!): Page
+  updatePage(id: String!, autosave: Boolean, data: mutationPageUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): Page
+  deletePage(id: String!, trash: Boolean): Page
+  duplicatePage(id: String!, data: mutationPageInput!): Page
   createArticle(data: mutationArticleInput!, draft: Boolean, locale: LocaleInputType): Article
-  updateArticle(id: Int!, autosave: Boolean, data: mutationArticleUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): Article
-  deleteArticle(id: Int!, trash: Boolean): Article
-  duplicateArticle(id: Int!, data: mutationArticleInput!): Article
+  updateArticle(id: String!, autosave: Boolean, data: mutationArticleUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): Article
+  deleteArticle(id: String!, trash: Boolean): Article
+  duplicateArticle(id: String!, data: mutationArticleInput!): Article
   createInsight(data: mutationInsightInput!, draft: Boolean, locale: LocaleInputType): Insight
-  updateInsight(id: Int!, autosave: Boolean, data: mutationInsightUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): Insight
-  deleteInsight(id: Int!, trash: Boolean): Insight
-  duplicateInsight(id: Int!, data: mutationInsightInput!): Insight
+  updateInsight(id: String!, autosave: Boolean, data: mutationInsightUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): Insight
+  deleteInsight(id: String!, trash: Boolean): Insight
+  duplicateInsight(id: String!, data: mutationInsightInput!): Insight
   createWebinarItem(data: mutationWebinarItemInput!, draft: Boolean, locale: LocaleInputType): WebinarItem
-  updateWebinarItem(id: Int!, autosave: Boolean, data: mutationWebinarItemUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): WebinarItem
-  deleteWebinarItem(id: Int!, trash: Boolean): WebinarItem
-  duplicateWebinarItem(id: Int!, data: mutationWebinarItemInput!): WebinarItem
+  updateWebinarItem(id: String!, autosave: Boolean, data: mutationWebinarItemUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): WebinarItem
+  deleteWebinarItem(id: String!, trash: Boolean): WebinarItem
+  duplicateWebinarItem(id: String!, data: mutationWebinarItemInput!): WebinarItem
   createStoryItem(data: mutationStoryItemInput!, draft: Boolean, locale: LocaleInputType): StoryItem
-  updateStoryItem(id: Int!, autosave: Boolean, data: mutationStoryItemUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): StoryItem
-  deleteStoryItem(id: Int!, trash: Boolean): StoryItem
-  duplicateStoryItem(id: Int!, data: mutationStoryItemInput!): StoryItem
+  updateStoryItem(id: String!, autosave: Boolean, data: mutationStoryItemUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): StoryItem
+  deleteStoryItem(id: String!, trash: Boolean): StoryItem
+  duplicateStoryItem(id: String!, data: mutationStoryItemInput!): StoryItem
   createCatalogue(data: mutationCatalogueInput!, draft: Boolean, locale: LocaleInputType): Catalogue
-  updateCatalogue(id: Int!, autosave: Boolean, data: mutationCatalogueUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): Catalogue
-  deleteCatalogue(id: Int!, trash: Boolean): Catalogue
-  duplicateCatalogue(id: Int!, data: mutationCatalogueInput!): Catalogue
+  updateCatalogue(id: String!, autosave: Boolean, data: mutationCatalogueUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): Catalogue
+  deleteCatalogue(id: String!, trash: Boolean): Catalogue
+  duplicateCatalogue(id: String!, data: mutationCatalogueInput!): Catalogue
   createPayloadKv(data: mutationPayloadKvInput!, draft: Boolean, locale: LocaleInputType): PayloadKv
-  updatePayloadKv(id: Int!, autosave: Boolean, data: mutationPayloadKvUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): PayloadKv
-  deletePayloadKv(id: Int!, trash: Boolean): PayloadKv
-  duplicatePayloadKv(id: Int!, data: mutationPayloadKvInput!): PayloadKv
+  updatePayloadKv(id: String!, autosave: Boolean, data: mutationPayloadKvUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): PayloadKv
+  deletePayloadKv(id: String!, trash: Boolean): PayloadKv
+  duplicatePayloadKv(id: String!, data: mutationPayloadKvInput!): PayloadKv
   createPayloadLockedDocument(data: mutationPayloadLockedDocumentInput!, draft: Boolean, locale: LocaleInputType): PayloadLockedDocument
-  updatePayloadLockedDocument(id: Int!, autosave: Boolean, data: mutationPayloadLockedDocumentUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): PayloadLockedDocument
-  deletePayloadLockedDocument(id: Int!, trash: Boolean): PayloadLockedDocument
-  duplicatePayloadLockedDocument(id: Int!, data: mutationPayloadLockedDocumentInput!): PayloadLockedDocument
+  updatePayloadLockedDocument(id: String!, autosave: Boolean, data: mutationPayloadLockedDocumentUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): PayloadLockedDocument
+  deletePayloadLockedDocument(id: String!, trash: Boolean): PayloadLockedDocument
+  duplicatePayloadLockedDocument(id: String!, data: mutationPayloadLockedDocumentInput!): PayloadLockedDocument
   createPayloadPreference(data: mutationPayloadPreferenceInput!, draft: Boolean, locale: LocaleInputType): PayloadPreference
-  updatePayloadPreference(id: Int!, autosave: Boolean, data: mutationPayloadPreferenceUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): PayloadPreference
-  deletePayloadPreference(id: Int!, trash: Boolean): PayloadPreference
-  duplicatePayloadPreference(id: Int!, data: mutationPayloadPreferenceInput!): PayloadPreference
+  updatePayloadPreference(id: String!, autosave: Boolean, data: mutationPayloadPreferenceUpdateInput!, draft: Boolean, locale: LocaleInputType, trash: Boolean): PayloadPreference
+  deletePayloadPreference(id: String!, trash: Boolean): PayloadPreference
+  duplicatePayloadPreference(id: String!, data: mutationPayloadPreferenceInput!): PayloadPreference
   updateLayout(data: mutationLayoutInput!, draft: Boolean, locale: LocaleInputType): Layout
   updateHomepage(data: mutationHomepageInput!, draft: Boolean, locale: LocaleInputType): Homepage
   updateSearch(data: mutationSearchInput!, draft: Boolean, locale: LocaleInputType): Search
   updateGlobalSetting(data: mutationGlobalSettingInput!, draft: Boolean, locale: LocaleInputType): GlobalSetting
   updateSidebarForArticle(data: mutationSidebarForArticleInput!, draft: Boolean, locale: LocaleInputType): SidebarForArticle
+  updateSeoDefault(data: mutationSeoDefaultInput!, draft: Boolean, locale: LocaleInputType): SeoDefault
 }
 
 input mutationUserInput {
@@ -17349,19 +18408,21 @@ input mutationMacroTopicUpdateInput {
 
 input mutationStoryClassInput {
   label: String
+  sort: String
   updatedAt: String
   createdAt: String
 }
 
 input mutationStoryClassUpdateInput {
   label: String
+  sort: String
   updatedAt: String
   createdAt: String
 }
 
 input mutationWebinarAuthorInput {
   name: String!
-  photo: Int
+  photo: String
   role: String
   updatedAt: String
   createdAt: String
@@ -17369,7 +18430,7 @@ input mutationWebinarAuthorInput {
 
 input mutationWebinarAuthorUpdateInput {
   name: String
-  photo: Int
+  photo: String
   role: String
   updatedAt: String
   createdAt: String
@@ -17401,17 +18462,9 @@ input mutationKpiElementInput {
   percentage: String
   footerText: String
   openDataPath: String
-  bg: KpiElement_bg_MutationInput
+  backgroundColor: String
   updatedAt: String
   createdAt: String
-}
-
-enum KpiElement_bg_MutationInput {
-  default
-  lighter
-  primary_light
-  primary
-  dark
 }
 
 input mutationKpiElementUpdateInput {
@@ -17426,26 +18479,18 @@ input mutationKpiElementUpdateInput {
   percentage: String
   footerText: String
   openDataPath: String
-  bg: KpiElementUpdate_bg_MutationInput
+  backgroundColor: String
   updatedAt: String
   createdAt: String
-}
-
-enum KpiElementUpdate_bg_MutationInput {
-  default
-  lighter
-  primary_light
-  primary
-  dark
 }
 
 input mutationNewsItemInput {
   title: String
   link: String
-  paragraph: String
-  topic: Int
+  paragraph: JSON
+  topic: String
   dateOfPublication: String
-  image: Int
+  image: String
   updatedAt: String
   createdAt: String
 }
@@ -17453,26 +18498,26 @@ input mutationNewsItemInput {
 input mutationNewsItemUpdateInput {
   title: String
   link: String
-  paragraph: String
-  topic: Int
+  paragraph: JSON
+  topic: String
   dateOfPublication: String
-  image: Int
+  image: String
   updatedAt: String
   createdAt: String
 }
 
 input mutationResourceInput {
   resource: JSON
-  category: [Int]
-  typeResource: Int
+  category: [String]
+  typeResource: String
   updatedAt: String
   createdAt: String
 }
 
 input mutationResourceUpdateInput {
   resource: JSON
-  category: [Int]
-  typeResource: Int
+  category: [String]
+  typeResource: String
   updatedAt: String
   createdAt: String
 }
@@ -17490,7 +18535,7 @@ input mutationPageInput {
 input mutationPage_SeoInput {
   title: String
   description: String
-  image: Int
+  image: String
 }
 
 input mutationPageUpdateInput {
@@ -17506,19 +18551,19 @@ input mutationPageUpdateInput {
 input mutationPageUpdate_SeoInput {
   title: String
   description: String
-  image: Int
+  image: String
 }
 
 input mutationArticleInput {
-  parent: Int
+  parent: String
   title: String
-  paragraph: String
+  paragraph: JSON
   slug: String
-  image: Int
+  image: String
   content: JSON
   topics: JSON
   descriptionTitle: String
-  description: String
+  description: JSON
   seo: mutationArticle_SeoInput
   localizedSlugs: JSON
   updatedAt: String
@@ -17528,19 +18573,19 @@ input mutationArticleInput {
 input mutationArticle_SeoInput {
   title: String
   description: String
-  image: Int
+  image: String
 }
 
 input mutationArticleUpdateInput {
-  parent: Int
+  parent: String
   title: String
-  paragraph: String
+  paragraph: JSON
   slug: String
-  image: Int
+  image: String
   content: JSON
   topics: JSON
   descriptionTitle: String
-  description: String
+  description: JSON
   seo: mutationArticleUpdate_SeoInput
   localizedSlugs: JSON
   updatedAt: String
@@ -17550,17 +18595,17 @@ input mutationArticleUpdateInput {
 input mutationArticleUpdate_SeoInput {
   title: String
   description: String
-  image: Int
+  image: String
 }
 
 input mutationInsightInput {
-  parent: Int
+  parent: String
   title: String
-  image: Int
+  image: String
   slug: String
-  abstract: String
+  abstract: JSON
   content: JSON
-  topic: Int
+  topic: String
   seo: mutationInsight_SeoInput
   localizedSlugs: JSON
   updatedAt: String
@@ -17570,17 +18615,17 @@ input mutationInsightInput {
 input mutationInsight_SeoInput {
   title: String
   description: String
-  image: Int
+  image: String
 }
 
 input mutationInsightUpdateInput {
-  parent: Int
+  parent: String
   title: String
-  image: Int
+  image: String
   slug: String
-  abstract: String
+  abstract: JSON
   content: JSON
-  topic: Int
+  topic: String
   seo: mutationInsightUpdate_SeoInput
   localizedSlugs: JSON
   updatedAt: String
@@ -17590,18 +18635,19 @@ input mutationInsightUpdateInput {
 input mutationInsightUpdate_SeoInput {
   title: String
   description: String
-  image: Int
+  image: String
 }
 
 input mutationWebinarItemInput {
   slug: String
   title: String
-  paragraph: String
-  parent: Int
+  paragraph: JSON
+  parent: String
   date: String
   content: JSON
-  image: Int
-  topic: Int
+  image: String
+  eventBody: JSON
+  topic: String
   seo: mutationWebinarItem_SeoInput
   localizedSlugs: JSON
   updatedAt: String
@@ -17611,18 +18657,19 @@ input mutationWebinarItemInput {
 input mutationWebinarItem_SeoInput {
   title: String
   description: String
-  image: Int
+  image: String
 }
 
 input mutationWebinarItemUpdateInput {
   slug: String
   title: String
-  paragraph: String
-  parent: Int
+  paragraph: JSON
+  parent: String
   date: String
   content: JSON
-  image: Int
-  topic: Int
+  image: String
+  eventBody: JSON
+  topic: String
   seo: mutationWebinarItemUpdate_SeoInput
   localizedSlugs: JSON
   updatedAt: String
@@ -17632,17 +18679,19 @@ input mutationWebinarItemUpdateInput {
 input mutationWebinarItemUpdate_SeoInput {
   title: String
   description: String
-  image: Int
+  image: String
 }
 
 input mutationStoryItemInput {
-  parent: Int
+  parent: String
   title: String
-  articleClassification: Int
+  paragraph: JSON
+  articleClassification: String
   slug: String
-  topic: Int
+  topic: String
   dateOfPublication: String
-  image: Int
+  storyType: String
+  image: String
   content: JSON
   seo: mutationStoryItem_SeoInput
   localizedSlugs: JSON
@@ -17653,17 +18702,19 @@ input mutationStoryItemInput {
 input mutationStoryItem_SeoInput {
   title: String
   description: String
-  image: Int
+  image: String
 }
 
 input mutationStoryItemUpdateInput {
-  parent: Int
+  parent: String
   title: String
-  articleClassification: Int
+  paragraph: JSON
+  articleClassification: String
   slug: String
-  topic: Int
+  topic: String
   dateOfPublication: String
-  image: Int
+  storyType: String
+  image: String
   content: JSON
   seo: mutationStoryItemUpdate_SeoInput
   localizedSlugs: JSON
@@ -17674,12 +18725,12 @@ input mutationStoryItemUpdateInput {
 input mutationStoryItemUpdate_SeoInput {
   title: String
   description: String
-  image: Int
+  image: String
 }
 
 input mutationCatalogueInput {
   title: String
-  parent: Int
+  parent: String
   slug: String
   content: JSON
   seo: mutationCatalogue_SeoInput
@@ -17691,12 +18742,12 @@ input mutationCatalogueInput {
 input mutationCatalogue_SeoInput {
   title: String
   description: String
-  image: Int
+  image: String
 }
 
 input mutationCatalogueUpdateInput {
   title: String
-  parent: Int
+  parent: String
   slug: String
   content: JSON
   seo: mutationCatalogueUpdate_SeoInput
@@ -17708,7 +18759,7 @@ input mutationCatalogueUpdateInput {
 input mutationCatalogueUpdate_SeoInput {
   title: String
   description: String
-  image: Int
+  image: String
 }
 
 input mutationPayloadKvInput {
@@ -17849,7 +18900,7 @@ enum PayloadPreferenceUpdate_UserRelationshipInputRelationTo {
 
 input mutationLayoutInput {
   variant: String!
-  heading: String
+  heading: JSON
   logoSelect: String!
   organizations: JSON
   listNavbarBrand: JSON
@@ -17880,7 +18931,7 @@ input mutationHomepageInput {
 input mutationHomepage_SeoInput {
   title: String
   description: String
-  image: Int
+  image: String
 }
 
 input mutationSearchInput {
@@ -17897,16 +18948,16 @@ input mutationSearchInput {
 input mutationSearch_SeoInput {
   title: String
   description: String
-  image: Int
+  image: String
 }
 
 input mutationGlobalSettingInput {
   lastUpdateLabel: String
   title: String
   links: JSON
-  paragraph: String
+  paragraph: JSON
   siteName: String
-  image: Int
+  image: String
   labelCta: String
   updatedAt: String
   createdAt: String
@@ -17917,6 +18968,17 @@ input mutationSidebarForArticleInput {
   openLabel: String
   closeLabel: String
   menu: JSON
+  updatedAt: String
+  createdAt: String
+}
+
+input mutationSeoDefaultInput {
+  siteName: String
+  fallbackTitle: String
+  fallbackDescription: String
+  titleSuffix: String
+  ogImage: String
+  favicon: String
   updatedAt: String
   createdAt: String
 }

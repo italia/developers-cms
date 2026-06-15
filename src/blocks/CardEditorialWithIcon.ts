@@ -11,7 +11,7 @@ export const CardEditorialWithIcon: Block = {
     },
     {
       name: 'description',
-      type: 'textarea',
+      type: 'richText',
       required: true,
     },
     {

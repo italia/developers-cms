@@ -48,7 +48,7 @@ export const Hero: Block = {
     },
     {
       name: 'paragraph',
-      type: 'textarea',
+      type: 'richText',
     },
     {
       name: 'cta',

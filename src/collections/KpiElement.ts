@@ -1,13 +1,5 @@
 import type { CollectionConfig } from 'payload'
 
-const bgColors = [
-  { label: 'Default', value: 'default' },
-  { label: 'Lighter', value: 'lighter' },
-  { label: 'Primary light', value: 'primary-light' },
-  { label: 'Primary', value: 'primary' },
-  { label: 'Dark', value: 'dark' },
-]
-
 export const KpiElement: CollectionConfig = {
   slug: 'kpi-elements',
   admin: {
@@ -61,9 +53,8 @@ export const KpiElement: CollectionConfig = {
       type: 'text',
     },
     {
-      name: 'bg',
-      type: 'select',
-      options: bgColors,
+      name: 'backgroundColor',
+      type: 'text',
     },
   ],
 }

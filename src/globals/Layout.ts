@@ -1,4 +1,5 @@
 import type { GlobalConfig } from 'payload'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { Brand } from '../blocks/Brand'
 import { BrandHeader } from '../blocks/BrandHeader'
 import { SupportingBrand } from '../blocks/SupportingBrand'
@@ -19,7 +20,8 @@ export const Layout: GlobalConfig = {
     },
     {
       name: 'heading',
-      type: 'textarea',
+      type: 'richText',
+      editor: lexicalEditor(),
       required: true,
       localized: true,
     },

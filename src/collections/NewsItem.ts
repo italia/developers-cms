@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
 
 export const NewsItem: CollectionConfig = {
   slug: 'news-items',
@@ -21,7 +22,8 @@ export const NewsItem: CollectionConfig = {
     },
     {
       name: 'paragraph',
-      type: 'textarea',
+      type: 'richText',
+      editor: lexicalEditor(),
       required: true,
       localized: true,
     },

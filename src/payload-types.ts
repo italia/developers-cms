@@ -122,7 +122,7 @@ export interface Config {
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
   };
   db: {
-    defaultIDType: number;
+    defaultIDType: string;
   };
   fallbackLocale: ('false' | 'none' | 'null') | false | null | ('it' | 'en') | ('it' | 'en')[];
   globals: {
@@ -174,7 +174,7 @@ export interface UserAuthOperations {
  * via the `definition` "users".
  */
 export interface User {
-  id: number;
+  id: string;
   updatedAt: string;
   createdAt: string;
   enableAPIKey?: boolean | null;
@@ -202,7 +202,7 @@ export interface User {
  * via the `definition` "media".
  */
 export interface Media {
-  id: number;
+  id: string;
   alt: string;
   updatedAt: string;
   createdAt: string;
@@ -221,7 +221,7 @@ export interface Media {
  * via the `definition` "article-topics".
  */
 export interface ArticleTopic {
-  id: number;
+  id: string;
   label: string;
   updatedAt: string;
   createdAt: string;
@@ -231,7 +231,7 @@ export interface ArticleTopic {
  * via the `definition` "news-topics".
  */
 export interface NewsTopic {
-  id: number;
+  id: string;
   label: string;
   updatedAt: string;
   createdAt: string;
@@ -241,7 +241,7 @@ export interface NewsTopic {
  * via the `definition` "story-topics".
  */
 export interface StoryTopic {
-  id: number;
+  id: string;
   label: string;
   updatedAt: string;
   createdAt: string;
@@ -251,7 +251,7 @@ export interface StoryTopic {
  * via the `definition` "insight-topics".
  */
 export interface InsightTopic {
-  id: number;
+  id: string;
   label: string;
   updatedAt: string;
   createdAt: string;
@@ -261,7 +261,7 @@ export interface InsightTopic {
  * via the `definition` "resource-topics".
  */
 export interface ResourceTopic {
-  id: number;
+  id: string;
   label: string;
   updatedAt: string;
   createdAt: string;
@@ -271,7 +271,7 @@ export interface ResourceTopic {
  * via the `definition` "webinar-topics".
  */
 export interface WebinarTopic {
-  id: number;
+  id: string;
   label: string;
   updatedAt: string;
   createdAt: string;
@@ -281,7 +281,7 @@ export interface WebinarTopic {
  * via the `definition` "macro-topics".
  */
 export interface MacroTopic {
-  id: number;
+  id: string;
   label: string;
   updatedAt: string;
   createdAt: string;
@@ -291,8 +291,9 @@ export interface MacroTopic {
  * via the `definition` "story-classes".
  */
 export interface StoryClass {
-  id: number;
+  id: string;
   label: string;
+  sort?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -301,9 +302,9 @@ export interface StoryClass {
  * via the `definition` "webinar-authors".
  */
 export interface WebinarAuthor {
-  id: number;
+  id: string;
   name: string;
-  photo: number | Media;
+  photo: string | Media;
   role?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -313,7 +314,7 @@ export interface WebinarAuthor {
  * via the `definition` "chart-elements".
  */
 export interface ChartElement {
-  id: number;
+  id: string;
   title: string;
   chartData?:
     | {
@@ -332,7 +333,7 @@ export interface ChartElement {
  * via the `definition` "kpi-elements".
  */
 export interface KpiElement {
-  id: number;
+  id: string;
   title: string;
   value?: string | null;
   valuePrefix?: string | null;
@@ -344,7 +345,7 @@ export interface KpiElement {
   percentage?: string | null;
   footerText?: string | null;
   openDataPath?: string | null;
-  bg?: ('default' | 'lighter' | 'primary-light' | 'primary' | 'dark') | null;
+  backgroundColor?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -353,13 +354,27 @@ export interface KpiElement {
  * via the `definition` "news-items".
  */
 export interface NewsItem {
-  id: number;
+  id: string;
   title: string;
   link: string;
-  paragraph: string;
-  topic: number | NewsTopic;
+  paragraph: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  topic: string | NewsTopic;
   dateOfPublication: string;
-  image: number | Media;
+  image: string | Media;
   updatedAt: string;
   createdAt: string;
 }
@@ -368,11 +383,11 @@ export interface NewsItem {
  * via the `definition` "resources".
  */
 export interface Resource {
-  id: number;
+  id: string;
   resource: (
     | {
         label: string;
-        doc: number | Media;
+        doc: string | Media;
         description?: string | null;
         id?: string | null;
         blockName?: string | null;
@@ -387,8 +402,8 @@ export interface Resource {
         blockType: 'external-link';
       }
   )[];
-  category?: (number | ResourceTopic)[] | null;
-  typeResource: number | ResourceTopic;
+  category?: (string | ResourceTopic)[] | null;
+  typeResource: string | ResourceTopic;
   updatedAt: string;
   createdAt: string;
 }
@@ -397,7 +412,7 @@ export interface Resource {
  * via the `definition` "pages".
  */
 export interface Page {
-  id: number;
+  id: string;
   title: string;
   slug: string;
   content?:
@@ -405,8 +420,8 @@ export interface Page {
         | {
             variant?: ('default' | 'small' | 'xsmall-full' | 'xsmall-compact') | null;
             bg?: ('default' | 'lighter' | 'primary') | null;
-            backgroundImage?: (number | null) | Media;
-            backgroundImageForMobile?: (number | null) | Media;
+            backgroundImage?: (string | null) | Media;
+            backgroundImageForMobile?: (string | null) | Media;
             showBreadcrumb?: boolean | null;
             title: string;
             paragraph?: string | null;
@@ -417,27 +432,27 @@ export interface Page {
                       linkTo:
                         | {
                             relationTo: 'pages';
-                            value: number | Page;
+                            value: string | Page;
                           }
                         | {
                             relationTo: 'articles';
-                            value: number | Article;
+                            value: string | Article;
                           }
                         | {
                             relationTo: 'insights';
-                            value: number | Insight;
+                            value: string | Insight;
                           }
                         | {
                             relationTo: 'webinar-items';
-                            value: number | WebinarItem;
+                            value: string | WebinarItem;
                           }
                         | {
                             relationTo: 'story-items';
-                            value: number | StoryItem;
+                            value: string | StoryItem;
                           }
                         | {
                             relationTo: 'catalogues';
-                            value: number | Catalogue;
+                            value: string | Catalogue;
                           };
                       id?: string | null;
                       blockName?: string | null;
@@ -489,7 +504,21 @@ export interface Page {
             heading?: ('h2' | 'h3' | 'h4' | 'h5') | null;
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -497,27 +526,27 @@ export interface Page {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -566,8 +595,8 @@ export interface Page {
             highlights: {
               title: string;
               paragraph: string;
-              image: number | Media;
-              kpiElement?: (number | KpiElement)[] | null;
+              image: string | Media;
+              kpiElement?: (string | KpiElement)[] | null;
               id?: string | null;
               blockName?: string | null;
               blockType: 'highlight';
@@ -580,7 +609,7 @@ export interface Page {
                 subtitle?: string | null;
                 footerText?: string | null;
                 info?: string | null;
-                selectChart?: (number | null) | ChartElement;
+                selectChart?: (string | null) | ChartElement;
                 downloadData?: boolean | null;
                 downloadImage?: boolean | null;
                 showShare?: boolean | null;
@@ -617,23 +646,23 @@ export interface Page {
                 | (
                     | {
                         relationTo: 'pages';
-                        value: number | Page;
+                        value: string | Page;
                       }
                     | {
                         relationTo: 'articles';
-                        value: number | Article;
+                        value: string | Article;
                       }
                     | {
                         relationTo: 'insights';
-                        value: number | Insight;
+                        value: string | Insight;
                       }
                     | {
                         relationTo: 'webinar-items';
-                        value: number | WebinarItem;
+                        value: string | WebinarItem;
                       }
                     | {
                         relationTo: 'story-items';
-                        value: number | StoryItem;
+                        value: string | StoryItem;
                       }
                   )[]
                 | null;
@@ -651,7 +680,21 @@ export interface Page {
             heading?: ('h2' | 'h3' | 'h4' | 'h5') | null;
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -659,27 +702,27 @@ export interface Page {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -699,7 +742,7 @@ export interface Page {
               blockName?: string | null;
               blockType: 'text-block';
             }[];
-            image?: (number | null) | Media;
+            image?: (string | null) | Media;
             additionalContent?:
               | {
                   title?: string | null;
@@ -730,14 +773,14 @@ export interface Page {
               | (
                   | {
                       title: string;
-                      news?: (number | NewsItem)[] | null;
+                      news?: (string | NewsItem)[] | null;
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 'news-tab';
                     }
                   | {
                       title: string;
-                      news?: (number | StoryItem)[] | null;
+                      news?: (string | StoryItem)[] | null;
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 'story-tab';
@@ -751,27 +794,27 @@ export interface Page {
                       linkTo:
                         | {
                             relationTo: 'pages';
-                            value: number | Page;
+                            value: string | Page;
                           }
                         | {
                             relationTo: 'articles';
-                            value: number | Article;
+                            value: string | Article;
                           }
                         | {
                             relationTo: 'insights';
-                            value: number | Insight;
+                            value: string | Insight;
                           }
                         | {
                             relationTo: 'webinar-items';
-                            value: number | WebinarItem;
+                            value: string | WebinarItem;
                           }
                         | {
                             relationTo: 'story-items';
-                            value: number | StoryItem;
+                            value: string | StoryItem;
                           }
                         | {
                             relationTo: 'catalogues';
-                            value: number | Catalogue;
+                            value: string | Catalogue;
                           };
                       id?: string | null;
                       blockName?: string | null;
@@ -814,7 +857,21 @@ export interface Page {
             bg: 'default' | 'lighter' | 'primary-light' | 'primary' | 'dark';
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -822,27 +879,27 @@ export interface Page {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -889,7 +946,7 @@ export interface Page {
         | {
             title: string;
             paragraph: string;
-            image: number | Media;
+            image: string | Media;
             bg?: ('default' | 'lighter' | 'primary-light' | 'primary' | 'dark') | null;
             cta?:
               | (
@@ -898,27 +955,27 @@ export interface Page {
                       linkTo:
                         | {
                             relationTo: 'pages';
-                            value: number | Page;
+                            value: string | Page;
                           }
                         | {
                             relationTo: 'articles';
-                            value: number | Article;
+                            value: string | Article;
                           }
                         | {
                             relationTo: 'insights';
-                            value: number | Insight;
+                            value: string | Insight;
                           }
                         | {
                             relationTo: 'webinar-items';
-                            value: number | WebinarItem;
+                            value: string | WebinarItem;
                           }
                         | {
                             relationTo: 'story-items';
-                            value: number | StoryItem;
+                            value: string | StoryItem;
                           }
                         | {
                             relationTo: 'catalogues';
-                            value: number | Catalogue;
+                            value: string | Catalogue;
                           };
                       id?: string | null;
                       blockName?: string | null;
@@ -943,7 +1000,21 @@ export interface Page {
             showInline?: boolean | null;
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -951,27 +1022,27 @@ export interface Page {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -1002,7 +1073,7 @@ export interface Page {
                     blockType: 'data-container';
                   }[]
                 | null;
-              kpiElement?: (number | KpiElement)[] | null;
+              kpiElement?: (string | KpiElement)[] | null;
               id?: string | null;
               blockName?: string | null;
               blockType: 'statistic-block';
@@ -1024,23 +1095,23 @@ export interface Page {
                     | (
                         | {
                             relationTo: 'articles';
-                            value: number | Article;
+                            value: string | Article;
                           }
                         | {
                             relationTo: 'insights';
-                            value: number | Insight;
+                            value: string | Insight;
                           }
                         | {
                             relationTo: 'webinar-items';
-                            value: number | WebinarItem;
+                            value: string | WebinarItem;
                           }
                         | {
                             relationTo: 'story-items';
-                            value: number | StoryItem;
+                            value: string | StoryItem;
                           }
                         | {
                             relationTo: 'pages';
-                            value: number | Page;
+                            value: string | Page;
                           }
                       )[]
                     | null;
@@ -1062,32 +1133,32 @@ export interface Page {
               | {
                   title: string;
                   paragraph?: string | null;
-                  image: number | Media;
+                  image: string | Media;
                   link: {
                     link?:
                       | ({
                           relationTo: 'pages';
-                          value: number | Page;
+                          value: string | Page;
                         } | null)
                       | ({
                           relationTo: 'articles';
-                          value: number | Article;
+                          value: string | Article;
                         } | null)
                       | ({
                           relationTo: 'insights';
-                          value: number | Insight;
+                          value: string | Insight;
                         } | null)
                       | ({
                           relationTo: 'webinar-items';
-                          value: number | WebinarItem;
+                          value: string | WebinarItem;
                         } | null)
                       | ({
                           relationTo: 'story-items';
-                          value: number | StoryItem;
+                          value: string | StoryItem;
                         } | null)
                       | ({
                           relationTo: 'catalogues';
-                          value: number | Catalogue;
+                          value: string | Catalogue;
                         } | null);
                     externalUrl?: string | null;
                     id?: string | null;
@@ -1108,23 +1179,23 @@ export interface Page {
               | (
                   | {
                       relationTo: 'articles';
-                      value: number | Article;
+                      value: string | Article;
                     }
                   | {
                       relationTo: 'insights';
-                      value: number | Insight;
+                      value: string | Insight;
                     }
                   | {
                       relationTo: 'webinar-items';
-                      value: number | WebinarItem;
+                      value: string | WebinarItem;
                     }
                   | {
                       relationTo: 'story-items';
-                      value: number | StoryItem;
+                      value: string | StoryItem;
                     }
                   | {
                       relationTo: 'pages';
-                      value: number | Page;
+                      value: string | Page;
                     }
                 )[]
               | null;
@@ -1137,7 +1208,7 @@ export interface Page {
   seo?: {
     title?: string | null;
     description?: string | null;
-    image?: (number | null) | Media;
+    image?: (string | null) | Media;
   };
   localizedSlugs?:
     | {
@@ -1156,12 +1227,26 @@ export interface Page {
  * via the `definition` "articles".
  */
 export interface Article {
-  id: number;
-  parent?: (number | null) | Page;
+  id: string;
+  parent?: (string | null) | Page;
   title: string;
-  paragraph?: string | null;
+  paragraph?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
   slug: string;
-  image?: (number | null) | Media;
+  image?: (string | null) | Media;
   content?: {
     root: {
       type: string;
@@ -1184,27 +1269,27 @@ export interface Article {
           | (
               | {
                   relationTo: 'article-topics';
-                  value: number | ArticleTopic;
+                  value: string | ArticleTopic;
                 }
               | {
                   relationTo: 'news-topics';
-                  value: number | NewsTopic;
+                  value: string | NewsTopic;
                 }
               | {
                   relationTo: 'story-topics';
-                  value: number | StoryTopic;
+                  value: string | StoryTopic;
                 }
               | {
                   relationTo: 'insight-topics';
-                  value: number | InsightTopic;
+                  value: string | InsightTopic;
                 }
               | {
                   relationTo: 'resource-topics';
-                  value: number | ResourceTopic;
+                  value: string | ResourceTopic;
                 }
               | {
                   relationTo: 'webinar-topics';
-                  value: number | WebinarTopic;
+                  value: string | WebinarTopic;
                 }
             )[]
           | null;
@@ -1214,11 +1299,25 @@ export interface Article {
       }[]
     | null;
   descriptionTitle?: string | null;
-  description?: string | null;
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
   seo?: {
     title?: string | null;
     description?: string | null;
-    image?: (number | null) | Media;
+    image?: (string | null) | Media;
   };
   localizedSlugs?:
     | {
@@ -1237,19 +1336,33 @@ export interface Article {
  * via the `definition` "insights".
  */
 export interface Insight {
-  id: number;
-  parent?: (number | null) | Page;
+  id: string;
+  parent?: (string | null) | Page;
   title: string;
-  image: number | Media;
+  image: string | Media;
   slug: string;
-  abstract: string;
+  abstract: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
   content?:
     | (
         | {
             variant?: ('default' | 'small' | 'xsmall-full' | 'xsmall-compact') | null;
             bg?: ('default' | 'lighter' | 'primary') | null;
-            backgroundImage?: (number | null) | Media;
-            backgroundImageForMobile?: (number | null) | Media;
+            backgroundImage?: (string | null) | Media;
+            backgroundImageForMobile?: (string | null) | Media;
             showBreadcrumb?: boolean | null;
             title: string;
             paragraph?: string | null;
@@ -1260,27 +1373,27 @@ export interface Insight {
                       linkTo:
                         | {
                             relationTo: 'pages';
-                            value: number | Page;
+                            value: string | Page;
                           }
                         | {
                             relationTo: 'articles';
-                            value: number | Article;
+                            value: string | Article;
                           }
                         | {
                             relationTo: 'insights';
-                            value: number | Insight;
+                            value: string | Insight;
                           }
                         | {
                             relationTo: 'webinar-items';
-                            value: number | WebinarItem;
+                            value: string | WebinarItem;
                           }
                         | {
                             relationTo: 'story-items';
-                            value: number | StoryItem;
+                            value: string | StoryItem;
                           }
                         | {
                             relationTo: 'catalogues';
-                            value: number | Catalogue;
+                            value: string | Catalogue;
                           };
                       id?: string | null;
                       blockName?: string | null;
@@ -1305,7 +1418,21 @@ export interface Insight {
             heading?: ('h2' | 'h3' | 'h4' | 'h5') | null;
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -1313,27 +1440,27 @@ export interface Insight {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -1363,7 +1490,21 @@ export interface Insight {
             heading?: ('h2' | 'h3' | 'h4' | 'h5') | null;
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -1371,27 +1512,27 @@ export interface Insight {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -1411,7 +1552,7 @@ export interface Insight {
               blockName?: string | null;
               blockType: 'text-block';
             }[];
-            image?: (number | null) | Media;
+            image?: (string | null) | Media;
             additionalContent?:
               | {
                   title?: string | null;
@@ -1442,14 +1583,14 @@ export interface Insight {
               | (
                   | {
                       title: string;
-                      news?: (number | NewsItem)[] | null;
+                      news?: (string | NewsItem)[] | null;
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 'news-tab';
                     }
                   | {
                       title: string;
-                      news?: (number | StoryItem)[] | null;
+                      news?: (string | StoryItem)[] | null;
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 'story-tab';
@@ -1463,27 +1604,27 @@ export interface Insight {
                       linkTo:
                         | {
                             relationTo: 'pages';
-                            value: number | Page;
+                            value: string | Page;
                           }
                         | {
                             relationTo: 'articles';
-                            value: number | Article;
+                            value: string | Article;
                           }
                         | {
                             relationTo: 'insights';
-                            value: number | Insight;
+                            value: string | Insight;
                           }
                         | {
                             relationTo: 'webinar-items';
-                            value: number | WebinarItem;
+                            value: string | WebinarItem;
                           }
                         | {
                             relationTo: 'story-items';
-                            value: number | StoryItem;
+                            value: string | StoryItem;
                           }
                         | {
                             relationTo: 'catalogues';
-                            value: number | Catalogue;
+                            value: string | Catalogue;
                           };
                       id?: string | null;
                       blockName?: string | null;
@@ -1526,7 +1667,21 @@ export interface Insight {
             bg: 'default' | 'lighter' | 'primary-light' | 'primary' | 'dark';
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -1534,27 +1689,27 @@ export interface Insight {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -1580,23 +1735,23 @@ export interface Insight {
                 | (
                     | {
                         relationTo: 'articles';
-                        value: number | Article;
+                        value: string | Article;
                       }
                     | {
                         relationTo: 'insights';
-                        value: number | Insight;
+                        value: string | Insight;
                       }
                     | {
                         relationTo: 'webinar-items';
-                        value: number | WebinarItem;
+                        value: string | WebinarItem;
                       }
                     | {
                         relationTo: 'story-items';
-                        value: number | StoryItem;
+                        value: string | StoryItem;
                       }
                     | {
                         relationTo: 'pages';
-                        value: number | Page;
+                        value: string | Page;
                       }
                   )[]
                 | null;
@@ -1613,7 +1768,21 @@ export interface Insight {
             showInline?: boolean | null;
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -1621,27 +1790,27 @@ export interface Insight {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -1672,7 +1841,7 @@ export interface Insight {
                     blockType: 'data-container';
                   }[]
                 | null;
-              kpiElement?: (number | KpiElement)[] | null;
+              kpiElement?: (string | KpiElement)[] | null;
               id?: string | null;
               blockName?: string | null;
               blockType: 'statistic-block';
@@ -1690,32 +1859,32 @@ export interface Insight {
               | {
                   title: string;
                   paragraph?: string | null;
-                  image: number | Media;
+                  image: string | Media;
                   link: {
                     link?:
                       | ({
                           relationTo: 'pages';
-                          value: number | Page;
+                          value: string | Page;
                         } | null)
                       | ({
                           relationTo: 'articles';
-                          value: number | Article;
+                          value: string | Article;
                         } | null)
                       | ({
                           relationTo: 'insights';
-                          value: number | Insight;
+                          value: string | Insight;
                         } | null)
                       | ({
                           relationTo: 'webinar-items';
-                          value: number | WebinarItem;
+                          value: string | WebinarItem;
                         } | null)
                       | ({
                           relationTo: 'story-items';
-                          value: number | StoryItem;
+                          value: string | StoryItem;
                         } | null)
                       | ({
                           relationTo: 'catalogues';
-                          value: number | Catalogue;
+                          value: string | Catalogue;
                         } | null);
                     externalUrl?: string | null;
                     id?: string | null;
@@ -1733,11 +1902,11 @@ export interface Insight {
           }
       )[]
     | null;
-  topic?: (number | null) | InsightTopic;
+  topic?: (string | null) | InsightTopic;
   seo?: {
     title?: string | null;
     description?: string | null;
-    image?: (number | null) | Media;
+    image?: (string | null) | Media;
   };
   localizedSlugs?:
     | {
@@ -1756,19 +1925,33 @@ export interface Insight {
  * via the `definition` "webinar-items".
  */
 export interface WebinarItem {
-  id: number;
+  id: string;
   slug: string;
   title: string;
-  paragraph: string;
-  parent?: (number | null) | Page;
+  paragraph: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  parent?: (string | null) | Page;
   date: string;
   content?:
     | (
         | {
             variant?: ('default' | 'small' | 'xsmall-full' | 'xsmall-compact') | null;
             bg?: ('default' | 'lighter' | 'primary') | null;
-            backgroundImage?: (number | null) | Media;
-            backgroundImageForMobile?: (number | null) | Media;
+            backgroundImage?: (string | null) | Media;
+            backgroundImageForMobile?: (string | null) | Media;
             showBreadcrumb?: boolean | null;
             title: string;
             paragraph?: string | null;
@@ -1779,27 +1962,27 @@ export interface WebinarItem {
                       linkTo:
                         | {
                             relationTo: 'pages';
-                            value: number | Page;
+                            value: string | Page;
                           }
                         | {
                             relationTo: 'articles';
-                            value: number | Article;
+                            value: string | Article;
                           }
                         | {
                             relationTo: 'insights';
-                            value: number | Insight;
+                            value: string | Insight;
                           }
                         | {
                             relationTo: 'webinar-items';
-                            value: number | WebinarItem;
+                            value: string | WebinarItem;
                           }
                         | {
                             relationTo: 'story-items';
-                            value: number | StoryItem;
+                            value: string | StoryItem;
                           }
                         | {
                             relationTo: 'catalogues';
-                            value: number | Catalogue;
+                            value: string | Catalogue;
                           };
                       id?: string | null;
                       blockName?: string | null;
@@ -1824,7 +2007,7 @@ export interface WebinarItem {
             category?: string | null;
             cta: {
               label: string;
-              doc: number | Media;
+              doc: string | Media;
               description?: string | null;
               id?: string | null;
               blockName?: string | null;
@@ -1840,7 +2023,21 @@ export interface WebinarItem {
         | {
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -1848,27 +2045,27 @@ export interface WebinarItem {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -1890,7 +2087,7 @@ export interface WebinarItem {
             }[];
             list: {
               title?: string | null;
-              authors?: (number | WebinarAuthor)[] | null;
+              authors?: (string | WebinarAuthor)[] | null;
               id?: string | null;
               blockName?: string | null;
               blockType: 'author-list';
@@ -1902,7 +2099,21 @@ export interface WebinarItem {
         | {
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -1910,27 +2121,27 @@ export interface WebinarItem {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -1971,23 +2182,23 @@ export interface WebinarItem {
                     | (
                         | {
                             relationTo: 'articles';
-                            value: number | Article;
+                            value: string | Article;
                           }
                         | {
                             relationTo: 'insights';
-                            value: number | Insight;
+                            value: string | Insight;
                           }
                         | {
                             relationTo: 'webinar-items';
-                            value: number | WebinarItem;
+                            value: string | WebinarItem;
                           }
                         | {
                             relationTo: 'story-items';
-                            value: number | StoryItem;
+                            value: string | StoryItem;
                           }
                         | {
                             relationTo: 'pages';
-                            value: number | Page;
+                            value: string | Page;
                           }
                       )[]
                     | null;
@@ -2002,12 +2213,27 @@ export interface WebinarItem {
           }
       )[]
     | null;
-  image: number | Media;
-  topic: number | WebinarTopic;
+  image: string | Media;
+  eventBody?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  topic: string | WebinarTopic;
   seo?: {
     title?: string | null;
     description?: string | null;
-    image?: (number | null) | Media;
+    image?: (string | null) | Media;
   };
   localizedSlugs?:
     | {
@@ -2026,21 +2252,37 @@ export interface WebinarItem {
  * via the `definition` "story-items".
  */
 export interface StoryItem {
-  id: number;
-  parent?: (number | null) | Page;
+  id: string;
+  parent?: (string | null) | Page;
   title: string;
-  articleClassification?: (number | null) | StoryClass;
+  paragraph?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  articleClassification?: (string | null) | StoryClass;
   slug: string;
-  topic: number | StoryTopic;
+  topic: string | StoryTopic;
   dateOfPublication?: string | null;
-  image: number | Media;
+  storyType?: string | null;
+  image: string | Media;
   content?:
     | (
         | {
             variant?: ('default' | 'small' | 'xsmall-full' | 'xsmall-compact') | null;
             bg?: ('default' | 'lighter' | 'primary') | null;
-            backgroundImage?: (number | null) | Media;
-            backgroundImageForMobile?: (number | null) | Media;
+            backgroundImage?: (string | null) | Media;
+            backgroundImageForMobile?: (string | null) | Media;
             showBreadcrumb?: boolean | null;
             title: string;
             paragraph?: string | null;
@@ -2051,27 +2293,27 @@ export interface StoryItem {
                       linkTo:
                         | {
                             relationTo: 'pages';
-                            value: number | Page;
+                            value: string | Page;
                           }
                         | {
                             relationTo: 'articles';
-                            value: number | Article;
+                            value: string | Article;
                           }
                         | {
                             relationTo: 'insights';
-                            value: number | Insight;
+                            value: string | Insight;
                           }
                         | {
                             relationTo: 'webinar-items';
-                            value: number | WebinarItem;
+                            value: string | WebinarItem;
                           }
                         | {
                             relationTo: 'story-items';
-                            value: number | StoryItem;
+                            value: string | StoryItem;
                           }
                         | {
                             relationTo: 'catalogues';
-                            value: number | Catalogue;
+                            value: string | Catalogue;
                           };
                       id?: string | null;
                       blockName?: string | null;
@@ -2123,7 +2365,21 @@ export interface StoryItem {
             heading?: ('h2' | 'h3' | 'h4' | 'h5') | null;
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -2131,27 +2387,27 @@ export interface StoryItem {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -2202,7 +2458,21 @@ export interface StoryItem {
             heading?: ('h2' | 'h3' | 'h4' | 'h5') | null;
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -2210,27 +2480,27 @@ export interface StoryItem {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -2250,7 +2520,7 @@ export interface StoryItem {
               blockName?: string | null;
               blockType: 'text-block';
             }[];
-            image?: (number | null) | Media;
+            image?: (string | null) | Media;
             additionalContent?:
               | {
                   title?: string | null;
@@ -2296,7 +2566,21 @@ export interface StoryItem {
             bg: 'default' | 'lighter' | 'primary-light' | 'primary' | 'dark';
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -2304,27 +2588,27 @@ export interface StoryItem {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -2375,23 +2659,23 @@ export interface StoryItem {
               | (
                   | {
                       relationTo: 'articles';
-                      value: number | Article;
+                      value: string | Article;
                     }
                   | {
                       relationTo: 'insights';
-                      value: number | Insight;
+                      value: string | Insight;
                     }
                   | {
                       relationTo: 'webinar-items';
-                      value: number | WebinarItem;
+                      value: string | WebinarItem;
                     }
                   | {
                       relationTo: 'story-items';
-                      value: number | StoryItem;
+                      value: string | StoryItem;
                     }
                   | {
                       relationTo: 'pages';
-                      value: number | Page;
+                      value: string | Page;
                     }
                 )[]
               | null;
@@ -2402,7 +2686,7 @@ export interface StoryItem {
         | {
             title: string;
             paragraph: string;
-            image: number | Media;
+            image: string | Media;
             bg?: ('default' | 'lighter' | 'primary-light' | 'primary' | 'dark') | null;
             cta?:
               | (
@@ -2411,27 +2695,27 @@ export interface StoryItem {
                       linkTo:
                         | {
                             relationTo: 'pages';
-                            value: number | Page;
+                            value: string | Page;
                           }
                         | {
                             relationTo: 'articles';
-                            value: number | Article;
+                            value: string | Article;
                           }
                         | {
                             relationTo: 'insights';
-                            value: number | Insight;
+                            value: string | Insight;
                           }
                         | {
                             relationTo: 'webinar-items';
-                            value: number | WebinarItem;
+                            value: string | WebinarItem;
                           }
                         | {
                             relationTo: 'story-items';
-                            value: number | StoryItem;
+                            value: string | StoryItem;
                           }
                         | {
                             relationTo: 'catalogues';
-                            value: number | Catalogue;
+                            value: string | Catalogue;
                           };
                       id?: string | null;
                       blockName?: string | null;
@@ -2455,7 +2739,21 @@ export interface StoryItem {
             bg: 'default' | 'lighter' | 'primary-light' | 'primary' | 'dark';
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -2463,27 +2761,27 @@ export interface StoryItem {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -2509,23 +2807,23 @@ export interface StoryItem {
                 | (
                     | {
                         relationTo: 'articles';
-                        value: number | Article;
+                        value: string | Article;
                       }
                     | {
                         relationTo: 'insights';
-                        value: number | Insight;
+                        value: string | Insight;
                       }
                     | {
                         relationTo: 'webinar-items';
-                        value: number | WebinarItem;
+                        value: string | WebinarItem;
                       }
                     | {
                         relationTo: 'story-items';
-                        value: number | StoryItem;
+                        value: string | StoryItem;
                       }
                     | {
                         relationTo: 'pages';
-                        value: number | Page;
+                        value: string | Page;
                       }
                   )[]
                 | null;
@@ -2542,7 +2840,21 @@ export interface StoryItem {
             showInline?: boolean | null;
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -2550,27 +2862,27 @@ export interface StoryItem {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -2601,7 +2913,7 @@ export interface StoryItem {
                     blockType: 'data-container';
                   }[]
                 | null;
-              kpiElement?: (number | KpiElement)[] | null;
+              kpiElement?: (string | KpiElement)[] | null;
               id?: string | null;
               blockName?: string | null;
               blockType: 'statistic-block';
@@ -2619,32 +2931,32 @@ export interface StoryItem {
               | {
                   title: string;
                   paragraph?: string | null;
-                  image: number | Media;
+                  image: string | Media;
                   link: {
                     link?:
                       | ({
                           relationTo: 'pages';
-                          value: number | Page;
+                          value: string | Page;
                         } | null)
                       | ({
                           relationTo: 'articles';
-                          value: number | Article;
+                          value: string | Article;
                         } | null)
                       | ({
                           relationTo: 'insights';
-                          value: number | Insight;
+                          value: string | Insight;
                         } | null)
                       | ({
                           relationTo: 'webinar-items';
-                          value: number | WebinarItem;
+                          value: string | WebinarItem;
                         } | null)
                       | ({
                           relationTo: 'story-items';
-                          value: number | StoryItem;
+                          value: string | StoryItem;
                         } | null)
                       | ({
                           relationTo: 'catalogues';
-                          value: number | Catalogue;
+                          value: string | Catalogue;
                         } | null);
                     externalUrl?: string | null;
                     id?: string | null;
@@ -2665,7 +2977,7 @@ export interface StoryItem {
   seo?: {
     title?: string | null;
     description?: string | null;
-    image?: (number | null) | Media;
+    image?: (string | null) | Media;
   };
   localizedSlugs?:
     | {
@@ -2684,17 +2996,17 @@ export interface StoryItem {
  * via the `definition` "catalogues".
  */
 export interface Catalogue {
-  id: number;
+  id: string;
   title: string;
-  parent?: (number | null) | Page;
+  parent?: (string | null) | Page;
   slug: string;
   content?:
     | (
         | {
             variant?: ('default' | 'small' | 'xsmall-full' | 'xsmall-compact') | null;
             bg?: ('default' | 'lighter' | 'primary') | null;
-            backgroundImage?: (number | null) | Media;
-            backgroundImageForMobile?: (number | null) | Media;
+            backgroundImage?: (string | null) | Media;
+            backgroundImageForMobile?: (string | null) | Media;
             showBreadcrumb?: boolean | null;
             title: string;
             paragraph?: string | null;
@@ -2705,27 +3017,27 @@ export interface Catalogue {
                       linkTo:
                         | {
                             relationTo: 'pages';
-                            value: number | Page;
+                            value: string | Page;
                           }
                         | {
                             relationTo: 'articles';
-                            value: number | Article;
+                            value: string | Article;
                           }
                         | {
                             relationTo: 'insights';
-                            value: number | Insight;
+                            value: string | Insight;
                           }
                         | {
                             relationTo: 'webinar-items';
-                            value: number | WebinarItem;
+                            value: string | WebinarItem;
                           }
                         | {
                             relationTo: 'story-items';
-                            value: number | StoryItem;
+                            value: string | StoryItem;
                           }
                         | {
                             relationTo: 'catalogues';
-                            value: number | Catalogue;
+                            value: string | Catalogue;
                           };
                       id?: string | null;
                       blockName?: string | null;
@@ -2750,7 +3062,21 @@ export interface Catalogue {
             heading?: ('h2' | 'h3' | 'h4' | 'h5') | null;
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -2758,27 +3084,27 @@ export interface Catalogue {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -2825,7 +3151,7 @@ export interface Catalogue {
                   filterTitle: string;
                   labelForAll: string;
                   newsPageTabType: string;
-                  filterStory?: (number | null) | StoryTopic;
+                  filterStory?: (string | null) | StoryTopic;
                   elementPerPage?: number | null;
                   id?: string | null;
                   blockName?: string | null;
@@ -2841,7 +3167,7 @@ export interface Catalogue {
   seo?: {
     title?: string | null;
     description?: string | null;
-    image?: (number | null) | Media;
+    image?: (string | null) | Media;
   };
   localizedSlugs?:
     | {
@@ -2860,7 +3186,7 @@ export interface Catalogue {
  * via the `definition` "payload-kv".
  */
 export interface PayloadKv {
-  id: number;
+  id: string;
   key: string;
   data:
     | {
@@ -2877,96 +3203,96 @@ export interface PayloadKv {
  * via the `definition` "payload-locked-documents".
  */
 export interface PayloadLockedDocument {
-  id: number;
+  id: string;
   document?:
     | ({
         relationTo: 'users';
-        value: number | User;
+        value: string | User;
       } | null)
     | ({
         relationTo: 'media';
-        value: number | Media;
+        value: string | Media;
       } | null)
     | ({
         relationTo: 'article-topics';
-        value: number | ArticleTopic;
+        value: string | ArticleTopic;
       } | null)
     | ({
         relationTo: 'news-topics';
-        value: number | NewsTopic;
+        value: string | NewsTopic;
       } | null)
     | ({
         relationTo: 'story-topics';
-        value: number | StoryTopic;
+        value: string | StoryTopic;
       } | null)
     | ({
         relationTo: 'insight-topics';
-        value: number | InsightTopic;
+        value: string | InsightTopic;
       } | null)
     | ({
         relationTo: 'resource-topics';
-        value: number | ResourceTopic;
+        value: string | ResourceTopic;
       } | null)
     | ({
         relationTo: 'webinar-topics';
-        value: number | WebinarTopic;
+        value: string | WebinarTopic;
       } | null)
     | ({
         relationTo: 'macro-topics';
-        value: number | MacroTopic;
+        value: string | MacroTopic;
       } | null)
     | ({
         relationTo: 'story-classes';
-        value: number | StoryClass;
+        value: string | StoryClass;
       } | null)
     | ({
         relationTo: 'webinar-authors';
-        value: number | WebinarAuthor;
+        value: string | WebinarAuthor;
       } | null)
     | ({
         relationTo: 'chart-elements';
-        value: number | ChartElement;
+        value: string | ChartElement;
       } | null)
     | ({
         relationTo: 'kpi-elements';
-        value: number | KpiElement;
+        value: string | KpiElement;
       } | null)
     | ({
         relationTo: 'news-items';
-        value: number | NewsItem;
+        value: string | NewsItem;
       } | null)
     | ({
         relationTo: 'resources';
-        value: number | Resource;
+        value: string | Resource;
       } | null)
     | ({
         relationTo: 'pages';
-        value: number | Page;
+        value: string | Page;
       } | null)
     | ({
         relationTo: 'articles';
-        value: number | Article;
+        value: string | Article;
       } | null)
     | ({
         relationTo: 'insights';
-        value: number | Insight;
+        value: string | Insight;
       } | null)
     | ({
         relationTo: 'webinar-items';
-        value: number | WebinarItem;
+        value: string | WebinarItem;
       } | null)
     | ({
         relationTo: 'story-items';
-        value: number | StoryItem;
+        value: string | StoryItem;
       } | null)
     | ({
         relationTo: 'catalogues';
-        value: number | Catalogue;
+        value: string | Catalogue;
       } | null);
   globalSlug?: string | null;
   user: {
     relationTo: 'users';
-    value: number | User;
+    value: string | User;
   };
   updatedAt: string;
   createdAt: string;
@@ -2976,10 +3302,10 @@ export interface PayloadLockedDocument {
  * via the `definition` "payload-preferences".
  */
 export interface PayloadPreference {
-  id: number;
+  id: string;
   user: {
     relationTo: 'users';
-    value: number | User;
+    value: string | User;
   };
   key?: string | null;
   value?:
@@ -2999,7 +3325,7 @@ export interface PayloadPreference {
  * via the `definition` "payload-migrations".
  */
 export interface PayloadMigration {
-  id: number;
+  id: string;
   name?: string | null;
   batch?: number | null;
   updatedAt: string;
@@ -3117,6 +3443,7 @@ export interface MacroTopicsSelect<T extends boolean = true> {
  */
 export interface StoryClassesSelect<T extends boolean = true> {
   label?: T;
+  sort?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -3157,7 +3484,7 @@ export interface KpiElementsSelect<T extends boolean = true> {
   percentage?: T;
   footerText?: T;
   openDataPath?: T;
-  bg?: T;
+  backgroundColor?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -4442,6 +4769,7 @@ export interface WebinarItemsSelect<T extends boolean = true> {
             };
       };
   image?: T;
+  eventBody?: T;
   topic?: T;
   seo?:
     | T
@@ -4461,10 +4789,12 @@ export interface WebinarItemsSelect<T extends boolean = true> {
 export interface StoryItemsSelect<T extends boolean = true> {
   parent?: T;
   title?: T;
+  paragraph?: T;
   articleClassification?: T;
   slug?: T;
   topic?: T;
   dateOfPublication?: T;
+  storyType?: T;
   image?: T;
   content?:
     | T
@@ -5147,9 +5477,23 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
  * via the `definition` "layout".
  */
 export interface Layout {
-  id: number;
+  id: string;
   variant: string;
-  heading: string;
+  heading: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
   logoSelect: string;
   organizations?:
     | {
@@ -5189,27 +5533,27 @@ export interface Layout {
         linkTo:
           | {
               relationTo: 'pages';
-              value: number | Page;
+              value: string | Page;
             }
           | {
               relationTo: 'articles';
-              value: number | Article;
+              value: string | Article;
             }
           | {
               relationTo: 'insights';
-              value: number | Insight;
+              value: string | Insight;
             }
           | {
               relationTo: 'webinar-items';
-              value: number | WebinarItem;
+              value: string | WebinarItem;
             }
           | {
               relationTo: 'story-items';
-              value: number | StoryItem;
+              value: string | StoryItem;
             }
           | {
               relationTo: 'catalogues';
-              value: number | Catalogue;
+              value: string | Catalogue;
             };
         id?: string | null;
         blockName?: string | null;
@@ -5247,27 +5591,27 @@ export interface Layout {
           linkTo:
             | {
                 relationTo: 'pages';
-                value: number | Page;
+                value: string | Page;
               }
             | {
                 relationTo: 'articles';
-                value: number | Article;
+                value: string | Article;
               }
             | {
                 relationTo: 'insights';
-                value: number | Insight;
+                value: string | Insight;
               }
             | {
                 relationTo: 'webinar-items';
-                value: number | WebinarItem;
+                value: string | WebinarItem;
               }
             | {
                 relationTo: 'story-items';
-                value: number | StoryItem;
+                value: string | StoryItem;
               }
             | {
                 relationTo: 'catalogues';
-                value: number | Catalogue;
+                value: string | Catalogue;
               };
           id?: string | null;
           blockName?: string | null;
@@ -5285,27 +5629,27 @@ export interface Layout {
             pointsTo:
               | {
                   relationTo: 'pages';
-                  value: number | Page;
+                  value: string | Page;
                 }
               | {
                   relationTo: 'articles';
-                  value: number | Article;
+                  value: string | Article;
                 }
               | {
                   relationTo: 'insights';
-                  value: number | Insight;
+                  value: string | Insight;
                 }
               | {
                   relationTo: 'webinar-items';
-                  value: number | WebinarItem;
+                  value: string | WebinarItem;
                 }
               | {
                   relationTo: 'story-items';
-                  value: number | StoryItem;
+                  value: string | StoryItem;
                 }
               | {
                   relationTo: 'catalogues';
-                  value: number | Catalogue;
+                  value: string | Catalogue;
                 };
             id?: string | null;
             blockName?: string | null;
@@ -5317,29 +5661,29 @@ export interface Layout {
             pointsTo:
               | {
                   relationTo: 'pages';
-                  value: number | Page;
+                  value: string | Page;
                 }
               | {
                   relationTo: 'articles';
-                  value: number | Article;
+                  value: string | Article;
                 }
               | {
                   relationTo: 'insights';
-                  value: number | Insight;
+                  value: string | Insight;
                 }
               | {
                   relationTo: 'webinar-items';
-                  value: number | WebinarItem;
+                  value: string | WebinarItem;
                 }
               | {
                   relationTo: 'story-items';
-                  value: number | StoryItem;
+                  value: string | StoryItem;
                 }
               | {
                   relationTo: 'catalogues';
-                  value: number | Catalogue;
+                  value: string | Catalogue;
                 };
-            image: number | Media;
+            image: string | Media;
             caption: string;
             subMenu?:
               | {
@@ -5347,27 +5691,27 @@ export interface Layout {
                   pointsTo:
                     | {
                         relationTo: 'pages';
-                        value: number | Page;
+                        value: string | Page;
                       }
                     | {
                         relationTo: 'articles';
-                        value: number | Article;
+                        value: string | Article;
                       }
                     | {
                         relationTo: 'insights';
-                        value: number | Insight;
+                        value: string | Insight;
                       }
                     | {
                         relationTo: 'webinar-items';
-                        value: number | WebinarItem;
+                        value: string | WebinarItem;
                       }
                     | {
                         relationTo: 'story-items';
-                        value: number | StoryItem;
+                        value: string | StoryItem;
                       }
                     | {
                         relationTo: 'catalogues';
-                        value: number | Catalogue;
+                        value: string | Catalogue;
                       };
                   id?: string | null;
                   blockName?: string | null;
@@ -5387,27 +5731,27 @@ export interface Layout {
             pointsTo:
               | {
                   relationTo: 'pages';
-                  value: number | Page;
+                  value: string | Page;
                 }
               | {
                   relationTo: 'articles';
-                  value: number | Article;
+                  value: string | Article;
                 }
               | {
                   relationTo: 'insights';
-                  value: number | Insight;
+                  value: string | Insight;
                 }
               | {
                   relationTo: 'webinar-items';
-                  value: number | WebinarItem;
+                  value: string | WebinarItem;
                 }
               | {
                   relationTo: 'story-items';
-                  value: number | StoryItem;
+                  value: string | StoryItem;
                 }
               | {
                   relationTo: 'catalogues';
-                  value: number | Catalogue;
+                  value: string | Catalogue;
                 };
             id?: string | null;
             blockName?: string | null;
@@ -5419,29 +5763,29 @@ export interface Layout {
             pointsTo:
               | {
                   relationTo: 'pages';
-                  value: number | Page;
+                  value: string | Page;
                 }
               | {
                   relationTo: 'articles';
-                  value: number | Article;
+                  value: string | Article;
                 }
               | {
                   relationTo: 'insights';
-                  value: number | Insight;
+                  value: string | Insight;
                 }
               | {
                   relationTo: 'webinar-items';
-                  value: number | WebinarItem;
+                  value: string | WebinarItem;
                 }
               | {
                   relationTo: 'story-items';
-                  value: number | StoryItem;
+                  value: string | StoryItem;
                 }
               | {
                   relationTo: 'catalogues';
-                  value: number | Catalogue;
+                  value: string | Catalogue;
                 };
-            image: number | Media;
+            image: string | Media;
             caption: string;
             subMenu?:
               | {
@@ -5449,27 +5793,27 @@ export interface Layout {
                   pointsTo:
                     | {
                         relationTo: 'pages';
-                        value: number | Page;
+                        value: string | Page;
                       }
                     | {
                         relationTo: 'articles';
-                        value: number | Article;
+                        value: string | Article;
                       }
                     | {
                         relationTo: 'insights';
-                        value: number | Insight;
+                        value: string | Insight;
                       }
                     | {
                         relationTo: 'webinar-items';
-                        value: number | WebinarItem;
+                        value: string | WebinarItem;
                       }
                     | {
                         relationTo: 'story-items';
-                        value: number | StoryItem;
+                        value: string | StoryItem;
                       }
                     | {
                         relationTo: 'catalogues';
-                        value: number | Catalogue;
+                        value: string | Catalogue;
                       };
                   id?: string | null;
                   blockName?: string | null;
@@ -5490,27 +5834,27 @@ export interface Layout {
             linkTo:
               | {
                   relationTo: 'pages';
-                  value: number | Page;
+                  value: string | Page;
                 }
               | {
                   relationTo: 'articles';
-                  value: number | Article;
+                  value: string | Article;
                 }
               | {
                   relationTo: 'insights';
-                  value: number | Insight;
+                  value: string | Insight;
                 }
               | {
                   relationTo: 'webinar-items';
-                  value: number | WebinarItem;
+                  value: string | WebinarItem;
                 }
               | {
                   relationTo: 'story-items';
-                  value: number | StoryItem;
+                  value: string | StoryItem;
                 }
               | {
                   relationTo: 'catalogues';
-                  value: number | Catalogue;
+                  value: string | Catalogue;
                 };
             id?: string | null;
             blockName?: string | null;
@@ -5534,15 +5878,15 @@ export interface Layout {
  * via the `definition` "homepage".
  */
 export interface Homepage {
-  id: number;
+  id: string;
   title: string;
   content?:
     | (
         | {
             variant?: ('default' | 'small' | 'xsmall-full' | 'xsmall-compact') | null;
             bg?: ('default' | 'lighter' | 'primary') | null;
-            backgroundImage?: (number | null) | Media;
-            backgroundImageForMobile?: (number | null) | Media;
+            backgroundImage?: (string | null) | Media;
+            backgroundImageForMobile?: (string | null) | Media;
             showBreadcrumb?: boolean | null;
             title: string;
             paragraph?: string | null;
@@ -5553,27 +5897,27 @@ export interface Homepage {
                       linkTo:
                         | {
                             relationTo: 'pages';
-                            value: number | Page;
+                            value: string | Page;
                           }
                         | {
                             relationTo: 'articles';
-                            value: number | Article;
+                            value: string | Article;
                           }
                         | {
                             relationTo: 'insights';
-                            value: number | Insight;
+                            value: string | Insight;
                           }
                         | {
                             relationTo: 'webinar-items';
-                            value: number | WebinarItem;
+                            value: string | WebinarItem;
                           }
                         | {
                             relationTo: 'story-items';
-                            value: number | StoryItem;
+                            value: string | StoryItem;
                           }
                         | {
                             relationTo: 'catalogues';
-                            value: number | Catalogue;
+                            value: string | Catalogue;
                           };
                       id?: string | null;
                       blockName?: string | null;
@@ -5598,7 +5942,21 @@ export interface Homepage {
             heading?: ('h2' | 'h3' | 'h4' | 'h5') | null;
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -5606,27 +5964,27 @@ export interface Homepage {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -5656,7 +6014,21 @@ export interface Homepage {
             heading?: ('h2' | 'h3' | 'h4' | 'h5') | null;
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -5664,27 +6036,27 @@ export interface Homepage {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -5704,7 +6076,7 @@ export interface Homepage {
               blockName?: string | null;
               blockType: 'text-block';
             }[];
-            image?: (number | null) | Media;
+            image?: (string | null) | Media;
             additionalContent?:
               | {
                   title?: string | null;
@@ -5735,14 +6107,14 @@ export interface Homepage {
               | (
                   | {
                       title: string;
-                      news?: (number | NewsItem)[] | null;
+                      news?: (string | NewsItem)[] | null;
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 'news-tab';
                     }
                   | {
                       title: string;
-                      news?: (number | StoryItem)[] | null;
+                      news?: (string | StoryItem)[] | null;
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 'story-tab';
@@ -5756,27 +6128,27 @@ export interface Homepage {
                       linkTo:
                         | {
                             relationTo: 'pages';
-                            value: number | Page;
+                            value: string | Page;
                           }
                         | {
                             relationTo: 'articles';
-                            value: number | Article;
+                            value: string | Article;
                           }
                         | {
                             relationTo: 'insights';
-                            value: number | Insight;
+                            value: string | Insight;
                           }
                         | {
                             relationTo: 'webinar-items';
-                            value: number | WebinarItem;
+                            value: string | WebinarItem;
                           }
                         | {
                             relationTo: 'story-items';
-                            value: number | StoryItem;
+                            value: string | StoryItem;
                           }
                         | {
                             relationTo: 'catalogues';
-                            value: number | Catalogue;
+                            value: string | Catalogue;
                           };
                       id?: string | null;
                       blockName?: string | null;
@@ -5819,7 +6191,21 @@ export interface Homepage {
             bg: 'default' | 'lighter' | 'primary-light' | 'primary' | 'dark';
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -5827,27 +6213,27 @@ export interface Homepage {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -5873,23 +6259,23 @@ export interface Homepage {
                 | (
                     | {
                         relationTo: 'articles';
-                        value: number | Article;
+                        value: string | Article;
                       }
                     | {
                         relationTo: 'insights';
-                        value: number | Insight;
+                        value: string | Insight;
                       }
                     | {
                         relationTo: 'webinar-items';
-                        value: number | WebinarItem;
+                        value: string | WebinarItem;
                       }
                     | {
                         relationTo: 'story-items';
-                        value: number | StoryItem;
+                        value: string | StoryItem;
                       }
                     | {
                         relationTo: 'pages';
-                        value: number | Page;
+                        value: string | Page;
                       }
                   )[]
                 | null;
@@ -5906,7 +6292,21 @@ export interface Homepage {
             showInline?: boolean | null;
             text: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               cta?:
                 | (
                     | {
@@ -5914,27 +6314,27 @@ export interface Homepage {
                         linkTo:
                           | {
                               relationTo: 'pages';
-                              value: number | Page;
+                              value: string | Page;
                             }
                           | {
                               relationTo: 'articles';
-                              value: number | Article;
+                              value: string | Article;
                             }
                           | {
                               relationTo: 'insights';
-                              value: number | Insight;
+                              value: string | Insight;
                             }
                           | {
                               relationTo: 'webinar-items';
-                              value: number | WebinarItem;
+                              value: string | WebinarItem;
                             }
                           | {
                               relationTo: 'story-items';
-                              value: number | StoryItem;
+                              value: string | StoryItem;
                             }
                           | {
                               relationTo: 'catalogues';
-                              value: number | Catalogue;
+                              value: string | Catalogue;
                             };
                         id?: string | null;
                         blockName?: string | null;
@@ -5965,7 +6365,7 @@ export interface Homepage {
                     blockType: 'data-container';
                   }[]
                 | null;
-              kpiElement?: (number | KpiElement)[] | null;
+              kpiElement?: (string | KpiElement)[] | null;
               id?: string | null;
               blockName?: string | null;
               blockType: 'statistic-block';
@@ -5983,32 +6383,32 @@ export interface Homepage {
               | {
                   title: string;
                   paragraph?: string | null;
-                  image: number | Media;
+                  image: string | Media;
                   link: {
                     link?:
                       | ({
                           relationTo: 'pages';
-                          value: number | Page;
+                          value: string | Page;
                         } | null)
                       | ({
                           relationTo: 'articles';
-                          value: number | Article;
+                          value: string | Article;
                         } | null)
                       | ({
                           relationTo: 'insights';
-                          value: number | Insight;
+                          value: string | Insight;
                         } | null)
                       | ({
                           relationTo: 'webinar-items';
-                          value: number | WebinarItem;
+                          value: string | WebinarItem;
                         } | null)
                       | ({
                           relationTo: 'story-items';
-                          value: number | StoryItem;
+                          value: string | StoryItem;
                         } | null)
                       | ({
                           relationTo: 'catalogues';
-                          value: number | Catalogue;
+                          value: string | Catalogue;
                         } | null);
                     externalUrl?: string | null;
                     id?: string | null;
@@ -6029,7 +6429,7 @@ export interface Homepage {
   seo?: {
     title?: string | null;
     description?: string | null;
-    image?: (number | null) | Media;
+    image?: (string | null) | Media;
   };
   updatedAt?: string | null;
   createdAt?: string | null;
@@ -6039,7 +6439,7 @@ export interface Homepage {
  * via the `definition` "search".
  */
 export interface Search {
-  id: number;
+  id: string;
   isSearchEnabled?: boolean | null;
   searchLabel: string;
   title: string;
@@ -6049,8 +6449,8 @@ export interface Search {
         | {
             variant?: ('default' | 'small' | 'xsmall-full' | 'xsmall-compact') | null;
             bg?: ('default' | 'lighter' | 'primary') | null;
-            backgroundImage?: (number | null) | Media;
-            backgroundImageForMobile?: (number | null) | Media;
+            backgroundImage?: (string | null) | Media;
+            backgroundImageForMobile?: (string | null) | Media;
             showBreadcrumb?: boolean | null;
             title: string;
             paragraph?: string | null;
@@ -6061,27 +6461,27 @@ export interface Search {
                       linkTo:
                         | {
                             relationTo: 'pages';
-                            value: number | Page;
+                            value: string | Page;
                           }
                         | {
                             relationTo: 'articles';
-                            value: number | Article;
+                            value: string | Article;
                           }
                         | {
                             relationTo: 'insights';
-                            value: number | Insight;
+                            value: string | Insight;
                           }
                         | {
                             relationTo: 'webinar-items';
-                            value: number | WebinarItem;
+                            value: string | WebinarItem;
                           }
                         | {
                             relationTo: 'story-items';
-                            value: number | StoryItem;
+                            value: string | StoryItem;
                           }
                         | {
                             relationTo: 'catalogues';
-                            value: number | Catalogue;
+                            value: string | Catalogue;
                           };
                       id?: string | null;
                       blockName?: string | null;
@@ -6116,7 +6516,7 @@ export interface Search {
   seo?: {
     title?: string | null;
     description?: string | null;
-    image?: (number | null) | Media;
+    image?: (string | null) | Media;
   };
   updatedAt?: string | null;
   createdAt?: string | null;
@@ -6126,7 +6526,7 @@ export interface Search {
  * via the `definition` "global-setting".
  */
 export interface GlobalSetting {
-  id: number;
+  id: string;
   lastUpdateLabel: string;
   title: string;
   links?:
@@ -6139,9 +6539,23 @@ export interface GlobalSetting {
         blockType: 'external-link';
       }[]
     | null;
-  paragraph?: string | null;
+  paragraph?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
   siteName: string;
-  image: number | Media;
+  image: string | Media;
   labelCta: string;
   updatedAt?: string | null;
   createdAt?: string | null;
@@ -6151,7 +6565,7 @@ export interface GlobalSetting {
  * via the `definition` "sidebar-for-article".
  */
 export interface SidebarForArticle {
-  id: number;
+  id: string;
   headerLabel?: string | null;
   openLabel: string;
   closeLabel: string;
@@ -6165,27 +6579,27 @@ export interface SidebarForArticle {
                   pointsTo:
                     | {
                         relationTo: 'pages';
-                        value: number | Page;
+                        value: string | Page;
                       }
                     | {
                         relationTo: 'articles';
-                        value: number | Article;
+                        value: string | Article;
                       }
                     | {
                         relationTo: 'insights';
-                        value: number | Insight;
+                        value: string | Insight;
                       }
                     | {
                         relationTo: 'webinar-items';
-                        value: number | WebinarItem;
+                        value: string | WebinarItem;
                       }
                     | {
                         relationTo: 'story-items';
-                        value: number | StoryItem;
+                        value: string | StoryItem;
                       }
                     | {
                         relationTo: 'catalogues';
-                        value: number | Catalogue;
+                        value: string | Catalogue;
                       };
                   id?: string | null;
                   blockName?: string | null;
@@ -6201,27 +6615,27 @@ export interface SidebarForArticle {
             pointsTo:
               | {
                   relationTo: 'pages';
-                  value: number | Page;
+                  value: string | Page;
                 }
               | {
                   relationTo: 'articles';
-                  value: number | Article;
+                  value: string | Article;
                 }
               | {
                   relationTo: 'insights';
-                  value: number | Insight;
+                  value: string | Insight;
                 }
               | {
                   relationTo: 'webinar-items';
-                  value: number | WebinarItem;
+                  value: string | WebinarItem;
                 }
               | {
                   relationTo: 'story-items';
-                  value: number | StoryItem;
+                  value: string | StoryItem;
                 }
               | {
                   relationTo: 'catalogues';
-                  value: number | Catalogue;
+                  value: string | Catalogue;
                 };
             id?: string | null;
             blockName?: string | null;
@@ -6237,7 +6651,7 @@ export interface SidebarForArticle {
  * via the `definition` "seo-default".
  */
 export interface SeoDefault {
-  id: number;
+  id: string;
   /**
    * Used as og:site_name and as fallback brand name
    */
@@ -6257,11 +6671,11 @@ export interface SeoDefault {
   /**
    * Default social card image (og:image / twitter:image)
    */
-  ogImage: number | Media;
+  ogImage: string | Media;
   /**
    * Site favicon (.ico, .png or .svg)
    */
-  favicon: number | Media;
+  favicon: string | Media;
   updatedAt?: string | null;
   createdAt?: string | null;
 }

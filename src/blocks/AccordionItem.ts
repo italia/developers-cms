@@ -11,7 +11,7 @@ export const AccordionItem: Block = {
     },
     {
       name: 'body',
-      type: 'textarea',
+      type: 'richText',
       required: true,
     },
   ],

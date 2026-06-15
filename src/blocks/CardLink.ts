@@ -12,7 +12,7 @@ export const CardLink: Block = {
     },
     {
       name: 'paragraph',
-      type: 'textarea',
+      type: 'richText',
     },
     {
       name: 'image',

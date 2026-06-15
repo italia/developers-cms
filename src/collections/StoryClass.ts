@@ -13,5 +13,9 @@ export const StoryClass: CollectionConfig = {
       required: true,
       localized: true,
     },
+    {
+      name: 'sort',
+      type: 'text',
+    },
   ],
 }

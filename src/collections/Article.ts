@@ -32,7 +32,8 @@ export const Article: CollectionConfig = {
     },
     {
       name: 'paragraph',
-      type: 'textarea',
+      type: 'richText',
+      editor: lexicalEditor(),
       localized: true,
     },
     {
@@ -68,7 +69,8 @@ export const Article: CollectionConfig = {
     },
     {
       name: 'description',
-      type: 'textarea',
+      type: 'richText',
+      editor: lexicalEditor(),
       localized: true,
     },
     seoField(),

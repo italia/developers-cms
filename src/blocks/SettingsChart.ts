@@ -18,7 +18,7 @@ export const SettingsChart: Block = {
     },
     {
       name: 'info',
-      type: 'textarea',
+      type: 'richText',
     },
     {
       name: 'selectChart',

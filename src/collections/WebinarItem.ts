@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { seoField } from '../fields/seoField'
 import { Hero } from '../blocks/Hero'
 import { ActionCard } from '../blocks/ActionCard'
@@ -35,7 +36,8 @@ export const WebinarItem: CollectionConfig = {
     },
     {
       name: 'paragraph',
-      type: 'textarea',
+      type: 'richText',
+      editor: lexicalEditor(),
       required: true,
       localized: true,
     },
@@ -62,6 +64,11 @@ export const WebinarItem: CollectionConfig = {
       type: 'upload',
       relationTo: 'media',
       required: true,
+    },
+    {
+      name: 'eventBody',
+      type: 'richText',
+      editor: lexicalEditor(),
     },
     {
       name: 'topic',
