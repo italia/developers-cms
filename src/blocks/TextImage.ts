@@ -12,6 +12,7 @@ const bgColors = [
 
 export const TextImage: Block = {
   slug: 'text-image',
+  imageURL: '/api/media/file/text-image-deafult-3.png',
   labels: { singular: 'Text + Image', plural: 'Text + Images' },
   fields: [
     {

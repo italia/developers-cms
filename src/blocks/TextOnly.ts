@@ -11,6 +11,7 @@ const bgColors = [
 
 export const TextOnly: Block = {
   slug: 'text-only',
+  imageURL: '/api/media/file/text-image-deafult-3.png',
   labels: { singular: 'Text Only', plural: 'Text Only' },
   fields: [
     {

@@ -424,7 +424,21 @@ export interface Page {
             backgroundImageForMobile?: (string | null) | Media;
             showBreadcrumb?: boolean | null;
             title: string;
-            paragraph?: string | null;
+            paragraph?: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
             cta?:
               | (
                   | {
@@ -481,7 +495,21 @@ export interface Page {
                 items?:
                   | {
                       header: string;
-                      body: string;
+                      body: {
+                        root: {
+                          type: string;
+                          children: {
+                            type: any;
+                            version: number;
+                            [k: string]: unknown;
+                          }[];
+                          direction: ('ltr' | 'rtl') | null;
+                          format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                          indent: number;
+                          version: number;
+                        };
+                        [k: string]: unknown;
+                      };
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 'accordion-item';
@@ -594,7 +622,21 @@ export interface Page {
         | {
             highlights: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               image: string | Media;
               kpiElement?: (string | KpiElement)[] | null;
               id?: string | null;
@@ -603,12 +645,40 @@ export interface Page {
             }[];
             panel: {
               title: string;
-              paragraph: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
               chart: {
                 title?: string | null;
                 subtitle?: string | null;
                 footerText?: string | null;
-                info?: string | null;
+                info?: {
+                  root: {
+                    type: string;
+                    children: {
+                      type: any;
+                      version: number;
+                      [k: string]: unknown;
+                    }[];
+                    direction: ('ltr' | 'rtl') | null;
+                    format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                    indent: number;
+                    version: number;
+                  };
+                  [k: string]: unknown;
+                } | null;
                 selectChart?: (string | null) | ChartElement;
                 downloadData?: boolean | null;
                 downloadImage?: boolean | null;
@@ -635,7 +705,21 @@ export interface Page {
               items?:
                 | {
                     title: string;
-                    paragraph: string;
+                    paragraph: {
+                      root: {
+                        type: string;
+                        children: {
+                          type: any;
+                          version: number;
+                          [k: string]: unknown;
+                        }[];
+                        direction: ('ltr' | 'rtl') | null;
+                        format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                        indent: number;
+                        version: number;
+                      };
+                      [k: string]: unknown;
+                    };
                     id?: string | null;
                     blockName?: string | null;
                     blockType: 'list-item';
@@ -749,7 +833,21 @@ export interface Page {
                   content?:
                     | {
                         title: string;
-                        description: string;
+                        description: {
+                          root: {
+                            type: string;
+                            children: {
+                              type: any;
+                              version: number;
+                              [k: string]: unknown;
+                            }[];
+                            direction: ('ltr' | 'rtl') | null;
+                            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                            indent: number;
+                            version: number;
+                          };
+                          [k: string]: unknown;
+                        };
                         iconSelect: string;
                         id?: string | null;
                         blockName?: string | null;
@@ -768,7 +866,21 @@ export interface Page {
         | {
             bg?: ('default' | 'lighter' | 'primary-light' | 'primary' | 'dark') | null;
             title: string;
-            paragraph: string;
+            paragraph: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            };
             tabs?:
               | (
                   | {
@@ -836,11 +948,39 @@ export interface Page {
           }
         | {
             title: string;
-            paragraph: string;
+            paragraph: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            };
             channels?:
               | {
                   title: string;
-                  description: string;
+                  description: {
+                    root: {
+                      type: string;
+                      children: {
+                        type: any;
+                        version: number;
+                        [k: string]: unknown;
+                      }[];
+                      direction: ('ltr' | 'rtl') | null;
+                      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                      indent: number;
+                      version: number;
+                    };
+                    [k: string]: unknown;
+                  };
                   iconSelect: string;
                   linkTo: string;
                   id?: string | null;
@@ -925,7 +1065,21 @@ export interface Page {
                 items?:
                   | {
                       header: string;
-                      body: string;
+                      body: {
+                        root: {
+                          type: string;
+                          children: {
+                            type: any;
+                            version: number;
+                            [k: string]: unknown;
+                          }[];
+                          direction: ('ltr' | 'rtl') | null;
+                          format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                          indent: number;
+                          version: number;
+                        };
+                        [k: string]: unknown;
+                      };
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 'accordion-item';
@@ -1084,13 +1238,41 @@ export interface Page {
           }
         | {
             title: string;
-            paragraph: string;
+            paragraph: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            };
             titleFilter: string;
             labelForAll: string;
             content?:
               | {
                   title: string;
-                  paragraph?: string | null;
+                  paragraph?: {
+                    root: {
+                      type: string;
+                      children: {
+                        type: any;
+                        version: number;
+                        [k: string]: unknown;
+                      }[];
+                      direction: ('ltr' | 'rtl') | null;
+                      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                      indent: number;
+                      version: number;
+                    };
+                    [k: string]: unknown;
+                  } | null;
                   content?:
                     | (
                         | {
@@ -1128,11 +1310,39 @@ export interface Page {
             showInlineCard?: boolean | null;
             bg: 'default' | 'lighter' | 'primary-light' | 'primary' | 'dark';
             title: string;
-            paragraph?: string | null;
+            paragraph?: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
             listContent?:
               | {
                   title: string;
-                  paragraph?: string | null;
+                  paragraph?: {
+                    root: {
+                      type: string;
+                      children: {
+                        type: any;
+                        version: number;
+                        [k: string]: unknown;
+                      }[];
+                      direction: ('ltr' | 'rtl') | null;
+                      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                      indent: number;
+                      version: number;
+                    };
+                    [k: string]: unknown;
+                  } | null;
                   image: string | Media;
                   link: {
                     link?:
@@ -1365,7 +1575,21 @@ export interface Insight {
             backgroundImageForMobile?: (string | null) | Media;
             showBreadcrumb?: boolean | null;
             title: string;
-            paragraph?: string | null;
+            paragraph?: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
             cta?:
               | (
                   | {
@@ -1559,7 +1783,21 @@ export interface Insight {
                   content?:
                     | {
                         title: string;
-                        description: string;
+                        description: {
+                          root: {
+                            type: string;
+                            children: {
+                              type: any;
+                              version: number;
+                              [k: string]: unknown;
+                            }[];
+                            direction: ('ltr' | 'rtl') | null;
+                            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                            indent: number;
+                            version: number;
+                          };
+                          [k: string]: unknown;
+                        };
                         iconSelect: string;
                         id?: string | null;
                         blockName?: string | null;
@@ -1578,7 +1816,21 @@ export interface Insight {
         | {
             bg?: ('default' | 'lighter' | 'primary-light' | 'primary' | 'dark') | null;
             title: string;
-            paragraph: string;
+            paragraph: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            };
             tabs?:
               | (
                   | {
@@ -1646,11 +1898,39 @@ export interface Insight {
           }
         | {
             title: string;
-            paragraph: string;
+            paragraph: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            };
             channels?:
               | {
                   title: string;
-                  description: string;
+                  description: {
+                    root: {
+                      type: string;
+                      children: {
+                        type: any;
+                        version: number;
+                        [k: string]: unknown;
+                      }[];
+                      direction: ('ltr' | 'rtl') | null;
+                      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                      indent: number;
+                      version: number;
+                    };
+                    [k: string]: unknown;
+                  };
                   iconSelect: string;
                   linkTo: string;
                   id?: string | null;
@@ -1854,11 +2134,39 @@ export interface Insight {
             showInlineCard?: boolean | null;
             bg: 'default' | 'lighter' | 'primary-light' | 'primary' | 'dark';
             title: string;
-            paragraph?: string | null;
+            paragraph?: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
             listContent?:
               | {
                   title: string;
-                  paragraph?: string | null;
+                  paragraph?: {
+                    root: {
+                      type: string;
+                      children: {
+                        type: any;
+                        version: number;
+                        [k: string]: unknown;
+                      }[];
+                      direction: ('ltr' | 'rtl') | null;
+                      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                      indent: number;
+                      version: number;
+                    };
+                    [k: string]: unknown;
+                  } | null;
                   image: string | Media;
                   link: {
                     link?:
@@ -1954,7 +2262,21 @@ export interface WebinarItem {
             backgroundImageForMobile?: (string | null) | Media;
             showBreadcrumb?: boolean | null;
             title: string;
-            paragraph?: string | null;
+            paragraph?: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
             cta?:
               | (
                   | {
@@ -2013,7 +2335,21 @@ export interface WebinarItem {
               blockName?: string | null;
               blockType: 'download-link';
             }[];
-            paragraph: string;
+            paragraph: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            };
             readMoreLabel: string;
             readLessLabel: string;
             id?: string | null;
@@ -2165,7 +2501,21 @@ export interface WebinarItem {
               items?:
                 | {
                     title: string;
-                    paragraph: string;
+                    paragraph: {
+                      root: {
+                        type: string;
+                        children: {
+                          type: any;
+                          version: number;
+                          [k: string]: unknown;
+                        }[];
+                        direction: ('ltr' | 'rtl') | null;
+                        format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                        indent: number;
+                        version: number;
+                      };
+                      [k: string]: unknown;
+                    };
                     id?: string | null;
                     blockName?: string | null;
                     blockType: 'list-item';
@@ -2285,7 +2635,21 @@ export interface StoryItem {
             backgroundImageForMobile?: (string | null) | Media;
             showBreadcrumb?: boolean | null;
             title: string;
-            paragraph?: string | null;
+            paragraph?: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
             cta?:
               | (
                   | {
@@ -2342,7 +2706,21 @@ export interface StoryItem {
                 items?:
                   | {
                       header: string;
-                      body: string;
+                      body: {
+                        root: {
+                          type: string;
+                          children: {
+                            type: any;
+                            version: number;
+                            [k: string]: unknown;
+                          }[];
+                          direction: ('ltr' | 'rtl') | null;
+                          format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                          indent: number;
+                          version: number;
+                        };
+                        [k: string]: unknown;
+                      };
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 'accordion-item';
@@ -2527,7 +2905,21 @@ export interface StoryItem {
                   content?:
                     | {
                         title: string;
-                        description: string;
+                        description: {
+                          root: {
+                            type: string;
+                            children: {
+                              type: any;
+                              version: number;
+                              [k: string]: unknown;
+                            }[];
+                            direction: ('ltr' | 'rtl') | null;
+                            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                            indent: number;
+                            version: number;
+                          };
+                          [k: string]: unknown;
+                        };
                         iconSelect: string;
                         id?: string | null;
                         blockName?: string | null;
@@ -2545,11 +2937,39 @@ export interface StoryItem {
           }
         | {
             title: string;
-            paragraph: string;
+            paragraph: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            };
             channels?:
               | {
                   title: string;
-                  description: string;
+                  description: {
+                    root: {
+                      type: string;
+                      children: {
+                        type: any;
+                        version: number;
+                        [k: string]: unknown;
+                      }[];
+                      direction: ('ltr' | 'rtl') | null;
+                      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                      indent: number;
+                      version: number;
+                    };
+                    [k: string]: unknown;
+                  };
                   iconSelect: string;
                   linkTo: string;
                   id?: string | null;
@@ -2634,7 +3054,21 @@ export interface StoryItem {
                 items?:
                   | {
                       header: string;
-                      body: string;
+                      body: {
+                        root: {
+                          type: string;
+                          children: {
+                            type: any;
+                            version: number;
+                            [k: string]: unknown;
+                          }[];
+                          direction: ('ltr' | 'rtl') | null;
+                          format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                          indent: number;
+                          version: number;
+                        };
+                        [k: string]: unknown;
+                      };
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 'accordion-item';
@@ -2654,7 +3088,21 @@ export interface StoryItem {
           }
         | {
             title: string;
-            paragraph?: string | null;
+            paragraph?: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
             content?:
               | (
                   | {
@@ -2926,11 +3374,39 @@ export interface StoryItem {
             showInlineCard?: boolean | null;
             bg: 'default' | 'lighter' | 'primary-light' | 'primary' | 'dark';
             title: string;
-            paragraph?: string | null;
+            paragraph?: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
             listContent?:
               | {
                   title: string;
-                  paragraph?: string | null;
+                  paragraph?: {
+                    root: {
+                      type: string;
+                      children: {
+                        type: any;
+                        version: number;
+                        [k: string]: unknown;
+                      }[];
+                      direction: ('ltr' | 'rtl') | null;
+                      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                      indent: number;
+                      version: number;
+                    };
+                    [k: string]: unknown;
+                  } | null;
                   image: string | Media;
                   link: {
                     link?:
@@ -3009,7 +3485,21 @@ export interface Catalogue {
             backgroundImageForMobile?: (string | null) | Media;
             showBreadcrumb?: boolean | null;
             title: string;
-            paragraph?: string | null;
+            paragraph?: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
             cta?:
               | (
                   | {
@@ -3130,7 +3620,21 @@ export interface Catalogue {
           }
         | {
             title: string;
-            paragraph: string;
+            paragraph: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            };
             link: {
               label: string;
               url: string;
@@ -3147,7 +3651,21 @@ export interface Catalogue {
             tabs?:
               | {
                   title: string;
-                  paragraph: string;
+                  paragraph: {
+                    root: {
+                      type: string;
+                      children: {
+                        type: any;
+                        version: number;
+                        [k: string]: unknown;
+                      }[];
+                      direction: ('ltr' | 'rtl') | null;
+                      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                      indent: number;
+                      version: number;
+                    };
+                    [k: string]: unknown;
+                  };
                   filterTitle: string;
                   labelForAll: string;
                   newsPageTabType: string;
@@ -5684,7 +6202,21 @@ export interface Layout {
                   value: string | Catalogue;
                 };
             image: string | Media;
-            caption: string;
+            caption: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            };
             subMenu?:
               | {
                   title: string;
@@ -5786,7 +6318,21 @@ export interface Layout {
                   value: string | Catalogue;
                 };
             image: string | Media;
-            caption: string;
+            caption: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            };
             subMenu?:
               | {
                   title: string;
@@ -5889,7 +6435,21 @@ export interface Homepage {
             backgroundImageForMobile?: (string | null) | Media;
             showBreadcrumb?: boolean | null;
             title: string;
-            paragraph?: string | null;
+            paragraph?: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
             cta?:
               | (
                   | {
@@ -6083,7 +6643,21 @@ export interface Homepage {
                   content?:
                     | {
                         title: string;
-                        description: string;
+                        description: {
+                          root: {
+                            type: string;
+                            children: {
+                              type: any;
+                              version: number;
+                              [k: string]: unknown;
+                            }[];
+                            direction: ('ltr' | 'rtl') | null;
+                            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                            indent: number;
+                            version: number;
+                          };
+                          [k: string]: unknown;
+                        };
                         iconSelect: string;
                         id?: string | null;
                         blockName?: string | null;
@@ -6102,7 +6676,21 @@ export interface Homepage {
         | {
             bg?: ('default' | 'lighter' | 'primary-light' | 'primary' | 'dark') | null;
             title: string;
-            paragraph: string;
+            paragraph: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            };
             tabs?:
               | (
                   | {
@@ -6170,11 +6758,39 @@ export interface Homepage {
           }
         | {
             title: string;
-            paragraph: string;
+            paragraph: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            };
             channels?:
               | {
                   title: string;
-                  description: string;
+                  description: {
+                    root: {
+                      type: string;
+                      children: {
+                        type: any;
+                        version: number;
+                        [k: string]: unknown;
+                      }[];
+                      direction: ('ltr' | 'rtl') | null;
+                      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                      indent: number;
+                      version: number;
+                    };
+                    [k: string]: unknown;
+                  };
                   iconSelect: string;
                   linkTo: string;
                   id?: string | null;
@@ -6378,11 +6994,39 @@ export interface Homepage {
             showInlineCard?: boolean | null;
             bg: 'default' | 'lighter' | 'primary-light' | 'primary' | 'dark';
             title: string;
-            paragraph?: string | null;
+            paragraph?: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
             listContent?:
               | {
                   title: string;
-                  paragraph?: string | null;
+                  paragraph?: {
+                    root: {
+                      type: string;
+                      children: {
+                        type: any;
+                        version: number;
+                        [k: string]: unknown;
+                      }[];
+                      direction: ('ltr' | 'rtl') | null;
+                      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                      indent: number;
+                      version: number;
+                    };
+                    [k: string]: unknown;
+                  } | null;
                   image: string | Media;
                   link: {
                     link?:
@@ -6453,7 +7097,21 @@ export interface Search {
             backgroundImageForMobile?: (string | null) | Media;
             showBreadcrumb?: boolean | null;
             title: string;
-            paragraph?: string | null;
+            paragraph?: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
             cta?:
               | (
                   | {

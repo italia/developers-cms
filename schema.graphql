@@ -4559,7 +4559,7 @@ type Hero {
   backgroundImageForMobile(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
   showBreadcrumb: Boolean
   title: String!
-  paragraph: String
+  paragraph(depth: Int): JSON
   cta: [Hero_Cta!]
   id: String
   blockName: String
@@ -4699,7 +4699,7 @@ union TextOnly_Text = TextBlock
 
 type TextBlock {
   title: String!
-  paragraph: String!
+  paragraph(depth: Int): JSON!
   cta: [TextBlock_Cta!]
   id: String
   blockName: String
@@ -4751,7 +4751,7 @@ union AdditionalContent_Content = CardEditorialWithIcon
 
 type CardEditorialWithIcon {
   title: String!
-  description: String!
+  description(depth: Int): JSON!
   iconSelect: String!
   id: String
   blockName: String
@@ -4761,7 +4761,7 @@ type CardEditorialWithIcon {
 type NewsFeed {
   bg: NewsFeed_bg
   title: String!
-  paragraph: String!
+  paragraph(depth: Int): JSON!
   tabs: [NewsFeed_Tabs!]
   cta: [NewsFeed_Cta!]
   id: String
@@ -4855,7 +4855,7 @@ union Accordion_Items = AccordionItem
 
 type AccordionItem {
   header: String!
-  body: String!
+  body(depth: Int): JSON!
   id: String
   blockName: String
   blockType: String
@@ -4879,7 +4879,7 @@ enum StructuredTextBlock_bg {
 
 type SupportChannelsSection {
   title: String!
-  paragraph: String!
+  paragraph(depth: Int): JSON!
   channels: [SupportChannelsSection_Channels!]
   bg: SupportChannelsSection_bg
   id: String
@@ -4891,7 +4891,7 @@ union SupportChannelsSection_Channels = Channel
 
 type Channel {
   title: String!
-  description: String!
+  description(depth: Int): JSON!
   iconSelect: String!
   linkTo: String!
   id: String
@@ -4930,7 +4930,7 @@ union TextAccordion_Accordion = AccordionBlock
 
 type ListCollection {
   title: String!
-  paragraph: String
+  paragraph(depth: Int): JSON
   content(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): [ListCollection_Content_Relationship!]
   id: String
   blockName: String
@@ -4975,7 +4975,7 @@ type ActionCard {
   title: String!
   category: String
   cta: [ActionCard_Cta!]!
-  paragraph: String!
+  paragraph(depth: Int): JSON!
   readMoreLabel: String!
   readLessLabel: String!
   id: String
@@ -5029,7 +5029,7 @@ union FeatureList_Items = ListItem
 
 type ListItem {
   title: String!
-  paragraph: String!
+  paragraph(depth: Int): JSON!
   id: String
   blockName: String
   blockType: String
@@ -5176,7 +5176,7 @@ type CardLinkList {
   showInlineCard: Boolean
   bg: CardLinkList_bg!
   title: String!
-  paragraph: String
+  paragraph(depth: Int): JSON
   listContent: [CardLinkList_ListContent!]
   id: String
   blockName: String
@@ -5195,7 +5195,7 @@ union CardLinkList_ListContent = CardLink
 
 type CardLink {
   title: String!
-  paragraph: String
+  paragraph(depth: Int): JSON
   image(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
   link: [CardLink_Link!]!
   id: String
@@ -5245,7 +5245,7 @@ union Catalogue_Content = Hero | TextOnly | CalloutLink | CatalogueFeed
 
 type CalloutLink {
   title: String!
-  paragraph: String!
+  paragraph(depth: Int): JSON!
   link: [CalloutLink_Link!]!
   id: String
   blockName: String
@@ -5265,7 +5265,7 @@ union CatalogueFeed_Tabs = CatalogueTab
 
 type CatalogueTab {
   title: String!
-  paragraph: String!
+  paragraph(depth: Int): JSON!
   filterTitle: String!
   labelForAll: String!
   newsPageTabType: String!
@@ -5309,7 +5309,7 @@ union DataSection_Highlights = Highlight
 
 type Highlight {
   title: String!
-  paragraph: String!
+  paragraph(depth: Int): JSON!
   image(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
   kpiElement(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): [KpiElement!]
   id: String
@@ -5321,7 +5321,7 @@ union DataSection_Panel = Panel
 
 type Panel {
   title: String!
-  paragraph: String!
+  paragraph(depth: Int): JSON!
   chart: [Panel_Chart!]!
   externalLink: [Panel_ExternalLink!]!
   id: String
@@ -5335,7 +5335,7 @@ type SettingsChart {
   title: String
   subtitle: String
   footerText: String
-  info: String
+  info(depth: Int): JSON
   selectChart(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): ChartElement
   downloadData: Boolean
   downloadImage: Boolean
@@ -5379,7 +5379,7 @@ union Result_UseCases = Page | Article | Insight | WebinarItem | StoryItem
 
 type TopicFilter {
   title: String!
-  paragraph: String!
+  paragraph(depth: Int): JSON!
   titleFilter: String!
   labelForAll: String!
   content: [TopicFilter_Content!]
@@ -9711,7 +9711,7 @@ type MegaMenuItem {
   subtitle: String!
   pointsTo(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): MegaMenuItem_PointsTo_Relationship
   image(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
-  caption: String!
+  caption(depth: Int): JSON!
   subMenu: [MegaMenuItem_SubMenu!]
   id: String
   blockName: String
