@@ -1,0 +1,104 @@
+# Valori di esempio NON sensibili.
+# Credenziali reali (DATABASE_URL, PAYLOAD_SECRET, seed/apiKey) vanno passate con un file
+# -f esterno conservato in k8s-configuration (helm/developers-cms/{test,prod}/values.yaml).
+
+replicaCount: 1
+
+app:
+  image:
+    repository: ghcr.io/italia/developers-cms
+    tag: latest
+    # Le immagini private su ghcr.io richiedono imagePullSecrets (vedi sotto)
+    pullPolicy: IfNotPresent
+
+  # Porta su cui ascolta Next/Payload nel container (ENV PORT)
+  port: 3000
+
+  # Obbligatorio: connessione PostgreSQL esterna (Azure Postgres, altro namespace, ecc.)
+  databaseUrl: ""
+
+  # Obbligatorio: chiave usata da Payload per firmare/cifrare (JWT, apiKey, ecc.)
+  payloadSecret: ""
+
+  # URL pubblico dell'istanza: usato da Payload per CORS/CSRF (allowedOrigins).
+  # Se vuoto e ingress abilitato, viene derivato da https://<primo host ingress>.
+  siteUrl: ""
+
+  # Env aggiuntive non sensibili: [{ name: FOO, value: "bar" }]
+  extraEnv: []
+
+  resources:
+    requests:
+      cpu: 100m
+      memory: 512Mi
+    limits:
+      cpu: "1"
+      memory: 1Gi
+
+# Persistenza dei media caricati (collection Media, upload su filesystem).
+# Con ReadWriteOnce funziona con replicaCount=1. Per multi-replica passare a object storage.
+media:
+  persistence:
+    enabled: true
+    # Punto in cui Payload scrive i media nel container. Verificare che coincida con la
+    # staticDir effettiva della collection Media (vedi README).
+    mountPath: /app/media
+    existingClaim: ""
+    storageClass: ""
+    accessMode: ReadWriteOnce
+    size: 5Gi
+
+# Job di migrazione schema (Payload). Eseguito come hook pre-install/pre-upgrade.
+# Richiede un'immagine che includa la CLI payload (NON la build standalone trimmata).
+migrate:
+  enabled: true
+  command: ["node", "node_modules/.bin/payload", "migrate"]
+  # Attesa TCP opzionale del DB prima di migrare (utile per DB esterni non subito raggiungibili)
+  waitForTcp:
+    enabled: false
+    host: ""
+    port: 5432
+    attempts: 60
+    intervalSeconds: 2
+
+# Job di seed: crea il primo utente e gli assegna una API key deterministica.
+# Eseguito come hook post-install/post-upgrade. Idempotente (no-op se l'utente esiste già).
+# La API key risultante è quella usata dal repo di import per le API in lettura/scrittura.
+seed:
+  enabled: false
+  user:
+    email: ""
+    password: ""
+  # API key in chiaro da assegnare all'utente (header: Authorization: users API-Key <apiKey>)
+  apiKey: ""
+  # URL interno con cui il job raggiunge l'app; se vuoto usa il Service del rilascio.
+  baseUrl: ""
+
+service:
+  type: ClusterIP
+  port: 3000
+
+ingress:
+  enabled: false
+  className: nginx
+  # Con cert-manager HTTP-01 + path / Prefix, senza questa annotation le richieste ACME
+  # possono finire al backend app.
+  acmeHttp01EditInPlace: true
+  annotations: {}
+  hosts:
+    - host: developers-cms.example.local
+      paths:
+        - path: /
+          pathType: Prefix
+  tls: []
+
+secret:
+  create: true
+  existingSecret: ""
+
+# Per immagini private su ghcr.io (es. [{ name: ghcr-secret }])
+imagePullSecrets: []
+
+nodeSelector: {}
+tolerations: []
+affinity: {}

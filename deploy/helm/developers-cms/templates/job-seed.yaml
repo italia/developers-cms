@@ -1,0 +1,148 @@
+{{- if .Values.seed.enabled }}
+{{- if not .Values.seed.user.email }}{{ fail "seed.user.email è obbligatorio quando seed.enabled=true" }}{{- end }}
+{{- if not .Values.seed.user.password }}{{ fail "seed.user.password è obbligatorio quando seed.enabled=true" }}{{- end }}
+{{- if not .Values.seed.apiKey }}{{ fail "seed.apiKey è obbligatorio quando seed.enabled=true" }}{{- end }}
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: {{ include "dcms.fullname" . }}-seed
+  labels:
+    {{- include "dcms.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": post-install,post-upgrade
+    "helm.sh/hook-weight": "5"
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+type: Opaque
+stringData:
+  SEED_USER_EMAIL: {{ .Values.seed.user.email | quote }}
+  SEED_USER_PASSWORD: {{ .Values.seed.user.password | quote }}
+  SEED_API_KEY: {{ .Values.seed.apiKey | quote }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "dcms.fullname" . }}-seed-script
+  labels:
+    {{- include "dcms.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": post-install,post-upgrade
+    "helm.sh/hook-weight": "5"
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+data:
+  seed.mjs: |
+    const base = (process.env.SEED_BASE_URL || '').replace(/\/$/, '')
+    const email = process.env.SEED_USER_EMAIL
+    const password = process.env.SEED_USER_PASSWORD
+    const apiKey = process.env.SEED_API_KEY
+    const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
+
+    async function waitReady() {
+      for (let i = 0; i < 90; i++) {
+        try {
+          const r = await fetch(`${base}/api/access`)
+          if (r.ok) return
+        } catch {}
+        await sleep(2000)
+      }
+      throw new Error('app non pronta dopo l’attesa')
+    }
+
+    async function main() {
+      if (!base || !email || !password || !apiKey) throw new Error('env di seed mancanti')
+      await waitReady()
+
+      // 1. crea il primo utente (no-op se esistono già utenti)
+      const reg = await fetch(`${base}/api/users/first-register`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password }),
+      })
+      if (reg.ok) {
+        console.log('Primo utente creato:', email)
+      } else {
+        const body = await reg.text()
+        console.log(`first-register saltato (HTTP ${reg.status}); utente probabilmente già esistente`)
+      }
+
+      // 2. login per ottenere il token JWT
+      const login = await fetch(`${base}/api/users/login`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password }),
+      })
+      if (!login.ok) throw new Error(`login fallito: HTTP ${login.status} ${await login.text()}`)
+      const { token, user } = await login.json()
+      if (!token || !user || !user.id) throw new Error('login senza token/user')
+
+      // 3. abilita la API key con valore deterministico (usata dalle API in lettura/scrittura)
+      const patch = await fetch(`${base}/api/users/${user.id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json', Authorization: `JWT ${token}` },
+        body: JSON.stringify({ enableAPIKey: true, apiKey }),
+      })
+      if (!patch.ok) throw new Error(`set apiKey fallito: HTTP ${patch.status} ${await patch.text()}`)
+      console.log('API key impostata sull’utente', email)
+    }
+
+    main().catch((e) => {
+      console.error(e && e.message ? e.message : e)
+      process.exit(1)
+    })
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ include "dcms.fullname" . }}-seed-{{ .Release.Revision }}
+  labels:
+    {{- include "dcms.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": post-install,post-upgrade
+    "helm.sh/hook-weight": "10"
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+spec:
+  backoffLimit: 2
+  template:
+    metadata:
+      labels:
+        {{- include "dcms.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      restartPolicy: Never
+      volumes:
+        - name: seed-script
+          configMap:
+            name: {{ include "dcms.fullname" . }}-seed-script
+      containers:
+        - name: seed
+          image: "{{ .Values.app.image.repository }}:{{ .Values.app.image.tag }}"
+          imagePullPolicy: {{ .Values.app.image.pullPolicy }}
+          env:
+            - name: SEED_BASE_URL
+              value: {{ include "dcms.seedBaseUrl" . | quote }}
+          envFrom:
+            - secretRef:
+                name: {{ include "dcms.fullname" . }}-seed
+          volumeMounts:
+            - name: seed-script
+              mountPath: /seed
+          command: ["node", "/seed/seed.mjs"]
+          resources:
+            requests:
+              cpu: 50m
+              memory: 128Mi
+            limits:
+              cpu: 500m
+              memory: 256Mi
+{{- end }}
