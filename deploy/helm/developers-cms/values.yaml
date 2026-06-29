@@ -4,6 +4,12 @@
 
 replicaCount: 1
 
+# Security context del pod. fsGroup rende il PVC dei media scrivibile dall'utente
+# del container (l'immagine gira come uid/gid 1001): senza, il volume Azure è
+# montato root:root e Payload fallisce gli upload ("problem while uploading the file").
+podSecurityContext:
+  fsGroup: 1001
+
 app:
   image:
     repository: ghcr.io/italia/developers-cms
