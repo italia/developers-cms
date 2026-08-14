@@ -1,0 +1,6 @@
+apiVersion: v2
+name: developers-cms
+description: Developers CMS (Payload 3 / Next.js) — PostgreSQL e media gestiti esternamente al chart
+type: application
+version: 0.1.0
+appVersion: "1.0.0"

@@ -1,0 +1,29 @@
+{{ include "dcms.fullname" . }} installato nel namespace {{ .Release.Namespace }}.
+
+App:        {{ .Values.app.image.repository }}:{{ .Values.app.image.tag }}
+Service:    {{ include "dcms.fullname" . }}:{{ .Values.service.port }}
+{{- $siteUrl := include "dcms.siteUrl" . | trim }}
+{{- if $siteUrl }}
+URL:        {{ $siteUrl }}/admin
+{{- end }}
+
+Migrazioni: {{ if .Values.migrate.enabled }}eseguite via hook pre-install/pre-upgrade (`{{ join " " .Values.migrate.command }}`){{ else }}DISABILITATE (migrate.enabled=false){{ end }}
+Seed:       {{ if .Values.seed.enabled }}eseguito via hook post-install/post-upgrade (utente {{ .Values.seed.user.email }} + API key){{ else }}disabilitato (seed.enabled=false){{ end }}
+Media PVC:  {{ if .Values.media.persistence.enabled }}{{ include "dcms.mediaClaimName" . }} ({{ .Values.media.persistence.size }}) montato su {{ .Values.media.persistence.mountPath }}{{ else }}disabilitato (media effimeri){{ end }}
+
+{{- if .Values.seed.enabled }}
+
+L'API key impostata sull'utente {{ .Values.seed.user.email }} è quella indicata in seed.apiKey.
+Usala nel repo di import con header:
+
+  Authorization: users API-Key <seed.apiKey>
+
+Esempio lettura:  curl -H "Authorization: users API-Key <apiKey>" {{ if $siteUrl }}{{ $siteUrl }}{{ else }}http://<host>{{ end }}/api/articles
+{{- end }}
+
+Verifica lo stato:
+  kubectl -n {{ .Release.Namespace }} rollout status deploy/{{ include "dcms.fullname" . }}
+  kubectl -n {{ .Release.Namespace }} logs job/{{ include "dcms.fullname" . }}-migrate-{{ .Release.Revision }}
+{{- if .Values.seed.enabled }}
+  kubectl -n {{ .Release.Namespace }} logs job/{{ include "dcms.fullname" . }}-seed-{{ .Release.Revision }}
+{{- end }}

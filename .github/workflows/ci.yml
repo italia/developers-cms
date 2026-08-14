@@ -1,0 +1,182 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }} # italia/developers-cms
+  CHART_PATH: deploy/helm/developers-cms
+  CHART_REGISTRY: oci://ghcr.io/${{ github.repository_owner }}/charts
+
+jobs:
+  # ── Test applicativi: integrazione (Payload Local API su Postgres) ──────────
+  test:
+    name: Integration tests
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: developers_cms_test
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgres://postgres:postgres@localhost:5432/developers_cms_test
+      PAYLOAD_SECRET: ci-test-secret
+      CI: 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: '1.3'
+      - run: bun install --frozen-lockfile
+      - name: Run integration tests
+        run: bun run test:int
+
+  # ── Test applicativi: end-to-end (Playwright sull'admin Payload) ────────────
+  e2e:
+    name: E2E tests
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: developers_cms_e2e
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgres://postgres:postgres@localhost:5432/developers_cms_e2e
+      PAYLOAD_SECRET: ci-e2e-secret
+      CI: 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: '1.3'
+      - run: bun install --frozen-lockfile
+      - name: Install Playwright (chromium)
+        run: bunx playwright install --with-deps chromium
+      - name: Start app (dev) in background
+        run: |
+          nohup bun run dev > dev-server.log 2>&1 &
+          echo "Attendo l'avvio su http://localhost:3000 ..."
+          for i in $(seq 1 60); do
+            if curl -fsS http://localhost:3000/api/access >/dev/null 2>&1; then
+              echo "App pronta"; exit 0
+            fi
+            sleep 3
+          done
+          echo "Timeout avvio app"; cat dev-server.log; exit 1
+      - name: Run E2E tests
+        run: bun run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report
+          path: |
+            playwright-report/
+            dev-server.log
+          retention-days: 7
+
+  # ── Build immagine container e push su GHCR ─────────────────────────────────
+  build-push:
+    name: Build & push image
+    runs-on: ubuntu-latest
+    needs: [test, e2e]
+    if: github.event_name != 'pull_request'
+    permissions:
+      contents: read
+      packages: write
+    outputs:
+      version: ${{ steps.meta.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Docker metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          tags: |
+            type=semver,pattern={{version}}
+            type=ref,event=branch
+            type=sha,format=long
+            type=raw,value=latest,enable={{is_default_branch}}
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  # ── Lint, package e push del chart Helm su GHCR (OCI) ───────────────────────
+  helm:
+    name: Package & push Helm chart
+    runs-on: ubuntu-latest
+    needs: [build-push]
+    if: github.event_name != 'pull_request'
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: azure/setup-helm@v4
+        with:
+          version: v3.16.2
+      - name: Lint chart
+        run: |
+          helm lint "$CHART_PATH" \
+            --set app.databaseUrl=postgres://u:p@db:5432/x \
+            --set app.payloadSecret=dummy
+      - name: Compute versions
+        id: ver
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then
+            CHART_VERSION="${GITHUB_REF#refs/tags/v}"
+            APP_VERSION="${GITHUB_REF#refs/tags/v}"
+          else
+            CHART_VERSION="0.1.0-main.${GITHUB_SHA::7}"
+            APP_VERSION="sha-${GITHUB_SHA}"
+          fi
+          echo "chart=$CHART_VERSION" >> "$GITHUB_OUTPUT"
+          echo "app=$APP_VERSION" >> "$GITHUB_OUTPUT"
+      - name: Helm registry login
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" | \
+            helm registry login ghcr.io -u "${{ github.actor }}" --password-stdin
+      - name: Package & push
+        run: |
+          helm package "$CHART_PATH" \
+            --version "${{ steps.ver.outputs.chart }}" \
+            --app-version "${{ steps.ver.outputs.app }}"
+          helm push "developers-cms-${{ steps.ver.outputs.chart }}.tgz" "$CHART_REGISTRY"

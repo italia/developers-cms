@@ -1,0 +1,20 @@
+{{- if and .Values.media.persistence.enabled (not .Values.media.persistence.existingClaim) }}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ include "dcms.fullname" . }}-media
+  labels:
+    {{- include "dcms.labels" . | nindent 4 }}
+  annotations:
+    # Mantieni il PVC tra un helm uninstall/reinstall per non perdere i media già caricati
+    helm.sh/resource-policy: keep
+spec:
+  accessModes:
+    - {{ .Values.media.persistence.accessMode }}
+  resources:
+    requests:
+      storage: {{ .Values.media.persistence.size }}
+  {{- if .Values.media.persistence.storageClass }}
+  storageClassName: {{ .Values.media.persistence.storageClass | quote }}
+  {{- end }}
+{{- end }}

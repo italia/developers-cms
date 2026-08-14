@@ -1,0 +1,64 @@
+{{- if .Values.migrate.enabled }}
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ include "dcms.fullname" . }}-migrate-{{ .Release.Revision }}
+  labels:
+    {{- include "dcms.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": pre-install,pre-upgrade
+    "helm.sh/hook-weight": "-5"
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+spec:
+  backoffLimit: 3
+  template:
+    metadata:
+      labels:
+        {{- include "dcms.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      restartPolicy: Never
+      containers:
+        - name: migrate
+          image: "{{ .Values.app.image.repository }}:{{ .Values.app.image.tag }}"
+          imagePullPolicy: {{ .Values.app.image.pullPolicy }}
+          env:
+            - name: NODE_ENV
+              value: "production"
+          envFrom:
+            - secretRef:
+                name: {{ include "dcms.secretName" . }}
+          command: ["/bin/sh", "-c"]
+          args:
+            - |
+              set -e
+              {{- if .Values.migrate.waitForTcp.enabled }}
+              echo "Attendo TCP {{ .Values.migrate.waitForTcp.host }}:{{ .Values.migrate.waitForTcp.port }}..."
+              i=0
+              until node -e "require('net').connect({host:'{{ .Values.migrate.waitForTcp.host }}',port:{{ .Values.migrate.waitForTcp.port }}},()=>process.exit(0)).on('error',()=>process.exit(1))" 2>/dev/null; do
+                i=$((i+1))
+                if [ "$i" -ge "{{ .Values.migrate.waitForTcp.attempts }}" ]; then echo "DB non raggiungibile, timeout"; exit 1; fi
+                sleep {{ .Values.migrate.waitForTcp.intervalSeconds }}
+              done
+              echo "DB raggiungibile"
+              {{- end }}
+              exec {{ join " " .Values.migrate.command }}
+          resources:
+            requests:
+              cpu: 100m
+              memory: 512Mi
+            limits:
+              cpu: "1"
+              memory: 1Gi
+{{- end }}
