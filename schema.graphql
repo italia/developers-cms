@@ -9610,36 +9610,24 @@ type PayloadPreferencesDeleteDocAccess {
 
 type Layout {
   variant: String!
-  heading(depth: Int): JSON
-  logoSelect: String!
-  organizations: [Layout_Organizations!]
-  listNavbarBrand: [Layout_ListNavbarBrand!]
-  topicTitle: String
-  metaNavigation: [Layout_MetaNavigation!]
-  topicLink: [Layout_TopicLink!]
+  logoSelect(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
   siteName: String!
-  utilityTitle: String
   tagline: String
-  utility: [Layout_Utility!]
-  mailingListForm: [Layout_MailingListForm!]
+  listNavbarBrand: [Layout_ListNavbarBrand!]
+  metaNavigation: [Layout_MetaNavigation!]
   navigationBar: [Layout_NavigationBar!]
   navigationBarSecondary: [Layout_NavigationBarSecondary!]
+  heading(depth: Int): JSON
+  organizations: [Layout_Organizations!]
+  topicTitle: String
+  topicLink: [Layout_TopicLink!]
+  utilityTitle: String
+  utility: [Layout_Utility!]
+  mailingListForm: [Layout_MailingListForm!]
   showSitemapLink: Boolean
   smallPrint: [Layout_SmallPrint!]
   updatedAt: DateTime
   createdAt: DateTime
-}
-
-union Layout_Organizations = Brand
-
-type Brand {
-  mainLogo: String!
-  brandLogo: String!
-  label: String!
-  url: String!
-  id: String
-  blockName: String
-  blockType: String
 }
 
 union Layout_ListNavbarBrand = BrandHeader
@@ -9654,31 +9642,6 @@ type BrandHeader {
 }
 
 union Layout_MetaNavigation = ExternalLink
-
-union Layout_TopicLink = InternalLink
-
-union Layout_Utility = SupportingBrand | ExternalLink
-
-type SupportingBrand {
-  brandLogo: String!
-  label: String!
-  url: String!
-  id: String
-  blockName: String
-  blockType: String
-}
-
-union Layout_MailingListForm = MailingListSignupBlock
-
-type MailingListSignupBlock {
-  title: String!
-  privacyPolicy: [MailingListSignupBlock_PrivacyPolicy!]!
-  id: String
-  blockName: String
-  blockType: String
-}
-
-union MailingListSignupBlock_PrivacyPolicy = InternalLink
 
 union Layout_NavigationBar = MenuItem | MegaMenuItem
 
@@ -9738,6 +9701,43 @@ union MegaMenuItem_SubMenu = MenuItem
 
 union Layout_NavigationBarSecondary = MenuItem | MegaMenuItem
 
+union Layout_Organizations = Brand
+
+type Brand {
+  mainLogo(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
+  brandLogo(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
+  label: String!
+  url: String!
+  id: String
+  blockName: String
+  blockType: String
+}
+
+union Layout_TopicLink = InternalLink
+
+union Layout_Utility = SupportingBrand | ExternalLink
+
+type SupportingBrand {
+  brandLogo(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
+  label: String!
+  url: String!
+  id: String
+  blockName: String
+  blockType: String
+}
+
+union Layout_MailingListForm = MailingListSignupBlock
+
+type MailingListSignupBlock {
+  title: String!
+  privacyPolicy: [MailingListSignupBlock_PrivacyPolicy!]!
+  id: String
+  blockName: String
+  blockType: String
+}
+
+union MailingListSignupBlock_PrivacyPolicy = InternalLink
+
 union Layout_SmallPrint = InternalLink | ExternalLink
 
 type layoutDocAccess {
@@ -9748,20 +9748,20 @@ type layoutDocAccess {
 
 type LayoutDocAccessFields {
   variant: LayoutDocAccessFields_variant
-  heading: LayoutDocAccessFields_heading
   logoSelect: LayoutDocAccessFields_logoSelect
-  organizations: LayoutDocAccessFields_organizations
-  listNavbarBrand: LayoutDocAccessFields_listNavbarBrand
-  topicTitle: LayoutDocAccessFields_topicTitle
-  metaNavigation: LayoutDocAccessFields_metaNavigation
-  topicLink: LayoutDocAccessFields_topicLink
   siteName: LayoutDocAccessFields_siteName
-  utilityTitle: LayoutDocAccessFields_utilityTitle
   tagline: LayoutDocAccessFields_tagline
-  utility: LayoutDocAccessFields_utility
-  mailingListForm: LayoutDocAccessFields_mailingListForm
+  listNavbarBrand: LayoutDocAccessFields_listNavbarBrand
+  metaNavigation: LayoutDocAccessFields_metaNavigation
   navigationBar: LayoutDocAccessFields_navigationBar
   navigationBarSecondary: LayoutDocAccessFields_navigationBarSecondary
+  heading: LayoutDocAccessFields_heading
+  organizations: LayoutDocAccessFields_organizations
+  topicTitle: LayoutDocAccessFields_topicTitle
+  topicLink: LayoutDocAccessFields_topicLink
+  utilityTitle: LayoutDocAccessFields_utilityTitle
+  utility: LayoutDocAccessFields_utility
+  mailingListForm: LayoutDocAccessFields_mailingListForm
   showSitemapLink: LayoutDocAccessFields_showSitemapLink
   smallPrint: LayoutDocAccessFields_smallPrint
   updatedAt: LayoutDocAccessFields_updatedAt
@@ -9791,29 +9791,6 @@ type LayoutDocAccessFields_variant_Delete {
   permission: Boolean!
 }
 
-type LayoutDocAccessFields_heading {
-  create: LayoutDocAccessFields_heading_Create
-  read: LayoutDocAccessFields_heading_Read
-  update: LayoutDocAccessFields_heading_Update
-  delete: LayoutDocAccessFields_heading_Delete
-}
-
-type LayoutDocAccessFields_heading_Create {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_heading_Read {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_heading_Update {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_heading_Delete {
-  permission: Boolean!
-}
-
 type LayoutDocAccessFields_logoSelect {
   create: LayoutDocAccessFields_logoSelect_Create
   read: LayoutDocAccessFields_logoSelect_Read
@@ -9834,121 +9811,6 @@ type LayoutDocAccessFields_logoSelect_Update {
 }
 
 type LayoutDocAccessFields_logoSelect_Delete {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_organizations {
-  create: LayoutDocAccessFields_organizations_Create
-  read: LayoutDocAccessFields_organizations_Read
-  update: LayoutDocAccessFields_organizations_Update
-  delete: LayoutDocAccessFields_organizations_Delete
-}
-
-type LayoutDocAccessFields_organizations_Create {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_organizations_Read {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_organizations_Update {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_organizations_Delete {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_listNavbarBrand {
-  create: LayoutDocAccessFields_listNavbarBrand_Create
-  read: LayoutDocAccessFields_listNavbarBrand_Read
-  update: LayoutDocAccessFields_listNavbarBrand_Update
-  delete: LayoutDocAccessFields_listNavbarBrand_Delete
-}
-
-type LayoutDocAccessFields_listNavbarBrand_Create {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_listNavbarBrand_Read {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_listNavbarBrand_Update {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_listNavbarBrand_Delete {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_topicTitle {
-  create: LayoutDocAccessFields_topicTitle_Create
-  read: LayoutDocAccessFields_topicTitle_Read
-  update: LayoutDocAccessFields_topicTitle_Update
-  delete: LayoutDocAccessFields_topicTitle_Delete
-}
-
-type LayoutDocAccessFields_topicTitle_Create {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_topicTitle_Read {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_topicTitle_Update {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_topicTitle_Delete {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_metaNavigation {
-  create: LayoutDocAccessFields_metaNavigation_Create
-  read: LayoutDocAccessFields_metaNavigation_Read
-  update: LayoutDocAccessFields_metaNavigation_Update
-  delete: LayoutDocAccessFields_metaNavigation_Delete
-}
-
-type LayoutDocAccessFields_metaNavigation_Create {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_metaNavigation_Read {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_metaNavigation_Update {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_metaNavigation_Delete {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_topicLink {
-  create: LayoutDocAccessFields_topicLink_Create
-  read: LayoutDocAccessFields_topicLink_Read
-  update: LayoutDocAccessFields_topicLink_Update
-  delete: LayoutDocAccessFields_topicLink_Delete
-}
-
-type LayoutDocAccessFields_topicLink_Create {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_topicLink_Read {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_topicLink_Update {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_topicLink_Delete {
   permission: Boolean!
 }
 
@@ -9975,29 +9837,6 @@ type LayoutDocAccessFields_siteName_Delete {
   permission: Boolean!
 }
 
-type LayoutDocAccessFields_utilityTitle {
-  create: LayoutDocAccessFields_utilityTitle_Create
-  read: LayoutDocAccessFields_utilityTitle_Read
-  update: LayoutDocAccessFields_utilityTitle_Update
-  delete: LayoutDocAccessFields_utilityTitle_Delete
-}
-
-type LayoutDocAccessFields_utilityTitle_Create {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_utilityTitle_Read {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_utilityTitle_Update {
-  permission: Boolean!
-}
-
-type LayoutDocAccessFields_utilityTitle_Delete {
-  permission: Boolean!
-}
-
 type LayoutDocAccessFields_tagline {
   create: LayoutDocAccessFields_tagline_Create
   read: LayoutDocAccessFields_tagline_Read
@@ -10021,49 +9860,49 @@ type LayoutDocAccessFields_tagline_Delete {
   permission: Boolean!
 }
 
-type LayoutDocAccessFields_utility {
-  create: LayoutDocAccessFields_utility_Create
-  read: LayoutDocAccessFields_utility_Read
-  update: LayoutDocAccessFields_utility_Update
-  delete: LayoutDocAccessFields_utility_Delete
+type LayoutDocAccessFields_listNavbarBrand {
+  create: LayoutDocAccessFields_listNavbarBrand_Create
+  read: LayoutDocAccessFields_listNavbarBrand_Read
+  update: LayoutDocAccessFields_listNavbarBrand_Update
+  delete: LayoutDocAccessFields_listNavbarBrand_Delete
 }
 
-type LayoutDocAccessFields_utility_Create {
+type LayoutDocAccessFields_listNavbarBrand_Create {
   permission: Boolean!
 }
 
-type LayoutDocAccessFields_utility_Read {
+type LayoutDocAccessFields_listNavbarBrand_Read {
   permission: Boolean!
 }
 
-type LayoutDocAccessFields_utility_Update {
+type LayoutDocAccessFields_listNavbarBrand_Update {
   permission: Boolean!
 }
 
-type LayoutDocAccessFields_utility_Delete {
+type LayoutDocAccessFields_listNavbarBrand_Delete {
   permission: Boolean!
 }
 
-type LayoutDocAccessFields_mailingListForm {
-  create: LayoutDocAccessFields_mailingListForm_Create
-  read: LayoutDocAccessFields_mailingListForm_Read
-  update: LayoutDocAccessFields_mailingListForm_Update
-  delete: LayoutDocAccessFields_mailingListForm_Delete
+type LayoutDocAccessFields_metaNavigation {
+  create: LayoutDocAccessFields_metaNavigation_Create
+  read: LayoutDocAccessFields_metaNavigation_Read
+  update: LayoutDocAccessFields_metaNavigation_Update
+  delete: LayoutDocAccessFields_metaNavigation_Delete
 }
 
-type LayoutDocAccessFields_mailingListForm_Create {
+type LayoutDocAccessFields_metaNavigation_Create {
   permission: Boolean!
 }
 
-type LayoutDocAccessFields_mailingListForm_Read {
+type LayoutDocAccessFields_metaNavigation_Read {
   permission: Boolean!
 }
 
-type LayoutDocAccessFields_mailingListForm_Update {
+type LayoutDocAccessFields_metaNavigation_Update {
   permission: Boolean!
 }
 
-type LayoutDocAccessFields_mailingListForm_Delete {
+type LayoutDocAccessFields_metaNavigation_Delete {
   permission: Boolean!
 }
 
@@ -10110,6 +9949,167 @@ type LayoutDocAccessFields_navigationBarSecondary_Update {
 }
 
 type LayoutDocAccessFields_navigationBarSecondary_Delete {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_heading {
+  create: LayoutDocAccessFields_heading_Create
+  read: LayoutDocAccessFields_heading_Read
+  update: LayoutDocAccessFields_heading_Update
+  delete: LayoutDocAccessFields_heading_Delete
+}
+
+type LayoutDocAccessFields_heading_Create {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_heading_Read {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_heading_Update {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_heading_Delete {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_organizations {
+  create: LayoutDocAccessFields_organizations_Create
+  read: LayoutDocAccessFields_organizations_Read
+  update: LayoutDocAccessFields_organizations_Update
+  delete: LayoutDocAccessFields_organizations_Delete
+}
+
+type LayoutDocAccessFields_organizations_Create {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_organizations_Read {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_organizations_Update {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_organizations_Delete {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_topicTitle {
+  create: LayoutDocAccessFields_topicTitle_Create
+  read: LayoutDocAccessFields_topicTitle_Read
+  update: LayoutDocAccessFields_topicTitle_Update
+  delete: LayoutDocAccessFields_topicTitle_Delete
+}
+
+type LayoutDocAccessFields_topicTitle_Create {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_topicTitle_Read {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_topicTitle_Update {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_topicTitle_Delete {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_topicLink {
+  create: LayoutDocAccessFields_topicLink_Create
+  read: LayoutDocAccessFields_topicLink_Read
+  update: LayoutDocAccessFields_topicLink_Update
+  delete: LayoutDocAccessFields_topicLink_Delete
+}
+
+type LayoutDocAccessFields_topicLink_Create {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_topicLink_Read {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_topicLink_Update {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_topicLink_Delete {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_utilityTitle {
+  create: LayoutDocAccessFields_utilityTitle_Create
+  read: LayoutDocAccessFields_utilityTitle_Read
+  update: LayoutDocAccessFields_utilityTitle_Update
+  delete: LayoutDocAccessFields_utilityTitle_Delete
+}
+
+type LayoutDocAccessFields_utilityTitle_Create {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_utilityTitle_Read {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_utilityTitle_Update {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_utilityTitle_Delete {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_utility {
+  create: LayoutDocAccessFields_utility_Create
+  read: LayoutDocAccessFields_utility_Read
+  update: LayoutDocAccessFields_utility_Update
+  delete: LayoutDocAccessFields_utility_Delete
+}
+
+type LayoutDocAccessFields_utility_Create {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_utility_Read {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_utility_Update {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_utility_Delete {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_mailingListForm {
+  create: LayoutDocAccessFields_mailingListForm_Create
+  read: LayoutDocAccessFields_mailingListForm_Read
+  update: LayoutDocAccessFields_mailingListForm_Update
+  delete: LayoutDocAccessFields_mailingListForm_Delete
+}
+
+type LayoutDocAccessFields_mailingListForm_Create {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_mailingListForm_Read {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_mailingListForm_Update {
+  permission: Boolean!
+}
+
+type LayoutDocAccessFields_mailingListForm_Delete {
   permission: Boolean!
 }
 
@@ -16534,20 +16534,20 @@ type layoutAccess {
 
 type LayoutFields {
   variant: LayoutFields_variant
-  heading: LayoutFields_heading
   logoSelect: LayoutFields_logoSelect
-  organizations: LayoutFields_organizations
-  listNavbarBrand: LayoutFields_listNavbarBrand
-  topicTitle: LayoutFields_topicTitle
-  metaNavigation: LayoutFields_metaNavigation
-  topicLink: LayoutFields_topicLink
   siteName: LayoutFields_siteName
-  utilityTitle: LayoutFields_utilityTitle
   tagline: LayoutFields_tagline
-  utility: LayoutFields_utility
-  mailingListForm: LayoutFields_mailingListForm
+  listNavbarBrand: LayoutFields_listNavbarBrand
+  metaNavigation: LayoutFields_metaNavigation
   navigationBar: LayoutFields_navigationBar
   navigationBarSecondary: LayoutFields_navigationBarSecondary
+  heading: LayoutFields_heading
+  organizations: LayoutFields_organizations
+  topicTitle: LayoutFields_topicTitle
+  topicLink: LayoutFields_topicLink
+  utilityTitle: LayoutFields_utilityTitle
+  utility: LayoutFields_utility
+  mailingListForm: LayoutFields_mailingListForm
   showSitemapLink: LayoutFields_showSitemapLink
   smallPrint: LayoutFields_smallPrint
   updatedAt: LayoutFields_updatedAt
@@ -16577,29 +16577,6 @@ type LayoutFields_variant_Delete {
   permission: Boolean!
 }
 
-type LayoutFields_heading {
-  create: LayoutFields_heading_Create
-  read: LayoutFields_heading_Read
-  update: LayoutFields_heading_Update
-  delete: LayoutFields_heading_Delete
-}
-
-type LayoutFields_heading_Create {
-  permission: Boolean!
-}
-
-type LayoutFields_heading_Read {
-  permission: Boolean!
-}
-
-type LayoutFields_heading_Update {
-  permission: Boolean!
-}
-
-type LayoutFields_heading_Delete {
-  permission: Boolean!
-}
-
 type LayoutFields_logoSelect {
   create: LayoutFields_logoSelect_Create
   read: LayoutFields_logoSelect_Read
@@ -16620,121 +16597,6 @@ type LayoutFields_logoSelect_Update {
 }
 
 type LayoutFields_logoSelect_Delete {
-  permission: Boolean!
-}
-
-type LayoutFields_organizations {
-  create: LayoutFields_organizations_Create
-  read: LayoutFields_organizations_Read
-  update: LayoutFields_organizations_Update
-  delete: LayoutFields_organizations_Delete
-}
-
-type LayoutFields_organizations_Create {
-  permission: Boolean!
-}
-
-type LayoutFields_organizations_Read {
-  permission: Boolean!
-}
-
-type LayoutFields_organizations_Update {
-  permission: Boolean!
-}
-
-type LayoutFields_organizations_Delete {
-  permission: Boolean!
-}
-
-type LayoutFields_listNavbarBrand {
-  create: LayoutFields_listNavbarBrand_Create
-  read: LayoutFields_listNavbarBrand_Read
-  update: LayoutFields_listNavbarBrand_Update
-  delete: LayoutFields_listNavbarBrand_Delete
-}
-
-type LayoutFields_listNavbarBrand_Create {
-  permission: Boolean!
-}
-
-type LayoutFields_listNavbarBrand_Read {
-  permission: Boolean!
-}
-
-type LayoutFields_listNavbarBrand_Update {
-  permission: Boolean!
-}
-
-type LayoutFields_listNavbarBrand_Delete {
-  permission: Boolean!
-}
-
-type LayoutFields_topicTitle {
-  create: LayoutFields_topicTitle_Create
-  read: LayoutFields_topicTitle_Read
-  update: LayoutFields_topicTitle_Update
-  delete: LayoutFields_topicTitle_Delete
-}
-
-type LayoutFields_topicTitle_Create {
-  permission: Boolean!
-}
-
-type LayoutFields_topicTitle_Read {
-  permission: Boolean!
-}
-
-type LayoutFields_topicTitle_Update {
-  permission: Boolean!
-}
-
-type LayoutFields_topicTitle_Delete {
-  permission: Boolean!
-}
-
-type LayoutFields_metaNavigation {
-  create: LayoutFields_metaNavigation_Create
-  read: LayoutFields_metaNavigation_Read
-  update: LayoutFields_metaNavigation_Update
-  delete: LayoutFields_metaNavigation_Delete
-}
-
-type LayoutFields_metaNavigation_Create {
-  permission: Boolean!
-}
-
-type LayoutFields_metaNavigation_Read {
-  permission: Boolean!
-}
-
-type LayoutFields_metaNavigation_Update {
-  permission: Boolean!
-}
-
-type LayoutFields_metaNavigation_Delete {
-  permission: Boolean!
-}
-
-type LayoutFields_topicLink {
-  create: LayoutFields_topicLink_Create
-  read: LayoutFields_topicLink_Read
-  update: LayoutFields_topicLink_Update
-  delete: LayoutFields_topicLink_Delete
-}
-
-type LayoutFields_topicLink_Create {
-  permission: Boolean!
-}
-
-type LayoutFields_topicLink_Read {
-  permission: Boolean!
-}
-
-type LayoutFields_topicLink_Update {
-  permission: Boolean!
-}
-
-type LayoutFields_topicLink_Delete {
   permission: Boolean!
 }
 
@@ -16761,29 +16623,6 @@ type LayoutFields_siteName_Delete {
   permission: Boolean!
 }
 
-type LayoutFields_utilityTitle {
-  create: LayoutFields_utilityTitle_Create
-  read: LayoutFields_utilityTitle_Read
-  update: LayoutFields_utilityTitle_Update
-  delete: LayoutFields_utilityTitle_Delete
-}
-
-type LayoutFields_utilityTitle_Create {
-  permission: Boolean!
-}
-
-type LayoutFields_utilityTitle_Read {
-  permission: Boolean!
-}
-
-type LayoutFields_utilityTitle_Update {
-  permission: Boolean!
-}
-
-type LayoutFields_utilityTitle_Delete {
-  permission: Boolean!
-}
-
 type LayoutFields_tagline {
   create: LayoutFields_tagline_Create
   read: LayoutFields_tagline_Read
@@ -16807,49 +16646,49 @@ type LayoutFields_tagline_Delete {
   permission: Boolean!
 }
 
-type LayoutFields_utility {
-  create: LayoutFields_utility_Create
-  read: LayoutFields_utility_Read
-  update: LayoutFields_utility_Update
-  delete: LayoutFields_utility_Delete
+type LayoutFields_listNavbarBrand {
+  create: LayoutFields_listNavbarBrand_Create
+  read: LayoutFields_listNavbarBrand_Read
+  update: LayoutFields_listNavbarBrand_Update
+  delete: LayoutFields_listNavbarBrand_Delete
 }
 
-type LayoutFields_utility_Create {
+type LayoutFields_listNavbarBrand_Create {
   permission: Boolean!
 }
 
-type LayoutFields_utility_Read {
+type LayoutFields_listNavbarBrand_Read {
   permission: Boolean!
 }
 
-type LayoutFields_utility_Update {
+type LayoutFields_listNavbarBrand_Update {
   permission: Boolean!
 }
 
-type LayoutFields_utility_Delete {
+type LayoutFields_listNavbarBrand_Delete {
   permission: Boolean!
 }
 
-type LayoutFields_mailingListForm {
-  create: LayoutFields_mailingListForm_Create
-  read: LayoutFields_mailingListForm_Read
-  update: LayoutFields_mailingListForm_Update
-  delete: LayoutFields_mailingListForm_Delete
+type LayoutFields_metaNavigation {
+  create: LayoutFields_metaNavigation_Create
+  read: LayoutFields_metaNavigation_Read
+  update: LayoutFields_metaNavigation_Update
+  delete: LayoutFields_metaNavigation_Delete
 }
 
-type LayoutFields_mailingListForm_Create {
+type LayoutFields_metaNavigation_Create {
   permission: Boolean!
 }
 
-type LayoutFields_mailingListForm_Read {
+type LayoutFields_metaNavigation_Read {
   permission: Boolean!
 }
 
-type LayoutFields_mailingListForm_Update {
+type LayoutFields_metaNavigation_Update {
   permission: Boolean!
 }
 
-type LayoutFields_mailingListForm_Delete {
+type LayoutFields_metaNavigation_Delete {
   permission: Boolean!
 }
 
@@ -16896,6 +16735,167 @@ type LayoutFields_navigationBarSecondary_Update {
 }
 
 type LayoutFields_navigationBarSecondary_Delete {
+  permission: Boolean!
+}
+
+type LayoutFields_heading {
+  create: LayoutFields_heading_Create
+  read: LayoutFields_heading_Read
+  update: LayoutFields_heading_Update
+  delete: LayoutFields_heading_Delete
+}
+
+type LayoutFields_heading_Create {
+  permission: Boolean!
+}
+
+type LayoutFields_heading_Read {
+  permission: Boolean!
+}
+
+type LayoutFields_heading_Update {
+  permission: Boolean!
+}
+
+type LayoutFields_heading_Delete {
+  permission: Boolean!
+}
+
+type LayoutFields_organizations {
+  create: LayoutFields_organizations_Create
+  read: LayoutFields_organizations_Read
+  update: LayoutFields_organizations_Update
+  delete: LayoutFields_organizations_Delete
+}
+
+type LayoutFields_organizations_Create {
+  permission: Boolean!
+}
+
+type LayoutFields_organizations_Read {
+  permission: Boolean!
+}
+
+type LayoutFields_organizations_Update {
+  permission: Boolean!
+}
+
+type LayoutFields_organizations_Delete {
+  permission: Boolean!
+}
+
+type LayoutFields_topicTitle {
+  create: LayoutFields_topicTitle_Create
+  read: LayoutFields_topicTitle_Read
+  update: LayoutFields_topicTitle_Update
+  delete: LayoutFields_topicTitle_Delete
+}
+
+type LayoutFields_topicTitle_Create {
+  permission: Boolean!
+}
+
+type LayoutFields_topicTitle_Read {
+  permission: Boolean!
+}
+
+type LayoutFields_topicTitle_Update {
+  permission: Boolean!
+}
+
+type LayoutFields_topicTitle_Delete {
+  permission: Boolean!
+}
+
+type LayoutFields_topicLink {
+  create: LayoutFields_topicLink_Create
+  read: LayoutFields_topicLink_Read
+  update: LayoutFields_topicLink_Update
+  delete: LayoutFields_topicLink_Delete
+}
+
+type LayoutFields_topicLink_Create {
+  permission: Boolean!
+}
+
+type LayoutFields_topicLink_Read {
+  permission: Boolean!
+}
+
+type LayoutFields_topicLink_Update {
+  permission: Boolean!
+}
+
+type LayoutFields_topicLink_Delete {
+  permission: Boolean!
+}
+
+type LayoutFields_utilityTitle {
+  create: LayoutFields_utilityTitle_Create
+  read: LayoutFields_utilityTitle_Read
+  update: LayoutFields_utilityTitle_Update
+  delete: LayoutFields_utilityTitle_Delete
+}
+
+type LayoutFields_utilityTitle_Create {
+  permission: Boolean!
+}
+
+type LayoutFields_utilityTitle_Read {
+  permission: Boolean!
+}
+
+type LayoutFields_utilityTitle_Update {
+  permission: Boolean!
+}
+
+type LayoutFields_utilityTitle_Delete {
+  permission: Boolean!
+}
+
+type LayoutFields_utility {
+  create: LayoutFields_utility_Create
+  read: LayoutFields_utility_Read
+  update: LayoutFields_utility_Update
+  delete: LayoutFields_utility_Delete
+}
+
+type LayoutFields_utility_Create {
+  permission: Boolean!
+}
+
+type LayoutFields_utility_Read {
+  permission: Boolean!
+}
+
+type LayoutFields_utility_Update {
+  permission: Boolean!
+}
+
+type LayoutFields_utility_Delete {
+  permission: Boolean!
+}
+
+type LayoutFields_mailingListForm {
+  create: LayoutFields_mailingListForm_Create
+  read: LayoutFields_mailingListForm_Read
+  update: LayoutFields_mailingListForm_Update
+  delete: LayoutFields_mailingListForm_Delete
+}
+
+type LayoutFields_mailingListForm_Create {
+  permission: Boolean!
+}
+
+type LayoutFields_mailingListForm_Read {
+  permission: Boolean!
+}
+
+type LayoutFields_mailingListForm_Update {
+  permission: Boolean!
+}
+
+type LayoutFields_mailingListForm_Delete {
   permission: Boolean!
 }
 
@@ -18900,20 +18900,20 @@ enum PayloadPreferenceUpdate_UserRelationshipInputRelationTo {
 
 input mutationLayoutInput {
   variant: String!
-  heading: JSON
-  logoSelect: String!
-  organizations: JSON
-  listNavbarBrand: JSON
-  topicTitle: String
-  metaNavigation: JSON
-  topicLink: JSON
+  logoSelect: String
   siteName: String!
-  utilityTitle: String
   tagline: String
-  utility: JSON
-  mailingListForm: JSON
+  listNavbarBrand: JSON
+  metaNavigation: JSON
   navigationBar: JSON
   navigationBarSecondary: JSON
+  heading: JSON
+  organizations: JSON
+  topicTitle: String
+  topicLink: JSON
+  utilityTitle: String
+  utility: JSON
+  mailingListForm: JSON
   showSitemapLink: Boolean
   smallPrint: JSON
   updatedAt: String
