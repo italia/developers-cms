@@ -5997,33 +5997,9 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
 export interface Layout {
   id: string;
   variant: string;
-  heading: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
-  logoSelect: string;
-  organizations?:
-    | {
-        mainLogo: string;
-        brandLogo: string;
-        label: string;
-        url: string;
-        id?: string | null;
-        blockName?: string | null;
-        blockType: 'brand';
-      }[]
-    | null;
+  logoSelect: string | Media;
+  siteName: string;
+  tagline: string;
   listNavbarBrand?:
     | {
         label: string;
@@ -6034,7 +6010,6 @@ export interface Layout {
         blockType: 'brand-header';
       }[]
     | null;
-  topicTitle: string;
   metaNavigation?:
     | {
         label: string;
@@ -6043,101 +6018,6 @@ export interface Layout {
         id?: string | null;
         blockName?: string | null;
         blockType: 'external-link';
-      }[]
-    | null;
-  topicLink?:
-    | {
-        label: string;
-        linkTo:
-          | {
-              relationTo: 'pages';
-              value: string | Page;
-            }
-          | {
-              relationTo: 'articles';
-              value: string | Article;
-            }
-          | {
-              relationTo: 'insights';
-              value: string | Insight;
-            }
-          | {
-              relationTo: 'webinar-items';
-              value: string | WebinarItem;
-            }
-          | {
-              relationTo: 'story-items';
-              value: string | StoryItem;
-            }
-          | {
-              relationTo: 'catalogues';
-              value: string | Catalogue;
-            };
-        id?: string | null;
-        blockName?: string | null;
-        blockType: 'internal-link';
-      }[]
-    | null;
-  siteName: string;
-  utilityTitle: string;
-  tagline: string;
-  utility?:
-    | (
-        | {
-            brandLogo: string;
-            label: string;
-            url: string;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'supporting-brand';
-          }
-        | {
-            label: string;
-            url: string;
-            description?: string | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'external-link';
-          }
-      )[]
-    | null;
-  mailingListForm?:
-    | {
-        title: string;
-        privacyPolicy: {
-          label: string;
-          linkTo:
-            | {
-                relationTo: 'pages';
-                value: string | Page;
-              }
-            | {
-                relationTo: 'articles';
-                value: string | Article;
-              }
-            | {
-                relationTo: 'insights';
-                value: string | Insight;
-              }
-            | {
-                relationTo: 'webinar-items';
-                value: string | WebinarItem;
-              }
-            | {
-                relationTo: 'story-items';
-                value: string | StoryItem;
-              }
-            | {
-                relationTo: 'catalogues';
-                value: string | Catalogue;
-              };
-          id?: string | null;
-          blockName?: string | null;
-          blockType: 'internal-link';
-        }[];
-        id?: string | null;
-        blockName?: string | null;
-        blockType: 'mailing-list-signup-block';
       }[]
     | null;
   navigationBar?:
@@ -6371,6 +6251,126 @@ export interface Layout {
             blockType: 'mega-menu-item';
           }
       )[]
+    | null;
+  heading: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  organizations?:
+    | {
+        mainLogo: string | Media;
+        brandLogo: string | Media;
+        label: string;
+        url: string;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'brand';
+      }[]
+    | null;
+  topicTitle: string;
+  topicLink?:
+    | {
+        label: string;
+        linkTo:
+          | {
+              relationTo: 'pages';
+              value: string | Page;
+            }
+          | {
+              relationTo: 'articles';
+              value: string | Article;
+            }
+          | {
+              relationTo: 'insights';
+              value: string | Insight;
+            }
+          | {
+              relationTo: 'webinar-items';
+              value: string | WebinarItem;
+            }
+          | {
+              relationTo: 'story-items';
+              value: string | StoryItem;
+            }
+          | {
+              relationTo: 'catalogues';
+              value: string | Catalogue;
+            };
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'internal-link';
+      }[]
+    | null;
+  utilityTitle: string;
+  utility?:
+    | (
+        | {
+            brandLogo: string | Media;
+            label: string;
+            url: string;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'supporting-brand';
+          }
+        | {
+            label: string;
+            url: string;
+            description?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'external-link';
+          }
+      )[]
+    | null;
+  mailingListForm?:
+    | {
+        title: string;
+        privacyPolicy: {
+          label: string;
+          linkTo:
+            | {
+                relationTo: 'pages';
+                value: string | Page;
+              }
+            | {
+                relationTo: 'articles';
+                value: string | Article;
+              }
+            | {
+                relationTo: 'insights';
+                value: string | Insight;
+              }
+            | {
+                relationTo: 'webinar-items';
+                value: string | WebinarItem;
+              }
+            | {
+                relationTo: 'story-items';
+                value: string | StoryItem;
+              }
+            | {
+                relationTo: 'catalogues';
+                value: string | Catalogue;
+              };
+          id?: string | null;
+          blockName?: string | null;
+          blockType: 'internal-link';
+        }[];
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'mailing-list-signup-block';
+      }[]
     | null;
   showSitemapLink?: boolean | null;
   smallPrint?:
@@ -7343,22 +7343,9 @@ export interface SeoDefault {
  */
 export interface LayoutSelect<T extends boolean = true> {
   variant?: T;
-  heading?: T;
   logoSelect?: T;
-  organizations?:
-    | T
-    | {
-        brand?:
-          | T
-          | {
-              mainLogo?: T;
-              brandLogo?: T;
-              label?: T;
-              url?: T;
-              id?: T;
-              blockName?: T;
-            };
-      };
+  siteName?: T;
+  tagline?: T;
   listNavbarBrand?:
     | T
     | {
@@ -7372,7 +7359,6 @@ export interface LayoutSelect<T extends boolean = true> {
               blockName?: T;
             };
       };
-  topicTitle?: T;
   metaNavigation?:
     | T
     | {
@@ -7382,66 +7368,6 @@ export interface LayoutSelect<T extends boolean = true> {
               label?: T;
               url?: T;
               description?: T;
-              id?: T;
-              blockName?: T;
-            };
-      };
-  topicLink?:
-    | T
-    | {
-        'internal-link'?:
-          | T
-          | {
-              label?: T;
-              linkTo?: T;
-              id?: T;
-              blockName?: T;
-            };
-      };
-  siteName?: T;
-  utilityTitle?: T;
-  tagline?: T;
-  utility?:
-    | T
-    | {
-        'supporting-brand'?:
-          | T
-          | {
-              brandLogo?: T;
-              label?: T;
-              url?: T;
-              id?: T;
-              blockName?: T;
-            };
-        'external-link'?:
-          | T
-          | {
-              label?: T;
-              url?: T;
-              description?: T;
-              id?: T;
-              blockName?: T;
-            };
-      };
-  mailingListForm?:
-    | T
-    | {
-        'mailing-list-signup-block'?:
-          | T
-          | {
-              title?: T;
-              privacyPolicy?:
-                | T
-                | {
-                    'internal-link'?:
-                      | T
-                      | {
-                          label?: T;
-                          linkTo?: T;
-                          id?: T;
-                          blockName?: T;
-                        };
-                  };
               id?: T;
               blockName?: T;
             };
@@ -7508,6 +7434,80 @@ export interface LayoutSelect<T extends boolean = true> {
                       | {
                           title?: T;
                           pointsTo?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+      };
+  heading?: T;
+  organizations?:
+    | T
+    | {
+        brand?:
+          | T
+          | {
+              mainLogo?: T;
+              brandLogo?: T;
+              label?: T;
+              url?: T;
+              id?: T;
+              blockName?: T;
+            };
+      };
+  topicTitle?: T;
+  topicLink?:
+    | T
+    | {
+        'internal-link'?:
+          | T
+          | {
+              label?: T;
+              linkTo?: T;
+              id?: T;
+              blockName?: T;
+            };
+      };
+  utilityTitle?: T;
+  utility?:
+    | T
+    | {
+        'supporting-brand'?:
+          | T
+          | {
+              brandLogo?: T;
+              label?: T;
+              url?: T;
+              id?: T;
+              blockName?: T;
+            };
+        'external-link'?:
+          | T
+          | {
+              label?: T;
+              url?: T;
+              description?: T;
+              id?: T;
+              blockName?: T;
+            };
+      };
+  mailingListForm?:
+    | T
+    | {
+        'mailing-list-signup-block'?:
+          | T
+          | {
+              title?: T;
+              privacyPolicy?:
+                | T
+                | {
+                    'internal-link'?:
+                      | T
+                      | {
+                          label?: T;
+                          linkTo?: T;
                           id?: T;
                           blockName?: T;
                         };
