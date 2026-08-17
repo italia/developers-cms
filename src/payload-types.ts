@@ -6269,8 +6269,7 @@ export interface Layout {
   };
   organizations?:
     | {
-        mainLogo: string | Media;
-        brandLogo: string | Media;
+        logo: string | Media;
         label: string;
         url: string;
         id?: string | null;
@@ -7449,8 +7448,7 @@ export interface LayoutSelect<T extends boolean = true> {
         brand?:
           | T
           | {
-              mainLogo?: T;
-              brandLogo?: T;
+              logo?: T;
               label?: T;
               url?: T;
               id?: T;

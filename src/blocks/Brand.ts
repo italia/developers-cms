@@ -5,16 +5,7 @@ export const Brand: Block = {
   labels: { singular: 'Brand', plural: 'Brands' },
   fields: [
     {
-      name: 'mainLogo',
-      type: 'upload',
-      relationTo: 'media',
-      required: true,
-      filterOptions: {
-        mimeType: { equals: 'image/svg+xml' },
-      },
-    },
-    {
-      name: 'brandLogo',
+      name: 'logo',
       type: 'upload',
       relationTo: 'media',
       required: true,
