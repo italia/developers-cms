@@ -25,6 +25,7 @@ import { ChartElement } from './collections/ChartElement'
 import { KpiElement } from './collections/KpiElement'
 import { NewsItem } from './collections/NewsItem'
 import { Resource } from './collections/Resource'
+import { Feedback } from './collections/Feedback'
 
 // Content collections
 import { Article } from './collections/Article'
@@ -86,6 +87,7 @@ export default buildConfig({
     KpiElement,
     NewsItem,
     Resource,
+    Feedback,
     // Content
     Page,
     Article,

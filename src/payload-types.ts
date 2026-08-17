@@ -82,6 +82,7 @@ export interface Config {
     'kpi-elements': KpiElement;
     'news-items': NewsItem;
     resources: Resource;
+    feedback: Feedback;
     pages: Page;
     articles: Article;
     insights: Insight;
@@ -110,6 +111,7 @@ export interface Config {
     'kpi-elements': KpiElementsSelect<false> | KpiElementsSelect<true>;
     'news-items': NewsItemsSelect<false> | NewsItemsSelect<true>;
     resources: ResourcesSelect<false> | ResourcesSelect<true>;
+    feedback: FeedbackSelect<false> | FeedbackSelect<true>;
     pages: PagesSelect<false> | PagesSelect<true>;
     articles: ArticlesSelect<false> | ArticlesSelect<true>;
     insights: InsightsSelect<false> | InsightsSelect<true>;
@@ -404,6 +406,20 @@ export interface Resource {
   )[];
   category?: (string | ResourceTopic)[] | null;
   typeResource: string | ResourceTopic;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "feedback".
+ */
+export interface Feedback {
+  id: string;
+  feedback: string;
+  url: string;
+  message?: string | null;
+  expertise?: string | null;
+  reachedFrom?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3784,6 +3800,10 @@ export interface PayloadLockedDocument {
         value: string | Resource;
       } | null)
     | ({
+        relationTo: 'feedback';
+        value: string | Feedback;
+      } | null)
+    | ({
         relationTo: 'pages';
         value: string | Page;
       } | null)
@@ -4049,6 +4069,19 @@ export interface ResourcesSelect<T extends boolean = true> {
       };
   category?: T;
   typeResource?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "feedback_select".
+ */
+export interface FeedbackSelect<T extends boolean = true> {
+  feedback?: T;
+  url?: T;
+  message?: T;
+  expertise?: T;
+  reachedFrom?: T;
   updatedAt?: T;
   createdAt?: T;
 }
