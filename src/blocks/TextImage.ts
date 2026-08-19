@@ -17,8 +17,14 @@ export const TextImage: Block = {
   fields: [
     {
       name: 'variant',
-      type: 'text',
+      type: 'select',
+      options: [
+        { label: 'Default', value: 'variant-1' },
+        { label: 'Big Image', value: 'variant-2' },
+        { label: 'Image with box', value: 'variant-3' },
+      ],
       required: true,
+      defaultValue: 'variant-1',
     },
     {
       name: 'bg',

@@ -775,7 +775,7 @@ export interface Page {
             blockType: 'data-section';
           }
         | {
-            variant: string;
+            variant: 'variant-1' | 'variant-2' | 'variant-3';
             bg: 'default' | 'lighter' | 'primary-light' | 'primary' | 'dark';
             heading?: ('h2' | 'h3' | 'h4' | 'h5') | null;
             text: {
@@ -1725,7 +1725,7 @@ export interface Insight {
             blockType: 'text-only';
           }
         | {
-            variant: string;
+            variant: 'variant-1' | 'variant-2' | 'variant-3';
             bg: 'default' | 'lighter' | 'primary-light' | 'primary' | 'dark';
             heading?: ('h2' | 'h3' | 'h4' | 'h5') | null;
             text: {
@@ -2847,7 +2847,7 @@ export interface StoryItem {
             blockType: 'structured-text-block';
           }
         | {
-            variant: string;
+            variant: 'variant-1' | 'variant-2' | 'variant-3';
             bg: 'default' | 'lighter' | 'primary-light' | 'primary' | 'dark';
             heading?: ('h2' | 'h3' | 'h4' | 'h5') | null;
             text: {
@@ -6601,7 +6601,7 @@ export interface Homepage {
             blockType: 'text-only';
           }
         | {
-            variant: string;
+            variant: 'variant-1' | 'variant-2' | 'variant-3';
             bg: 'default' | 'lighter' | 'primary-light' | 'primary' | 'dark';
             heading?: ('h2' | 'h3' | 'h4' | 'h5') | null;
             text: {
@@ -7217,18 +7217,8 @@ export interface Search {
  */
 export interface GlobalSetting {
   id: string;
-  lastUpdateLabel: string;
+  siteName: string;
   title: string;
-  links?:
-    | {
-        label: string;
-        url: string;
-        description?: string | null;
-        id?: string | null;
-        blockName?: string | null;
-        blockType: 'external-link';
-      }[]
-    | null;
   paragraph?: {
     root: {
       type: string;
@@ -7244,9 +7234,19 @@ export interface GlobalSetting {
     };
     [k: string]: unknown;
   } | null;
-  siteName: string;
   image: string | Media;
   labelCta: string;
+  lastUpdateLabel: string;
+  links?:
+    | {
+        label: string;
+        url: string;
+        description?: string | null;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'external-link';
+      }[]
+    | null;
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -8035,8 +8035,12 @@ export interface SearchSelect<T extends boolean = true> {
  * via the `definition` "global-setting_select".
  */
 export interface GlobalSettingSelect<T extends boolean = true> {
-  lastUpdateLabel?: T;
+  siteName?: T;
   title?: T;
+  paragraph?: T;
+  image?: T;
+  labelCta?: T;
+  lastUpdateLabel?: T;
   links?:
     | T
     | {
@@ -8050,10 +8054,6 @@ export interface GlobalSettingSelect<T extends boolean = true> {
               blockName?: T;
             };
       };
-  paragraph?: T;
-  siteName?: T;
-  image?: T;
-  labelCta?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;
