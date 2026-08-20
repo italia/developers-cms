@@ -2304,6 +2304,109 @@ export interface Insight {
             blockName?: string | null;
             blockType: 'list-collection';
           }
+        | {
+            items?:
+              | (
+                  | {
+                      title: string;
+                      paragraph: {
+                        root: {
+                          type: string;
+                          children: {
+                            type: any;
+                            version: number;
+                            [k: string]: unknown;
+                          }[];
+                          direction: ('ltr' | 'rtl') | null;
+                          format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                          indent: number;
+                          version: number;
+                        };
+                        [k: string]: unknown;
+                      };
+                      subtitle?: string | null;
+                      links?:
+                        | (
+                            | {
+                                label: string;
+                                linkTo:
+                                  | {
+                                      relationTo: 'pages';
+                                      value: string | Page;
+                                    }
+                                  | {
+                                      relationTo: 'articles';
+                                      value: string | Article;
+                                    }
+                                  | {
+                                      relationTo: 'insights';
+                                      value: string | Insight;
+                                    }
+                                  | {
+                                      relationTo: 'webinar-items';
+                                      value: string | WebinarItem;
+                                    }
+                                  | {
+                                      relationTo: 'story-items';
+                                      value: string | StoryItem;
+                                    }
+                                  | {
+                                      relationTo: 'catalogues';
+                                      value: string | Catalogue;
+                                    };
+                                id?: string | null;
+                                blockName?: string | null;
+                                blockType: 'internal-link';
+                              }
+                            | {
+                                label: string;
+                                doc: string | Media;
+                                description?: string | null;
+                                id?: string | null;
+                                blockName?: string | null;
+                                blockType: 'download-link';
+                              }
+                            | {
+                                label: string;
+                                url: string;
+                                description?: string | null;
+                                id?: string | null;
+                                blockName?: string | null;
+                                blockType: 'external-link';
+                              }
+                          )[]
+                        | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'list-item-resource';
+                    }
+                  | {
+                      title: string;
+                      paragraph: {
+                        root: {
+                          type: string;
+                          children: {
+                            type: any;
+                            version: number;
+                            [k: string]: unknown;
+                          }[];
+                          direction: ('ltr' | 'rtl') | null;
+                          format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                          indent: number;
+                          version: number;
+                        };
+                        [k: string]: unknown;
+                      };
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'list-item';
+                    }
+                )[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'ordered-list';
+          }
       )[]
     | null;
   topic?: (string | null) | InsightTopic;
@@ -5316,6 +5419,63 @@ export interface InsightsSelect<T extends boolean = true> {
               title?: T;
               paragraph?: T;
               content?: T;
+              id?: T;
+              blockName?: T;
+            };
+        'ordered-list'?:
+          | T
+          | {
+              items?:
+                | T
+                | {
+                    'list-item-resource'?:
+                      | T
+                      | {
+                          title?: T;
+                          paragraph?: T;
+                          subtitle?: T;
+                          links?:
+                            | T
+                            | {
+                                'internal-link'?:
+                                  | T
+                                  | {
+                                      label?: T;
+                                      linkTo?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                                'download-link'?:
+                                  | T
+                                  | {
+                                      label?: T;
+                                      doc?: T;
+                                      description?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                                'external-link'?:
+                                  | T
+                                  | {
+                                      label?: T;
+                                      url?: T;
+                                      description?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                              };
+                          id?: T;
+                          blockName?: T;
+                        };
+                    'list-item'?:
+                      | T
+                      | {
+                          title?: T;
+                          paragraph?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
               id?: T;
               blockName?: T;
             };
