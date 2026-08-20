@@ -2224,6 +2224,72 @@ export interface Insight {
             blockName?: string | null;
             blockType: 'card-link-list';
           }
+        | {
+            bg?: ('default' | 'lighter' | 'primary-light' | 'primary' | 'dark') | null;
+            content: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            };
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'structured-text-block';
+          }
+        | {
+            title: string;
+            paragraph?: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
+            content?:
+              | (
+                  | {
+                      relationTo: 'articles';
+                      value: string | Article;
+                    }
+                  | {
+                      relationTo: 'insights';
+                      value: string | Insight;
+                    }
+                  | {
+                      relationTo: 'webinar-items';
+                      value: string | WebinarItem;
+                    }
+                  | {
+                      relationTo: 'story-items';
+                      value: string | StoryItem;
+                    }
+                  | {
+                      relationTo: 'pages';
+                      value: string | Page;
+                    }
+                )[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'list-collection';
+          }
       )[]
     | null;
   topic?: (string | null) | InsightTopic;
@@ -2343,6 +2409,10 @@ export interface WebinarItem {
         | {
             title: string;
             category?: string | null;
+            /**
+             * If set, a video player is shown instead of the download card.
+             */
+            videoUrl?: string | null;
             cta: {
               label: string;
               doc: string | Media;
@@ -2641,7 +2711,7 @@ export interface StoryItem {
   topic: string | StoryTopic;
   dateOfPublication?: string | null;
   storyType?: string | null;
-  image: string | Media;
+  image?: (string | null) | Media;
   content?:
     | (
         | {
@@ -3464,6 +3534,97 @@ export interface StoryItem {
             blockName?: string | null;
             blockType: 'card-link-list';
           }
+        | {
+            text: {
+              title: string;
+              paragraph: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              };
+              cta?:
+                | (
+                    | {
+                        label: string;
+                        linkTo:
+                          | {
+                              relationTo: 'pages';
+                              value: string | Page;
+                            }
+                          | {
+                              relationTo: 'articles';
+                              value: string | Article;
+                            }
+                          | {
+                              relationTo: 'insights';
+                              value: string | Insight;
+                            }
+                          | {
+                              relationTo: 'webinar-items';
+                              value: string | WebinarItem;
+                            }
+                          | {
+                              relationTo: 'story-items';
+                              value: string | StoryItem;
+                            }
+                          | {
+                              relationTo: 'catalogues';
+                              value: string | Catalogue;
+                            };
+                        id?: string | null;
+                        blockName?: string | null;
+                        blockType: 'internal-link';
+                      }
+                    | {
+                        label: string;
+                        url: string;
+                        description?: string | null;
+                        id?: string | null;
+                        blockName?: string | null;
+                        blockType: 'external-link';
+                      }
+                  )[]
+                | null;
+              id?: string | null;
+              blockName?: string | null;
+              blockType: 'text-block';
+            }[];
+            list: {
+              title?: string | null;
+              items?:
+                | {
+                    items?:
+                      | {
+                          iconSelect: string;
+                          label: string;
+                          id?: string | null;
+                          blockName?: string | null;
+                          blockType: 'icon-list-item';
+                        }[]
+                      | null;
+                    id?: string | null;
+                    blockName?: string | null;
+                    blockType: 'icon-list';
+                  }[]
+                | null;
+              id?: string | null;
+              blockName?: string | null;
+              blockType: 'icon-list-block';
+            }[];
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'intro-article';
+          }
       )[]
     | null;
   seo?: {
@@ -3685,7 +3846,8 @@ export interface Catalogue {
                   filterTitle: string;
                   labelForAll: string;
                   newsPageTabType: string;
-                  filterStory?: (string | null) | StoryTopic;
+                  filterStory?: (string | null) | StoryClass;
+                  sortMode?: ('date_desc' | 'date_asc' | 'title_asc' | 'title_desc' | 'updated_desc') | null;
                   elementPerPage?: number | null;
                   id?: string | null;
                   blockName?: string | null;
@@ -5110,6 +5272,23 @@ export interface InsightsSelect<T extends boolean = true> {
               id?: T;
               blockName?: T;
             };
+        'structured-text-block'?:
+          | T
+          | {
+              bg?: T;
+              content?: T;
+              id?: T;
+              blockName?: T;
+            };
+        'list-collection'?:
+          | T
+          | {
+              title?: T;
+              paragraph?: T;
+              content?: T;
+              id?: T;
+              blockName?: T;
+            };
       };
   topic?: T;
   seo?:
@@ -5175,6 +5354,7 @@ export interface WebinarItemsSelect<T extends boolean = true> {
           | {
               title?: T;
               category?: T;
+              videoUrl?: T;
               cta?:
                 | T
                 | {
@@ -5829,6 +6009,78 @@ export interface StoryItemsSelect<T extends boolean = true> {
               id?: T;
               blockName?: T;
             };
+        'intro-article'?:
+          | T
+          | {
+              text?:
+                | T
+                | {
+                    'text-block'?:
+                      | T
+                      | {
+                          title?: T;
+                          paragraph?: T;
+                          cta?:
+                            | T
+                            | {
+                                'internal-link'?:
+                                  | T
+                                  | {
+                                      label?: T;
+                                      linkTo?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                                'external-link'?:
+                                  | T
+                                  | {
+                                      label?: T;
+                                      url?: T;
+                                      description?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                              };
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              list?:
+                | T
+                | {
+                    'icon-list-block'?:
+                      | T
+                      | {
+                          title?: T;
+                          items?:
+                            | T
+                            | {
+                                'icon-list'?:
+                                  | T
+                                  | {
+                                      items?:
+                                        | T
+                                        | {
+                                            'icon-list-item'?:
+                                              | T
+                                              | {
+                                                  iconSelect?: T;
+                                                  label?: T;
+                                                  id?: T;
+                                                  blockName?: T;
+                                                };
+                                          };
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                              };
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
       };
   seo?:
     | T
@@ -5963,6 +6215,7 @@ export interface CataloguesSelect<T extends boolean = true> {
                           labelForAll?: T;
                           newsPageTabType?: T;
                           filterStory?: T;
+                          sortMode?: T;
                           elementPerPage?: T;
                           id?: T;
                           blockName?: T;

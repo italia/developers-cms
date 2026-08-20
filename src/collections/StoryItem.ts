@@ -13,6 +13,7 @@ import { SupportCtaSection } from '../blocks/SupportCtaSection'
 import { TextUseCase } from '../blocks/TextUseCase'
 import { TextStatistic } from '../blocks/TextStatistic'
 import { CardLinkList } from '../blocks/CardLinkList'
+import { IntroArticle } from '../blocks/IntroArticle'
 
 export const StoryItem: CollectionConfig = {
   slug: 'story-items',
@@ -80,7 +81,6 @@ export const StoryItem: CollectionConfig = {
       name: 'image',
       type: 'upload',
       relationTo: 'media',
-      required: true,
     },
     {
       name: 'content',
@@ -88,6 +88,7 @@ export const StoryItem: CollectionConfig = {
       blocks: [
         Hero, FaqSection, TextOnly, StructuredTextBlock, TextImage, SupportChannelsSection,
         TextAccordion, ListCollection, SupportCtaSection, TextUseCase, TextStatistic, CardLinkList,
+        IntroArticle,
       ],
       localized: true,
     },

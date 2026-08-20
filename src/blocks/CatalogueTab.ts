@@ -32,7 +32,22 @@ export const CatalogueTab: Block = {
     {
       name: 'filterStory',
       type: 'relationship',
-      relationTo: 'story-topics',
+      // Despite the name, this filters by StoryClass (e.g. "Notizie"/"Piattaforme"),
+      // not StoryTopic — relationTo was wrong (story-topics) before, so it never
+      // resolved to anything since the source data always references story-classes.
+      relationTo: 'story-classes',
+    },
+    {
+      name: 'sortMode',
+      type: 'select',
+      options: [
+        { label: 'Date (newest first)', value: 'date_desc' },
+        { label: 'Date (oldest first)', value: 'date_asc' },
+        { label: 'Title (A-Z)', value: 'title_asc' },
+        { label: 'Title (Z-A)', value: 'title_desc' },
+        { label: 'Last updated', value: 'updated_desc' },
+      ],
+      defaultValue: 'date_desc',
     },
     {
       name: 'elementPerPage',

@@ -9,6 +9,8 @@ import { SupportChannelsSection } from '../blocks/SupportChannelsSection'
 import { TextUseCase } from '../blocks/TextUseCase'
 import { TextStatistic } from '../blocks/TextStatistic'
 import { CardLinkList } from '../blocks/CardLinkList'
+import { StructuredTextBlock } from '../blocks/StructuredTextBlock'
+import { ListCollection } from '../blocks/ListCollection'
 
 export const Insight: CollectionConfig = {
   slug: 'insights',
@@ -61,7 +63,7 @@ export const Insight: CollectionConfig = {
     {
       name: 'content',
       type: 'blocks',
-      blocks: [Hero, TextOnly, TextImage, NewsFeed, SupportChannelsSection, TextUseCase, TextStatistic, CardLinkList],
+      blocks: [Hero, TextOnly, TextImage, NewsFeed, SupportChannelsSection, TextUseCase, TextStatistic, CardLinkList, StructuredTextBlock, ListCollection],
       localized: true,
     },
     {

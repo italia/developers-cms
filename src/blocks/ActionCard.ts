@@ -15,6 +15,13 @@ export const ActionCard: Block = {
       type: 'text',
     },
     {
+      name: 'videoUrl',
+      type: 'text',
+      admin: {
+        description: 'If set, a video player is shown instead of the download card.',
+      },
+    },
+    {
       name: 'cta',
       type: 'blocks',
       blocks: [DownloadLink],
