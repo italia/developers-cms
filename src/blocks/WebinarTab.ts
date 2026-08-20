@@ -1,8 +1,8 @@
 import type { Block } from 'payload'
 
-export const StoryTab: Block = {
-  slug: 'story-tab',
-  labels: { singular: 'Story Tab', plural: 'Story Tabs' },
+export const WebinarTab: Block = {
+  slug: 'Webinar-tab',
+  labels: { singular: 'Webinar Tab', plural: 'Webinar Tabs' },
   fields: [
     {
       name: 'title',
@@ -10,9 +10,9 @@ export const StoryTab: Block = {
       required: true,
     },
     {
-      name: 'Stories',
+      name: 'Webinars',
       type: 'relationship',
-      relationTo: 'story-items',
+      relationTo: 'webinar-items',
       hasMany: true,
     },
   ],

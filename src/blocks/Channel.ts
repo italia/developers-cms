@@ -16,8 +16,12 @@ export const Channel: Block = {
     },
     {
       name: 'iconSelect',
-      type: 'text',
+      type: 'upload',
+      relationTo: 'media',
       required: true,
+      filterOptions: {
+        mimeType: { equals: 'image/svg+xml' },
+      },
     },
     {
       name: 'linkTo',

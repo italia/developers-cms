@@ -908,10 +908,17 @@ export interface Page {
                     }
                   | {
                       title: string;
-                      news?: (string | StoryItem)[] | null;
+                      Stories?: (string | StoryItem)[] | null;
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 'story-tab';
+                    }
+                  | {
+                      title: string;
+                      Webinars?: (string | WebinarItem)[] | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'Webinar-tab';
                     }
                 )[]
               | null;
@@ -997,7 +1004,7 @@ export interface Page {
                     };
                     [k: string]: unknown;
                   };
-                  iconSelect: string;
+                  iconSelect: string | Media;
                   linkTo: string;
                   id?: string | null;
                   blockName?: string | null;
@@ -1858,10 +1865,17 @@ export interface Insight {
                     }
                   | {
                       title: string;
-                      news?: (string | StoryItem)[] | null;
+                      Stories?: (string | StoryItem)[] | null;
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 'story-tab';
+                    }
+                  | {
+                      title: string;
+                      Webinars?: (string | WebinarItem)[] | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'Webinar-tab';
                     }
                 )[]
               | null;
@@ -1947,7 +1961,7 @@ export interface Insight {
                     };
                     [k: string]: unknown;
                   };
-                  iconSelect: string;
+                  iconSelect: string | Media;
                   linkTo: string;
                   id?: string | null;
                   blockName?: string | null;
@@ -3056,7 +3070,7 @@ export interface StoryItem {
                     };
                     [k: string]: unknown;
                   };
-                  iconSelect: string;
+                  iconSelect: string | Media;
                   linkTo: string;
                   id?: string | null;
                   blockName?: string | null;
@@ -4558,7 +4572,15 @@ export interface PagesSelect<T extends boolean = true> {
                       | T
                       | {
                           title?: T;
-                          news?: T;
+                          Stories?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    'Webinar-tab'?:
+                      | T
+                      | {
+                          title?: T;
+                          Webinars?: T;
                           id?: T;
                           blockName?: T;
                         };
@@ -5068,7 +5090,15 @@ export interface InsightsSelect<T extends boolean = true> {
                       | T
                       | {
                           title?: T;
-                          news?: T;
+                          Stories?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    'Webinar-tab'?:
+                      | T
+                      | {
+                          title?: T;
+                          Webinars?: T;
                           id?: T;
                           blockName?: T;
                         };
@@ -6987,10 +7017,17 @@ export interface Homepage {
                     }
                   | {
                       title: string;
-                      news?: (string | StoryItem)[] | null;
+                      Stories?: (string | StoryItem)[] | null;
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 'story-tab';
+                    }
+                  | {
+                      title: string;
+                      Webinars?: (string | WebinarItem)[] | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'Webinar-tab';
                     }
                 )[]
               | null;
@@ -7076,7 +7113,7 @@ export interface Homepage {
                     };
                     [k: string]: unknown;
                   };
-                  iconSelect: string;
+                  iconSelect: string | Media;
                   linkTo: string;
                   id?: string | null;
                   blockName?: string | null;
@@ -7998,7 +8035,15 @@ export interface HomepageSelect<T extends boolean = true> {
                       | T
                       | {
                           title?: T;
-                          news?: T;
+                          Stories?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    'Webinar-tab'?:
+                      | T
+                      | {
+                          title?: T;
+                          Webinars?: T;
                           id?: T;
                           blockName?: T;
                         };
