@@ -1480,21 +1480,83 @@ export interface Article {
   } | null;
   slug: string;
   image?: (string | null) | Media;
-  content?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  content?:
+    | (
+        | {
+            bg?: ('default' | 'lighter' | 'primary-light' | 'primary' | 'dark') | null;
+            content: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            };
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'structured-text-block';
+          }
+        | {
+            title: string;
+            paragraph: string;
+            image: string | Media;
+            bg?: ('default' | 'lighter' | 'primary-light' | 'primary' | 'dark') | null;
+            cta?:
+              | (
+                  | {
+                      label: string;
+                      linkTo:
+                        | {
+                            relationTo: 'pages';
+                            value: string | Page;
+                          }
+                        | {
+                            relationTo: 'articles';
+                            value: string | Article;
+                          }
+                        | {
+                            relationTo: 'insights';
+                            value: string | Insight;
+                          }
+                        | {
+                            relationTo: 'webinar-items';
+                            value: string | WebinarItem;
+                          }
+                        | {
+                            relationTo: 'story-items';
+                            value: string | StoryItem;
+                          }
+                        | {
+                            relationTo: 'catalogues';
+                            value: string | Catalogue;
+                          };
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'internal-link';
+                    }
+                  | {
+                      label: string;
+                      url: string;
+                      description?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'external-link';
+                    }
+                )[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'support-cta-section';
+          }
+      )[]
+    | null;
   topics?:
     | {
         title?: string | null;
@@ -4991,7 +5053,49 @@ export interface ArticlesSelect<T extends boolean = true> {
   paragraph?: T;
   slug?: T;
   image?: T;
-  content?: T;
+  content?:
+    | T
+    | {
+        'structured-text-block'?:
+          | T
+          | {
+              bg?: T;
+              content?: T;
+              id?: T;
+              blockName?: T;
+            };
+        'support-cta-section'?:
+          | T
+          | {
+              title?: T;
+              paragraph?: T;
+              image?: T;
+              bg?: T;
+              cta?:
+                | T
+                | {
+                    'internal-link'?:
+                      | T
+                      | {
+                          label?: T;
+                          linkTo?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    'external-link'?:
+                      | T
+                      | {
+                          label?: T;
+                          url?: T;
+                          description?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+      };
   topics?:
     | T
     | {

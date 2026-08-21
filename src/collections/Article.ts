@@ -2,6 +2,8 @@ import type { CollectionConfig } from 'payload'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { seoField } from '../fields/seoField'
 import { TopicsBlock } from '../blocks/TopicsBlock'
+import { StructuredTextBlock } from '../blocks/StructuredTextBlock'
+import { SupportCtaSection } from '../blocks/SupportCtaSection'
 
 export const Article: CollectionConfig = {
   slug: 'articles',
@@ -51,8 +53,8 @@ export const Article: CollectionConfig = {
     },
     {
       name: 'content',
-      type: 'richText',
-      editor: lexicalEditor(),
+      type: 'blocks',
+      blocks: [StructuredTextBlock, SupportCtaSection],
       localized: true,
     },
     {
