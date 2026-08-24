@@ -1,0 +1,1193 @@
+[
+  {
+    "id": "ad147107-9814-414f-ae04-920bb43a0db7",
+    "title": {
+      "it": "Approfondimenti",
+      "en": "Further Reading"
+    },
+    "parent": {
+      "it": "0c0f78c4-be8a-49f4-a479-d3ab18199280",
+      "en": "0c0f78c4-be8a-49f4-a479-d3ab18199280"
+    },
+    "slug": {
+      "it": "approfondimenti",
+      "en": "in-depth-articles"
+    },
+    "content": {
+      "it": [
+        {
+          "id": "6a8c615346868470070fdd43",
+          "variant": "small",
+          "bg": "lighter",
+          "backgroundImage": null,
+          "backgroundImageForMobile": null,
+          "showBreadcrumb": true,
+          "title": "Articoli di approfondimento",
+          "paragraph": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Analisi e riflessioni su buone pratiche, strumenti e approcci adottati nel settore pubblico",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "blockName": null,
+          "blockType": "hero",
+          "cta": []
+        },
+        {
+          "id": "6a8c615346868470070fdd45",
+          "blockName": null,
+          "blockType": "catalogue-feed",
+          "tabs": [
+            {
+              "id": "6a8c615346868470070fdd44",
+              "title": "Tutti gli articoli",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Esplora tutti gli approfondimenti che trattano nel dettaglio i temi della trasformazione digitale",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "filterTitle": "FILTRA PER TIPOLOGIA",
+              "labelForAll": "Tutte",
+              "newsPageTabType": "news_item",
+              "filterStory": null,
+              "sortMode": "date_desc",
+              "elementPerPage": 12,
+              "blockName": null,
+              "blockType": "catalogue-tab"
+            }
+          ]
+        }
+      ],
+      "en": [
+        {
+          "id": "6a8c615346868470070fdd40",
+          "variant": "small",
+          "bg": "lighter",
+          "backgroundImage": null,
+          "backgroundImageForMobile": null,
+          "showBreadcrumb": true,
+          "title": "In-Depth Articles",
+          "paragraph": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Analysis and reflections on practices, tools, and approaches adopted in the public sector.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "blockName": null,
+          "blockType": "hero",
+          "cta": []
+        },
+        {
+          "id": "6a8c615346868470070fdd42",
+          "blockName": null,
+          "blockType": "catalogue-feed",
+          "tabs": [
+            {
+              "id": "6a8c615346868470070fdd41",
+              "title": "Explore the archive",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Explore all the in-depth articles or filter by topic to find what you're looking for.",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "filterTitle": "FILTER BY TOPIC",
+              "labelForAll": "All",
+              "newsPageTabType": "news_item",
+              "filterStory": null,
+              "sortMode": "date_desc",
+              "elementPerPage": 12,
+              "blockName": null,
+              "blockType": "catalogue-tab"
+            }
+          ]
+        }
+      ]
+    },
+    "seo": {
+      "title": {
+        "it": null,
+        "en": null
+      },
+      "description": {
+        "it": null,
+        "en": null
+      },
+      "image": null
+    },
+    "localizedSlugs": "{\"it\":\"approfondimenti\",\"en\":\"in-depth-articles\"}",
+    "updatedAt": "2026-08-24T15:20:51.290Z",
+    "createdAt": "2026-08-12T13:19:23.259Z"
+  },
+  {
+    "id": "e70dd15b-36ae-46d8-b723-4faef6db09eb",
+    "title": {
+      "it": "Piattaforme",
+      "en": "Platforms"
+    },
+    "parent": {
+      "it": null,
+      "en": null
+    },
+    "slug": {
+      "it": "piattaforme",
+      "en": "platforms"
+    },
+    "content": {
+      "it": [
+        {
+          "id": "6a8c615246868470070fdd2f",
+          "variant": "small",
+          "bg": "primary",
+          "backgroundImage": null,
+          "backgroundImageForMobile": null,
+          "showBreadcrumb": true,
+          "title": "Piattaforme abilitanti",
+          "paragraph": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "I servizi individuati dal Piano Triennale che rendono possibile l’ecosistema digitale della Pubblica Amministrazione",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "blockName": null,
+          "blockType": "hero",
+          "cta": []
+        },
+        {
+          "id": "6a8c615246868470070fdd31",
+          "bg": "default",
+          "heading": "h2",
+          "blockName": null,
+          "blockType": "text-only",
+          "text": [
+            {
+              "id": "6a8c615246868470070fdd30",
+              "title": "Le fondamenta dei servizi digitali della PA",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Nel percorso di trasformazione digitale della PA, alcune infrastrutture svolgono un ruolo centrale: rendono possibile la costruzione, l’integrazione e l’evoluzione dei servizi digitali.",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    },
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Mettono a disposizione funzionalità comuni come identità digitale, pagamenti, dati e notifiche che le amministrazioni possono utilizzare nei propri servizi, seguendo regole e pratiche condivise.",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "blockName": null,
+              "blockType": "text-block",
+              "cta": []
+            }
+          ]
+        },
+        {
+          "id": "6a8c615246868470070fdd33",
+          "blockName": null,
+          "blockType": "catalogue-feed",
+          "tabs": [
+            {
+              "id": "6a8c615246868470070fdd32",
+              "title": "Esplora le piattaforme",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "⠀",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "filterTitle": "FILTRA PER ARGOMENTO",
+              "labelForAll": "Tutti",
+              "newsPageTabType": "story_item",
+              "filterStory": "ae159bcf-450a-428d-af9f-a701451166b3",
+              "sortMode": "title_asc",
+              "elementPerPage": 12,
+              "blockName": null,
+              "blockType": "catalogue-tab"
+            }
+          ]
+        }
+      ],
+      "en": [
+        {
+          "id": "6a8c615246868470070fdd2a",
+          "variant": "small",
+          "bg": "primary",
+          "backgroundImage": null,
+          "backgroundImageForMobile": null,
+          "showBreadcrumb": true,
+          "title": "Enabling platforms",
+          "paragraph": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "The services identified in the Three-Year Plan that enable the public administration’s digital ecosystem.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "blockName": null,
+          "blockType": "hero",
+          "cta": []
+        },
+        {
+          "id": "6a8c615246868470070fdd2c",
+          "bg": "default",
+          "heading": "h2",
+          "blockName": null,
+          "blockType": "text-only",
+          "text": [
+            {
+              "id": "6a8c615246868470070fdd2b",
+              "title": "The Foundation of Digital Services in the Public Administration",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "In the public sector’s digital transformation, certain infrastructures play a central role: they enable the creation, integration, and evolution of digital services.",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    },
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "They provide common functionalities—such as digital identity, payments, data, and notifications—that government agencies can use in their own services, following shared rules and practices.",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "blockName": null,
+              "blockType": "text-block",
+              "cta": []
+            }
+          ]
+        },
+        {
+          "id": "6a8c615246868470070fdd2e",
+          "blockName": null,
+          "blockType": "catalogue-feed",
+          "tabs": [
+            {
+              "id": "6a8c615246868470070fdd2d",
+              "title": "Explore the platforms",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "⠀",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "filterTitle": "FILTER BY TOPIC",
+              "labelForAll": "Everyone",
+              "newsPageTabType": "story_item",
+              "filterStory": "ae159bcf-450a-428d-af9f-a701451166b3",
+              "sortMode": "title_asc",
+              "elementPerPage": 12,
+              "blockName": null,
+              "blockType": "catalogue-tab"
+            }
+          ]
+        }
+      ]
+    },
+    "seo": {
+      "title": {
+        "it": null,
+        "en": null
+      },
+      "description": {
+        "it": null,
+        "en": null
+      },
+      "image": null
+    },
+    "localizedSlugs": "{\"it\":\"piattaforme\",\"en\":\"platforms\"}",
+    "updatedAt": "2026-08-24T15:20:50.848Z",
+    "createdAt": "2026-06-19T09:04:40.219Z"
+  },
+  {
+    "id": "888467e3-2531-4134-b500-327be9a8780f",
+    "title": {
+      "it": "Eventi",
+      "en": "Events"
+    },
+    "parent": {
+      "it": "0c0f78c4-be8a-49f4-a479-d3ab18199280",
+      "en": "0c0f78c4-be8a-49f4-a479-d3ab18199280"
+    },
+    "slug": {
+      "it": "eventi",
+      "en": "events"
+    },
+    "content": {
+      "it": [
+        {
+          "id": "6a8c615346868470070fdd3d",
+          "variant": "small",
+          "bg": "lighter",
+          "backgroundImage": null,
+          "backgroundImageForMobile": null,
+          "showBreadcrumb": true,
+          "title": "Eventi",
+          "paragraph": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Appuntamenti e momenti di confronto dedicati allo sviluppo dei servizi digitali pubblici",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "blockName": null,
+          "blockType": "hero",
+          "cta": []
+        },
+        {
+          "id": "6a8c615346868470070fdd3f",
+          "blockName": null,
+          "blockType": "catalogue-feed",
+          "tabs": [
+            {
+              "id": "6a8c615346868470070fdd3e",
+              "title": "Esplora tutti gli eventi",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Esplora tutti gli eventi o filtra per tipologia per trovare quello che stai cercando",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "filterTitle": "FILTRA PER TIPOLOGIA",
+              "labelForAll": "Tutti",
+              "newsPageTabType": "webinar_item",
+              "filterStory": null,
+              "sortMode": "date_desc",
+              "elementPerPage": 12,
+              "blockName": null,
+              "blockType": "catalogue-tab"
+            }
+          ]
+        }
+      ],
+      "en": [
+        {
+          "id": "6a8c615346868470070fdd3a",
+          "variant": "small",
+          "bg": "lighter",
+          "backgroundImage": null,
+          "backgroundImageForMobile": null,
+          "showBreadcrumb": true,
+          "title": "Events",
+          "paragraph": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Events and forums dedicated to the development of public digital services.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "blockName": null,
+          "blockType": "hero",
+          "cta": []
+        },
+        {
+          "id": "6a8c615346868470070fdd3c",
+          "blockName": null,
+          "blockType": "catalogue-feed",
+          "tabs": [
+            {
+              "id": "6a8c615346868470070fdd3b",
+              "title": "Explore the archive",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Browse all events or filter by topic to find what you're looking for.",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "filterTitle": "FILTER BY TOPIC",
+              "labelForAll": "Everyone",
+              "newsPageTabType": "webinar_item",
+              "filterStory": null,
+              "sortMode": "date_desc",
+              "elementPerPage": 12,
+              "blockName": null,
+              "blockType": "catalogue-tab"
+            }
+          ]
+        }
+      ]
+    },
+    "seo": {
+      "title": {
+        "it": null,
+        "en": null
+      },
+      "description": {
+        "it": null,
+        "en": null
+      },
+      "image": null
+    },
+    "localizedSlugs": "{\"it\":\"eventi\",\"en\":\"events\"}",
+    "updatedAt": "2026-08-24T15:20:51.130Z",
+    "createdAt": "2026-06-19T09:04:40.174Z"
+  },
+  {
+    "id": "af16c6db-2830-4b96-832c-3a9a32b63129",
+    "title": {
+      "it": "Notizie",
+      "en": "News"
+    },
+    "parent": {
+      "it": "0c0f78c4-be8a-49f4-a479-d3ab18199280",
+      "en": "0c0f78c4-be8a-49f4-a479-d3ab18199280"
+    },
+    "slug": {
+      "it": "notizie",
+      "en": "news"
+    },
+    "content": {
+      "it": [
+        {
+          "id": "6a8c615246868470070fdd37",
+          "variant": "small",
+          "bg": "lighter",
+          "backgroundImage": null,
+          "backgroundImageForMobile": null,
+          "showBreadcrumb": true,
+          "title": "Notizie",
+          "paragraph": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Aggiornamenti sulle attività progettuali e sulle iniziative legate alla trasformazione digitale della Pubblica Amministrazione",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "blockName": null,
+          "blockType": "hero",
+          "cta": []
+        },
+        {
+          "id": "6a8c615246868470070fdd39",
+          "blockName": null,
+          "blockType": "catalogue-feed",
+          "tabs": [
+            {
+              "id": "6a8c615246868470070fdd38",
+              "title": "Esplora tutte le notizie",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Esplora tutte le notizie o filtra per argomento per trovare quello che stai cercando",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "filterTitle": "FILTRA PER ARGOMENTO",
+              "labelForAll": "Tutte",
+              "newsPageTabType": "story_item",
+              "filterStory": "c19133c2-04fe-46cc-b2c8-b5ef52bc9a55",
+              "sortMode": "date_desc",
+              "elementPerPage": 12,
+              "blockName": null,
+              "blockType": "catalogue-tab"
+            }
+          ]
+        }
+      ],
+      "en": [
+        {
+          "id": "6a8c615246868470070fdd34",
+          "variant": "small",
+          "bg": "lighter",
+          "backgroundImage": null,
+          "backgroundImageForMobile": null,
+          "showBreadcrumb": true,
+          "title": "News",
+          "paragraph": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Updates on activities and initiatives related to the digital transformation of the public administration.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "blockName": null,
+          "blockType": "hero",
+          "cta": []
+        },
+        {
+          "id": "6a8c615246868470070fdd36",
+          "blockName": null,
+          "blockType": "catalogue-feed",
+          "tabs": [
+            {
+              "id": "6a8c615246868470070fdd35",
+              "title": "Explore the archive",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Browse all the news or filter by topic to find what you're looking for.",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "filterTitle": "FILTER BY TOPIC",
+              "labelForAll": "All",
+              "newsPageTabType": "story_item",
+              "filterStory": "c19133c2-04fe-46cc-b2c8-b5ef52bc9a55",
+              "sortMode": "date_desc",
+              "elementPerPage": 12,
+              "blockName": null,
+              "blockType": "catalogue-tab"
+            }
+          ]
+        }
+      ]
+    },
+    "seo": {
+      "title": {
+        "it": null,
+        "en": null
+      },
+      "description": {
+        "it": null,
+        "en": null
+      },
+      "image": null
+    },
+    "localizedSlugs": "{\"it\":\"notizie\",\"en\":\"news\"}",
+    "updatedAt": "2026-08-24T15:20:50.956Z",
+    "createdAt": "2026-06-19T09:04:40.128Z"
+  },
+  {
+    "id": "bf23aecd-1e5d-49e5-b190-f490518582e4",
+    "title": {
+      "it": "Approfondimenti",
+      "en": "Insights"
+    },
+    "parent": {
+      "it": "0c0f78c4-be8a-49f4-a479-d3ab18199280",
+      "en": "0c0f78c4-be8a-49f4-a479-d3ab18199280"
+    },
+    "slug": {
+      "it": "approfondimenti",
+      "en": "insights"
+    },
+    "content": {
+      "it": [
+        {
+          "id": "6a3543ff083f8705b337935c",
+          "variant": "small",
+          "bg": "lighter",
+          "backgroundImage": null,
+          "backgroundImageForMobile": null,
+          "showBreadcrumb": true,
+          "title": "Articoli di approfondimento",
+          "paragraph": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Analisi e riflessioni su pratiche, strumenti e approcci adottati nel settore pubblico.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "blockName": null,
+          "blockType": "hero",
+          "cta": []
+        },
+        {
+          "id": "6a3543ff083f8705b337935e",
+          "blockName": null,
+          "blockType": "catalogue-feed",
+          "tabs": [
+            {
+              "id": "6a3543ff083f8705b337935d",
+              "title": "Esplora l’archivio",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Esplora tutti gli approfondimenti o filtra per argomento per trovare quello che stai cercando.",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "filterTitle": "FILTRA PER ARGOMENTO",
+              "labelForAll": "Tutte",
+              "newsPageTabType": "news_item",
+              "filterStory": null,
+              "sortMode": "date_desc",
+              "elementPerPage": 12,
+              "blockName": null,
+              "blockType": "catalogue-tab"
+            }
+          ]
+        }
+      ],
+      "en": [
+        {
+          "id": "6a3543ff083f8705b3379359",
+          "variant": "small",
+          "bg": "lighter",
+          "backgroundImage": null,
+          "backgroundImageForMobile": null,
+          "showBreadcrumb": true,
+          "title": "In-depth articles",
+          "paragraph": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Analysis and reflections on practices, tools and approaches adopted in the public sector.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "blockName": null,
+          "blockType": "hero",
+          "cta": []
+        },
+        {
+          "id": "6a3543ff083f8705b337935b",
+          "blockName": null,
+          "blockType": "catalogue-feed",
+          "tabs": [
+            {
+              "id": "6a3543ff083f8705b337935a",
+              "title": "Explore the archive",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Explore all the insights or filter by topic to find what you are looking for.",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "filterTitle": "FILTER BY TOPIC",
+              "labelForAll": "All",
+              "newsPageTabType": "news_item",
+              "filterStory": null,
+              "sortMode": "date_desc",
+              "elementPerPage": 12,
+              "blockName": null,
+              "blockType": "catalogue-tab"
+            }
+          ]
+        }
+      ]
+    },
+    "seo": {
+      "title": {
+        "it": null,
+        "en": null
+      },
+      "description": {
+        "it": null,
+        "en": null
+      },
+      "image": null
+    },
+    "localizedSlugs": "{\"it\":\"approfondimenti\",\"en\":\"insights\"}",
+    "updatedAt": "2026-06-26T14:51:31.497Z",
+    "createdAt": "2026-06-19T09:04:40.060Z"
+  }
+]

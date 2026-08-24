@@ -1,0 +1,43 @@
+[
+  {
+    "id": "f88a189a-1b55-4053-adcb-2bc84f1b30da",
+    "label": {
+      "it": "Interoperabilità"
+    },
+    "updatedAt": "2026-08-20T09:31:16.143Z",
+    "createdAt": "2026-08-20T09:31:16.143Z"
+  },
+  {
+    "id": "2f52fe5e-71f6-44fd-8902-55259fe0b340",
+    "label": {
+      "it": "Open Source"
+    },
+    "updatedAt": "2026-08-20T09:31:16.126Z",
+    "createdAt": "2026-08-20T09:31:16.126Z"
+  },
+  {
+    "id": "e9b18e7e-545b-4da2-8ea6-8b7906e3e286",
+    "label": {
+      "it": "Community Lab"
+    },
+    "updatedAt": "2026-08-20T09:31:16.108Z",
+    "createdAt": "2026-08-20T09:31:16.108Z"
+  },
+  {
+    "id": "5aa86423-e5c0-425e-9c0d-7cfa43b47520",
+    "label": {
+      "it": "Community Call"
+    },
+    "updatedAt": "2026-08-20T09:31:16.094Z",
+    "createdAt": "2026-08-20T09:31:16.094Z"
+  },
+  {
+    "id": "db93167f-2c28-4bf2-97a8-52ca9e4b1db4",
+    "label": {
+      "it": "Argomento evento",
+      "en": "Preparing for migration"
+    },
+    "updatedAt": "2026-06-19T09:04:38.970Z",
+    "createdAt": "2026-06-19T09:04:38.970Z"
+  }
+]

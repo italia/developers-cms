@@ -1,0 +1,1027 @@
+{
+  "id": "c6188b8a-8f7d-4e72-9fef-90fb56e8f53c",
+  "title": {
+    "it": "Developers Italia",
+    "en": "Developers Italy"
+  },
+  "content": {
+    "it": [
+      {
+        "id": "6a8c615e46868470070fdf31",
+        "variant": "default",
+        "bg": "primary",
+        "backgroundImage": "4471e0ea-68a0-4558-a0da-8d40695d7c5c",
+        "backgroundImageForMobile": "eff1e40a-1c26-4958-8fb3-707531927692",
+        "showBreadcrumb": false,
+        "title": "Diamo forma ai servizi digitali della Pubblica Amministrazione, insieme",
+        "paragraph": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "Developers Italia è il progetto pubblico che promuove un modo condiviso di pensare, costruire e far evolvere il software della Pubblica Amministrazione",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              }
+            ],
+            "direction": "ltr"
+          }
+        },
+        "blockName": null,
+        "blockType": "hero",
+        "cta": [
+          {
+            "id": "6a8c615e46868470070fdf30",
+            "label": "Scopri il progetto",
+            "blockName": null,
+            "blockType": "internal-link",
+            "linkTo": {
+              "relationTo": "pages",
+              "value": "0c6c27cc-7503-4927-b401-7c4197411a8a"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6a8c615e46868470070fdf38",
+        "showInlineCard": false,
+        "bg": "lighter",
+        "title": "Consulta i cataloghi e le risorse per il riuso e l’interoperabilità",
+        "paragraph": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "Esplora le raccolte di software open source, API e piattaforme per trovare risorse pronte all’uso per costruire servizi digitali interoperabili",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              }
+            ],
+            "direction": "ltr"
+          }
+        },
+        "blockName": null,
+        "blockType": "card-link-list",
+        "listContent": [
+          {
+            "id": "6a8c615e46868470070fdf33",
+            "title": "Software open source",
+            "paragraph": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "Il catalogo delle soluzioni open source sviluppate dalle pubbliche amministrazioni e riutilizzabili in altri contesti.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  }
+                ],
+                "direction": "ltr"
+              }
+            },
+            "image": "0181ab6b-ef09-4e9b-a720-5023ae0b533a",
+            "blockName": null,
+            "blockType": "card-link",
+            "link": [
+              {
+                "id": "6a8c615e46868470070fdf32",
+                "externalUrl": null,
+                "blockName": null,
+                "blockType": "link-block",
+                "link": {
+                  "relationTo": "pages",
+                  "value": "fe55e1ab-7ead-438b-b6f7-858b9db4a8dd"
+                }
+              }
+            ]
+          },
+          {
+            "id": "6a8c615e46868470070fdf35",
+            "title": "Interoperabilità e API",
+            "paragraph": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "Il catalogo delle interfacce per l’integrazione e lo scambio di dati tra sistemi pubblici.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  }
+                ],
+                "direction": "ltr"
+              }
+            },
+            "image": "53a08949-a011-4158-ad94-dad4823d7c98",
+            "blockName": null,
+            "blockType": "card-link",
+            "link": [
+              {
+                "id": "6a8c615e46868470070fdf34",
+                "externalUrl": null,
+                "blockName": null,
+                "blockType": "link-block",
+                "link": {
+                  "relationTo": "pages",
+                  "value": "f0c80ac3-7bcb-491b-b13f-dd95e975ea81"
+                }
+              }
+            ]
+          },
+          {
+            "id": "6a8c615e46868470070fdf37",
+            "title": "Piattaforme",
+            "paragraph": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "L'elenco delle infrastrutture e dei servizi nazionali su cui si basano i servizi digitali della PA.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  }
+                ],
+                "direction": "ltr"
+              }
+            },
+            "image": "53466746-4b6a-4911-8e29-612ca815cf3f",
+            "blockName": null,
+            "blockType": "card-link",
+            "link": [
+              {
+                "id": "6a8c615e46868470070fdf36",
+                "externalUrl": null,
+                "blockName": null,
+                "blockType": "link-block",
+                "link": {
+                  "relationTo": "catalogues",
+                  "value": "e70dd15b-36ae-46d8-b723-4faef6db09eb"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6a8c615e46868470070fdf3c",
+        "bg": "default",
+        "blockName": null,
+        "blockType": "text-use-case",
+        "text": [
+          {
+            "id": "6a8c615e46868470070fdf3a",
+            "title": "Scopri  le guide per la gestione del software della PA",
+            "paragraph": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "Hai a disposizione risorse operative, strumenti tecnici e indicazioni pratiche per trasformare la normativa e le linee guida in pratica quotidiana",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  }
+                ],
+                "direction": "ltr"
+              }
+            },
+            "blockName": null,
+            "blockType": "text-block",
+            "cta": [
+              {
+                "id": "6a8c615e46868470070fdf39",
+                "label": "Vai a tutte le guide",
+                "blockName": null,
+                "blockType": "internal-link",
+                "linkTo": {
+                  "relationTo": "pages",
+                  "value": "e6d9916a-bca2-4656-b9e2-2c25393c54f9"
+                }
+              }
+            ]
+          }
+        ],
+        "useCases": [
+          {
+            "id": "6a8c615e46868470070fdf3b",
+            "title": "In Evidenza",
+            "blockName": null,
+            "blockType": "use-case-block",
+            "useCases": [
+              {
+                "relationTo": "insights",
+                "value": "e6d6ef25-d1b6-4174-8590-5c3207a2bcb8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6a8c615e46868470070fdf3e",
+        "bg": "dark",
+        "title": "Le novità della community",
+        "paragraph": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "Contribuisci a Developers Italia, partecipa agli eventi e confrontati sulle buone pratiche di sviluppo nel settore pubblico",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              }
+            ],
+            "direction": "ltr"
+          }
+        },
+        "blockName": null,
+        "blockType": "news-feed",
+        "tabs": [],
+        "cta": [
+          {
+            "id": "6a8c615e46868470070fdf3d",
+            "label": "Entra nella community",
+            "blockName": null,
+            "blockType": "internal-link",
+            "linkTo": {
+              "relationTo": "pages",
+              "value": "0c0f78c4-be8a-49f4-a479-d3ab18199280"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6a8c615e46868470070fdf41",
+        "variant": "variant-1",
+        "bg": "primary-light",
+        "heading": "h2",
+        "image": "68c2d71b-af95-47c9-bb18-d0a13c0813b5",
+        "blockName": null,
+        "blockType": "text-image",
+        "text": [
+          {
+            "id": "6a8c615e46868470070fdf40",
+            "title": "Un quadro comune di regole e responsabilità",
+            "paragraph": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "Le norme e le linee guida italiane ed europee definiscono regole condivise, ruoli e responsabilità che rendono possibile il coordinamento tra amministrazioni su interoperabilità, riuso, sicurezza e accessibilità",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  }
+                ],
+                "direction": "ltr"
+              }
+            },
+            "blockName": null,
+            "blockType": "text-block",
+            "cta": [
+              {
+                "id": "6a8c615e46868470070fdf3f",
+                "label": "Scopri la normativa",
+                "blockName": null,
+                "blockType": "internal-link",
+                "linkTo": {
+                  "relationTo": "pages",
+                  "value": "37bccb31-b1ee-43dc-94ac-714f911f7510"
+                }
+              }
+            ]
+          }
+        ],
+        "additionalContent": []
+      },
+      {
+        "id": "6a8c615e46868470070fdf45",
+        "bg": "dark",
+        "showInline": false,
+        "blockName": null,
+        "blockType": "text-statistic",
+        "text": [
+          {
+            "id": "6a8c615e46868470070fdf43",
+            "title": "Un impatto visibile nel tempo",
+            "paragraph": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "Dal 2017 a oggi Developers Italia ha contribuito a rendere i software della Pubblica Amministrazione più condivisi e accessibili.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "L’adozione del catalogo e la partecipazione delle amministrazioni raccontano come il software stia diventando sempre più un patrimonio comune, costruito e mantenuto insieme.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  }
+                ],
+                "direction": "ltr"
+              }
+            },
+            "blockName": null,
+            "blockType": "text-block",
+            "cta": [
+              {
+                "id": "6a8c615e46868470070fdf42",
+                "label": "Scopri il catalogo software",
+                "url": "https://catalogo-software.developers.italia.it",
+                "description": "",
+                "blockName": null,
+                "blockType": "external-link"
+              }
+            ]
+          }
+        ],
+        "statistics": [
+          {
+            "id": "6a8c615e46868470070fdf44",
+            "blockName": null,
+            "blockType": "statistic-block",
+            "kpiElement": [
+              "4f43d703-c758-447b-9ac0-172fc7f130d8",
+              "1ffcca4a-1cf9-4064-9bd2-3bac370d96a2"
+            ],
+            "statistics": []
+          }
+        ]
+      }
+    ],
+    "en": [
+      {
+        "id": "6a8c615e46868470070fdf1a",
+        "variant": "default",
+        "bg": "primary",
+        "backgroundImage": "4471e0ea-68a0-4558-a0da-8d40695d7c5c",
+        "backgroundImageForMobile": "eff1e40a-1c26-4958-8fb3-707531927692",
+        "showBreadcrumb": false,
+        "title": "Let’s shape the public sector’s digital services—together",
+        "paragraph": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "Developers Italia is a public initiative that promotes a collaborative approach to designing, building, and evolving software for the public sector.",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              }
+            ],
+            "direction": "ltr"
+          }
+        },
+        "blockName": null,
+        "blockType": "hero",
+        "cta": [
+          {
+            "id": "6a8c615e46868470070fdf19",
+            "label": "Learn about the project",
+            "blockName": null,
+            "blockType": "internal-link",
+            "linkTo": {
+              "relationTo": "pages",
+              "value": "0c6c27cc-7503-4927-b401-7c4197411a8a"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6a8c615e46868470070fdf21",
+        "showInlineCard": false,
+        "bg": "lighter",
+        "title": "Browse the catalogs and resources for reuse and interoperability",
+        "paragraph": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "Explore collections of open-source software, APIs, and platforms to find ready-to-use resources for building interoperable digital services. ",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              }
+            ],
+            "direction": "ltr"
+          }
+        },
+        "blockName": null,
+        "blockType": "card-link-list",
+        "listContent": [
+          {
+            "id": "6a8c615e46868470070fdf1c",
+            "title": "Open-source software",
+            "paragraph": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "A catalog of open-source solutions developed by public administrations that can be reused in other contexts.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  }
+                ],
+                "direction": "ltr"
+              }
+            },
+            "image": "0181ab6b-ef09-4e9b-a720-5023ae0b533a",
+            "blockName": null,
+            "blockType": "card-link",
+            "link": [
+              {
+                "id": "6a8c615e46868470070fdf1b",
+                "externalUrl": null,
+                "blockName": null,
+                "blockType": "link-block",
+                "link": {
+                  "relationTo": "pages",
+                  "value": "fe55e1ab-7ead-438b-b6f7-858b9db4a8dd"
+                }
+              }
+            ]
+          },
+          {
+            "id": "6a8c615e46868470070fdf1e",
+            "title": "Interoperability and APIs",
+            "paragraph": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "The catalog of interfaces for integration and data exchange between public systems.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  }
+                ],
+                "direction": "ltr"
+              }
+            },
+            "image": "53a08949-a011-4158-ad94-dad4823d7c98",
+            "blockName": null,
+            "blockType": "card-link",
+            "link": [
+              {
+                "id": "6a8c615e46868470070fdf1d",
+                "externalUrl": null,
+                "blockName": null,
+                "blockType": "link-block",
+                "link": {
+                  "relationTo": "pages",
+                  "value": "f0c80ac3-7bcb-491b-b13f-dd95e975ea81"
+                }
+              }
+            ]
+          },
+          {
+            "id": "6a8c615e46868470070fdf20",
+            "title": "Platforms",
+            "paragraph": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "The list of national infrastructure and services on which the public administration's digital services are based.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  }
+                ],
+                "direction": "ltr"
+              }
+            },
+            "image": "53466746-4b6a-4911-8e29-612ca815cf3f",
+            "blockName": null,
+            "blockType": "card-link",
+            "link": [
+              {
+                "id": "6a8c615e46868470070fdf1f",
+                "externalUrl": null,
+                "blockName": null,
+                "blockType": "link-block",
+                "link": {
+                  "relationTo": "catalogues",
+                  "value": "e70dd15b-36ae-46d8-b723-4faef6db09eb"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6a8c615e46868470070fdf25",
+        "bg": "default",
+        "blockName": null,
+        "blockType": "text-use-case",
+        "text": [
+          {
+            "id": "6a8c615e46868470070fdf23",
+            "title": "Explore the guides for managing public administration software",
+            "paragraph": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "You have access to operational resources, technical tools, and practical guidance to put regulations and guidelines into daily practice.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  }
+                ],
+                "direction": "ltr"
+              }
+            },
+            "blockName": null,
+            "blockType": "text-block",
+            "cta": [
+              {
+                "id": "6a8c615e46868470070fdf22",
+                "label": "Go to all guides",
+                "blockName": null,
+                "blockType": "internal-link",
+                "linkTo": {
+                  "relationTo": "pages",
+                  "value": "e6d9916a-bca2-4656-b9e2-2c25393c54f9"
+                }
+              }
+            ]
+          }
+        ],
+        "useCases": [
+          {
+            "id": "6a8c615e46868470070fdf24",
+            "title": "Highlights",
+            "blockName": null,
+            "blockType": "use-case-block",
+            "useCases": [
+              {
+                "relationTo": "insights",
+                "value": "e6d6ef25-d1b6-4174-8590-5c3207a2bcb8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6a8c615e46868470070fdf28",
+        "bg": "dark",
+        "title": "Community Updates",
+        "paragraph": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "Contribute to Developers Italia, attend events, and discuss best practices in public sector development.",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              }
+            ],
+            "direction": "ltr"
+          }
+        },
+        "blockName": null,
+        "blockType": "news-feed",
+        "tabs": [
+          {
+            "id": "6a8c615e46868470070fdf26",
+            "title": "News",
+            "blockName": null,
+            "blockType": "story-tab",
+            "Stories": []
+          }
+        ],
+        "cta": [
+          {
+            "id": "6a8c615e46868470070fdf27",
+            "label": "Join the community",
+            "blockName": null,
+            "blockType": "internal-link",
+            "linkTo": {
+              "relationTo": "pages",
+              "value": "0c0f78c4-be8a-49f4-a479-d3ab18199280"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6a8c615e46868470070fdf2b",
+        "variant": "variant-1",
+        "bg": "primary-light",
+        "heading": "h2",
+        "image": "68c2d71b-af95-47c9-bb18-d0a13c0813b5",
+        "blockName": null,
+        "blockType": "text-image",
+        "text": [
+          {
+            "id": "6a8c615e46868470070fdf2a",
+            "title": "A Common Framework of Rules and Responsibilities",
+            "paragraph": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "Italian and European standards and guidelines establish shared rules, roles, and responsibilities that enable coordination among government agencies on interoperability, reuse, security, and accessibility.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  }
+                ],
+                "direction": "ltr"
+              }
+            },
+            "blockName": null,
+            "blockType": "text-block",
+            "cta": [
+              {
+                "id": "6a8c615e46868470070fdf29",
+                "label": "Learn about the regulations",
+                "blockName": null,
+                "blockType": "internal-link",
+                "linkTo": {
+                  "relationTo": "pages",
+                  "value": "37bccb31-b1ee-43dc-94ac-714f911f7510"
+                }
+              }
+            ]
+          }
+        ],
+        "additionalContent": []
+      },
+      {
+        "id": "6a8c615e46868470070fdf2f",
+        "bg": "dark",
+        "showInline": false,
+        "blockName": null,
+        "blockType": "text-statistic",
+        "text": [
+          {
+            "id": "6a8c615e46868470070fdf2d",
+            "title": "A Visible Impact Over Time",
+            "paragraph": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "Since 2017, Developers Italia has helped make public administration software more widely shared and accessible.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "The adoption of the catalog and the participation of government agencies demonstrate how software is increasingly becoming a shared resource, built and maintained collaboratively.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  }
+                ],
+                "direction": "ltr"
+              }
+            },
+            "blockName": null,
+            "blockType": "text-block",
+            "cta": [
+              {
+                "id": "6a8c615e46868470070fdf2c",
+                "label": "Explore the software catalog",
+                "url": "https://catalogo-software.developers.italia.it",
+                "description": "",
+                "blockName": null,
+                "blockType": "external-link"
+              }
+            ]
+          }
+        ],
+        "statistics": [
+          {
+            "id": "6a8c615e46868470070fdf2e",
+            "blockName": null,
+            "blockType": "statistic-block",
+            "kpiElement": [
+              "4f43d703-c758-447b-9ac0-172fc7f130d8",
+              "1ffcca4a-1cf9-4064-9bd2-3bac370d96a2"
+            ],
+            "statistics": []
+          }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "title": {
+      "it": null,
+      "en": null
+    },
+    "description": {
+      "it": null,
+      "en": null
+    },
+    "image": null
+  },
+  "updatedAt": "2026-08-24T15:21:02.849Z",
+  "createdAt": "2026-08-12T13:29:01.385Z",
+  "globalType": "homepage"
+}

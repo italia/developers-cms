@@ -1,0 +1,138 @@
+{
+  "id": "e0c0b7c9-e4ab-4997-8004-03a37ca7763c",
+  "isSearchEnabled": true,
+  "searchLabel": {
+    "it": "Cerca",
+    "en": "Search"
+  },
+  "title": {
+    "it": "Cerca nel sito",
+    "en": "Search the site"
+  },
+  "slug": {
+    "it": "ricerca",
+    "en": "search"
+  },
+  "content": {
+    "it": [
+      {
+        "id": "6a8c615f46868470070fdf48",
+        "variant": "small",
+        "bg": "default",
+        "backgroundImage": null,
+        "backgroundImageForMobile": null,
+        "showBreadcrumb": true,
+        "title": "Cerca in Developers Italia",
+        "paragraph": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "Trova rapidamente riferimenti normativi, guide, strumenti operativi, notizie e contenuti dedicati ai principali temi del software della Pubblica Amministrazione.",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              }
+            ],
+            "direction": "ltr"
+          }
+        },
+        "blockName": null,
+        "blockType": "hero",
+        "cta": []
+      },
+      {
+        "id": "6a8c615f46868470070fdf49",
+        "title": "Quale argomento stai cercando?",
+        "labelButton": "Cerca",
+        "labelForAllResult": "Tutti i risultati trovati per",
+        "labelForNoResult": "Nessun risultato trovato per",
+        "inputPlaceholder": "Cerca per parole chiave ed esplora i risultati",
+        "blockName": null,
+        "blockType": "search-bar"
+      }
+    ],
+    "en": [
+      {
+        "id": "6a8c615f46868470070fdf46",
+        "variant": "small",
+        "bg": "default",
+        "backgroundImage": null,
+        "backgroundImageForMobile": null,
+        "showBreadcrumb": true,
+        "title": "Search Developers Italia",
+        "paragraph": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "Quickly find regulatory references, guides, operational tools, news, and content related to key topics in public administration software.",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              }
+            ],
+            "direction": "ltr"
+          }
+        },
+        "blockName": null,
+        "blockType": "hero",
+        "cta": []
+      },
+      {
+        "id": "6a8c615f46868470070fdf47",
+        "title": "What topic are you looking for?",
+        "labelButton": "Search",
+        "labelForAllResult": "All results found for",
+        "labelForNoResult": "No results found for",
+        "inputPlaceholder": "Search by keywords and explore the results",
+        "blockName": null,
+        "blockType": "search-bar"
+      }
+    ]
+  },
+  "seo": {
+    "title": {
+      "it": null,
+      "en": null
+    },
+    "description": {
+      "it": null,
+      "en": null
+    },
+    "image": null
+  },
+  "updatedAt": "2026-08-24T15:21:03.117Z",
+  "createdAt": "2026-08-17T14:56:38.319Z",
+  "globalType": "search"
+}

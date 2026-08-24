@@ -1,0 +1,443 @@
+[
+  {
+    "id": "96306985-d73c-4ccb-a86f-80b40b5ad950",
+    "title": {
+      "it": "“Una volta sola”: come l’interoperabilità nel cloud cambia i servizi pubblici"
+    },
+    "link": {
+      "it": "https://medium.com/developers-italia/una-volta-sola-come-linteroperabilit%C3%A0-nel-cloud-cambia-i-servizi-pubblici-2365de8a2fe3"
+    },
+    "paragraph": {
+      "it": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Cloud e interoperabilità alimentano il dialogo tra piattaforme, dati e applicazioni per semplificare la vita di cittadini e imprese.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "direction": "ltr"
+        }
+      }
+    },
+    "topic": {
+      "it": "65c28f67-973b-4e99-9a36-c574dfa87410"
+    },
+    "dateOfPublication": {
+      "it": "2025-11-19T23:00:00.000Z"
+    },
+    "image": "52c88554-a1a2-4794-aa2c-2ae50480a741",
+    "updatedAt": "2026-08-20T10:30:43.696Z",
+    "createdAt": "2026-08-20T09:29:30.809Z"
+  },
+  {
+    "id": "aa2fe7d6-c623-4b30-b717-21d79a73430a",
+    "title": {
+      "it": "La gestione delle identità digitali e degli accessi al cloud"
+    },
+    "link": {
+      "it": "https://medium.com/developers-italia/la-gestione-delle-identit%C3%A0-digitali-e-degli-accessi-al-cloud-d56312a4e766"
+    },
+    "paragraph": {
+      "it": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Passiamo in rassegna la “cassetta degli attrezzi” dei sistemi di identità digitali che consentono l’erogazione dei servizi pubblici online per tutte le esigenze: da centinaia a milioni di utenti.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "direction": "ltr"
+        }
+      }
+    },
+    "topic": {
+      "it": "65c28f67-973b-4e99-9a36-c574dfa87410"
+    },
+    "dateOfPublication": {
+      "it": "2025-06-10T22:00:00.000Z"
+    },
+    "image": "faa279c1-f085-41c1-95b1-a8f5616f6156",
+    "updatedAt": "2026-08-20T10:30:43.654Z",
+    "createdAt": "2026-08-20T09:29:30.768Z"
+  },
+  {
+    "id": "5a345e8d-c54c-4fe9-8a00-6c17451fc4f8",
+    "title": {
+      "it": "Una nuvola a bilancio"
+    },
+    "link": {
+      "it": "https://medium.com/developers-italia/una-nuvola-a-bilancio-a6d0018dbc51"
+    },
+    "paragraph": {
+      "it": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Suggerimenti per generare risparmi grazie all’utilizzo di sistemi cloud.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "direction": "ltr"
+        }
+      }
+    },
+    "topic": {
+      "it": "65c28f67-973b-4e99-9a36-c574dfa87410"
+    },
+    "dateOfPublication": {
+      "it": "2024-11-18T23:00:00.000Z"
+    },
+    "image": "e4b55a9a-8f3a-494d-9305-7a2b6af7de89",
+    "updatedAt": "2026-08-20T10:30:43.623Z",
+    "createdAt": "2026-08-20T09:29:30.724Z"
+  },
+  {
+    "id": "cab6f2e4-3568-4c8f-8c3f-15738d08d143",
+    "title": {
+      "it": "Come accordare l’orchestra del cloud con i “container”"
+    },
+    "link": {
+      "it": "https://medium.com/developers-italia/come-accordare-lorchestra-del-cloud-con-i-container-b688425d50cd"
+    },
+    "paragraph": {
+      "it": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buone pratiche per sviluppare applicazioni e servizi in modo sicuro, leggero e scalabile nel settore pubblico.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "direction": "ltr"
+        }
+      }
+    },
+    "topic": {
+      "it": "65c28f67-973b-4e99-9a36-c574dfa87410"
+    },
+    "dateOfPublication": {
+      "it": "2025-02-12T23:00:00.000Z"
+    },
+    "image": "16dc93e5-cb0a-4934-bf1b-2341410d2cec",
+    "updatedAt": "2026-08-20T10:30:43.589Z",
+    "createdAt": "2026-08-20T09:29:30.683Z"
+  },
+  {
+    "id": "20ed6666-e9ad-4d2f-9c19-1f836352c132",
+    "title": {
+      "it": "Tutto questo non sarebbe dovuto accadere"
+    },
+    "link": {
+      "it": "https://medium.com/developers-italia/tutto-questo-non-sarebbe-dovuto-accadere-66f84060f26c"
+    },
+    "paragraph": {
+      "it": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Come predisporre strategie di backup, restore e disaster recovery per proteggere dati e servizi cloud.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "direction": "ltr"
+        }
+      }
+    },
+    "topic": {
+      "it": "65c28f67-973b-4e99-9a36-c574dfa87410"
+    },
+    "dateOfPublication": {
+      "it": "2024-05-26T22:00:00.000Z"
+    },
+    "image": "7eea0214-ff90-4446-8ba6-6e99b0f8432a",
+    "updatedAt": "2026-08-20T10:30:43.558Z",
+    "createdAt": "2026-08-20T09:29:30.636Z"
+  },
+  {
+    "id": "11f9a660-bbe4-4144-b9ec-d68257257848",
+    "title": {
+      "it": "Il monitoraggio dei costi cloud"
+    },
+    "link": {
+      "it": "https://medium.com/developers-italia/il-monitoraggio-dei-costi-cloud-82aae39a2e81"
+    },
+    "paragraph": {
+      "it": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buone pratiche per ottimizzare la spesa delle pubbliche amministrazioni nella gestione di servizi cloud.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "direction": "ltr"
+        }
+      }
+    },
+    "topic": {
+      "it": "65c28f67-973b-4e99-9a36-c574dfa87410"
+    },
+    "dateOfPublication": {
+      "it": "2024-05-26T22:00:00.000Z"
+    },
+    "image": "3053c3e7-0b27-4038-a4bc-1f94be37679c",
+    "updatedAt": "2026-08-20T10:30:43.530Z",
+    "createdAt": "2026-08-20T09:29:30.595Z"
+  },
+  {
+    "id": "ccb433e3-886f-4a25-8092-895808fc4824",
+    "title": {
+      "it": "Verso Design system .italia: dalle origini al design system aperto della Pubblica Amministrazione"
+    },
+    "link": {
+      "it": "https://medium.com/designers-italia/verso-design-system-italia-dalle-origini-al-design-system-aperto-del-paese-66a2d5af6654"
+    },
+    "paragraph": {
+      "it": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Tre generazioni di linee guida, strumenti e processi per portare accessibilità, usabilità e qualità nei servizi pubblici digitali.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "direction": "ltr"
+        }
+      }
+    },
+    "topic": {
+      "it": "65c28f67-973b-4e99-9a36-c574dfa87410"
+    },
+    "dateOfPublication": {
+      "it": "2024-05-21T22:00:00.000Z"
+    },
+    "image": "a3bb4753-f1ca-498e-a02f-7d575621e1cb",
+    "updatedAt": "2026-08-20T10:30:43.493Z",
+    "createdAt": "2026-08-20T09:29:30.558Z"
+  },
+  {
+    "id": "faad824d-3401-48cb-9695-4c283344932a",
+    "title": {
+      "it": "L’innovazione trasparente: re-architect o refactoring di applicazioni per il cloud"
+    },
+    "link": {
+      "it": "https://medium.com/developers-italia/linnovazione-trasparente-re-architect-o-refactoring-di-applicazioni-per-il-cloud-c94f53df1c8d"
+    },
+    "paragraph": {
+      "it": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Come le PA possono sfruttare al massimo le opportunità messe a disposizione dalla migrazione di dati, servizi e sistemi applicativi.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "direction": "ltr"
+        }
+      }
+    },
+    "topic": {
+      "it": "65c28f67-973b-4e99-9a36-c574dfa87410"
+    },
+    "dateOfPublication": {
+      "it": "2023-10-30T23:00:00.000Z"
+    },
+    "image": "bc3b8b6d-be54-4bac-871d-8b8fc7169fa3",
+    "updatedAt": "2026-08-20T10:30:43.457Z",
+    "createdAt": "2026-08-20T09:29:30.526Z"
+  },
+  {
+    "id": "827f002f-2e79-4906-84fb-f4fe22248238",
+    "title": {
+      "it": "Test di usabilità inclusivi: cosa abbiamo imparato testando Developers Italia"
+    },
+    "link": {
+      "it": "https://medium.com/designers-italia/test-di-usabilit%C3%A0-inclusivi-cosa-abbiamo-imparato-testando-developers-italia-88ffc7282a6c"
+    },
+    "paragraph": {
+      "it": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Il racconto di un’esperienza sul campo degli Accessibility Days 2026",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "direction": "ltr"
+        }
+      }
+    },
+    "topic": {
+      "it": "65c28f67-973b-4e99-9a36-c574dfa87410"
+    },
+    "dateOfPublication": {
+      "it": "2026-07-08T22:00:00.000Z"
+    },
+    "image": "66b1627b-440f-4e11-abc1-921d992cd3d7",
+    "updatedAt": "2026-08-20T09:29:30.485Z",
+    "createdAt": "2026-08-20T09:29:30.485Z"
+  }
+]

@@ -1,0 +1,1714 @@
+[
+  {
+    "id": "74a6433e-ec79-427c-859e-946349c77d09",
+    "slug": {
+      "it": "progettare-api-di-qualita-per-servizi-pubblici-interoperabili"
+    },
+    "title": {
+      "it": "Progettare API di qualità per servizi pubblici interoperabili"
+    },
+    "paragraph": {
+      "it": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Strumenti e buone pratiche per definire e verificare semantica e sintassi delle API",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "direction": "ltr"
+        }
+      }
+    },
+    "parent": {
+      "it": "0c0f78c4-be8a-49f4-a479-d3ab18199280"
+    },
+    "date": {
+      "it": "2026-04-28T22:00:00.000Z"
+    },
+    "content": {
+      "it": [
+        {
+          "id": "6a8c615d46868470070fdefa",
+          "blockName": null,
+          "blockType": "webinar-description",
+          "text": [
+            {
+              "id": "6a8c615d46868470070fdef5",
+              "title": "Progettare API di qualità per servizi pubblici interoperabili",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Strumenti e buone pratiche per definire e verificare semantica e sintassi delle API",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "blockName": null,
+              "blockType": "text-block",
+              "cta": []
+            }
+          ],
+          "subjects": [
+            {
+              "id": "6a8c615d46868470070fdef8",
+              "blockName": null,
+              "blockType": "feature-list",
+              "items": [
+                {
+                  "id": "6a8c615d46868470070fdef6",
+                  "title": "Luogo",
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "format": "",
+                          "indent": 0,
+                          "version": 1,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "Online",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 0,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "blockName": null,
+                  "blockType": "list-item"
+                },
+                {
+                  "id": "6a8c615d46868470070fdef7",
+                  "title": "Data",
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "format": "",
+                          "indent": 0,
+                          "version": 1,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "29 aprile 2026",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 0,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "blockName": null,
+                  "blockType": "list-item"
+                }
+              ]
+            }
+          ],
+          "resources": [
+            {
+              "id": "6a8c615d46868470070fdef9",
+              "title": "Approfondisci",
+              "blockName": null,
+              "blockType": "quick-link-card",
+              "linkToResource": [
+                {
+                  "relationTo": "articles",
+                  "value": "3f1f66f7-e914-49ee-97f8-fd086ad9f9e8"
+                },
+                {
+                  "relationTo": "articles",
+                  "value": "8cb07fd3-63aa-46ef-8d59-76b8ba60d51a"
+                },
+                {
+                  "relationTo": "articles",
+                  "value": "3324f242-7d6d-4e3e-a042-67e7bdae402e"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6a8c615d46868470070fdefc",
+          "title": "Webinar transcript block",
+          "category": "",
+          "videoUrl": "https://www.youtube.com/watch?v=dM5kb9pdVdU",
+          "paragraph": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "È disponibile la sola trascrizione generata automaticamente nella ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    },
+                    {
+                      "type": "link",
+                      "fields": {
+                        "url": "https://www.youtube.com/watch?v=dM5kb9pdVdU",
+                        "newTab": false,
+                        "linkType": "custom"
+                      },
+                      "format": "",
+                      "indent": 0,
+                      "version": 3,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "scheda del video su YouTube",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "readMoreLabel": "label - di più",
+          "readLessLabel": "label - di meno",
+          "blockName": null,
+          "blockType": "action-card",
+          "cta": [
+            {
+              "id": "6a8c615d46868470070fdefb",
+              "label": "download link",
+              "doc": "c6145a5d-62d9-4a8e-9110-0aa90a027a5b",
+              "description": "downalod qualcosa",
+              "blockName": null,
+              "blockType": "download-link"
+            }
+          ]
+        }
+      ]
+    },
+    "image": "66b1627b-440f-4e11-abc1-921d992cd3d7",
+    "eventBody": {
+      "root": {
+        "type": "root",
+        "format": "",
+        "indent": 0,
+        "version": 1,
+        "children": [
+          {
+            "type": "paragraph",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "mode": "normal",
+                "text": "Durante l'incontro abbiamo esplorato come progettare API di qualità che abilitano servizi pubblici interoperabili, seguendo gli step suggeriti da Developers Italia: ricerca, sviluppa, verifica, pubblica. Abbiamo presentato il ",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              },
+              {
+                "type": "link",
+                "fields": {
+                  "url": "https://api.gov.it/it/",
+                  "newTab": false,
+                  "linkType": "custom"
+                },
+                "format": "",
+                "indent": 0,
+                "version": 3,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "catalogo api.gov.it",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              },
+              {
+                "mode": "normal",
+                "text": " per la ricerca delle API, il ",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              },
+              {
+                "type": "link",
+                "fields": {
+                  "url": "https://www.schema.gov.it/",
+                  "newTab": false,
+                  "linkType": "custom"
+                },
+                "format": "",
+                "indent": 0,
+                "version": 3,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "catalogo nazionale della semantica dei dati schema.gov.it",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              },
+              {
+                "mode": "normal",
+                "text": " e le buone pratiche per nominare e descrivere le API.",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "mode": "normal",
+                "text": "A seguire, una sessione dimostrativa con gli strumenti per garantire la qualità sintattica e semantica delle API a disposizione degli sviluppatori: ",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              },
+              {
+                "type": "link",
+                "fields": {
+                  "url": "https://italia.github.io/api-oas-checker/",
+                  "newTab": false,
+                  "linkType": "custom"
+                },
+                "format": "",
+                "indent": 0,
+                "version": 3,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "API OAS Checker",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              },
+              {
+                "mode": "normal",
+                "text": " per verificare la conformità al Modello d'Interoperabilità (ModI) definito dalle Linee Guida AgID, e ",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              },
+              {
+                "type": "link",
+                "fields": {
+                  "url": "https://teamdigitale.github.io/dati-semantic-schema-editor/latest/",
+                  "newTab": false,
+                  "linkType": "custom"
+                },
+                "format": "",
+                "indent": 0,
+                "version": 3,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "Schema Editor",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              },
+              {
+                "mode": "normal",
+                "text": " per creare e modificare gli schemi dati OpenAPI con la semantica nazionale.",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "link",
+                "fields": {
+                  "url": "https://developers.italia.it/it/interoperabilita.html",
+                  "newTab": false,
+                  "linkType": "custom"
+                },
+                "format": "",
+                "indent": 0,
+                "version": 3,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "Approfondisci il tema interoperabilità su Developers Italia (si apre in una nuova finestra)",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              }
+            ],
+            "direction": "ltr"
+          }
+        ],
+        "direction": "ltr"
+      }
+    },
+    "topic": {
+      "it": "e9b18e7e-545b-4da2-8ea6-8b7906e3e286"
+    },
+    "seo": {
+      "title": {
+        "it": null
+      },
+      "description": {
+        "it": null
+      },
+      "image": null
+    },
+    "localizedSlugs": "{\"it\":\"progettare-api-di-qualita-per-servizi-pubblici-interoperabili\"}",
+    "updatedAt": "2026-08-24T15:21:01.177Z",
+    "createdAt": "2026-08-20T09:31:16.335Z"
+  },
+  {
+    "id": "59a750ac-8b9e-4ccb-a2db-137c7327828b",
+    "slug": {
+      "it": "community-lab-di-developers-italia-software-a-riuso-nella-pa"
+    },
+    "title": {
+      "it": "Community lab di Developers Italia: software a riuso nella PA"
+    },
+    "paragraph": {
+      "it": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Approfondimento sulle linee guida, gli strumenti pratici e le buone pratiche",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "direction": "ltr"
+        }
+      }
+    },
+    "parent": {
+      "it": "0c0f78c4-be8a-49f4-a479-d3ab18199280"
+    },
+    "date": {
+      "it": "2025-07-09T22:00:00.000Z"
+    },
+    "content": {
+      "it": [
+        {
+          "id": "6a8c615c46868470070fdef2",
+          "blockName": null,
+          "blockType": "webinar-description",
+          "text": [
+            {
+              "id": "6a8c615c46868470070fdeed",
+              "title": "Community lab di Developers Italia: software a riuso nella PA",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Approfondimento sulle linee guida, gli strumenti pratici e le buone pratiche",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "blockName": null,
+              "blockType": "text-block",
+              "cta": []
+            }
+          ],
+          "subjects": [
+            {
+              "id": "6a8c615c46868470070fdef0",
+              "blockName": null,
+              "blockType": "feature-list",
+              "items": [
+                {
+                  "id": "6a8c615c46868470070fdeee",
+                  "title": "Luogo",
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "format": "",
+                          "indent": 0,
+                          "version": 1,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "Online",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 0,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "blockName": null,
+                  "blockType": "list-item"
+                },
+                {
+                  "id": "6a8c615c46868470070fdeef",
+                  "title": "Data",
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "format": "",
+                          "indent": 0,
+                          "version": 1,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "10 luglio 2025",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 0,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "blockName": null,
+                  "blockType": "list-item"
+                }
+              ]
+            }
+          ],
+          "resources": [
+            {
+              "id": "6a8c615c46868470070fdef1",
+              "title": "Approfondisci",
+              "blockName": null,
+              "blockType": "quick-link-card",
+              "linkToResource": [
+                {
+                  "relationTo": "articles",
+                  "value": "5cee57de-e046-43d9-a38f-18c59b9186fe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6a8c615c46868470070fdef4",
+          "title": "Webinar transcript block",
+          "category": "",
+          "videoUrl": "https://www.youtube.com/watch?v=3VzeQP7thUA&t=1s",
+          "paragraph": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "È disponibile la sola trascrizione generata automaticamente nella ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    },
+                    {
+                      "type": "link",
+                      "fields": {
+                        "url": "https://www.youtube.com/watch?v=3VzeQP7thUA&t=1s",
+                        "newTab": false,
+                        "linkType": "custom"
+                      },
+                      "format": "",
+                      "indent": 0,
+                      "version": 3,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "scheda del video su YouTube",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "readMoreLabel": "label - di più",
+          "readLessLabel": "label - di meno",
+          "blockName": null,
+          "blockType": "action-card",
+          "cta": [
+            {
+              "id": "6a8c615c46868470070fdef3",
+              "label": "Download link",
+              "doc": "6cdc1dcb-f7b7-4aad-abc0-43f9d3a7ed0e",
+              "description": "Scopri di più",
+              "blockName": null,
+              "blockType": "download-link"
+            }
+          ]
+        }
+      ]
+    },
+    "image": "6cdc1dcb-f7b7-4aad-abc0-43f9d3a7ed0e",
+    "eventBody": {
+      "root": {
+        "type": "root",
+        "format": "",
+        "indent": 0,
+        "version": 1,
+        "children": [
+          {
+            "type": "paragraph",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "mode": "normal",
+                "text": "L'incontro dedicato ad esporre buone pratiche per la creazione, pubblicazione e installazione del software a riuso nella Pubblica Amministrazione. Durante l’evento sono state presentate le linee guida e gli adempimenti richiesti dall’Agenzia per l’Italia Digitale (AgID), è stato illustrato passo per passo come inserire un software nel catalogo di Developers Italia, e soprattutto è stata un’occasione di confronto per progettisti, sviluppatori e professionisti che operano nella PA o collaborano con essa.",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "link",
+                "fields": {
+                  "url": "https://catalogo-software.developers.italia.it/",
+                  "newTab": false,
+                  "linkType": "custom"
+                },
+                "format": "",
+                "indent": 0,
+                "version": 3,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "Esplora il catalogo del riuso",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              }
+            ],
+            "direction": "ltr"
+          }
+        ],
+        "direction": "ltr"
+      }
+    },
+    "topic": {
+      "it": "e9b18e7e-545b-4da2-8ea6-8b7906e3e286"
+    },
+    "seo": {
+      "title": {
+        "it": null
+      },
+      "description": {
+        "it": null
+      },
+      "image": null
+    },
+    "localizedSlugs": "{\"it\":\"community-lab-di-developers-italia-software-a-riuso-nella-pa\"}",
+    "updatedAt": "2026-08-24T15:21:00.954Z",
+    "createdAt": "2026-08-20T09:31:16.280Z"
+  },
+  {
+    "id": "726d63bf-69ed-446c-8c52-a305811ec6ae",
+    "slug": {
+      "it": "il-nuovo-dev-kit-italia-e-gli-ultimi-progressi-del-design-system-italia"
+    },
+    "title": {
+      "it": "Il nuovo Dev Kit Italia e gli ultimi progressi del design system .italia"
+    },
+    "paragraph": {
+      "it": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scopri come usare il nuovo kit basato su web component e le novità della versione 3.0 di Bootstrap Italia",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "direction": "ltr"
+        }
+      }
+    },
+    "parent": {
+      "it": "0c0f78c4-be8a-49f4-a479-d3ab18199280"
+    },
+    "date": {
+      "it": "2026-05-26T22:00:00.000Z"
+    },
+    "content": {
+      "it": [
+        {
+          "id": "6a8c615c46868470070fdeea",
+          "blockName": null,
+          "blockType": "webinar-description",
+          "text": [
+            {
+              "id": "6a8c615c46868470070fdee5",
+              "title": "Il nuovo Dev Kit Italia e gli ultimi progressi del design system .italia",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Scopri come usare il nuovo kit basato su web component e le novità della versione 3.0 di Bootstrap Italia",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "blockName": null,
+              "blockType": "text-block",
+              "cta": []
+            }
+          ],
+          "subjects": [
+            {
+              "id": "6a8c615c46868470070fdee8",
+              "blockName": null,
+              "blockType": "feature-list",
+              "items": [
+                {
+                  "id": "6a8c615c46868470070fdee6",
+                  "title": "Luogo",
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "format": "",
+                          "indent": 0,
+                          "version": 1,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "Online",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 0,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "blockName": null,
+                  "blockType": "list-item"
+                },
+                {
+                  "id": "6a8c615c46868470070fdee7",
+                  "title": "Data",
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "format": "",
+                          "indent": 0,
+                          "version": 1,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "27 maggio 2026",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 0,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "blockName": null,
+                  "blockType": "list-item"
+                }
+              ]
+            }
+          ],
+          "resources": [
+            {
+              "id": "6a8c615c46868470070fdee9",
+              "title": "Approfondisci",
+              "blockName": null,
+              "blockType": "quick-link-card",
+              "linkToResource": [
+                {
+                  "relationTo": "articles",
+                  "value": "5cee57de-e046-43d9-a38f-18c59b9186fe"
+                },
+                {
+                  "relationTo": "articles",
+                  "value": "3f1f66f7-e914-49ee-97f8-fd086ad9f9e8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6a8c615c46868470070fdeec",
+          "title": "Webinar transcript block",
+          "category": "",
+          "videoUrl": "https://www.youtube.com/watch?v=SvSJOfogGdI&t=88s",
+          "paragraph": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "È disponibile la sola trascrizione generata automaticamente nella ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    },
+                    {
+                      "type": "link",
+                      "fields": {
+                        "url": "https://www.youtube.com/watch?v=SvSJOfogGdI&t=88s",
+                        "newTab": false,
+                        "linkType": "custom"
+                      },
+                      "format": "",
+                      "indent": 0,
+                      "version": 3,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "scheda del video su YouTube",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "readMoreLabel": "label - di più",
+          "readLessLabel": "label - di meno",
+          "blockName": null,
+          "blockType": "action-card",
+          "cta": [
+            {
+              "id": "6a8c615c46868470070fdeeb",
+              "label": "Download link",
+              "doc": "a3bb4753-f1ca-498e-a02f-7d575621e1cb",
+              "description": "Scopri di più",
+              "blockName": null,
+              "blockType": "download-link"
+            }
+          ]
+        }
+      ]
+    },
+    "image": "a3bb4753-f1ca-498e-a02f-7d575621e1cb",
+    "eventBody": {
+      "root": {
+        "type": "root",
+        "format": "",
+        "indent": 0,
+        "version": 1,
+        "children": [
+          {
+            "type": "paragraph",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "mode": "normal",
+                "text": "Durante l'incontro abbiamo scoperto ed esplorato in anteprima, prima del rilascio ufficiale, il nuovo ",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              },
+              {
+                "type": "link",
+                "fields": {
+                  "url": "https://designers.italia.it/design-system/come-iniziare/per-sviluppatori/",
+                  "newTab": false,
+                  "linkType": "custom"
+                },
+                "format": "",
+                "indent": 0,
+                "version": 3,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "Dev Kit Italia",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              },
+              {
+                "mode": "normal",
+                "text": ", il nuovo strumento trasversale e versatile, per sviluppare interfacce digitali usabili e accessibili. Il kit, basato su tecnologia Web Component, è indipendente dai framework di sviluppo ed è stato progettato per adattarsi alle preferenze degli sviluppatori e per durare nel tempo. Inoltre, sono stati condivisi gli importanti aggiornamenti della versione 3 di Bootstrap Italia, con uno sguardo ai più recenti sviluppi del ",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              },
+              {
+                "type": "link",
+                "fields": {
+                  "url": "https://designers.italia.it/design-system/",
+                  "newTab": false,
+                  "linkType": "custom"
+                },
+                "format": "",
+                "indent": 0,
+                "version": 3,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "design system .italia",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              },
+              {
+                "mode": "normal",
+                "text": " per la progettazione e lo sviluppo di servizi pubblici digitali.",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "link",
+                "fields": {
+                  "url": "https://designers.italia.it/design-system/come-contribuire/per-lo-sviluppo/",
+                  "newTab": false,
+                  "linkType": "custom"
+                },
+                "format": "",
+                "indent": 0,
+                "version": 3,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "Approfondisci come contribuire allo sviluppo",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              }
+            ],
+            "direction": "ltr"
+          }
+        ],
+        "direction": "ltr"
+      }
+    },
+    "topic": {
+      "it": "e9b18e7e-545b-4da2-8ea6-8b7906e3e286"
+    },
+    "seo": {
+      "title": {
+        "it": null
+      },
+      "description": {
+        "it": null
+      },
+      "image": null
+    },
+    "localizedSlugs": "{\"it\":\"il-nuovo-dev-kit-italia-e-gli-ultimi-progressi-del-design-system-italia\"}",
+    "updatedAt": "2026-08-24T15:21:00.686Z",
+    "createdAt": "2026-08-20T09:31:16.236Z"
+  },
+  {
+    "id": "079ac218-ccd3-4679-9fdb-16157d294b5c",
+    "slug": {
+      "it": "dallo-sviluppo-al-riuso-buone-pratiche-del-software-nella-pa"
+    },
+    "title": {
+      "it": "Dallo sviluppo al riuso: buone pratiche del software nella PA"
+    },
+    "paragraph": {
+      "it": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Esperienze concrete di collaborazione, pubblicazione e riutilizzo di software open source",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "direction": "ltr"
+        }
+      }
+    },
+    "parent": {
+      "it": "0c0f78c4-be8a-49f4-a479-d3ab18199280"
+    },
+    "date": {
+      "it": "2026-03-10T23:00:00.000Z"
+    },
+    "content": {
+      "it": [
+        {
+          "id": "6a8c615c46868470070fdee2",
+          "blockName": null,
+          "blockType": "webinar-description",
+          "text": [
+            {
+              "id": "6a8c615c46868470070fdedd",
+              "title": "Dallo sviluppo al riuso: buone pratiche del software nella PA",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Esperienze concrete di collaborazione e presentazione di due soluzioni a riuso delle Università",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "blockName": null,
+              "blockType": "text-block",
+              "cta": []
+            }
+          ],
+          "subjects": [
+            {
+              "id": "6a8c615c46868470070fdee0",
+              "blockName": null,
+              "blockType": "feature-list",
+              "items": [
+                {
+                  "id": "6a8c615c46868470070fdede",
+                  "title": "Luogo",
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "format": "",
+                          "indent": 0,
+                          "version": 1,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "Online",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 0,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "blockName": null,
+                  "blockType": "list-item"
+                },
+                {
+                  "id": "6a8c615c46868470070fdedf",
+                  "title": "Data",
+                  "paragraph": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "format": "",
+                          "indent": 0,
+                          "version": 1,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "11 marzo 2026",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 0,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "blockName": null,
+                  "blockType": "list-item"
+                }
+              ]
+            }
+          ],
+          "resources": [
+            {
+              "id": "6a8c615c46868470070fdee1",
+              "title": "Parliamo di",
+              "blockName": null,
+              "blockType": "quick-link-card",
+              "linkToResource": [
+                {
+                  "relationTo": "articles",
+                  "value": "5cee57de-e046-43d9-a38f-18c59b9186fe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6a8c615c46868470070fdee4",
+          "title": "Webinar transcript block",
+          "category": "",
+          "videoUrl": "https://www.youtube.com/watch?v=J5AGN20SJBI",
+          "paragraph": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "È disponibile la sola trascrizione generata automaticamente nella ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    },
+                    {
+                      "type": "link",
+                      "fields": {
+                        "url": "https://www.youtube.com/watch?v=J5AGN20SJBI",
+                        "newTab": false,
+                        "linkType": "custom"
+                      },
+                      "format": "",
+                      "indent": 0,
+                      "version": 3,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "scheda del video su YouTube",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "readMoreLabel": "label - di più",
+          "readLessLabel": "label - di meno",
+          "blockName": null,
+          "blockType": "action-card",
+          "cta": [
+            {
+              "id": "6a8c615c46868470070fdee3",
+              "label": "Download link",
+              "doc": "c6145a5d-62d9-4a8e-9110-0aa90a027a5b",
+              "description": "download",
+              "blockName": null,
+              "blockType": "download-link"
+            }
+          ]
+        }
+      ]
+    },
+    "image": "66b1627b-440f-4e11-abc1-921d992cd3d7",
+    "eventBody": {
+      "root": {
+        "type": "root",
+        "format": "",
+        "indent": 0,
+        "version": 1,
+        "children": [
+          {
+            "type": "paragraph",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "mode": "normal",
+                "text": "L’incontro è stato un’occasione di confronto tra amministrazioni pubbliche su approcci, strumenti ed esperienze per favorire il riuso del software e migliorare la qualità dei progetti digitali pubblici. Tra i temi affrontati, le linee guida normative e il valore del riuso, con la presentazione di due soluzioni presenti sul sito di Developers Italia: ",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              },
+              {
+                "type": "link",
+                "fields": {
+                  "url": "https://catalogo-software.developers.italia.it/software/ea2d2b61-acff-49f0-98c1-8f1b1bd666b3",
+                  "newTab": false,
+                  "linkType": "custom"
+                },
+                "format": "",
+                "indent": 0,
+                "version": 3,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "UniContr",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              },
+              {
+                "mode": "normal",
+                "text": " e ",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              },
+              {
+                "type": "link",
+                "fields": {
+                  "url": "https://catalogo-software.developers.italia.it/software/13221983-d9e9-4c88-928c-23240ef55dac",
+                  "newTab": false,
+                  "linkType": "custom"
+                },
+                "format": "",
+                "indent": 0,
+                "version": 3,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "uniTicket",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              },
+              {
+                "mode": "normal",
+                "text": ".",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "mode": "normal",
+                "text": "Durante l’evento il Dipartimento ha lanciato un ",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              },
+              {
+                "type": "link",
+                "fields": {
+                  "url": "https://padigitale2026.gov.it/supporto/richiedi-assistenza",
+                  "newTab": false,
+                  "linkType": "custom"
+                },
+                "format": "",
+                "indent": 0,
+                "version": 3,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "nuovo canale di supporto per gli enti sul sito PA Digitale 2026",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              },
+              {
+                "mode": "normal",
+                "text": ", sull'argomento dell'",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              },
+              {
+                "mode": "normal",
+                "text": "Open source",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 1,
+                "version": 1
+              },
+              {
+                "mode": "normal",
+                "text": ", oltre ad invitare enti e organizzazioni a ",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              },
+              {
+                "mode": "normal",
+                "text": "segnalare buoni esempi di software pubblico",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 1,
+                "version": 1
+              },
+              {
+                "mode": "normal",
+                "text": " attraverso il questionario dedicato.",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "link",
+                "fields": {
+                  "url": "https://ec.europa.eu/eusurvey/runner/buonepraticheDesItDevIT",
+                  "newTab": false,
+                  "linkType": "custom"
+                },
+                "format": "",
+                "indent": 0,
+                "version": 3,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "Segnala un software",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr"
+              }
+            ],
+            "direction": "ltr"
+          }
+        ],
+        "direction": "ltr"
+      }
+    },
+    "topic": {
+      "it": "5aa86423-e5c0-425e-9c0d-7cfa43b47520"
+    },
+    "seo": {
+      "title": {
+        "it": null
+      },
+      "description": {
+        "it": null
+      },
+      "image": null
+    },
+    "localizedSlugs": "{\"it\":\"dallo-sviluppo-al-riuso-buone-pratiche-del-software-nella-pa\"}",
+    "updatedAt": "2026-08-24T15:21:00.428Z",
+    "createdAt": "2026-08-20T09:31:16.176Z"
+  }
+]

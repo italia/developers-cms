@@ -1,0 +1,22 @@
+[
+  {
+    "id": "c19133c2-04fe-46cc-b2c8-b5ef52bc9a55",
+    "label": {
+      "it": "Notizie",
+      "en": "News"
+    },
+    "sort": null,
+    "updatedAt": "2026-06-19T09:04:39.144Z",
+    "createdAt": "2026-06-19T09:04:39.131Z"
+  },
+  {
+    "id": "ae159bcf-450a-428d-af9f-a701451166b3",
+    "label": {
+      "it": "Piattaforme",
+      "en": "Platforms"
+    },
+    "sort": null,
+    "updatedAt": "2026-06-19T09:04:39.115Z",
+    "createdAt": "2026-06-19T09:04:39.101Z"
+  }
+]

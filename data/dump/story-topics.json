@@ -1,0 +1,29 @@
+[
+  {
+    "id": "a29a96df-5cf5-496a-b249-27879a1310f1",
+    "label": {
+      "it": "Piattaforme che attestano attributi",
+      "en": "Platforms that attest attributes"
+    },
+    "updatedAt": "2026-06-19T09:04:39.072Z",
+    "createdAt": "2026-06-19T09:04:39.072Z"
+  },
+  {
+    "id": "ecd32c54-8e74-4ab8-badd-c643ad1adf17",
+    "label": {
+      "it": "Piattaforme che erogano servizi",
+      "en": "Platforms that deliver services"
+    },
+    "updatedAt": "2026-06-19T09:04:39.042Z",
+    "createdAt": "2026-06-19T09:04:39.042Z"
+  },
+  {
+    "id": "a7f63403-de61-4aa7-a1d2-d81a1cc1ead9",
+    "label": {
+      "it": "Categoria notizia",
+      "en": "News category"
+    },
+    "updatedAt": "2026-06-19T09:04:39.009Z",
+    "createdAt": "2026-06-19T09:04:39.009Z"
+  }
+]

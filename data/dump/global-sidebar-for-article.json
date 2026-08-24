@@ -1,0 +1,144 @@
+{
+  "id": "ed97835e-56ab-4953-8bbc-978efcf34435",
+  "headerLabel": {
+    "it": "Normativa",
+    "en": "Regulations"
+  },
+  "openLabel": {
+    "it": "Navigation Menu",
+    "en": "Navigation Menu"
+  },
+  "closeLabel": {
+    "it": "Chiudi",
+    "en": "Close"
+  },
+  "menu": {
+    "it": [
+      {
+        "id": "6a83170d7ee8f8c885b2dba3",
+        "label": "Valutazione comparativa",
+        "blockName": null,
+        "blockType": "menu-article-item",
+        "pointsTo": {
+          "relationTo": "articles",
+          "value": "be7f7dcd-a1ee-4312-a1c2-51a0d8149277"
+        }
+      },
+      {
+        "id": "6a86c23d5a71be86e51a9e87",
+        "label": "Riuso e Open source",
+        "blockName": null,
+        "blockType": "menu-article-item",
+        "pointsTo": {
+          "relationTo": "articles",
+          "value": "5cee57de-e046-43d9-a38f-18c59b9186fe"
+        }
+      },
+      {
+        "id": "6a86c25d5a71be86e51a9e89",
+        "label": "Interoperabilità",
+        "blockName": null,
+        "blockType": "menu-article-item",
+        "pointsTo": {
+          "relationTo": "articles",
+          "value": "8cb07fd3-63aa-46ef-8d59-76b8ba60d51a"
+        }
+      },
+      {
+        "id": "6a86c2ab5a71be86e51a9e8b",
+        "label": "Accessibilità",
+        "blockName": null,
+        "blockType": "menu-article-item",
+        "pointsTo": {
+          "relationTo": "articles",
+          "value": "3f1f66f7-e914-49ee-97f8-fd086ad9f9e8"
+        }
+      },
+      {
+        "id": "6a86c2c35a71be86e51a9e8d",
+        "label": "Privacy by design",
+        "blockName": null,
+        "blockType": "menu-article-item",
+        "pointsTo": {
+          "relationTo": "articles",
+          "value": "b885d2e6-e73a-4915-a61e-1db58d302ff3"
+        }
+      },
+      {
+        "id": "6a86c2df5a71be86e51a9e8f",
+        "label": "Cybersecurity by design",
+        "blockName": null,
+        "blockType": "menu-article-item",
+        "pointsTo": {
+          "relationTo": "articles",
+          "value": "3324f242-7d6d-4e3e-a042-67e7bdae402e"
+        }
+      }
+    ],
+    "en": [
+      {
+        "id": "6a86c3265a71be86e51a9e91",
+        "label": "Comparative",
+        "blockName": null,
+        "blockType": "menu-article-item",
+        "pointsTo": {
+          "relationTo": "articles",
+          "value": "be7f7dcd-a1ee-4312-a1c2-51a0d8149277"
+        }
+      },
+      {
+        "id": "6a86c33d5a71be86e51a9e93",
+        "label": "Reuse and Open Source",
+        "blockName": null,
+        "blockType": "menu-article-item",
+        "pointsTo": {
+          "relationTo": "articles",
+          "value": "5cee57de-e046-43d9-a38f-18c59b9186fe"
+        }
+      },
+      {
+        "id": "6a86c34f5a71be86e51a9e95",
+        "label": "Interoperability",
+        "blockName": null,
+        "blockType": "menu-article-item",
+        "pointsTo": {
+          "relationTo": "articles",
+          "value": "8cb07fd3-63aa-46ef-8d59-76b8ba60d51a"
+        }
+      },
+      {
+        "id": "6a86c3615a71be86e51a9e97",
+        "label": "Accessibility",
+        "blockName": null,
+        "blockType": "menu-article-item",
+        "pointsTo": {
+          "relationTo": "articles",
+          "value": "3f1f66f7-e914-49ee-97f8-fd086ad9f9e8"
+        }
+      },
+      {
+        "id": "6a86c3715a71be86e51a9e99",
+        "label": "Privacy by Design",
+        "blockName": null,
+        "blockType": "menu-article-item",
+        "pointsTo": {
+          "relationTo": "articles",
+          "value": "b885d2e6-e73a-4915-a61e-1db58d302ff3"
+        }
+      },
+      {
+        "id": "6a86c3825a71be86e51a9e9b",
+        "label": "Cybersecurity by Design",
+        "blockName": null,
+        "blockType": "menu-article-item",
+        "pointsTo": {
+          "relationTo": "articles",
+          "value": "3324f242-7d6d-4e3e-a042-67e7bdae402e"
+        }
+      }
+    ]
+  },
+  "updatedAt": "2026-08-17T14:13:51.967Z",
+  "createdAt": "2026-08-17T14:13:51.967Z",
+  "globalType": "sidebar-for-article"
+}

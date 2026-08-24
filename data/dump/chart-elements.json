@@ -1,0 +1,266 @@
+[
+  {
+    "id": "9ddadedd-4226-4235-ba89-7f4882fed1c0",
+    "title": "MapChart",
+    "chartData": {
+      "data": [
+        [
+          "Regione",
+          "Percentuale"
+        ],
+        [
+          "Abruzzo",
+          30
+        ],
+        [
+          "Basilicata",
+          23
+        ],
+        [
+          "Calabria",
+          55
+        ],
+        [
+          "Campania",
+          22
+        ],
+        [
+          "Emilia-Romagna",
+          46
+        ],
+        [
+          "Friuli-Venezia Giulia",
+          34
+        ],
+        [
+          "Lazio",
+          33
+        ],
+        [
+          "Liguria",
+          43
+        ],
+        [
+          "Lombardia",
+          34
+        ],
+        [
+          "Marche",
+          53
+        ],
+        [
+          "Molise",
+          54
+        ],
+        [
+          "Puglia",
+          34
+        ],
+        [
+          "Piemonte",
+          77
+        ],
+        [
+          "Trentino-Alto Adige/Südtirol",
+          32
+        ],
+        [
+          "Sardegna",
+          56
+        ],
+        [
+          "Sicilia",
+          67
+        ],
+        [
+          "Toscana",
+          78
+        ],
+        [
+          "Umbria",
+          42
+        ],
+        [
+          "Valle d'Aosta/Vallée d'Aoste",
+          54
+        ],
+        [
+          "Veneto",
+          44
+        ],
+        [
+          " "
+        ]
+      ],
+      "chart": "map",
+      "config": {
+        "h": 350,
+        "w": null,
+        "colors": [
+          "#0066CC",
+          "#CC7A00"
+        ],
+        "legend": true,
+        "palette": "_2_a",
+        "tooltip": true,
+        "labeLine": false,
+        "areaColor": "#f2f7fc",
+        "direction": "horizontal",
+        "serieName": "Numero progetti",
+        "visualMap": false,
+        "geoJsonUrl": "https://www.datocms-assets.com/138980/1736438332-limits_it_regions.geojson",
+        "responsive": true,
+        "totalLabel": "Totale",
+        "nameProperty": "reg_name",
+        "showMapLabels": false,
+        "visualMapLeft": "right",
+        "legendPosition": "bottom",
+        "tooltipTrigger": "axis",
+        "valueFormatter": "",
+        "visualMapOrient": "vertical",
+        "tooltipFormatter": "number"
+      }
+    },
+    "updatedAt": "2026-06-19T09:04:41.243Z",
+    "createdAt": "2026-06-19T09:04:41.243Z"
+  },
+  {
+    "id": "3fee93e5-fc18-4736-b65b-d317b4236898",
+    "title": "Regioni",
+    "chartData": {
+      "data": [
+        [
+          "Regione",
+          "Percentuale"
+        ],
+        [
+          "Abruzzo",
+          30
+        ],
+        [
+          "Basilicata",
+          23
+        ],
+        [
+          "Calabria",
+          55
+        ],
+        [
+          "Campania",
+          22
+        ],
+        [
+          "Emilia-Romagna",
+          46
+        ],
+        [
+          "Friuli-Venezia Giulia",
+          34
+        ],
+        [
+          "Lazio",
+          33
+        ],
+        [
+          "Liguria",
+          43
+        ],
+        [
+          "Lombardia",
+          34
+        ],
+        [
+          "Marche",
+          53
+        ],
+        [
+          "Molise",
+          54
+        ],
+        [
+          "Puglia",
+          34
+        ],
+        [
+          "Piemonte",
+          77
+        ],
+        [
+          "Trentino-Alto Adige/Südtirol",
+          32
+        ],
+        [
+          "Sardegna",
+          56
+        ],
+        [
+          "Sicilia",
+          67
+        ],
+        [
+          "Toscana",
+          78
+        ],
+        [
+          "Umbria",
+          42
+        ],
+        [
+          "Valle d'Aosta/Vallée d'Aoste",
+          54
+        ],
+        [
+          "Veneto",
+          44
+        ],
+        [
+          " "
+        ]
+      ],
+      "chart": "pie",
+      "config": {
+        "h": 350,
+        "w": 0,
+        "zoom": "none",
+        "stack": false,
+        "colors": [
+          "#5470c6",
+          "#91cc75",
+          "#fac858",
+          "#ee6666",
+          "#73c0de",
+          "#3ba272",
+          "#fc8452",
+          "#9a60b4",
+          "#ea7ccc"
+        ],
+        "legend": false,
+        "smooth": "",
+        "xLabel": "",
+        "yLabel": "",
+        "gridTop": "60",
+        "nameGap": "40",
+        "palette": "default",
+        "tooltip": true,
+        "gridLeft": "10%",
+        "labeLine": true,
+        "showArea": false,
+        "direction": "horizontal",
+        "gridRight": "10%",
+        "gridWidth": "auto",
+        "gridBottom": "60",
+        "gridHeight": "auto",
+        "responsive": true,
+        "totalLabel": "Totale",
+        "showAllSymbol": false,
+        "showPieLabels": true,
+        "legendPosition": "bottom",
+        "tooltipTrigger": "axis",
+        "valueFormatter": "",
+        "tooltipFormatter": "number"
+      }
+    },
+    "updatedAt": "2026-06-19T09:04:41.228Z",
+    "createdAt": "2026-06-19T09:04:41.228Z"
+  }
+]

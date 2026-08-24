@@ -1,0 +1,157 @@
+{
+  "id": "6cddf9a3-cfdf-4f21-a45a-a87c51463b8e",
+  "siteName": {
+    "it": "Developers Italia",
+    "en": "Developers Italia"
+  },
+  "title": {
+    "it": "Un imprevisto può capitare",
+    "en": "Something went wrong"
+  },
+  "paragraph": {
+    "it": {
+      "root": {
+        "type": "root",
+        "format": "",
+        "indent": 0,
+        "version": 1,
+        "children": [
+          {
+            "type": "paragraph",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "mode": "normal",
+                "text": "Non abbiamo trovato la pagina che cercavi.",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "textStyle": "",
+            "textFormat": 0
+          },
+          {
+            "type": "paragraph",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [],
+            "direction": null,
+            "textStyle": "",
+            "textFormat": 0
+          },
+          {
+            "type": "paragraph",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "mode": "normal",
+                "text": "Verifica che l’indirizzo sia corretto oppure torna all’inizio per esplorare altri contenuti.",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "textStyle": "",
+            "textFormat": 0
+          }
+        ],
+        "direction": null
+      }
+    },
+    "en": {
+      "root": {
+        "type": "root",
+        "format": "",
+        "indent": 0,
+        "version": 1,
+        "children": [
+          {
+            "type": "paragraph",
+            "format": "start",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "mode": "normal",
+                "text": "We couldn’t find the page you were looking for.",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "textStyle": "",
+            "textFormat": 0
+          },
+          {
+            "type": "paragraph",
+            "format": "start",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "mode": "normal",
+                "text": "Check that the address is correct, or go back to the homepage to explore other content.",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "textStyle": "",
+            "textFormat": 0
+          }
+        ],
+        "direction": null
+      }
+    }
+  },
+  "image": "95f03153-6e97-4b33-b453-480f1849360f",
+  "labelCta": {
+    "it": "Torna alla pagina iniziale",
+    "en": "Back to home"
+  },
+  "lastUpdateLabel": {
+    "it": "Ultimo Aggiornamento",
+    "en": "Last Update"
+  },
+  "links": {
+    "it": [
+      {
+        "id": "6a85b5fb908ac420c3f52fed",
+        "label": "Licenza CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.it",
+        "description": null,
+        "blockName": null,
+        "blockType": "external-link"
+      },
+      {
+        "id": "6a85b609908ac420c3f52fef",
+        "label": "Proponi una modifica a questa pagina",
+        "url": "https://github.com/italia/designers.italia.it/blob/main/src/data/content/index.yaml",
+        "description": null,
+        "blockName": null,
+        "blockType": "external-link"
+      }
+    ]
+  },
+  "updatedAt": "2026-08-19T14:33:59.665Z",
+  "createdAt": "2026-06-19T11:24:20.629Z",
+  "globalType": "global-setting"
+}

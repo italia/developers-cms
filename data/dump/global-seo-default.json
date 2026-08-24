@@ -1,0 +1,24 @@
+{
+  "id": "13fafc33-a37e-47e9-a364-275216cc784e",
+  "siteName": {
+    "it": "Developers Italia",
+    "en": "Developers Italia"
+  },
+  "fallbackTitle": {
+    "it": "Diamo forma ai servizi digitali della Pubblica Amministrazione",
+    "en": "We shape the digital services of the Public Administration, together"
+  },
+  "fallbackDescription": {
+    "it": "Developers Italia è il progetto pubblico che promuove un modo condiviso di pensare, costruire e far evolvere il software della Pubblica Amministrazione.",
+    "en": "Developers Italia is the public project that promotes a shared way of thinking, building, and evolving Public Administration software."
+  },
+  "titleSuffix": {
+    "it": "",
+    "en": ""
+  },
+  "ogImage": "6cdc1dcb-f7b7-4aad-abc0-43f9d3a7ed0e",
+  "favicon": "c0e209e5-049b-4554-9df6-099521a65f47",
+  "updatedAt": "2026-08-19T09:40:48.979Z",
+  "createdAt": "2026-06-19T11:12:57.582Z",
+  "globalType": "seo-default"
+}

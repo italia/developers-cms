@@ -1,0 +1,606 @@
+{
+  "id": "d40f7f02-6814-4857-ac1e-89870214e97b",
+  "variant": "dark",
+  "logoSelect": "a15876e1-be1a-41ac-a0b8-6ff47951d935",
+  "siteName": "Developers Italia",
+  "tagline": {
+    "it": "Sviluppiamo i servizi pubblici, insieme",
+    "en": "We develop our public services, together"
+  },
+  "listNavbarBrand": {
+    "it": [
+      {
+        "id": "6a7ef322c9ca09f0638d6f64",
+        "label": "Dipartimento per la trasformazione digitale",
+        "url": "https://innovazione.gov.it/dipartimento/",
+        "shortLabel": "DTD",
+        "blockName": null,
+        "blockType": "brand-header"
+      },
+      {
+        "id": "6a83160a7ee8f8c885b2dba1",
+        "label": "Agenzia per l’Italia digitale",
+        "url": "https://www.agid.gov.it/it",
+        "shortLabel": "AGID",
+        "blockName": null,
+        "blockType": "brand-header"
+      }
+    ],
+    "en": [
+      {
+        "id": "6a857b1d40738325884f82c7",
+        "label": "Dipartimento Trasformazione digitale",
+        "url": "https://innovazione.gov.it",
+        "shortLabel": "DTD",
+        "blockName": null,
+        "blockType": "brand-header"
+      },
+      {
+        "id": "6a857b4640738325884f82c9",
+        "label": "Agenzia per l'Italia digitale",
+        "url": "https://agid.it",
+        "shortLabel": "AGID",
+        "blockName": null,
+        "blockType": "brand-header"
+      }
+    ]
+  },
+  "metaNavigation": {
+    "it": [
+      {
+        "id": "6a7ef41dc9ca09f0638d6f6a",
+        "label": "Designers",
+        "url": "https://designers.italia.it/",
+        "description": null,
+        "blockName": null,
+        "blockType": "external-link"
+      }
+    ],
+    "en": [
+      {
+        "id": "6a857b8140738325884f82cb",
+        "label": "Designers",
+        "url": "https://designers.italia.it",
+        "description": "Designer Italia website",
+        "blockName": null,
+        "blockType": "external-link"
+      }
+    ]
+  },
+  "navigationBar": {
+    "it": [
+      {
+        "id": "6a7ef434c9ca09f0638d6f6c",
+        "title": "Progetto",
+        "blockName": null,
+        "blockType": "menu-item",
+        "pointsTo": {
+          "relationTo": "pages",
+          "value": "0c6c27cc-7503-4927-b401-7c4197411a8a"
+        }
+      },
+      {
+        "id": "6a7ef44dc9ca09f0638d6f6e",
+        "title": "Normativa",
+        "blockName": null,
+        "blockType": "menu-item",
+        "pointsTo": {
+          "relationTo": "pages",
+          "value": "37bccb31-b1ee-43dc-94ac-714f911f7510"
+        }
+      },
+      {
+        "id": "6a7ef460c9ca09f0638d6f70",
+        "title": "Guide",
+        "blockName": null,
+        "blockType": "menu-item",
+        "pointsTo": {
+          "relationTo": "pages",
+          "value": "e6d9916a-bca2-4656-b9e2-2c25393c54f9"
+        }
+      },
+      {
+        "id": "6a7ef475c9ca09f0638d6f72",
+        "title": "Software open source",
+        "blockName": null,
+        "blockType": "menu-item",
+        "pointsTo": {
+          "relationTo": "pages",
+          "value": "fe55e1ab-7ead-438b-b6f7-858b9db4a8dd"
+        }
+      },
+      {
+        "id": "6a7ef48cc9ca09f0638d6f74",
+        "title": "Interoperabilità e API",
+        "blockName": null,
+        "blockType": "menu-item",
+        "pointsTo": {
+          "relationTo": "pages",
+          "value": "f0c80ac3-7bcb-491b-b13f-dd95e975ea81"
+        }
+      },
+      {
+        "id": "6a7ef498c9ca09f0638d6f76",
+        "title": "Piattaforme",
+        "blockName": null,
+        "blockType": "menu-item",
+        "pointsTo": {
+          "relationTo": "catalogues",
+          "value": "e70dd15b-36ae-46d8-b723-4faef6db09eb"
+        }
+      }
+    ],
+    "en": [
+      {
+        "id": "6a857f0340738325884f82cf",
+        "title": "Project",
+        "blockName": null,
+        "blockType": "menu-item",
+        "pointsTo": {
+          "relationTo": "pages",
+          "value": "0c6c27cc-7503-4927-b401-7c4197411a8a"
+        }
+      },
+      {
+        "id": "6a857f1f40738325884f82d1",
+        "title": "Regulations",
+        "blockName": null,
+        "blockType": "menu-item",
+        "pointsTo": {
+          "relationTo": "pages",
+          "value": "37bccb31-b1ee-43dc-94ac-714f911f7510"
+        }
+      },
+      {
+        "id": "6a857f3240738325884f82d3",
+        "title": "Guides",
+        "blockName": null,
+        "blockType": "menu-item",
+        "pointsTo": {
+          "relationTo": "pages",
+          "value": "e6d9916a-bca2-4656-b9e2-2c25393c54f9"
+        }
+      },
+      {
+        "id": "6a857f4340738325884f82d5",
+        "title": "Reusable Software",
+        "blockName": null,
+        "blockType": "menu-item",
+        "pointsTo": {
+          "relationTo": "articles",
+          "value": "5cee57de-e046-43d9-a38f-18c59b9186fe"
+        }
+      },
+      {
+        "id": "6a857f6840738325884f82d7",
+        "title": "Interoperability and APIs",
+        "blockName": null,
+        "blockType": "menu-item",
+        "pointsTo": {
+          "relationTo": "pages",
+          "value": "f0c80ac3-7bcb-491b-b13f-dd95e975ea81"
+        }
+      },
+      {
+        "id": "6a857f7f40738325884f82d9",
+        "title": "Platforms",
+        "blockName": null,
+        "blockType": "menu-item",
+        "pointsTo": {
+          "relationTo": "catalogues",
+          "value": "e70dd15b-36ae-46d8-b723-4faef6db09eb"
+        }
+      }
+    ]
+  },
+  "navigationBarSecondary": {
+    "it": [
+      {
+        "id": "6a7ef4afc9ca09f0638d6f78",
+        "title": "Community",
+        "blockName": null,
+        "blockType": "menu-item",
+        "pointsTo": {
+          "relationTo": "pages",
+          "value": "0c0f78c4-be8a-49f4-a479-d3ab18199280"
+        }
+      }
+    ],
+    "en": [
+      {
+        "id": "6a857faa40738325884f82db",
+        "title": "Community",
+        "blockName": null,
+        "blockType": "menu-item",
+        "pointsTo": {
+          "relationTo": "pages",
+          "value": "0c0f78c4-be8a-49f4-a479-d3ab18199280"
+        }
+      }
+    ]
+  },
+  "heading": {
+    "it": {
+      "root": {
+        "type": "root",
+        "format": "",
+        "indent": 0,
+        "version": 1,
+        "children": [
+          {
+            "type": "paragraph",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "mode": "normal",
+                "text": "**Developers Italia** è un progetto di",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "textStyle": "",
+            "textFormat": 0
+          }
+        ],
+        "direction": null
+      }
+    },
+    "en": {
+      "root": {
+        "type": "root",
+        "format": "",
+        "indent": 0,
+        "version": 1,
+        "children": [
+          {
+            "type": "paragraph",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "mode": "normal",
+                "text": "**Developers Italia** is a project by",
+                "type": "text",
+                "style": "",
+                "detail": 0,
+                "format": 0,
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "textStyle": "",
+            "textFormat": 0
+          }
+        ],
+        "direction": null
+      }
+    }
+  },
+  "organizations": {
+    "it": [
+      {
+        "id": "6a82e89bc6213118267ca5c7",
+        "logo": "e8d24ac7-8518-4d7b-8d7a-1abf10a12799",
+        "label": "Dipartimento per la trasformazione digitale",
+        "url": "https://innovazione.gov.it/dipartimento/",
+        "blockName": null,
+        "blockType": "brand"
+      },
+      {
+        "id": "6a82e8f5c6213118267ca5c9",
+        "logo": "2d5f8660-c96b-49f2-b2e9-fce20015034a",
+        "label": "Agenzia per l'Italia digitale",
+        "url": "https://www.agid.gov.it/it",
+        "blockName": null,
+        "blockType": "brand"
+      }
+    ],
+    "en": [
+      {
+        "id": "6a857ea840738325884f82cd",
+        "logo": "ce73caca-567e-4ef7-baef-93549807060a",
+        "label": "DTD",
+        "url": "https://innovazione.gov.it",
+        "blockName": null,
+        "blockType": "brand"
+      },
+      {
+        "id": "6a857fc940738325884f82dd",
+        "logo": "7c4b3c2f-22ab-4bdd-b27b-d503b6a23135",
+        "label": "Agid",
+        "url": "https://agid.it",
+        "blockName": null,
+        "blockType": "brand"
+      }
+    ]
+  },
+  "topicTitle": {
+    "it": "Scopri gli argomenti",
+    "en": "Explore the topics"
+  },
+  "topicLink": {
+    "en": [
+      {
+        "id": "6a85805840738325884f82df",
+        "label": "Compare Software Solutions",
+        "blockName": null,
+        "blockType": "internal-link",
+        "linkTo": {
+          "relationTo": "insights",
+          "value": "11e12122-415b-4ae9-935a-49596f090693"
+        }
+      },
+      {
+        "id": "6a85807640738325884f82e1",
+        "label": "Develop and mange Software",
+        "blockName": null,
+        "blockType": "internal-link",
+        "linkTo": {
+          "relationTo": "insights",
+          "value": "e6d6ef25-d1b6-4174-8590-5c3207a2bcb8"
+        }
+      },
+      {
+        "id": "6a8580be40738325884f82e3",
+        "label": "Publishing Software for the Public Sector",
+        "blockName": null,
+        "blockType": "internal-link",
+        "linkTo": {
+          "relationTo": "insights",
+          "value": "6139ea8e-c71b-4e17-accb-650ac97a6e4a"
+        }
+      },
+      {
+        "id": "6a8580e940738325884f82e5",
+        "label": "Designing interoperable Services",
+        "blockName": null,
+        "blockType": "internal-link",
+        "linkTo": {
+          "relationTo": "insights",
+          "value": "90b3e9b1-ab9c-4f9a-9971-052b424d2fe8"
+        }
+      },
+      {
+        "id": "6a85828440738325884f82f9",
+        "label": "Adopting Reusable Software",
+        "blockName": null,
+        "blockType": "internal-link",
+        "linkTo": {
+          "relationTo": "insights",
+          "value": "4105277c-2fbe-4a30-be3e-0c2bcc390c7e"
+        }
+      }
+    ],
+    "it": [
+      {
+        "id": "6a7ef4ecc9ca09f0638d6f7a",
+        "label": "Confrontare le soluzioni software",
+        "blockName": null,
+        "blockType": "internal-link",
+        "linkTo": {
+          "relationTo": "insights",
+          "value": "11e12122-415b-4ae9-935a-49596f090693"
+        }
+      },
+      {
+        "id": "6a7ef521c9ca09f0638d6f7e",
+        "label": "Sviluppare e gestire software",
+        "blockName": null,
+        "blockType": "internal-link",
+        "linkTo": {
+          "relationTo": "insights",
+          "value": "e6d6ef25-d1b6-4174-8590-5c3207a2bcb8"
+        }
+      },
+      {
+        "id": "6a7ef541c9ca09f0638d6f80",
+        "label": "Pubblicare software per la PA",
+        "blockName": null,
+        "blockType": "internal-link",
+        "linkTo": {
+          "relationTo": "insights",
+          "value": "6139ea8e-c71b-4e17-accb-650ac97a6e4a"
+        }
+      },
+      {
+        "id": "6a7ef553c9ca09f0638d6f82",
+        "label": "Progettare servizi interoperabili",
+        "blockName": null,
+        "blockType": "internal-link",
+        "linkTo": {
+          "relationTo": "insights",
+          "value": "90b3e9b1-ab9c-4f9a-9971-052b424d2fe8"
+        }
+      }
+    ]
+  },
+  "utilityTitle": {
+    "it": "Community",
+    "en": "Community"
+  },
+  "utility": {
+    "it": [
+      {
+        "id": "6a7ef572c9ca09f0638d6f84",
+        "brandLogo": "a15876e1-be1a-41ac-a0b8-6ff47951d935",
+        "label": "Forum Italia",
+        "url": "https://forum.italia.it/",
+        "blockName": null,
+        "blockType": "supporting-brand"
+      },
+      {
+        "id": "6a7ef59dc9ca09f0638d6f86",
+        "brandLogo": "16f4f39c-a44f-449c-966e-b4f7860ca9e4",
+        "label": "Matrix",
+        "url": "https://matrix.to/#/#developers-italia:developers.italia.it",
+        "blockName": null,
+        "blockType": "supporting-brand"
+      },
+      {
+        "id": "6a7ef5bac9ca09f0638d6f88",
+        "brandLogo": "f4c57068-3e47-4bd2-8352-532dc213ab30",
+        "label": "Github",
+        "url": "https://github.com/italia",
+        "blockName": null,
+        "blockType": "supporting-brand"
+      },
+      {
+        "id": "6a7ef5d4c9ca09f0638d6f8a",
+        "label": "Innova con noi",
+        "url": "https://innovazione.gov.it/innova-con-noi/",
+        "description": "Sezione del sito di innovazione",
+        "blockName": null,
+        "blockType": "external-link"
+      }
+    ],
+    "en": [
+      {
+        "id": "6a85814f40738325884f82e7",
+        "brandLogo": "a15876e1-be1a-41ac-a0b8-6ff47951d935",
+        "label": "Italy Forum",
+        "url": "https://forum.italia.it/",
+        "blockName": null,
+        "blockType": "supporting-brand"
+      },
+      {
+        "id": "6a85819640738325884f82e9",
+        "brandLogo": "16f4f39c-a44f-449c-966e-b4f7860ca9e4",
+        "label": "Matrix",
+        "url": "https://matrix.to/#/#developers-italia:developers.italia.it",
+        "blockName": null,
+        "blockType": "supporting-brand"
+      },
+      {
+        "id": "6a8581be40738325884f82eb",
+        "brandLogo": "f4c57068-3e47-4bd2-8352-532dc213ab30",
+        "label": "GitHub",
+        "url": "https://github.com/italia",
+        "blockName": null,
+        "blockType": "supporting-brand"
+      },
+      {
+        "id": "6a8581d640738325884f82ed",
+        "label": "Innovate with us",
+        "url": "https://innovazione.gov.it/innova-con-noi/",
+        "description": null,
+        "blockName": null,
+        "blockType": "external-link"
+      }
+    ]
+  },
+  "mailingListForm": {
+    "it": [
+      {
+        "id": "6a7ef666c9ca09f0638d6f8c",
+        "title": "Iscriviti alla mailing list",
+        "blockName": null,
+        "blockType": "mailing-list-signup-block",
+        "privacyPolicy": [
+          {
+            "id": "6a7ef670c9ca09f0638d6f8e",
+            "label": "Informativa sulla privacy",
+            "blockName": null,
+            "blockType": "internal-link",
+            "linkTo": {
+              "relationTo": "pages",
+              "value": "1e7d6c7d-8464-44d6-9e4c-982038053ede"
+            }
+          }
+        ]
+      }
+    ],
+    "en": [
+      {
+        "id": "6a85820440738325884f82ef",
+        "title": "Subscribe to the mailing list",
+        "blockName": null,
+        "blockType": "mailing-list-signup-block",
+        "privacyPolicy": [
+          {
+            "id": "6a85821240738325884f82f1",
+            "label": "Privacy Policy",
+            "blockName": null,
+            "blockType": "internal-link",
+            "linkTo": {
+              "relationTo": "pages",
+              "value": "1e7d6c7d-8464-44d6-9e4c-982038053ede"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showSitemapLink": true,
+  "smallPrint": {
+    "it": [
+      {
+        "id": "6a7ef684c9ca09f0638d6f90",
+        "label": "Privacy Policy",
+        "blockName": null,
+        "blockType": "internal-link",
+        "linkTo": {
+          "relationTo": "pages",
+          "value": "1e7d6c7d-8464-44d6-9e4c-982038053ede"
+        }
+      },
+      {
+        "id": "6a7ef691c9ca09f0638d6f92",
+        "label": "Note Legali",
+        "blockName": null,
+        "blockType": "internal-link",
+        "linkTo": {
+          "relationTo": "pages",
+          "value": "a0d6b11f-9d46-428b-a542-49120e7fe165"
+        }
+      },
+      {
+        "id": "6a7ef6a0c9ca09f0638d6f94",
+        "label": "Dichiarazione di accessibilità",
+        "url": "https://form.agid.gov.it/PCM/Developers_Italia/dichiarazione",
+        "description": null,
+        "blockName": null,
+        "blockType": "external-link"
+      }
+    ],
+    "en": [
+      {
+        "id": "6a85822440738325884f82f3",
+        "label": "Privacy Policy",
+        "blockName": null,
+        "blockType": "internal-link",
+        "linkTo": {
+          "relationTo": "pages",
+          "value": "1e7d6c7d-8464-44d6-9e4c-982038053ede"
+        }
+      },
+      {
+        "id": "6a85822f40738325884f82f5",
+        "label": "Legal Notices",
+        "blockName": null,
+        "blockType": "internal-link",
+        "linkTo": {
+          "relationTo": "pages",
+          "value": "a0d6b11f-9d46-428b-a542-49120e7fe165"
+        }
+      },
+      {
+        "id": "6a85823c40738325884f82f7",
+        "label": "Accessibility Statement",
+        "url": "https://form.agid.gov.it/PCM/Developers_Italia/dichiarazione",
+        "description": null,
+        "blockName": null,
+        "blockType": "external-link"
+      }
+    ]
+  },
+  "updatedAt": "2026-08-20T10:15:00.601Z",
+  "createdAt": "2026-08-14T10:53:37.402Z",
+  "globalType": "layout"
+}

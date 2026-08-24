@@ -1,0 +1,18 @@
+[
+  {
+    "id": "65c28f67-973b-4e99-9a36-c574dfa87410",
+    "label": {
+      "it": "Approfondimento"
+    },
+    "updatedAt": "2026-08-12T13:19:22.269Z",
+    "createdAt": "2026-08-12T13:19:22.269Z"
+  },
+  {
+    "id": "4c057aa7-eb0a-472d-9a7c-9cd0e566b98a",
+    "label": {
+      "it": "Categoria notizia"
+    },
+    "updatedAt": "2026-06-19T09:04:39.159Z",
+    "createdAt": "2026-06-19T09:04:39.159Z"
+  }
+]
