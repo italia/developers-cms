@@ -864,7 +864,7 @@ export interface Page {
                           };
                           [k: string]: unknown;
                         };
-                        iconSelect: string;
+                        iconSelect: string | Media;
                         id?: string | null;
                         blockName?: string | null;
                         blockType: 'card-editorial-with-icon';
@@ -1883,7 +1883,7 @@ export interface Insight {
                           };
                           [k: string]: unknown;
                         };
-                        iconSelect: string;
+                        iconSelect: string | Media;
                         id?: string | null;
                         blockName?: string | null;
                         blockType: 'card-editorial-with-icon';
@@ -3185,7 +3185,7 @@ export interface StoryItem {
                           };
                           [k: string]: unknown;
                         };
-                        iconSelect: string;
+                        iconSelect: string | Media;
                         id?: string | null;
                         blockName?: string | null;
                         blockType: 'card-editorial-with-icon';
@@ -7237,7 +7237,7 @@ export interface Homepage {
                           };
                           [k: string]: unknown;
                         };
-                        iconSelect: string;
+                        iconSelect: string | Media;
                         id?: string | null;
                         blockName?: string | null;
                         blockType: 'card-editorial-with-icon';
