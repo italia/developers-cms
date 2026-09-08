@@ -80,7 +80,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615546868470070fddad",
+          "id": "6a8da25608fd6ff816a60aa2",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "16da45e9-22d9-42af-b690-f86c9d704442",
@@ -121,7 +121,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615546868470070fddae",
+          "id": "6a8da25608fd6ff816a60aa3",
           "bg": "default",
           "content": {
             "root": {
@@ -357,12 +357,12 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615546868470070fddb2",
+          "id": "6a8da25608fd6ff816a60aa7",
           "blockName": null,
           "blockType": "ordered-list",
           "items": [
             {
-              "id": "6a8c615546868470070fddaf",
+              "id": "6a8da25608fd6ff816a60aa4",
               "title": " Preparare l’adozione del software",
               "paragraph": {
                 "root": {
@@ -469,7 +469,7 @@
               "links": []
             },
             {
-              "id": "6a8c615546868470070fddb0",
+              "id": "6a8da25608fd6ff816a60aa5",
               "title": "  Adottare e configurare la soluzione",
               "paragraph": {
                 "root": {
@@ -595,7 +595,7 @@
               "links": []
             },
             {
-              "id": "6a8c615546868470070fddb1",
+              "id": "6a8da25608fd6ff816a60aa6",
               "title": "Gestire il progetto nel tempo",
               "paragraph": {
                 "root": {
@@ -666,7 +666,7 @@
           ]
         },
         {
-          "id": "6a8c615546868470070fddb3",
+          "id": "6a8da25608fd6ff816a60aa8",
           "title": "Continua a esplorare le guide",
           "paragraph": {
             "root": {
@@ -717,7 +717,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615546868470070fdda6",
+          "id": "6a8da25508fd6ff816a60a9b",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "16da45e9-22d9-42af-b690-f86c9d704442",
@@ -758,7 +758,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615546868470070fdda7",
+          "id": "6a8da25508fd6ff816a60a9c",
           "bg": "default",
           "content": {
             "root": {
@@ -994,12 +994,12 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615546868470070fddab",
+          "id": "6a8da25508fd6ff816a60aa0",
           "blockName": null,
           "blockType": "ordered-list",
           "items": [
             {
-              "id": "6a8c615546868470070fdda8",
+              "id": "6a8da25508fd6ff816a60a9d",
               "title": " Preparing for Software Adoption",
               "paragraph": {
                 "root": {
@@ -1106,7 +1106,7 @@
               "links": []
             },
             {
-              "id": "6a8c615546868470070fdda9",
+              "id": "6a8da25508fd6ff816a60a9e",
               "title": "  Implement and configure the solution",
               "paragraph": {
                 "root": {
@@ -1232,7 +1232,7 @@
               "links": []
             },
             {
-              "id": "6a8c615546868470070fddaa",
+              "id": "6a8da25508fd6ff816a60a9f",
               "title": "Managing the Project Over Time",
               "paragraph": {
                 "root": {
@@ -1303,7 +1303,7 @@
           ]
         },
         {
-          "id": "6a8c615546868470070fddac",
+          "id": "6a8da25508fd6ff816a60aa1",
           "title": "Continue exploring the guides",
           "paragraph": {
             "root": {
@@ -1369,7 +1369,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"adottare-software-a-riuso\",\"en\":\"adopt-reusable-software\"}",
-    "updatedAt": "2026-08-24T15:20:53.187Z",
+    "updatedAt": "2026-08-25T14:10:30.014Z",
     "createdAt": "2026-08-20T10:08:02.598Z"
   },
   {
@@ -1453,7 +1453,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615446868470070fdd9b",
+          "id": "6a8da25508fd6ff816a60a90",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "4b9d5566-feb2-49ec-8874-c8d4861ba08c",
@@ -1494,7 +1494,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615446868470070fdd9c",
+          "id": "6a8da25508fd6ff816a60a91",
           "bg": "default",
           "content": {
             "root": {
@@ -1621,12 +1621,12 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615446868470070fdda4",
+          "id": "6a8da25508fd6ff816a60a99",
           "blockName": null,
           "blockType": "ordered-list",
           "items": [
             {
-              "id": "6a8c615446868470070fdd9d",
+              "id": "6a8da25508fd6ff816a60a92",
               "title": "Definire obiettivi, policy e requisiti",
               "paragraph": {
                 "root": {
@@ -1714,7 +1714,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd9e",
+              "id": "6a8da25508fd6ff816a60a93",
               "title": "Organizzare il repository in modo chiaro",
               "paragraph": {
                 "root": {
@@ -1802,7 +1802,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd9f",
+              "id": "6a8da25508fd6ff816a60a94",
               "title": "Automatizzare l’integrazione continua (CI)",
               "paragraph": {
                 "root": {
@@ -1890,7 +1890,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdda0",
+              "id": "6a8da25508fd6ff816a60a95",
               "title": "Implementare la distribuzione continua (CD)",
               "paragraph": {
                 "root": {
@@ -1927,7 +1927,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdda1",
+              "id": "6a8da25508fd6ff816a60a96",
               "title": "Integrare sicurezza e conformità (DevSecOps)",
               "paragraph": {
                 "root": {
@@ -2015,7 +2015,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdda2",
+              "id": "6a8da25508fd6ff816a60a97",
               "title": "Monitorare, raccogliere feedback e migliorare",
               "paragraph": {
                 "root": {
@@ -2103,7 +2103,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdda3",
+              "id": "6a8da25508fd6ff816a60a98",
               "title": "Documentare e formare",
               "paragraph": {
                 "root": {
@@ -2193,7 +2193,7 @@
           ]
         },
         {
-          "id": "6a8c615446868470070fdda5",
+          "id": "6a8da25508fd6ff816a60a9a",
           "title": "Continua a esplorare le guide",
           "paragraph": {
             "root": {
@@ -2244,7 +2244,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615446868470070fdd90",
+          "id": "6a8da25508fd6ff816a60a85",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "4b9d5566-feb2-49ec-8874-c8d4861ba08c",
@@ -2285,7 +2285,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615446868470070fdd91",
+          "id": "6a8da25508fd6ff816a60a86",
           "bg": "default",
           "content": {
             "root": {
@@ -2412,12 +2412,12 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615446868470070fdd99",
+          "id": "6a8da25508fd6ff816a60a8e",
           "blockName": null,
           "blockType": "ordered-list",
           "items": [
             {
-              "id": "6a8c615446868470070fdd92",
+              "id": "6a8da25508fd6ff816a60a87",
               "title": "Define objectives, policies, and requirements",
               "paragraph": {
                 "root": {
@@ -2505,7 +2505,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd93",
+              "id": "6a8da25508fd6ff816a60a88",
               "title": "Organize the repository clearly",
               "paragraph": {
                 "root": {
@@ -2593,7 +2593,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd94",
+              "id": "6a8da25508fd6ff816a60a89",
               "title": "Automating Continuous Integration (CI)",
               "paragraph": {
                 "root": {
@@ -2681,7 +2681,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd95",
+              "id": "6a8da25508fd6ff816a60a8a",
               "title": "Implement Continuous Deployment (CD)",
               "paragraph": {
                 "root": {
@@ -2718,7 +2718,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd96",
+              "id": "6a8da25508fd6ff816a60a8b",
               "title": "Integrating Security and Compliance (DevSecOps)",
               "paragraph": {
                 "root": {
@@ -2806,7 +2806,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd97",
+              "id": "6a8da25508fd6ff816a60a8c",
               "title": "Monitor, gather feedback, and improve",
               "paragraph": {
                 "root": {
@@ -2894,7 +2894,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd98",
+              "id": "6a8da25508fd6ff816a60a8d",
               "title": "Document and Train",
               "paragraph": {
                 "root": {
@@ -2984,7 +2984,7 @@
           ]
         },
         {
-          "id": "6a8c615446868470070fdd9a",
+          "id": "6a8da25508fd6ff816a60a8f",
           "title": "Continue exploring the guides",
           "paragraph": {
             "root": {
@@ -3050,7 +3050,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"implementare-le-pratiche-devops\",\"en\":\"implementing-devops-practices\"}",
-    "updatedAt": "2026-08-24T15:20:52.840Z",
+    "updatedAt": "2026-08-25T14:10:29.735Z",
     "createdAt": "2026-08-20T10:08:02.487Z"
   },
   {
@@ -3134,7 +3134,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615446868470070fdd80",
+          "id": "6a8da25508fd6ff816a60a75",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "b6d18a0d-7108-4c45-8d3b-86f8d3a2346d",
@@ -3175,7 +3175,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615446868470070fdd81",
+          "id": "6a8da25508fd6ff816a60a76",
           "bg": "default",
           "content": {
             "root": {
@@ -3266,12 +3266,12 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615446868470070fdd8d",
+          "id": "6a8da25508fd6ff816a60a82",
           "blockName": null,
           "blockType": "ordered-list",
           "items": [
             {
-              "id": "6a8c615446868470070fdd82",
+              "id": "6a8da25508fd6ff816a60a77",
               "title": "Definire la licenza del software",
               "paragraph": {
                 "root": {
@@ -3358,7 +3358,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd83",
+              "id": "6a8da25508fd6ff816a60a78",
               "title": "Definire la licenza dei metadati",
               "paragraph": {
                 "root": {
@@ -3464,7 +3464,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd84",
+              "id": "6a8da25508fd6ff816a60a79",
               "title": "Preparare il repository del codice",
               "paragraph": {
                 "root": {
@@ -3588,7 +3588,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd85",
+              "id": "6a8da25508fd6ff816a60a7a",
               "title": "Verificare la sicurezza del codice e la qualità",
               "paragraph": {
                 "root": {
@@ -3712,7 +3712,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd88",
+              "id": "6a8da25508fd6ff816a60a7d",
               "title": "Preparare pubbliccode.yml",
               "paragraph": {
                 "root": {
@@ -3911,7 +3911,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615446868470070fdd86",
+                  "id": "6a8da25508fd6ff816a60a7b",
                   "label": "Publiccode.yml",
                   "url": "https://github.com/publiccodeyml/publiccode.yml",
                   "description": "",
@@ -3919,7 +3919,7 @@
                   "blockType": "external-link"
                 },
                 {
-                  "id": "6a8c615446868470070fdd87",
+                  "id": "6a8da25508fd6ff816a60a7c",
                   "label": "Publiccode.yml Editor",
                   "url": "https://publiccode-editor.developers.italia.it/",
                   "description": "",
@@ -3929,7 +3929,7 @@
               ]
             },
             {
-              "id": "6a8c615446868470070fdd8a",
+              "id": "6a8da25508fd6ff816a60a7f",
               "title": "Pubblicare tramite i canali ufficiali della PA",
               "paragraph": {
                 "root": {
@@ -4063,7 +4063,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615446868470070fdd89",
+                  "id": "6a8da25508fd6ff816a60a7e",
                   "label": "Catalogo Pubblico delle API",
                   "url": "https://api.gov.it/it/",
                   "description": "",
@@ -4073,7 +4073,7 @@
               ]
             },
             {
-              "id": "6a8c615446868470070fdd8b",
+              "id": "6a8da25508fd6ff816a60a80",
               "title": "Pubblicare tramite i canali ufficiali della PA",
               "paragraph": {
                 "root": {
@@ -4208,7 +4208,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd8c",
+              "id": "6a8da25508fd6ff816a60a81",
               "title": "Verificare la sicurezza del codice e la qualità",
               "paragraph": {
                 "root": {
@@ -4335,7 +4335,7 @@
           ]
         },
         {
-          "id": "6a8c615446868470070fdd8e",
+          "id": "6a8da25508fd6ff816a60a83",
           "bg": "default",
           "content": {
             "root": {
@@ -4442,7 +4442,7 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615446868470070fdd8f",
+          "id": "6a8da25508fd6ff816a60a84",
           "title": "Continua a esplorare le guide",
           "paragraph": {
             "root": {
@@ -4493,7 +4493,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615446868470070fdd70",
+          "id": "6a8da25508fd6ff816a60a65",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "b6d18a0d-7108-4c45-8d3b-86f8d3a2346d",
@@ -4534,7 +4534,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615446868470070fdd71",
+          "id": "6a8da25508fd6ff816a60a66",
           "bg": "default",
           "content": {
             "root": {
@@ -4625,12 +4625,12 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615446868470070fdd7d",
+          "id": "6a8da25508fd6ff816a60a72",
           "blockName": null,
           "blockType": "ordered-list",
           "items": [
             {
-              "id": "6a8c615446868470070fdd72",
+              "id": "6a8da25508fd6ff816a60a67",
               "title": "Define the software license",
               "paragraph": {
                 "root": {
@@ -4717,7 +4717,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd73",
+              "id": "6a8da25508fd6ff816a60a68",
               "title": "Define the metadata license",
               "paragraph": {
                 "root": {
@@ -4823,7 +4823,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd74",
+              "id": "6a8da25508fd6ff816a60a69",
               "title": "Set up the code repository",
               "paragraph": {
                 "root": {
@@ -4947,7 +4947,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd75",
+              "id": "6a8da25508fd6ff816a60a6a",
               "title": "Verify code security and quality",
               "paragraph": {
                 "root": {
@@ -5071,7 +5071,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd78",
+              "id": "6a8da25508fd6ff816a60a6d",
               "title": "Prepare pubbliccode.yml",
               "paragraph": {
                 "root": {
@@ -5288,7 +5288,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615446868470070fdd76",
+                  "id": "6a8da25508fd6ff816a60a6b",
                   "label": "Publiccode.yml",
                   "url": "https://github.com/publiccodeyml/publiccode.yml",
                   "description": "",
@@ -5296,7 +5296,7 @@
                   "blockType": "external-link"
                 },
                 {
-                  "id": "6a8c615446868470070fdd77",
+                  "id": "6a8da25508fd6ff816a60a6c",
                   "label": "Publiccode.yml Editor",
                   "url": "https://publiccode-editor.developers.italia.it/",
                   "description": "",
@@ -5306,7 +5306,7 @@
               ]
             },
             {
-              "id": "6a8c615446868470070fdd7a",
+              "id": "6a8da25508fd6ff816a60a6f",
               "title": "Publish through the government's official channels",
               "paragraph": {
                 "root": {
@@ -5440,7 +5440,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615446868470070fdd79",
+                  "id": "6a8da25508fd6ff816a60a6e",
                   "label": "Public API Catalog",
                   "url": "https://api.gov.it/it/",
                   "description": "",
@@ -5450,7 +5450,7 @@
               ]
             },
             {
-              "id": "6a8c615446868470070fdd7b",
+              "id": "6a8da25508fd6ff816a60a70",
               "title": "Publish through the government's official channels",
               "paragraph": {
                 "root": {
@@ -5585,7 +5585,7 @@
               "links": []
             },
             {
-              "id": "6a8c615446868470070fdd7c",
+              "id": "6a8da25508fd6ff816a60a71",
               "title": "Verify code security and quality",
               "paragraph": {
                 "root": {
@@ -5712,7 +5712,7 @@
           ]
         },
         {
-          "id": "6a8c615446868470070fdd7e",
+          "id": "6a8da25508fd6ff816a60a73",
           "bg": "default",
           "content": {
             "root": {
@@ -5819,7 +5819,7 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615446868470070fdd7f",
+          "id": "6a8da25508fd6ff816a60a74",
           "title": "Continue exploring the guides",
           "paragraph": {
             "root": {
@@ -5885,7 +5885,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"pubblicare-software-per-la-pa\",\"en\":\"publishing-software-for-the-public-sector\"}",
-    "updatedAt": "2026-08-24T15:20:52.498Z",
+    "updatedAt": "2026-08-25T14:10:29.493Z",
     "createdAt": "2026-08-20T10:08:02.380Z"
   },
   {
@@ -5969,7 +5969,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615446868470070fdd6e",
+          "id": "6a8da25508fd6ff816a60a63",
           "variant": "xsmall-full",
           "bg": "lighter",
           "backgroundImage": "10c88f39-a95f-4a4d-9372-fdd73959bbd5",
@@ -6010,7 +6010,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615446868470070fdd6f",
+          "id": "6a8da25508fd6ff816a60a64",
           "bg": "default",
           "content": {
             "root": {
@@ -6386,7 +6386,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615446868470070fdd6c",
+          "id": "6a8da25508fd6ff816a60a61",
           "variant": "xsmall-full",
           "bg": "lighter",
           "backgroundImage": "10c88f39-a95f-4a4d-9372-fdd73959bbd5",
@@ -6427,7 +6427,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615446868470070fdd6d",
+          "id": "6a8da25508fd6ff816a60a62",
           "bg": "default",
           "content": {
             "root": {
@@ -6818,7 +6818,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"segnala-buoni-esempi-di-progettazione-e-sviluppo-nella-pa\",\"en\":\"report-good-examples-of-design-and-development-in-the-public-sector\"}",
-    "updatedAt": "2026-08-24T15:20:52.160Z",
+    "updatedAt": "2026-08-25T14:10:29.279Z",
     "createdAt": "2026-08-20T10:08:02.286Z"
   },
   {
@@ -6902,7 +6902,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615346868470070fdd68",
+          "id": "6a8da25508fd6ff816a60a5d",
           "variant": "xsmall-full",
           "bg": "lighter",
           "backgroundImage": "e743a6ec-8f64-47f6-8c75-32fd5e08ec56",
@@ -6943,7 +6943,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615346868470070fdd69",
+          "id": "6a8da25508fd6ff816a60a5e",
           "bg": "default",
           "content": {
             "root": {
@@ -7235,7 +7235,7 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615346868470070fdd6a",
+          "id": "6a8da25508fd6ff816a60a5f",
           "bg": "lighter",
           "content": {
             "root": {
@@ -7503,7 +7503,7 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615346868470070fdd6b",
+          "id": "6a8da25508fd6ff816a60a60",
           "bg": "default",
           "content": {
             "root": {
@@ -7742,7 +7742,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615346868470070fdd64",
+          "id": "6a8da25408fd6ff816a60a59",
           "variant": "xsmall-full",
           "bg": "lighter",
           "backgroundImage": "e743a6ec-8f64-47f6-8c75-32fd5e08ec56",
@@ -7783,7 +7783,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615346868470070fdd65",
+          "id": "6a8da25408fd6ff816a60a5a",
           "bg": "default",
           "content": {
             "root": {
@@ -8075,7 +8075,7 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615346868470070fdd66",
+          "id": "6a8da25408fd6ff816a60a5b",
           "bg": "lighter",
           "content": {
             "root": {
@@ -8343,7 +8343,7 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615346868470070fdd67",
+          "id": "6a8da25408fd6ff816a60a5c",
           "bg": "default",
           "content": {
             "root": {
@@ -8597,7 +8597,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"la-visione-e-i-valori-di-developers-italia\",\"en\":\"the-vision-and-values-of-developers-italia\"}",
-    "updatedAt": "2026-08-24T15:20:51.884Z",
+    "updatedAt": "2026-08-25T14:10:29.089Z",
     "createdAt": "2026-08-20T10:08:02.199Z"
   },
   {
@@ -8681,7 +8681,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615346868470070fdd55",
+          "id": "6a8da25408fd6ff816a60a4a",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "d0e269fe-5cbe-4edc-8ea5-5730e6053fd8",
@@ -8722,7 +8722,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615346868470070fdd56",
+          "id": "6a8da25408fd6ff816a60a4b",
           "bg": "default",
           "content": {
             "root": {
@@ -9019,12 +9019,12 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615346868470070fdd61",
+          "id": "6a8da25408fd6ff816a60a56",
           "blockName": null,
           "blockType": "ordered-list",
           "items": [
             {
-              "id": "6a8c615346868470070fdd59",
+              "id": "6a8da25408fd6ff816a60a4e",
               "title": "Definizione del fabbisogno",
               "paragraph": {
                 "root": {
@@ -9092,7 +9092,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615346868470070fdd57",
+                  "id": "6a8da25408fd6ff816a60a4c",
                   "label": "Strumento per la Valutazione Comparativa nell'Acquisizione e Riuso di Software",
                   "url": "https://developers.italia.it/it/software/d6ed7fdd-8eca-4368-9ac0-6de71211a2c2",
                   "description": "",
@@ -9100,7 +9100,7 @@
                   "blockType": "external-link"
                 },
                 {
-                  "id": "6a8c615346868470070fdd58",
+                  "id": "6a8da25408fd6ff816a60a4d",
                   "label": "Valutazione Comparativa Tecnica ed Economica",
                   "url": "https://teamdigitale.github.io/devita-ccros-valcomp-software-pa/",
                   "description": "",
@@ -9110,7 +9110,7 @@
               ]
             },
             {
-              "id": "6a8c615346868470070fdd5b",
+              "id": "6a8da25408fd6ff816a60a50",
               "title": "Ricognizione soluzioni disponibili",
               "paragraph": {
                 "root": {
@@ -9178,7 +9178,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615346868470070fdd5a",
+                  "id": "6a8da25408fd6ff816a60a4f",
                   "label": "Catalogo software di Developers Italia",
                   "url": "https://catalogo-software.developers.italia.it/",
                   "description": "",
@@ -9188,7 +9188,7 @@
               ]
             },
             {
-              "id": "6a8c615346868470070fdd5d",
+              "id": "6a8da25408fd6ff816a60a52",
               "title": "Metodologia comparativa",
               "paragraph": {
                 "root": {
@@ -9256,7 +9256,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615346868470070fdd5c",
+                  "id": "6a8da25408fd6ff816a60a51",
                   "label": "Linee guida per la valutazione comparativa (AgID, 2013)",
                   "url": "https://www.agid.gov.it//sites/default/files/repository_files/linee_guida/circolare_agid_63-2013_linee_guida_art_68_del_cad_ver_13_b.pdf",
                   "description": "",
@@ -9266,7 +9266,7 @@
               ]
             },
             {
-              "id": "6a8c615346868470070fdd5e",
+              "id": "6a8da25408fd6ff816a60a53",
               "title": "Valutazione e confronto",
               "paragraph": {
                 "root": {
@@ -9354,7 +9354,7 @@
               "links": []
             },
             {
-              "id": "6a8c615346868470070fdd5f",
+              "id": "6a8da25408fd6ff816a60a54",
               "title": "Scelta motivata e approvazione",
               "paragraph": {
                 "root": {
@@ -9423,7 +9423,7 @@
               "links": []
             },
             {
-              "id": "6a8c615346868470070fdd60",
+              "id": "6a8da25408fd6ff816a60a55",
               "title": "Monitoraggio post-adozione",
               "paragraph": {
                 "root": {
@@ -9494,7 +9494,7 @@
           ]
         },
         {
-          "id": "6a8c615346868470070fdd62",
+          "id": "6a8da25408fd6ff816a60a57",
           "bg": "default",
           "content": {
             "root": {
@@ -10033,7 +10033,7 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615346868470070fdd63",
+          "id": "6a8da25408fd6ff816a60a58",
           "title": "Continua a esplorare le guide",
           "paragraph": {
             "root": {
@@ -10084,7 +10084,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615346868470070fdd46",
+          "id": "6a8da25408fd6ff816a60a3b",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "d0e269fe-5cbe-4edc-8ea5-5730e6053fd8",
@@ -10125,7 +10125,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615346868470070fdd47",
+          "id": "6a8da25408fd6ff816a60a3c",
           "bg": "default",
           "content": {
             "root": {
@@ -10422,12 +10422,12 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615346868470070fdd52",
+          "id": "6a8da25408fd6ff816a60a47",
           "blockName": null,
           "blockType": "ordered-list",
           "items": [
             {
-              "id": "6a8c615346868470070fdd4a",
+              "id": "6a8da25408fd6ff816a60a3f",
               "title": "Determining Needs",
               "paragraph": {
                 "root": {
@@ -10495,7 +10495,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615346868470070fdd48",
+                  "id": "6a8da25408fd6ff816a60a3d",
                   "label": "Tool for Comparative Evaluation in Software Acquisition and Reuse",
                   "url": "https://developers.italia.it/it/software/d6ed7fdd-8eca-4368-9ac0-6de71211a2c2",
                   "description": "",
@@ -10503,7 +10503,7 @@
                   "blockType": "external-link"
                 },
                 {
-                  "id": "6a8c615346868470070fdd49",
+                  "id": "6a8da25408fd6ff816a60a3e",
                   "label": "Technical and Economic Comparative Assessment",
                   "url": "https://teamdigitale.github.io/devita-ccros-valcomp-software-pa/",
                   "description": "",
@@ -10513,7 +10513,7 @@
               ]
             },
             {
-              "id": "6a8c615346868470070fdd4c",
+              "id": "6a8da25408fd6ff816a60a41",
               "title": "Survey of Available Solutions",
               "paragraph": {
                 "root": {
@@ -10581,7 +10581,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615346868470070fdd4b",
+                  "id": "6a8da25408fd6ff816a60a40",
                   "label": "Developers Italia Software Catalog",
                   "url": "https://catalogo-software.developers.italia.it/",
                   "description": "",
@@ -10591,7 +10591,7 @@
               ]
             },
             {
-              "id": "6a8c615346868470070fdd4e",
+              "id": "6a8da25408fd6ff816a60a43",
               "title": "Comparative Methodology",
               "paragraph": {
                 "root": {
@@ -10659,7 +10659,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615346868470070fdd4d",
+                  "id": "6a8da25408fd6ff816a60a42",
                   "label": "Guidelines for Comparative Evaluation (AgID, 2013)",
                   "url": "https://www.agid.gov.it//sites/default/files/repository_files/linee_guida/circolare_agid_63-2013_linee_guida_art_68_del_cad_ver_13_b.pdf",
                   "description": "",
@@ -10669,7 +10669,7 @@
               ]
             },
             {
-              "id": "6a8c615346868470070fdd4f",
+              "id": "6a8da25408fd6ff816a60a44",
               "title": "Evaluation and Comparison",
               "paragraph": {
                 "root": {
@@ -10757,7 +10757,7 @@
               "links": []
             },
             {
-              "id": "6a8c615346868470070fdd50",
+              "id": "6a8da25408fd6ff816a60a45",
               "title": "Reasoned Decision and Approval",
               "paragraph": {
                 "root": {
@@ -10826,7 +10826,7 @@
               "links": []
             },
             {
-              "id": "6a8c615346868470070fdd51",
+              "id": "6a8da25408fd6ff816a60a46",
               "title": "Post-Adoption Follow-Up",
               "paragraph": {
                 "root": {
@@ -10897,7 +10897,7 @@
           ]
         },
         {
-          "id": "6a8c615346868470070fdd53",
+          "id": "6a8da25408fd6ff816a60a48",
           "bg": "default",
           "content": {
             "root": {
@@ -11436,7 +11436,7 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615346868470070fdd54",
+          "id": "6a8da25408fd6ff816a60a49",
           "title": "Continue exploring the guides",
           "paragraph": {
             "root": {
@@ -11502,7 +11502,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"confrontare-le-soluzioni-software\",\"en\":\"compare-software-solutions\"}",
-    "updatedAt": "2026-08-24T15:20:51.586Z",
+    "updatedAt": "2026-08-25T14:10:28.810Z",
     "createdAt": "2026-08-20T10:08:02.105Z"
   },
   {
@@ -11956,7 +11956,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615546868470070fdddb",
+          "id": "6a8da25608fd6ff816a60ad0",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "4795a740-b416-45bb-b9eb-315e0c81b87f",
@@ -11997,7 +11997,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615546868470070fdddc",
+          "id": "6a8da25608fd6ff816a60ad1",
           "bg": "default",
           "content": {
             "root": {
@@ -12142,12 +12142,12 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615546868470070fddeb",
+          "id": "6a8da25608fd6ff816a60ae0",
           "blockName": null,
           "blockType": "ordered-list",
           "items": [
             {
-              "id": "6a8c615546868470070fdddf",
+              "id": "6a8da25608fd6ff816a60ad4",
               "title": "Ricerca",
               "paragraph": {
                 "root": {
@@ -12201,7 +12201,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615546868470070fdddd",
+                  "id": "6a8da25608fd6ff816a60ad2",
                   "label": "Catalogo pubblico delle API",
                   "url": "https://api.gov.it/it/",
                   "description": "",
@@ -12209,7 +12209,7 @@
                   "blockType": "external-link"
                 },
                 {
-                  "id": "6a8c615546868470070fddde",
+                  "id": "6a8da25608fd6ff816a60ad3",
                   "label": "Piattaforma Digitale Nazionale Dati (PDND)",
                   "url": "https://www.interop.pagopa.it",
                   "description": "",
@@ -12219,7 +12219,7 @@
               ]
             },
             {
-              "id": "6a8c615546868470070fdde3",
+              "id": "6a8da25608fd6ff816a60ad8",
               "title": "Sviluppa",
               "paragraph": {
                 "root": {
@@ -12273,7 +12273,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615546868470070fdde0",
+                  "id": "6a8da25608fd6ff816a60ad5",
                   "label": "Introduzione alla semantica dei dati",
                   "url": "https://teamdigitale.github.io/dati-semantic-doc-introduzione-semantica/",
                   "description": "",
@@ -12281,7 +12281,7 @@
                   "blockType": "external-link"
                 },
                 {
-                  "id": "6a8c615546868470070fdde1",
+                  "id": "6a8da25608fd6ff816a60ad6",
                   "label": "Schema",
                   "url": "https://schema.gov.it",
                   "description": "",
@@ -12289,7 +12289,7 @@
                   "blockType": "external-link"
                 },
                 {
-                  "id": "6a8c615546868470070fdde2",
+                  "id": "6a8da25608fd6ff816a60ad7",
                   "label": "Risorse per sviluppare API",
                   "url": "https://github.com/italia#-interoperabilit%C3%A0-e-semantica-pdnd-e-schemagovit",
                   "description": "",
@@ -12299,7 +12299,7 @@
               ]
             },
             {
-              "id": "6a8c615546868470070fdde7",
+              "id": "6a8da25608fd6ff816a60adc",
               "title": "Verifica",
               "paragraph": {
                 "root": {
@@ -12335,7 +12335,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615546868470070fdde4",
+                  "id": "6a8da25608fd6ff816a60ad9",
                   "label": "API OAS checker",
                   "url": "https://italia.github.io/api-oas-checker/",
                   "description": "",
@@ -12343,7 +12343,7 @@
                   "blockType": "external-link"
                 },
                 {
-                  "id": "6a8c615546868470070fdde5",
+                  "id": "6a8da25608fd6ff816a60ada",
                   "label": "Regole per il controllo automatico di specifiche OpenAPI",
                   "url": "https://github.com/italia/api-oas-checker-rules",
                   "description": "",
@@ -12351,7 +12351,7 @@
                   "blockType": "external-link"
                 },
                 {
-                  "id": "6a8c615546868470070fdde6",
+                  "id": "6a8da25608fd6ff816a60adb",
                   "label": "Schema Editor",
                   "url": "https://teamdigitale.github.io/dati-semantic-schema-editor/latest/",
                   "description": "",
@@ -12361,7 +12361,7 @@
               ]
             },
             {
-              "id": "6a8c615546868470070fddea",
+              "id": "6a8da25608fd6ff816a60adf",
               "title": "Pubblica",
               "paragraph": {
                 "root": {
@@ -12397,7 +12397,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615546868470070fdde8",
+                  "id": "6a8da25608fd6ff816a60add",
                   "label": "Piattaforma Digitale Nazionale Dati (PDND)",
                   "url": "https://www.interop.pagopa.it",
                   "description": "",
@@ -12405,7 +12405,7 @@
                   "blockType": "external-link"
                 },
                 {
-                  "id": "6a8c615546868470070fdde9",
+                  "id": "6a8da25608fd6ff816a60ade",
                   "label": "Guida alla nomenclatura degli e-service",
                   "url": "https://italia.github.io/pdnd-guida-nomenclatura-eservice",
                   "description": "",
@@ -12417,7 +12417,7 @@
           ]
         },
         {
-          "id": "6a8c615546868470070fddec",
+          "id": "6a8da25608fd6ff816a60ae1",
           "title": "Continua a esplorare le guide",
           "paragraph": {
             "root": {
@@ -12466,7 +12466,7 @@
           ]
         },
         {
-          "id": "6a8c615546868470070fddef",
+          "id": "6a8da25608fd6ff816a60ae4",
           "variant": "variant-1",
           "bg": "dark",
           "heading": "h2",
@@ -12475,7 +12475,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615546868470070fddee",
+              "id": "6a8da25608fd6ff816a60ae3",
               "title": "Cosa trovi su api.gov.it",
               "paragraph": {
                 "root": {
@@ -12510,7 +12510,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615546868470070fdded",
+                  "id": "6a8da25608fd6ff816a60ae2",
                   "label": "Vai sul sito",
                   "url": "https://api.gov.it/it/",
                   "description": "",
@@ -12525,7 +12525,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615546868470070fddc8",
+          "id": "6a8da25608fd6ff816a60abd",
           "variant": "small",
           "bg": "lighter",
           "backgroundImage": null,
@@ -12566,7 +12566,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615546868470070fddc9",
+          "id": "6a8da25608fd6ff816a60abe",
           "bg": "default",
           "content": {
             "root": {
@@ -12711,12 +12711,12 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615546868470070fddd6",
+          "id": "6a8da25608fd6ff816a60acb",
           "blockName": null,
           "blockType": "ordered-list",
           "items": [
             {
-              "id": "6a8c615546868470070fddcc",
+              "id": "6a8da25608fd6ff816a60ac1",
               "title": "Search",
               "paragraph": {
                 "root": {
@@ -12770,7 +12770,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615546868470070fddca",
+                  "id": "6a8da25608fd6ff816a60abf",
                   "label": "Public API catalog",
                   "url": "https://api.gov.it/it/",
                   "description": "",
@@ -12778,7 +12778,7 @@
                   "blockType": "external-link"
                 },
                 {
-                  "id": "6a8c615546868470070fddcb",
+                  "id": "6a8da25608fd6ff816a60ac0",
                   "label": "National Digital Data Platform (PDND)",
                   "url": "https://www.interop.pagopa.it",
                   "description": "",
@@ -12788,7 +12788,7 @@
               ]
             },
             {
-              "id": "6a8c615546868470070fddcf",
+              "id": "6a8da25608fd6ff816a60ac4",
               "title": "Develop",
               "paragraph": {
                 "root": {
@@ -12842,7 +12842,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615546868470070fddcd",
+                  "id": "6a8da25608fd6ff816a60ac2",
                   "label": "Introduction to data semantics",
                   "url": "https://teamdigitale.github.io/dati-semantic-doc-introduzione-semantica/",
                   "description": "",
@@ -12850,7 +12850,7 @@
                   "blockType": "external-link"
                 },
                 {
-                  "id": "6a8c615546868470070fddce",
+                  "id": "6a8da25608fd6ff816a60ac3",
                   "label": "Scheme",
                   "url": "https://schema.gov.it",
                   "description": "",
@@ -12860,7 +12860,7 @@
               ]
             },
             {
-              "id": "6a8c615546868470070fddd3",
+              "id": "6a8da25608fd6ff816a60ac8",
               "title": "Check",
               "paragraph": {
                 "root": {
@@ -12896,7 +12896,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615546868470070fddd0",
+                  "id": "6a8da25608fd6ff816a60ac5",
                   "label": "API OAS checker",
                   "url": "https://italia.github.io/api-oas-checker/",
                   "description": "",
@@ -12904,7 +12904,7 @@
                   "blockType": "external-link"
                 },
                 {
-                  "id": "6a8c615546868470070fddd1",
+                  "id": "6a8da25608fd6ff816a60ac6",
                   "label": "Rules for automatic checking of OpenAPI specifications",
                   "url": "https://github.com/italia/api-oas-checker-rules",
                   "description": "",
@@ -12912,7 +12912,7 @@
                   "blockType": "external-link"
                 },
                 {
-                  "id": "6a8c615546868470070fddd2",
+                  "id": "6a8da25608fd6ff816a60ac7",
                   "label": "Schema Editor",
                   "url": "https://teamdigitale.github.io/dati-semantic-schema-editor/latest/",
                   "description": "",
@@ -12922,7 +12922,7 @@
               ]
             },
             {
-              "id": "6a8c615546868470070fddd5",
+              "id": "6a8da25608fd6ff816a60aca",
               "title": "Publish",
               "paragraph": {
                 "root": {
@@ -12958,7 +12958,7 @@
               "blockType": "list-item-resource",
               "links": [
                 {
-                  "id": "6a8c615546868470070fddd4",
+                  "id": "6a8da25608fd6ff816a60ac9",
                   "label": "National Digital Data Platform (PDND)",
                   "url": "https://www.interop.pagopa.it",
                   "description": "",
@@ -12970,7 +12970,7 @@
           ]
         },
         {
-          "id": "6a8c615546868470070fddd7",
+          "id": "6a8da25608fd6ff816a60acc",
           "title": "Continued exploration",
           "paragraph": {
             "root": {
@@ -13019,7 +13019,7 @@
           ]
         },
         {
-          "id": "6a8c615546868470070fddda",
+          "id": "6a8da25608fd6ff816a60acf",
           "variant": "variant-1",
           "bg": "dark",
           "heading": "h2",
@@ -13028,7 +13028,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615546868470070fddd9",
+              "id": "6a8da25608fd6ff816a60ace",
               "title": "What you can find at api.gov.it",
               "paragraph": {
                 "root": {
@@ -13063,7 +13063,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615546868470070fddd8",
+                  "id": "6a8da25608fd6ff816a60acd",
                   "label": "Go to the site",
                   "url": "https://api.gov.it/it/",
                   "description": "",
@@ -13093,7 +13093,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"progettare-e-integrare-servizi-interoperabili\",\"en\":\"design-and-integrate-services-interoperable\"}",
-    "updatedAt": "2026-08-24T15:20:53.922Z",
+    "updatedAt": "2026-08-25T14:10:30.584Z",
     "createdAt": "2026-06-19T09:08:31.833Z"
   },
   {
@@ -13177,7 +13177,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615546868470070fddbe",
+          "id": "6a8da25608fd6ff816a60ab3",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "a98ae62e-c16d-493f-8a95-b7918513dcd8",
@@ -13218,7 +13218,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615546868470070fddbf",
+          "id": "6a8da25608fd6ff816a60ab4",
           "bg": "default",
           "content": {
             "root": {
@@ -13345,12 +13345,12 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615546868470070fddc3",
+          "id": "6a8da25608fd6ff816a60ab8",
           "blockName": null,
           "blockType": "ordered-list",
           "items": [
             {
-              "id": "6a8c615546868470070fddc0",
+              "id": "6a8da25608fd6ff816a60ab5",
               "title": "Prima di pubblicare: verifica rapida",
               "paragraph": {
                 "root": {
@@ -13551,7 +13551,7 @@
               "links": []
             },
             {
-              "id": "6a8c615546868470070fddc1",
+              "id": "6a8da25608fd6ff816a60ab6",
               "title": "Quando pubblichi: cosa non dimenticare",
               "paragraph": {
                 "root": {
@@ -13657,7 +13657,7 @@
               "links": []
             },
             {
-              "id": "6a8c615546868470070fddc2",
+              "id": "6a8da25608fd6ff816a60ab7",
               "title": "Dopo il rilascio: gestire il progetto nel tempo",
               "paragraph": {
                 "root": {
@@ -13784,7 +13784,7 @@
           ]
         },
         {
-          "id": "6a8c615546868470070fddc4",
+          "id": "6a8da25608fd6ff816a60ab9",
           "title": "Continua a esplorare le guide",
           "paragraph": {
             "root": {
@@ -13833,7 +13833,7 @@
           ]
         },
         {
-          "id": "6a8c615546868470070fddc7",
+          "id": "6a8da25608fd6ff816a60abc",
           "variant": "variant-1",
           "bg": "dark",
           "heading": "h2",
@@ -13842,7 +13842,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615546868470070fddc6",
+              "id": "6a8da25608fd6ff816a60abb",
               "title": "Approfondisci",
               "paragraph": {
                 "root": {
@@ -13877,7 +13877,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615546868470070fddc5",
+                  "id": "6a8da25608fd6ff816a60aba",
                   "label": "Leggi su Docs Italia",
                   "url": "https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/2022-05/per-chi-sviluppa-il-software.html",
                   "description": "",
@@ -13892,7 +13892,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615546868470070fddb4",
+          "id": "6a8da25608fd6ff816a60aa9",
           "variant": "small",
           "bg": "lighter",
           "backgroundImage": null,
@@ -13933,7 +13933,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615546868470070fddb5",
+          "id": "6a8da25608fd6ff816a60aaa",
           "bg": "default",
           "content": {
             "root": {
@@ -14060,12 +14060,12 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615546868470070fddb9",
+          "id": "6a8da25608fd6ff816a60aae",
           "blockName": null,
           "blockType": "ordered-list",
           "items": [
             {
-              "id": "6a8c615546868470070fddb6",
+              "id": "6a8da25608fd6ff816a60aab",
               "title": "Before publishing: quick check",
               "paragraph": {
                 "root": {
@@ -14266,7 +14266,7 @@
               "links": []
             },
             {
-              "id": "6a8c615546868470070fddb7",
+              "id": "6a8da25608fd6ff816a60aac",
               "title": "When you publish: what not to forget",
               "paragraph": {
                 "root": {
@@ -14372,7 +14372,7 @@
               "links": []
             },
             {
-              "id": "6a8c615546868470070fddb8",
+              "id": "6a8da25608fd6ff816a60aad",
               "title": "After release: managing the project over time",
               "paragraph": {
                 "root": {
@@ -14499,7 +14499,7 @@
           ]
         },
         {
-          "id": "6a8c615546868470070fddba",
+          "id": "6a8da25608fd6ff816a60aaf",
           "title": "Continued exploration",
           "paragraph": {
             "root": {
@@ -14548,7 +14548,7 @@
           ]
         },
         {
-          "id": "6a8c615546868470070fddbd",
+          "id": "6a8da25608fd6ff816a60ab2",
           "variant": "variant-1",
           "bg": "dark",
           "heading": "h2",
@@ -14557,7 +14557,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615546868470070fddbc",
+              "id": "6a8da25608fd6ff816a60ab1",
               "title": "Read more",
               "paragraph": {
                 "root": {
@@ -14592,7 +14592,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615546868470070fddbb",
+                  "id": "6a8da25608fd6ff816a60ab0",
                   "label": "Read about Docs Italy",
                   "url": "https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/2022-05/per-chi-sviluppa-il-software.html",
                   "description": "",
@@ -14622,7 +14622,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"sviluppare-e-gestire-software-con-licenza-aperta\",\"en\":\"develop-and-manage-software-with-open-license\"}",
-    "updatedAt": "2026-08-24T15:20:53.521Z",
+    "updatedAt": "2026-08-25T14:10:30.300Z",
     "createdAt": "2026-06-19T09:08:31.674Z"
   }
 ]

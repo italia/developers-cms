@@ -42,6 +42,9 @@ next-env.d.ts
 
 /media
 
+# contains live API keys for the target instance — never commit this
+/data/remote_users_and_keys.json
+
 # Playwright
 node_modules/
 /test-results/

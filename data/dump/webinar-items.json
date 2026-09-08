@@ -47,12 +47,12 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615d46868470070fdefa",
+          "id": "6a8da25c08fd6ff816a60bf3",
           "blockName": null,
           "blockType": "webinar-description",
           "text": [
             {
-              "id": "6a8c615d46868470070fdef5",
+              "id": "6a8da25c08fd6ff816a60bee",
               "title": "Progettare API di qualità per servizi pubblici interoperabili",
               "paragraph": {
                 "root": {
@@ -90,12 +90,12 @@
           ],
           "subjects": [
             {
-              "id": "6a8c615d46868470070fdef8",
+              "id": "6a8da25c08fd6ff816a60bf1",
               "blockName": null,
               "blockType": "feature-list",
               "items": [
                 {
-                  "id": "6a8c615d46868470070fdef6",
+                  "id": "6a8da25c08fd6ff816a60bef",
                   "title": "Luogo",
                   "paragraph": {
                     "root": {
@@ -130,7 +130,7 @@
                   "blockType": "list-item"
                 },
                 {
-                  "id": "6a8c615d46868470070fdef7",
+                  "id": "6a8da25c08fd6ff816a60bf0",
                   "title": "Data",
                   "paragraph": {
                     "root": {
@@ -169,7 +169,7 @@
           ],
           "resources": [
             {
-              "id": "6a8c615d46868470070fdef9",
+              "id": "6a8da25c08fd6ff816a60bf2",
               "title": "Approfondisci",
               "blockName": null,
               "blockType": "quick-link-card",
@@ -191,7 +191,7 @@
           ]
         },
         {
-          "id": "6a8c615d46868470070fdefc",
+          "id": "6a8da25c08fd6ff816a60bf5",
           "title": "Webinar transcript block",
           "category": "",
           "videoUrl": "https://www.youtube.com/watch?v=dM5kb9pdVdU",
@@ -253,7 +253,7 @@
           "blockType": "action-card",
           "cta": [
             {
-              "id": "6a8c615d46868470070fdefb",
+              "id": "6a8da25c08fd6ff816a60bf4",
               "label": "download link",
               "doc": "c6145a5d-62d9-4a8e-9110-0aa90a027a5b",
               "description": "downalod qualcosa",
@@ -485,7 +485,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"progettare-api-di-qualita-per-servizi-pubblici-interoperabili\"}",
-    "updatedAt": "2026-08-24T15:21:01.177Z",
+    "updatedAt": "2026-08-25T14:10:36.746Z",
     "createdAt": "2026-08-20T09:31:16.335Z"
   },
   {
@@ -536,12 +536,12 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615c46868470070fdef2",
+          "id": "6a8da25c08fd6ff816a60beb",
           "blockName": null,
           "blockType": "webinar-description",
           "text": [
             {
-              "id": "6a8c615c46868470070fdeed",
+              "id": "6a8da25c08fd6ff816a60be6",
               "title": "Community lab di Developers Italia: software a riuso nella PA",
               "paragraph": {
                 "root": {
@@ -579,12 +579,12 @@
           ],
           "subjects": [
             {
-              "id": "6a8c615c46868470070fdef0",
+              "id": "6a8da25c08fd6ff816a60be9",
               "blockName": null,
               "blockType": "feature-list",
               "items": [
                 {
-                  "id": "6a8c615c46868470070fdeee",
+                  "id": "6a8da25c08fd6ff816a60be7",
                   "title": "Luogo",
                   "paragraph": {
                     "root": {
@@ -619,7 +619,7 @@
                   "blockType": "list-item"
                 },
                 {
-                  "id": "6a8c615c46868470070fdeef",
+                  "id": "6a8da25c08fd6ff816a60be8",
                   "title": "Data",
                   "paragraph": {
                     "root": {
@@ -658,7 +658,7 @@
           ],
           "resources": [
             {
-              "id": "6a8c615c46868470070fdef1",
+              "id": "6a8da25c08fd6ff816a60bea",
               "title": "Approfondisci",
               "blockName": null,
               "blockType": "quick-link-card",
@@ -672,7 +672,7 @@
           ]
         },
         {
-          "id": "6a8c615c46868470070fdef4",
+          "id": "6a8da25c08fd6ff816a60bed",
           "title": "Webinar transcript block",
           "category": "",
           "videoUrl": "https://www.youtube.com/watch?v=3VzeQP7thUA&t=1s",
@@ -734,7 +734,7 @@
           "blockType": "action-card",
           "cta": [
             {
-              "id": "6a8c615c46868470070fdef3",
+              "id": "6a8da25c08fd6ff816a60bec",
               "label": "Download link",
               "doc": "6cdc1dcb-f7b7-4aad-abc0-43f9d3a7ed0e",
               "description": "Scopri di più",
@@ -820,7 +820,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"community-lab-di-developers-italia-software-a-riuso-nella-pa\"}",
-    "updatedAt": "2026-08-24T15:21:00.954Z",
+    "updatedAt": "2026-08-25T14:10:36.540Z",
     "createdAt": "2026-08-20T09:31:16.280Z"
   },
   {
@@ -871,12 +871,12 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615c46868470070fdeea",
+          "id": "6a8da25c08fd6ff816a60be3",
           "blockName": null,
           "blockType": "webinar-description",
           "text": [
             {
-              "id": "6a8c615c46868470070fdee5",
+              "id": "6a8da25c08fd6ff816a60bde",
               "title": "Il nuovo Dev Kit Italia e gli ultimi progressi del design system .italia",
               "paragraph": {
                 "root": {
@@ -914,12 +914,12 @@
           ],
           "subjects": [
             {
-              "id": "6a8c615c46868470070fdee8",
+              "id": "6a8da25c08fd6ff816a60be1",
               "blockName": null,
               "blockType": "feature-list",
               "items": [
                 {
-                  "id": "6a8c615c46868470070fdee6",
+                  "id": "6a8da25c08fd6ff816a60bdf",
                   "title": "Luogo",
                   "paragraph": {
                     "root": {
@@ -954,7 +954,7 @@
                   "blockType": "list-item"
                 },
                 {
-                  "id": "6a8c615c46868470070fdee7",
+                  "id": "6a8da25c08fd6ff816a60be0",
                   "title": "Data",
                   "paragraph": {
                     "root": {
@@ -993,7 +993,7 @@
           ],
           "resources": [
             {
-              "id": "6a8c615c46868470070fdee9",
+              "id": "6a8da25c08fd6ff816a60be2",
               "title": "Approfondisci",
               "blockName": null,
               "blockType": "quick-link-card",
@@ -1011,7 +1011,7 @@
           ]
         },
         {
-          "id": "6a8c615c46868470070fdeec",
+          "id": "6a8da25c08fd6ff816a60be5",
           "title": "Webinar transcript block",
           "category": "",
           "videoUrl": "https://www.youtube.com/watch?v=SvSJOfogGdI&t=88s",
@@ -1073,7 +1073,7 @@
           "blockType": "action-card",
           "cta": [
             {
-              "id": "6a8c615c46868470070fdeeb",
+              "id": "6a8da25c08fd6ff816a60be4",
               "label": "Download link",
               "doc": "a3bb4753-f1ca-498e-a02f-7d575621e1cb",
               "description": "Scopri di più",
@@ -1223,7 +1223,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"il-nuovo-dev-kit-italia-e-gli-ultimi-progressi-del-design-system-italia\"}",
-    "updatedAt": "2026-08-24T15:21:00.686Z",
+    "updatedAt": "2026-08-25T14:10:36.284Z",
     "createdAt": "2026-08-20T09:31:16.236Z"
   },
   {
@@ -1274,12 +1274,12 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615c46868470070fdee2",
+          "id": "6a8da25b08fd6ff816a60bdb",
           "blockName": null,
           "blockType": "webinar-description",
           "text": [
             {
-              "id": "6a8c615c46868470070fdedd",
+              "id": "6a8da25b08fd6ff816a60bd6",
               "title": "Dallo sviluppo al riuso: buone pratiche del software nella PA",
               "paragraph": {
                 "root": {
@@ -1317,12 +1317,12 @@
           ],
           "subjects": [
             {
-              "id": "6a8c615c46868470070fdee0",
+              "id": "6a8da25b08fd6ff816a60bd9",
               "blockName": null,
               "blockType": "feature-list",
               "items": [
                 {
-                  "id": "6a8c615c46868470070fdede",
+                  "id": "6a8da25b08fd6ff816a60bd7",
                   "title": "Luogo",
                   "paragraph": {
                     "root": {
@@ -1357,7 +1357,7 @@
                   "blockType": "list-item"
                 },
                 {
-                  "id": "6a8c615c46868470070fdedf",
+                  "id": "6a8da25b08fd6ff816a60bd8",
                   "title": "Data",
                   "paragraph": {
                     "root": {
@@ -1396,7 +1396,7 @@
           ],
           "resources": [
             {
-              "id": "6a8c615c46868470070fdee1",
+              "id": "6a8da25b08fd6ff816a60bda",
               "title": "Parliamo di",
               "blockName": null,
               "blockType": "quick-link-card",
@@ -1410,7 +1410,7 @@
           ]
         },
         {
-          "id": "6a8c615c46868470070fdee4",
+          "id": "6a8da25b08fd6ff816a60bdd",
           "title": "Webinar transcript block",
           "category": "",
           "videoUrl": "https://www.youtube.com/watch?v=J5AGN20SJBI",
@@ -1472,7 +1472,7 @@
           "blockType": "action-card",
           "cta": [
             {
-              "id": "6a8c615c46868470070fdee3",
+              "id": "6a8da25b08fd6ff816a60bdc",
               "label": "Download link",
               "doc": "c6145a5d-62d9-4a8e-9110-0aa90a027a5b",
               "description": "download",
@@ -1708,7 +1708,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"dallo-sviluppo-al-riuso-buone-pratiche-del-software-nella-pa\"}",
-    "updatedAt": "2026-08-24T15:21:00.428Z",
+    "updatedAt": "2026-08-25T14:10:36.051Z",
     "createdAt": "2026-08-20T09:31:16.176Z"
   }
 ]

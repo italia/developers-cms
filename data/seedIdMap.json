@@ -1,0 +1,54 @@
+{
+  "media": {
+    "dc5a4f60-04e1-4e4a-a185-82e062ede22e": "a52b6687-eeaa-4694-9fa4-73db98191e8a",
+    "d2815c08-4348-4e7b-a8c5-1a5f1d0e5470": "dd817313-17d1-46f2-a75e-f60d2dc8f0d8",
+    "885ad3cc-8b62-4f86-baf3-a6e0ca4364e9": "fcd90116-b3f6-4759-a726-d98acfd75168",
+    "66697314-933e-4461-935e-2faa3ce4eeda": "1e6841a4-b0d0-4667-a412-a84e67e267fd"
+  },
+  "news-topics": {
+    "65c28f67-973b-4e99-9a36-c574dfa87410": "37ff43e0-5cb6-4555-98d6-e4a259722df4",
+    "4c057aa7-eb0a-472d-9a7c-9cd0e566b98a": "a3c46c2a-f4f9-4809-960c-f72c595a9ed8"
+  },
+  "story-topics": {
+    "a29a96df-5cf5-496a-b249-27879a1310f1": "12169113-827d-4363-93f8-7955c52b9115",
+    "ecd32c54-8e74-4ab8-badd-c643ad1adf17": "aa5c8a26-7451-4159-9a88-9f2bf2c90165",
+    "a7f63403-de61-4aa7-a1d2-d81a1cc1ead9": "f00d6460-1417-436d-bf82-90c7ce115943"
+  },
+  "webinar-topics": {
+    "f88a189a-1b55-4053-adcb-2bc84f1b30da": "64cb1ec8-7363-401e-8467-a97081bc3230",
+    "2f52fe5e-71f6-44fd-8902-55259fe0b340": "96c98c40-c832-4ca3-a0a6-ce124fa1bb41",
+    "e9b18e7e-545b-4da2-8ea6-8b7906e3e286": "657bb538-96ca-49f6-968f-b274d5050e1c",
+    "5aa86423-e5c0-425e-9c0d-7cfa43b47520": "4315e86f-1836-433a-883f-cc64a08b44c1",
+    "db93167f-2c28-4bf2-97a8-52ca9e4b1db4": "a803d0e2-4632-455c-b2b7-239e7addb045"
+  },
+  "story-classes": {
+    "c19133c2-04fe-46cc-b2c8-b5ef52bc9a55": "9a77936a-8171-4e67-a172-6f2daa50c1b5",
+    "ae159bcf-450a-428d-af9f-a701451166b3": "ed47ffcf-b961-4e0d-ab04-497d92486ca5"
+  },
+  "webinar-authors": {},
+  "chart-elements": {
+    "9ddadedd-4226-4235-ba89-7f4882fed1c0": "31a2c5db-fd37-456e-b0af-e51cac0e7e1f",
+    "3fee93e5-fc18-4736-b65b-d317b4236898": "2697d307-7f10-4f23-8d7d-da456f82821c"
+  },
+  "kpi-elements": {
+    "4f43d703-c758-447b-9ac0-172fc7f130d8": "1f6c6a63-774d-411e-81c1-be369b6aabab",
+    "74f09762-ea65-458f-8dc8-b9e71cc8a698": "434a75ab-4f72-46ae-983d-c7d8cd566c3f",
+    "93f2c6de-34cb-4f8f-9892-8c6b1e49bf46": "01b17a7c-53ff-468e-a263-50e40b20d200",
+    "38b06ff5-92b1-4bcb-89f1-f79b46cd87db": "ce8cfb76-be81-446a-aefa-3da1c65c6240",
+    "1ffcca4a-1cf9-4064-9bd2-3bac370d96a2": "0d89e891-9c23-4733-8d31-aa1e224efdb2",
+    "f956f0b4-00f4-41c6-8e89-86fa882a882b": "63ee48f4-8e8d-4492-a1e5-840609034c03",
+    "b4925db1-00ab-4256-8618-61e8be639609": "5472b608-dc07-4587-bbc1-fcb03ff33761",
+    "c6e7511c-5367-4db7-a653-fde9cfec87c7": "311aad2c-92ef-41e3-a498-b476e7b2c3fd",
+    "17250f74-b3e5-4a69-b7b3-0dd1e5eab9af": "e0e02516-8f40-41db-86c8-2106d1ad4dd7",
+    "bd092ec8-2a5c-4422-b830-a9ec669bdef3": "e3397437-76bf-4d9f-a63a-3402e65736ee",
+    "43265eba-8eba-45b3-9503-ba2b555d745a": "57a1ab31-9282-48db-bd31-963942571f6c",
+    "f9a6cb16-8ea0-407d-bf7d-baa2535e9fd9": "ac36e36c-8496-44eb-b337-9f29d9973de8"
+  },
+  "news-items": {},
+  "pages": {},
+  "articles": {},
+  "insights": {},
+  "webinar-items": {},
+  "story-items": {},
+  "catalogues": {}
+}

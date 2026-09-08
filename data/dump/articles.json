@@ -24,7 +24,7 @@
     "content": {
       "en": [
         {
-          "id": "6a8c615e46868470070fdf13",
+          "id": "6a8da25d08fd6ff816a60c0c",
           "bg": "default",
           "content": {
             "root": {
@@ -334,7 +334,7 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615e46868470070fdf15",
+          "id": "6a8da25d08fd6ff816a60c0e",
           "title": "Learn More",
           "paragraph": "Check out our guide, “Comparing Software Solutions,” to learn how to determine whether a solution that meets your organization’s needs already exists.",
           "image": "21632888-855d-45a0-9733-1a9a9e6f8fe5",
@@ -343,7 +343,7 @@
           "blockType": "support-cta-section",
           "cta": [
             {
-              "id": "6a8c615e46868470070fdf14",
+              "id": "6a8da25d08fd6ff816a60c0d",
               "label": "Read the instructions",
               "blockName": null,
               "blockType": "internal-link",
@@ -357,7 +357,7 @@
       ],
       "it": [
         {
-          "id": "6a8c615e46868470070fdf16",
+          "id": "6a8da25d08fd6ff816a60c0f",
           "bg": "default",
           "content": {
             "root": {
@@ -667,7 +667,7 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615e46868470070fdf18",
+          "id": "6a8da25d08fd6ff816a60c11",
           "title": "Approfondisci",
           "paragraph": "Consulta la nostra guida “Confrontare le soluzioni software” per capire come valutare se esiste già una soluzione adatta alle necessità del tuo ente.",
           "image": "21632888-855d-45a0-9733-1a9a9e6f8fe5",
@@ -676,7 +676,7 @@
           "blockType": "support-cta-section",
           "cta": [
             {
-              "id": "6a8c615e46868470070fdf17",
+              "id": "6a8da25d08fd6ff816a60c10",
               "label": "Leggi le indicazioni",
               "blockName": null,
               "blockType": "internal-link",
@@ -709,7 +709,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"valutazione-comparativa\",\"en\":\"comparative-evaluation\"}",
-    "updatedAt": "2026-08-24T15:21:02.445Z",
+    "updatedAt": "2026-08-25T14:10:37.688Z",
     "createdAt": "2026-08-12T13:19:23.078Z",
     "topics": []
   },
@@ -738,7 +738,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615e46868470070fdf0e",
+          "id": "6a8da25d08fd6ff816a60c07",
           "bg": "default",
           "content": {
             "root": {
@@ -1098,7 +1098,7 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615e46868470070fdf10",
+          "id": "6a8da25d08fd6ff816a60c09",
           "title": "Approfondisci",
           "paragraph": "Consulta la nostra guida “Acquisire software a riuso” per capire come trovarlo, valutarlo e dichiararne l'adozione.",
           "image": "81d3e6ac-f91e-4753-9b06-fbad25dc35ba",
@@ -1107,7 +1107,7 @@
           "blockType": "support-cta-section",
           "cta": [
             {
-              "id": "6a8c615e46868470070fdf0f",
+              "id": "6a8da25d08fd6ff816a60c08",
               "label": "Leggi le indicazioni",
               "blockName": null,
               "blockType": "internal-link",
@@ -1119,7 +1119,7 @@
           ]
         },
         {
-          "id": "6a8c615e46868470070fdf12",
+          "id": "6a8da25d08fd6ff816a60c0b",
           "title": "Approfondisci",
           "paragraph": "Consulta la nostra guida “Sviluppare e gestire software con licenza aperta” per sapere come renderlo leggibile, riusabile e manutenibile nel tempo.",
           "image": "70bf3d76-afa7-43ae-b73f-c54d988206d6",
@@ -1128,7 +1128,7 @@
           "blockType": "support-cta-section",
           "cta": [
             {
-              "id": "6a8c615e46868470070fdf11",
+              "id": "6a8da25d08fd6ff816a60c0a",
               "label": "Leggi le indicazioni",
               "blockName": null,
               "blockType": "internal-link",
@@ -1142,7 +1142,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615d46868470070fdf09",
+          "id": "6a8da25d08fd6ff816a60c02",
           "bg": "default",
           "content": {
             "root": {
@@ -1502,7 +1502,7 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615d46868470070fdf0b",
+          "id": "6a8da25d08fd6ff816a60c04",
           "title": "Learn More",
           "paragraph": "Check out our guide, “Acquiring Reusable Software,” to learn how to find, evaluate, and declare its adoption.",
           "image": "81d3e6ac-f91e-4753-9b06-fbad25dc35ba",
@@ -1511,7 +1511,7 @@
           "blockType": "support-cta-section",
           "cta": [
             {
-              "id": "6a8c615d46868470070fdf0a",
+              "id": "6a8da25d08fd6ff816a60c03",
               "label": "Read the instructions",
               "blockName": null,
               "blockType": "internal-link",
@@ -1523,7 +1523,7 @@
           ]
         },
         {
-          "id": "6a8c615d46868470070fdf0d",
+          "id": "6a8da25d08fd6ff816a60c06",
           "title": "Learn More",
           "paragraph": "Check out our guide, “Developing and Managing Open-Source Software,” to learn how to make your software readable, reusable, and maintainable over time.",
           "image": "70bf3d76-afa7-43ae-b73f-c54d988206d6",
@@ -1532,7 +1532,7 @@
           "blockType": "support-cta-section",
           "cta": [
             {
-              "id": "6a8c615d46868470070fdf0c",
+              "id": "6a8da25d08fd6ff816a60c05",
               "label": "Read the instructions",
               "blockName": null,
               "blockType": "internal-link",
@@ -1565,7 +1565,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"riuso-e-open-source\",\"en\":\"reuse-and-open-source\"}",
-    "updatedAt": "2026-08-24T15:21:02.172Z",
+    "updatedAt": "2026-08-25T14:10:37.461Z",
     "createdAt": "2026-06-19T09:04:39.978Z",
     "topics": []
   },
@@ -1594,7 +1594,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615d46868470070fdf06",
+          "id": "6a8da25d08fd6ff816a60bff",
           "bg": "default",
           "content": {
             "root": {
@@ -2170,7 +2170,7 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615d46868470070fdf08",
+          "id": "6a8da25d08fd6ff816a60c01",
           "title": "Approfondisci",
           "paragraph": "Consulta la nostra guida “Progettare e integrare servizi interoperabili” per assicurare lo scambio sicuro dei dati e l’integrazione tra sistemi della Pubblica Amministrazione.",
           "image": "5fa109ac-dc20-40b1-aea9-0b565ee2a2b8",
@@ -2179,7 +2179,7 @@
           "blockType": "support-cta-section",
           "cta": [
             {
-              "id": "6a8c615d46868470070fdf07",
+              "id": "6a8da25d08fd6ff816a60c00",
               "label": "Leggi le indicazioni",
               "blockName": null,
               "blockType": "internal-link",
@@ -2193,7 +2193,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615d46868470070fdf03",
+          "id": "6a8da25d08fd6ff816a60bfc",
           "bg": "default",
           "content": {
             "root": {
@@ -2769,7 +2769,7 @@
           "blockType": "structured-text-block"
         },
         {
-          "id": "6a8c615d46868470070fdf05",
+          "id": "6a8da25d08fd6ff816a60bfe",
           "title": "Learn More",
           "paragraph": "Check out our guide, “Designing and Integrating Interoperable Services,” to ensure secure data exchange and integration between public administration systems.",
           "image": "5fa109ac-dc20-40b1-aea9-0b565ee2a2b8",
@@ -2778,7 +2778,7 @@
           "blockType": "support-cta-section",
           "cta": [
             {
-              "id": "6a8c615d46868470070fdf04",
+              "id": "6a8da25d08fd6ff816a60bfd",
               "label": "Read the instructions",
               "blockName": null,
               "blockType": "internal-link",
@@ -2811,7 +2811,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"interoperabilita\",\"en\":\"interoperability\"}",
-    "updatedAt": "2026-08-24T15:21:01.828Z",
+    "updatedAt": "2026-08-25T14:10:37.240Z",
     "createdAt": "2026-06-19T09:04:39.947Z",
     "topics": []
   },
@@ -2840,7 +2840,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615d46868470070fdf02",
+          "id": "6a8da25d08fd6ff816a60bfb",
           "bg": "default",
           "content": {
             "root": {
@@ -3524,7 +3524,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615d46868470070fdf01",
+          "id": "6a8da25d08fd6ff816a60bfa",
           "bg": "default",
           "content": {
             "root": {
@@ -4227,7 +4227,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"accessibilita\",\"en\":\"accessibility\"}",
-    "updatedAt": "2026-08-24T15:21:01.612Z",
+    "updatedAt": "2026-08-25T14:10:37.086Z",
     "createdAt": "2026-06-19T09:04:39.913Z",
     "topics": []
   },
@@ -4254,334 +4254,9 @@
       "en": null
     },
     "content": {
-      "it": [
-        {
-          "id": "6a8c615d46868470070fdf00",
-          "bg": "default",
-          "content": {
-            "root": {
-              "type": "root",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "tag": "h1",
-                  "type": "heading",
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Privacy by design",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": "ltr"
-                },
-                {
-                  "type": "paragraph",
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": "ltr"
-                },
-                {
-                  "tag": "h2",
-                  "type": "heading",
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Cosa significa in pratica",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": "ltr"
-                },
-                {
-                  "type": "paragraph",
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "La protezione dei dati personali deve essere integrata fin dalla progettazione del servizio digitale e per impostazione predefinita. Raccolta, gestione, conservazione e accesso ai dati devono rispettare i principi di minimizzazione, sicurezza e limitazione delle finalità.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": "ltr"
-                },
-                {
-                  "type": "paragraph",
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "La conformità alla normativa privacy è una responsabilità che incide anche sulle scelte architetturali e funzionali.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": "ltr"
-                },
-                {
-                  "type": "paragraph",
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": "ltr"
-                },
-                {
-                  "tag": "h2",
-                  "type": "heading",
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Normativa nazionale",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": "ltr"
-                },
-                {
-                  "type": "paragraph",
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Il Codice in materia di protezione dei dati personali (d.lgs. n. 196/2003, come modificato dal d.lgs. n. 101/2018) coordina l’applicazione del ",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    },
-                    {
-                      "mode": "normal",
-                      "text": "General Data Protection Regulation",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 2,
-                      "version": 1
-                    },
-                    {
-                      "mode": "normal",
-                      "text": " (GDPR) in Italia.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": "ltr"
-                },
-                {
-                  "type": "paragraph",
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "\nPer chi sviluppa servizi digitali significa raccogliere solo i dati necessari, integrare la protezione dei dati fin dalla progettazione, definire ruoli e autorizzazioni, garantire la tracciabilità e stabilire tempi di conservazione coerenti con le finalità del trattamento.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": "ltr"
-                },
-                {
-                  "type": "paragraph",
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": "ltr"
-                },
-                {
-                  "tag": "h2",
-                  "type": "heading",
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Normativa europea",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": "ltr"
-                },
-                {
-                  "type": "paragraph",
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Il Regolamento (UE) 2016/679 stabilisce le regole generali in materia di protezione dei dati personali. L’articolo 25 introduce il principio di protezione dei dati fin dalla progettazione e per impostazione predefinita (",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    },
-                    {
-                      "mode": "normal",
-                      "text": "privacy by design e by default",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 2,
-                      "version": 1
-                    },
-                    {
-                      "mode": "normal",
-                      "text": "), imponendo ai titolari del trattamento di adottare misure tecniche e organizzative adeguate per garantire il rispetto della normativa.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": "ltr"
-                },
-                {
-                  "type": "paragraph",
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "type": "link",
-                      "fields": {
-                        "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32016R0679",
-                        "newTab": false,
-                        "linkType": "custom"
-                      },
-                      "format": "",
-                      "indent": 0,
-                      "version": 3,
-                      "children": [
-                        {
-                          "mode": "normal",
-                          "text": "Regolamento UE 2016/679",
-                          "type": "text",
-                          "style": "",
-                          "detail": 0,
-                          "format": 0,
-                          "version": 1
-                        }
-                      ],
-                      "direction": "ltr"
-                    }
-                  ],
-                  "direction": "ltr"
-                },
-                {
-                  "type": "paragraph",
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": "ltr"
-                }
-              ],
-              "direction": "ltr"
-            }
-          },
-          "blockName": null,
-          "blockType": "structured-text-block"
-        }
-      ],
       "en": [
         {
-          "id": "6a8c615d46868470070fdeff",
+          "id": "6a8da25c08fd6ff816a60bf8",
           "bg": "default",
           "content": {
             "root": {
@@ -4903,6 +4578,331 @@
           "blockName": null,
           "blockType": "structured-text-block"
         }
+      ],
+      "it": [
+        {
+          "id": "6a8da25c08fd6ff816a60bf9",
+          "bg": "default",
+          "content": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "tag": "h1",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Privacy by design",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "tag": "h2",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Cosa significa in pratica",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "La protezione dei dati personali deve essere integrata fin dalla progettazione del servizio digitale e per impostazione predefinita. Raccolta, gestione, conservazione e accesso ai dati devono rispettare i principi di minimizzazione, sicurezza e limitazione delle finalità.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "La conformità alla normativa privacy è una responsabilità che incide anche sulle scelte architetturali e funzionali.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "tag": "h2",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Normativa nazionale",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Il Codice in materia di protezione dei dati personali (d.lgs. n. 196/2003, come modificato dal d.lgs. n. 101/2018) coordina l’applicazione del ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": "General Data Protection Regulation",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 2,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": " (GDPR) in Italia.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "\nPer chi sviluppa servizi digitali significa raccogliere solo i dati necessari, integrare la protezione dei dati fin dalla progettazione, definire ruoli e autorizzazioni, garantire la tracciabilità e stabilire tempi di conservazione coerenti con le finalità del trattamento.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "tag": "h2",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Normativa europea",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Il Regolamento (UE) 2016/679 stabilisce le regole generali in materia di protezione dei dati personali. L’articolo 25 introduce il principio di protezione dei dati fin dalla progettazione e per impostazione predefinita (",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": "privacy by design e by default",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 2,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": "), imponendo ai titolari del trattamento di adottare misure tecniche e organizzative adeguate per garantire il rispetto della normativa.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "link",
+                      "fields": {
+                        "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32016R0679",
+                        "newTab": false,
+                        "linkType": "custom"
+                      },
+                      "format": "",
+                      "indent": 0,
+                      "version": 3,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Regolamento UE 2016/679",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "blockName": null,
+          "blockType": "structured-text-block"
+        }
       ]
     },
     "descriptionTitle": {
@@ -4925,7 +4925,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"privacy-by-design\",\"en\":\"privacy-by-design\"}",
-    "updatedAt": "2026-08-24T15:21:01.501Z",
+    "updatedAt": "2026-08-25T14:10:36.989Z",
     "createdAt": "2026-06-19T09:04:39.872Z",
     "topics": []
   },
@@ -4954,7 +4954,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615d46868470070fdefe",
+          "id": "6a8da25c08fd6ff816a60bf7",
           "bg": "default",
           "content": {
             "root": {
@@ -5467,7 +5467,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615d46868470070fdefd",
+          "id": "6a8da25c08fd6ff816a60bf6",
           "bg": "default",
           "content": {
             "root": {
@@ -5999,7 +5999,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"cybersecurity-by-design\",\"en\":\"cybersecurity-by-design\"}",
-    "updatedAt": "2026-08-24T15:21:01.394Z",
+    "updatedAt": "2026-08-25T14:10:36.900Z",
     "createdAt": "2026-06-19T09:04:39.841Z",
     "topics": []
   }

@@ -16,7 +16,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615346868470070fdd43",
+          "id": "6a8da25408fd6ff816a60a38",
           "variant": "small",
           "bg": "lighter",
           "backgroundImage": null,
@@ -57,12 +57,12 @@
           "cta": []
         },
         {
-          "id": "6a8c615346868470070fdd45",
+          "id": "6a8da25408fd6ff816a60a3a",
           "blockName": null,
           "blockType": "catalogue-feed",
           "tabs": [
             {
-              "id": "6a8c615346868470070fdd44",
+              "id": "6a8da25408fd6ff816a60a39",
               "title": "Tutti gli articoli",
               "paragraph": {
                 "root": {
@@ -107,7 +107,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615346868470070fdd40",
+          "id": "6a8da25408fd6ff816a60a35",
           "variant": "small",
           "bg": "lighter",
           "backgroundImage": null,
@@ -148,12 +148,12 @@
           "cta": []
         },
         {
-          "id": "6a8c615346868470070fdd42",
+          "id": "6a8da25408fd6ff816a60a37",
           "blockName": null,
           "blockType": "catalogue-feed",
           "tabs": [
             {
-              "id": "6a8c615346868470070fdd41",
+              "id": "6a8da25408fd6ff816a60a36",
               "title": "Explore the archive",
               "paragraph": {
                 "root": {
@@ -209,7 +209,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"approfondimenti\",\"en\":\"in-depth-articles\"}",
-    "updatedAt": "2026-08-24T15:20:51.290Z",
+    "updatedAt": "2026-08-25T14:10:28.583Z",
     "createdAt": "2026-08-12T13:19:23.259Z"
   },
   {
@@ -229,7 +229,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615246868470070fdd2f",
+          "id": "6a8da25408fd6ff816a60a24",
           "variant": "small",
           "bg": "primary",
           "backgroundImage": null,
@@ -270,14 +270,14 @@
           "cta": []
         },
         {
-          "id": "6a8c615246868470070fdd31",
+          "id": "6a8da25408fd6ff816a60a26",
           "bg": "default",
           "heading": "h2",
           "blockName": null,
           "blockType": "text-only",
           "text": [
             {
-              "id": "6a8c615246868470070fdd30",
+              "id": "6a8da25408fd6ff816a60a25",
               "title": "Le fondamenta dei servizi digitali della PA",
               "paragraph": {
                 "root": {
@@ -333,12 +333,12 @@
           ]
         },
         {
-          "id": "6a8c615246868470070fdd33",
+          "id": "6a8da25408fd6ff816a60a28",
           "blockName": null,
           "blockType": "catalogue-feed",
           "tabs": [
             {
-              "id": "6a8c615246868470070fdd32",
+              "id": "6a8da25408fd6ff816a60a27",
               "title": "Esplora le piattaforme",
               "paragraph": {
                 "root": {
@@ -383,7 +383,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615246868470070fdd2a",
+          "id": "6a8da25408fd6ff816a60a1f",
           "variant": "small",
           "bg": "primary",
           "backgroundImage": null,
@@ -424,14 +424,14 @@
           "cta": []
         },
         {
-          "id": "6a8c615246868470070fdd2c",
+          "id": "6a8da25408fd6ff816a60a21",
           "bg": "default",
           "heading": "h2",
           "blockName": null,
           "blockType": "text-only",
           "text": [
             {
-              "id": "6a8c615246868470070fdd2b",
+              "id": "6a8da25408fd6ff816a60a20",
               "title": "The Foundation of Digital Services in the Public Administration",
               "paragraph": {
                 "root": {
@@ -487,12 +487,12 @@
           ]
         },
         {
-          "id": "6a8c615246868470070fdd2e",
+          "id": "6a8da25408fd6ff816a60a23",
           "blockName": null,
           "blockType": "catalogue-feed",
           "tabs": [
             {
-              "id": "6a8c615246868470070fdd2d",
+              "id": "6a8da25408fd6ff816a60a22",
               "title": "Explore the platforms",
               "paragraph": {
                 "root": {
@@ -548,7 +548,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"piattaforme\",\"en\":\"platforms\"}",
-    "updatedAt": "2026-08-24T15:20:50.848Z",
+    "updatedAt": "2026-08-25T14:10:28.257Z",
     "createdAt": "2026-06-19T09:04:40.219Z"
   },
   {
@@ -568,7 +568,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615346868470070fdd3d",
+          "id": "6a8da25408fd6ff816a60a32",
           "variant": "small",
           "bg": "lighter",
           "backgroundImage": null,
@@ -609,12 +609,12 @@
           "cta": []
         },
         {
-          "id": "6a8c615346868470070fdd3f",
+          "id": "6a8da25408fd6ff816a60a34",
           "blockName": null,
           "blockType": "catalogue-feed",
           "tabs": [
             {
-              "id": "6a8c615346868470070fdd3e",
+              "id": "6a8da25408fd6ff816a60a33",
               "title": "Esplora tutti gli eventi",
               "paragraph": {
                 "root": {
@@ -659,7 +659,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615346868470070fdd3a",
+          "id": "6a8da25408fd6ff816a60a2f",
           "variant": "small",
           "bg": "lighter",
           "backgroundImage": null,
@@ -700,12 +700,12 @@
           "cta": []
         },
         {
-          "id": "6a8c615346868470070fdd3c",
+          "id": "6a8da25408fd6ff816a60a31",
           "blockName": null,
           "blockType": "catalogue-feed",
           "tabs": [
             {
-              "id": "6a8c615346868470070fdd3b",
+              "id": "6a8da25408fd6ff816a60a30",
               "title": "Explore the archive",
               "paragraph": {
                 "root": {
@@ -761,7 +761,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"eventi\",\"en\":\"events\"}",
-    "updatedAt": "2026-08-24T15:20:51.130Z",
+    "updatedAt": "2026-08-25T14:10:28.458Z",
     "createdAt": "2026-06-19T09:04:40.174Z"
   },
   {
@@ -781,7 +781,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615246868470070fdd37",
+          "id": "6a8da25408fd6ff816a60a2c",
           "variant": "small",
           "bg": "lighter",
           "backgroundImage": null,
@@ -822,12 +822,12 @@
           "cta": []
         },
         {
-          "id": "6a8c615246868470070fdd39",
+          "id": "6a8da25408fd6ff816a60a2e",
           "blockName": null,
           "blockType": "catalogue-feed",
           "tabs": [
             {
-              "id": "6a8c615246868470070fdd38",
+              "id": "6a8da25408fd6ff816a60a2d",
               "title": "Esplora tutte le notizie",
               "paragraph": {
                 "root": {
@@ -872,7 +872,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615246868470070fdd34",
+          "id": "6a8da25408fd6ff816a60a29",
           "variant": "small",
           "bg": "lighter",
           "backgroundImage": null,
@@ -913,12 +913,12 @@
           "cta": []
         },
         {
-          "id": "6a8c615246868470070fdd36",
+          "id": "6a8da25408fd6ff816a60a2b",
           "blockName": null,
           "blockType": "catalogue-feed",
           "tabs": [
             {
-              "id": "6a8c615246868470070fdd35",
+              "id": "6a8da25408fd6ff816a60a2a",
               "title": "Explore the archive",
               "paragraph": {
                 "root": {
@@ -974,7 +974,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"notizie\",\"en\":\"news\"}",
-    "updatedAt": "2026-08-24T15:20:50.956Z",
+    "updatedAt": "2026-08-25T14:10:28.349Z",
     "createdAt": "2026-06-19T09:04:40.128Z"
   },
   {

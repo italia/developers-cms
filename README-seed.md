@@ -31,7 +31,8 @@ export SEED_TARGET_URL=https://your-online-cms.example.com
 export SEED_TARGET_API_KEY=...
 
 # 3. (only if the target already has content you want replaced) wipe it —
-#    asks for a typed "yes" confirmation before deleting anything; never touches media or globals
+#    asks for a typed "yes" confirmation before deleting anything; never touches media, globals,
+#    or users/api keys
 bun run src/scripts/seed-wipe.ts
 
 # 4. Create shells + build cms/data/seedIdMap.json
@@ -50,4 +51,18 @@ attempt's docs on it.
 wrong instance.
 
 `users` and `feedback` are excluded from the dump on purpose (admin accounts / visitor form
-submissions aren't content to replicate).
+submissions aren't content to replicate). `users` (accounts + API keys, via `useAPIKey` on the
+collection) is never wiped or recreated on the target by this pipeline — it's the target's own,
+separate from the content being copied.
+
+## Snapshotting the target's users/API keys
+
+Standalone, unrelated to the dump/seed pipeline above — takes a point-in-time backup of whatever
+`users` currently looks like on the target, in case you need a record before poking at accounts
+there by hand:
+
+```bash
+bun run src/scripts/dump-remote-users.ts   # writes cms/data/remote_users_and_keys.json
+```
+
+This file contains live API keys — it's gitignored and should never be committed or shared.

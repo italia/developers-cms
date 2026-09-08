@@ -7,7 +7,7 @@
   "content": {
     "it": [
       {
-        "id": "6a8c615e46868470070fdf31",
+        "id": "6a8da25e08fd6ff816a60c2a",
         "variant": "default",
         "bg": "primary",
         "backgroundImage": "4471e0ea-68a0-4558-a0da-8d40695d7c5c",
@@ -47,7 +47,7 @@
         "blockType": "hero",
         "cta": [
           {
-            "id": "6a8c615e46868470070fdf30",
+            "id": "6a8da25e08fd6ff816a60c29",
             "label": "Scopri il progetto",
             "blockName": null,
             "blockType": "internal-link",
@@ -59,7 +59,7 @@
         ]
       },
       {
-        "id": "6a8c615e46868470070fdf38",
+        "id": "6a8da25e08fd6ff816a60c31",
         "showInlineCard": false,
         "bg": "lighter",
         "title": "Consulta i cataloghi e le risorse per il riuso e l’interoperabilità",
@@ -96,7 +96,7 @@
         "blockType": "card-link-list",
         "listContent": [
           {
-            "id": "6a8c615e46868470070fdf33",
+            "id": "6a8da25e08fd6ff816a60c2c",
             "title": "Software open source",
             "paragraph": {
               "root": {
@@ -132,7 +132,7 @@
             "blockType": "card-link",
             "link": [
               {
-                "id": "6a8c615e46868470070fdf32",
+                "id": "6a8da25e08fd6ff816a60c2b",
                 "externalUrl": null,
                 "blockName": null,
                 "blockType": "link-block",
@@ -144,7 +144,7 @@
             ]
           },
           {
-            "id": "6a8c615e46868470070fdf35",
+            "id": "6a8da25e08fd6ff816a60c2e",
             "title": "Interoperabilità e API",
             "paragraph": {
               "root": {
@@ -180,7 +180,7 @@
             "blockType": "card-link",
             "link": [
               {
-                "id": "6a8c615e46868470070fdf34",
+                "id": "6a8da25e08fd6ff816a60c2d",
                 "externalUrl": null,
                 "blockName": null,
                 "blockType": "link-block",
@@ -192,7 +192,7 @@
             ]
           },
           {
-            "id": "6a8c615e46868470070fdf37",
+            "id": "6a8da25e08fd6ff816a60c30",
             "title": "Piattaforme",
             "paragraph": {
               "root": {
@@ -228,7 +228,7 @@
             "blockType": "card-link",
             "link": [
               {
-                "id": "6a8c615e46868470070fdf36",
+                "id": "6a8da25e08fd6ff816a60c2f",
                 "externalUrl": null,
                 "blockName": null,
                 "blockType": "link-block",
@@ -242,13 +242,13 @@
         ]
       },
       {
-        "id": "6a8c615e46868470070fdf3c",
+        "id": "6a8da25e08fd6ff816a60c35",
         "bg": "default",
         "blockName": null,
         "blockType": "text-use-case",
         "text": [
           {
-            "id": "6a8c615e46868470070fdf3a",
+            "id": "6a8da25e08fd6ff816a60c33",
             "title": "Scopri  le guide per la gestione del software della PA",
             "paragraph": {
               "root": {
@@ -283,7 +283,7 @@
             "blockType": "text-block",
             "cta": [
               {
-                "id": "6a8c615e46868470070fdf39",
+                "id": "6a8da25e08fd6ff816a60c32",
                 "label": "Vai a tutte le guide",
                 "blockName": null,
                 "blockType": "internal-link",
@@ -297,7 +297,7 @@
         ],
         "useCases": [
           {
-            "id": "6a8c615e46868470070fdf3b",
+            "id": "6a8da25e08fd6ff816a60c34",
             "title": "In Evidenza",
             "blockName": null,
             "blockType": "use-case-block",
@@ -311,7 +311,7 @@
         ]
       },
       {
-        "id": "6a8c615e46868470070fdf3e",
+        "id": "6a8da25e08fd6ff816a60c37",
         "bg": "dark",
         "title": "Le novità della community",
         "paragraph": {
@@ -348,7 +348,7 @@
         "tabs": [],
         "cta": [
           {
-            "id": "6a8c615e46868470070fdf3d",
+            "id": "6a8da25e08fd6ff816a60c36",
             "label": "Entra nella community",
             "blockName": null,
             "blockType": "internal-link",
@@ -360,7 +360,7 @@
         ]
       },
       {
-        "id": "6a8c615e46868470070fdf41",
+        "id": "6a8da25e08fd6ff816a60c3a",
         "variant": "variant-1",
         "bg": "primary-light",
         "heading": "h2",
@@ -369,7 +369,7 @@
         "blockType": "text-image",
         "text": [
           {
-            "id": "6a8c615e46868470070fdf40",
+            "id": "6a8da25e08fd6ff816a60c39",
             "title": "Un quadro comune di regole e responsabilità",
             "paragraph": {
               "root": {
@@ -404,7 +404,7 @@
             "blockType": "text-block",
             "cta": [
               {
-                "id": "6a8c615e46868470070fdf3f",
+                "id": "6a8da25e08fd6ff816a60c38",
                 "label": "Scopri la normativa",
                 "blockName": null,
                 "blockType": "internal-link",
@@ -419,14 +419,14 @@
         "additionalContent": []
       },
       {
-        "id": "6a8c615e46868470070fdf45",
+        "id": "6a8da25e08fd6ff816a60c3e",
         "bg": "dark",
         "showInline": false,
         "blockName": null,
         "blockType": "text-statistic",
         "text": [
           {
-            "id": "6a8c615e46868470070fdf43",
+            "id": "6a8da25e08fd6ff816a60c3c",
             "title": "Un impatto visibile nel tempo",
             "paragraph": {
               "root": {
@@ -479,7 +479,7 @@
             "blockType": "text-block",
             "cta": [
               {
-                "id": "6a8c615e46868470070fdf42",
+                "id": "6a8da25e08fd6ff816a60c3b",
                 "label": "Scopri il catalogo software",
                 "url": "https://catalogo-software.developers.italia.it",
                 "description": "",
@@ -491,7 +491,7 @@
         ],
         "statistics": [
           {
-            "id": "6a8c615e46868470070fdf44",
+            "id": "6a8da25e08fd6ff816a60c3d",
             "blockName": null,
             "blockType": "statistic-block",
             "kpiElement": [
@@ -505,7 +505,7 @@
     ],
     "en": [
       {
-        "id": "6a8c615e46868470070fdf1a",
+        "id": "6a8da25d08fd6ff816a60c13",
         "variant": "default",
         "bg": "primary",
         "backgroundImage": "4471e0ea-68a0-4558-a0da-8d40695d7c5c",
@@ -545,7 +545,7 @@
         "blockType": "hero",
         "cta": [
           {
-            "id": "6a8c615e46868470070fdf19",
+            "id": "6a8da25d08fd6ff816a60c12",
             "label": "Learn about the project",
             "blockName": null,
             "blockType": "internal-link",
@@ -557,7 +557,7 @@
         ]
       },
       {
-        "id": "6a8c615e46868470070fdf21",
+        "id": "6a8da25d08fd6ff816a60c1a",
         "showInlineCard": false,
         "bg": "lighter",
         "title": "Browse the catalogs and resources for reuse and interoperability",
@@ -594,7 +594,7 @@
         "blockType": "card-link-list",
         "listContent": [
           {
-            "id": "6a8c615e46868470070fdf1c",
+            "id": "6a8da25d08fd6ff816a60c15",
             "title": "Open-source software",
             "paragraph": {
               "root": {
@@ -630,7 +630,7 @@
             "blockType": "card-link",
             "link": [
               {
-                "id": "6a8c615e46868470070fdf1b",
+                "id": "6a8da25d08fd6ff816a60c14",
                 "externalUrl": null,
                 "blockName": null,
                 "blockType": "link-block",
@@ -642,7 +642,7 @@
             ]
           },
           {
-            "id": "6a8c615e46868470070fdf1e",
+            "id": "6a8da25d08fd6ff816a60c17",
             "title": "Interoperability and APIs",
             "paragraph": {
               "root": {
@@ -678,7 +678,7 @@
             "blockType": "card-link",
             "link": [
               {
-                "id": "6a8c615e46868470070fdf1d",
+                "id": "6a8da25d08fd6ff816a60c16",
                 "externalUrl": null,
                 "blockName": null,
                 "blockType": "link-block",
@@ -690,7 +690,7 @@
             ]
           },
           {
-            "id": "6a8c615e46868470070fdf20",
+            "id": "6a8da25d08fd6ff816a60c19",
             "title": "Platforms",
             "paragraph": {
               "root": {
@@ -726,7 +726,7 @@
             "blockType": "card-link",
             "link": [
               {
-                "id": "6a8c615e46868470070fdf1f",
+                "id": "6a8da25d08fd6ff816a60c18",
                 "externalUrl": null,
                 "blockName": null,
                 "blockType": "link-block",
@@ -740,13 +740,13 @@
         ]
       },
       {
-        "id": "6a8c615e46868470070fdf25",
+        "id": "6a8da25d08fd6ff816a60c1e",
         "bg": "default",
         "blockName": null,
         "blockType": "text-use-case",
         "text": [
           {
-            "id": "6a8c615e46868470070fdf23",
+            "id": "6a8da25d08fd6ff816a60c1c",
             "title": "Explore the guides for managing public administration software",
             "paragraph": {
               "root": {
@@ -781,7 +781,7 @@
             "blockType": "text-block",
             "cta": [
               {
-                "id": "6a8c615e46868470070fdf22",
+                "id": "6a8da25d08fd6ff816a60c1b",
                 "label": "Go to all guides",
                 "blockName": null,
                 "blockType": "internal-link",
@@ -795,7 +795,7 @@
         ],
         "useCases": [
           {
-            "id": "6a8c615e46868470070fdf24",
+            "id": "6a8da25d08fd6ff816a60c1d",
             "title": "Highlights",
             "blockName": null,
             "blockType": "use-case-block",
@@ -809,7 +809,7 @@
         ]
       },
       {
-        "id": "6a8c615e46868470070fdf28",
+        "id": "6a8da25d08fd6ff816a60c21",
         "bg": "dark",
         "title": "Community Updates",
         "paragraph": {
@@ -845,7 +845,7 @@
         "blockType": "news-feed",
         "tabs": [
           {
-            "id": "6a8c615e46868470070fdf26",
+            "id": "6a8da25d08fd6ff816a60c1f",
             "title": "News",
             "blockName": null,
             "blockType": "story-tab",
@@ -854,7 +854,7 @@
         ],
         "cta": [
           {
-            "id": "6a8c615e46868470070fdf27",
+            "id": "6a8da25d08fd6ff816a60c20",
             "label": "Join the community",
             "blockName": null,
             "blockType": "internal-link",
@@ -866,7 +866,7 @@
         ]
       },
       {
-        "id": "6a8c615e46868470070fdf2b",
+        "id": "6a8da25d08fd6ff816a60c24",
         "variant": "variant-1",
         "bg": "primary-light",
         "heading": "h2",
@@ -875,7 +875,7 @@
         "blockType": "text-image",
         "text": [
           {
-            "id": "6a8c615e46868470070fdf2a",
+            "id": "6a8da25d08fd6ff816a60c23",
             "title": "A Common Framework of Rules and Responsibilities",
             "paragraph": {
               "root": {
@@ -910,7 +910,7 @@
             "blockType": "text-block",
             "cta": [
               {
-                "id": "6a8c615e46868470070fdf29",
+                "id": "6a8da25d08fd6ff816a60c22",
                 "label": "Learn about the regulations",
                 "blockName": null,
                 "blockType": "internal-link",
@@ -925,14 +925,14 @@
         "additionalContent": []
       },
       {
-        "id": "6a8c615e46868470070fdf2f",
+        "id": "6a8da25d08fd6ff816a60c28",
         "bg": "dark",
         "showInline": false,
         "blockName": null,
         "blockType": "text-statistic",
         "text": [
           {
-            "id": "6a8c615e46868470070fdf2d",
+            "id": "6a8da25d08fd6ff816a60c26",
             "title": "A Visible Impact Over Time",
             "paragraph": {
               "root": {
@@ -985,7 +985,7 @@
             "blockType": "text-block",
             "cta": [
               {
-                "id": "6a8c615e46868470070fdf2c",
+                "id": "6a8da25d08fd6ff816a60c25",
                 "label": "Explore the software catalog",
                 "url": "https://catalogo-software.developers.italia.it",
                 "description": "",
@@ -997,7 +997,7 @@
         ],
         "statistics": [
           {
-            "id": "6a8c615e46868470070fdf2e",
+            "id": "6a8da25d08fd6ff816a60c27",
             "blockName": null,
             "blockType": "statistic-block",
             "kpiElement": [
@@ -1021,7 +1021,7 @@
     },
     "image": null
   },
-  "updatedAt": "2026-08-24T15:21:02.849Z",
+  "updatedAt": "2026-08-25T14:10:38.063Z",
   "createdAt": "2026-08-12T13:29:01.385Z",
   "globalType": "homepage"
 }

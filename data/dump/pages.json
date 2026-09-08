@@ -12,7 +12,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615246868470070fdd28",
+          "id": "6a8da25408fd6ff816a60a1d",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": null,
@@ -53,7 +53,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615246868470070fdd29",
+          "id": "6a8da25408fd6ff816a60a1e",
           "bg": "default",
           "content": {
             "root": {
@@ -1018,7 +1018,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615246868470070fdd26",
+          "id": "6a8da25408fd6ff816a60a1b",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": null,
@@ -1059,7 +1059,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615246868470070fdd27",
+          "id": "6a8da25408fd6ff816a60a1c",
           "bg": "default",
           "content": {
             "root": {
@@ -2035,7 +2035,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"note-legali\",\"en\":\"legal-notices\"}",
-    "updatedAt": "2026-08-24T15:20:50.753Z",
+    "updatedAt": "2026-08-25T14:10:28.191Z",
     "createdAt": "2026-08-12T13:19:22.775Z"
   },
   {
@@ -2051,7 +2051,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615146868470070fdcb9",
+          "id": "6a8da25308fd6ff816a609a6",
           "variant": "small",
           "bg": "primary",
           "backgroundImage": null,
@@ -2092,7 +2092,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615146868470070fdcbc",
+          "id": "6a8da25308fd6ff816a609a9",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h2",
@@ -2101,7 +2101,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdcbb",
+              "id": "6a8da25308fd6ff816a609a8",
               "title": "Esplora il catalogo del software della PA",
               "paragraph": {
                 "root": {
@@ -2154,7 +2154,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdcba",
+                  "id": "6a8da25308fd6ff816a609a7",
                   "label": "Vai al catalogo software",
                   "url": "https://catalogo-software.developers.italia.it",
                   "description": "",
@@ -2167,14 +2167,14 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdcbf",
+          "id": "6a8da25308fd6ff816a609ac",
           "bg": "dark",
           "showInline": false,
           "blockName": null,
           "blockType": "text-statistic",
           "text": [
             {
-              "id": "6a8c615146868470070fdcbd",
+              "id": "6a8da25308fd6ff816a609aa",
               "title": "Come orientarti nel catalogo",
               "paragraph": {
                 "root": {
@@ -2318,7 +2318,7 @@
           ],
           "statistics": [
             {
-              "id": "6a8c615146868470070fdcbe",
+              "id": "6a8da25308fd6ff816a609ab",
               "blockName": null,
               "blockType": "statistic-block",
               "kpiElement": [
@@ -2331,7 +2331,7 @@
           ]
         },
         {
-          "id": "6a8c615146868470070fdcc6",
+          "id": "6a8da25308fd6ff816a609b3",
           "showInlineCard": false,
           "bg": "primary-light",
           "title": "Gli ultimi software pubblicati",
@@ -2368,7 +2368,7 @@
           "blockType": "card-link-list",
           "listContent": [
             {
-              "id": "6a8c615146868470070fdcc1",
+              "id": "6a8da25308fd6ff816a609ae",
               "title": "Selezioni online - Gestione dei Bandi di Concorso",
               "paragraph": {
                 "root": {
@@ -2404,7 +2404,7 @@
               "blockType": "card-link",
               "link": [
                 {
-                  "id": "6a8c615146868470070fdcc0",
+                  "id": "6a8da25308fd6ff816a609ad",
                   "externalUrl": "https://catalogo-software.developers.italia.it/software/5a177170-0145-41c0-8307-209381e3714c",
                   "blockName": null,
                   "blockType": "link-block"
@@ -2412,7 +2412,7 @@
               ]
             },
             {
-              "id": "6a8c615146868470070fdcc3",
+              "id": "6a8da25308fd6ff816a609b0",
               "title": "OpenCity Italia - La Stanza del Cittadino",
               "paragraph": {
                 "root": {
@@ -2448,7 +2448,7 @@
               "blockType": "card-link",
               "link": [
                 {
-                  "id": "6a8c615146868470070fdcc2",
+                  "id": "6a8da25308fd6ff816a609af",
                   "externalUrl": "https://catalogo-software.developers.italia.it/software/dc4a6716-cd9a-4c0f-a011-6782c2c27209",
                   "blockName": null,
                   "blockType": "link-block"
@@ -2456,7 +2456,7 @@
               ]
             },
             {
-              "id": "6a8c615146868470070fdcc5",
+              "id": "6a8da25308fd6ff816a609b2",
               "title": "GlobaLeaks",
               "paragraph": {
                 "root": {
@@ -2492,7 +2492,7 @@
               "blockType": "card-link",
               "link": [
                 {
-                  "id": "6a8c615146868470070fdcc4",
+                  "id": "6a8da25308fd6ff816a609b1",
                   "externalUrl": "https://catalogo-software.developers.italia.it/software/f276675f-a1ee-441f-8e0b-d4572ef4c566",
                   "blockName": null,
                   "blockType": "link-block"
@@ -2502,7 +2502,7 @@
           ]
         },
         {
-          "id": "6a8c615146868470070fdcc8",
+          "id": "6a8da25308fd6ff816a609b5",
           "bg": "lighter",
           "title": "Esplora le nostre guide",
           "paragraph": {
@@ -2538,7 +2538,7 @@
           "blockType": "news-feed",
           "tabs": [
             {
-              "id": "6a8c615146868470070fdcc7",
+              "id": "6a8da25308fd6ff816a609b4",
               "title": "Guide",
               "blockName": null,
               "blockType": "story-tab",
@@ -2548,7 +2548,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615146868470070fdccb",
+          "id": "6a8da25308fd6ff816a609b8",
           "variant": "variant-1",
           "bg": "dark",
           "heading": "h2",
@@ -2557,7 +2557,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdcca",
+              "id": "6a8da25308fd6ff816a609b7",
               "title": "Approfondisci",
               "paragraph": {
                 "root": {
@@ -2610,7 +2610,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdcc9",
+                  "id": "6a8da25308fd6ff816a609b6",
                   "label": "Leggi il documento",
                   "url": "https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/index.html",
                   "description": "",
@@ -2625,7 +2625,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615146868470070fdca6",
+          "id": "6a8da25308fd6ff816a60993",
           "variant": "small",
           "bg": "primary",
           "backgroundImage": null,
@@ -2666,7 +2666,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615146868470070fdca9",
+          "id": "6a8da25308fd6ff816a60996",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h2",
@@ -2675,7 +2675,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdca8",
+              "id": "6a8da25308fd6ff816a60995",
               "title": "Explore the public administration software catalog",
               "paragraph": {
                 "root": {
@@ -2710,7 +2710,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdca7",
+                  "id": "6a8da25308fd6ff816a60994",
                   "label": "Go to the software catalog",
                   "url": "https://catalogo-software.developers.italia.it",
                   "description": "",
@@ -2723,14 +2723,14 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdcac",
+          "id": "6a8da25308fd6ff816a60999",
           "bg": "dark",
           "showInline": false,
           "blockName": null,
           "blockType": "text-statistic",
           "text": [
             {
-              "id": "6a8c615146868470070fdcaa",
+              "id": "6a8da25308fd6ff816a60997",
               "title": "How to Navigate the Catalog",
               "paragraph": {
                 "root": {
@@ -2874,7 +2874,7 @@
           ],
           "statistics": [
             {
-              "id": "6a8c615146868470070fdcab",
+              "id": "6a8da25308fd6ff816a60998",
               "blockName": null,
               "blockType": "statistic-block",
               "kpiElement": [
@@ -2887,7 +2887,7 @@
           ]
         },
         {
-          "id": "6a8c615146868470070fdcb3",
+          "id": "6a8da25308fd6ff816a609a0",
           "showInlineCard": false,
           "bg": "primary-light",
           "title": "The latest software releases",
@@ -2924,7 +2924,7 @@
           "blockType": "card-link-list",
           "listContent": [
             {
-              "id": "6a8c615146868470070fdcae",
+              "id": "6a8da25308fd6ff816a6099b",
               "title": "Online Selection Processes - Management of Job Postings",
               "paragraph": {
                 "root": {
@@ -2960,7 +2960,7 @@
               "blockType": "card-link",
               "link": [
                 {
-                  "id": "6a8c615146868470070fdcad",
+                  "id": "6a8da25308fd6ff816a6099a",
                   "externalUrl": "https://catalogo-software.developers.italia.it/software/5a177170-0145-41c0-8307-209381e3714c",
                   "blockName": null,
                   "blockType": "link-block"
@@ -2968,7 +2968,7 @@
               ]
             },
             {
-              "id": "6a8c615146868470070fdcb0",
+              "id": "6a8da25308fd6ff816a6099d",
               "title": "OpenCity Italia - The Citizen's Room",
               "paragraph": {
                 "root": {
@@ -3004,7 +3004,7 @@
               "blockType": "card-link",
               "link": [
                 {
-                  "id": "6a8c615146868470070fdcaf",
+                  "id": "6a8da25308fd6ff816a6099c",
                   "externalUrl": "https://catalogo-software.developers.italia.it/software/dc4a6716-cd9a-4c0f-a011-6782c2c27209",
                   "blockName": null,
                   "blockType": "link-block"
@@ -3012,7 +3012,7 @@
               ]
             },
             {
-              "id": "6a8c615146868470070fdcb2",
+              "id": "6a8da25308fd6ff816a6099f",
               "title": "GlobaLeaks",
               "paragraph": {
                 "root": {
@@ -3048,7 +3048,7 @@
               "blockType": "card-link",
               "link": [
                 {
-                  "id": "6a8c615146868470070fdcb1",
+                  "id": "6a8da25308fd6ff816a6099e",
                   "externalUrl": "https://catalogo-software.developers.italia.it/software/f276675f-a1ee-441f-8e0b-d4572ef4c566",
                   "blockName": null,
                   "blockType": "link-block"
@@ -3058,7 +3058,7 @@
           ]
         },
         {
-          "id": "6a8c615146868470070fdcb5",
+          "id": "6a8da25308fd6ff816a609a2",
           "bg": "lighter",
           "title": "Explore our guides",
           "paragraph": {
@@ -3094,7 +3094,7 @@
           "blockType": "news-feed",
           "tabs": [
             {
-              "id": "6a8c615146868470070fdcb4",
+              "id": "6a8da25308fd6ff816a609a1",
               "title": "Guides",
               "blockName": null,
               "blockType": "story-tab",
@@ -3104,7 +3104,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615146868470070fdcb8",
+          "id": "6a8da25308fd6ff816a609a5",
           "variant": "variant-1",
           "bg": "dark",
           "heading": "h2",
@@ -3113,7 +3113,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdcb7",
+              "id": "6a8da25308fd6ff816a609a4",
               "title": "Learn More",
               "paragraph": {
                 "root": {
@@ -3166,7 +3166,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdcb6",
+                  "id": "6a8da25308fd6ff816a609a3",
                   "label": "Read the document",
                   "url": "https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/index.html",
                   "description": "",
@@ -3192,7 +3192,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"software-open-source\",\"en\":\"open-source-software\"}",
-    "updatedAt": "2026-08-24T15:20:49.602Z",
+    "updatedAt": "2026-08-25T14:10:27.191Z",
     "createdAt": "2026-08-12T13:19:22.518Z"
   },
   {
@@ -3208,7 +3208,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615146868470070fdc96",
+          "id": "6a8da25208fd6ff816a60983",
           "variant": "small",
           "bg": "primary",
           "backgroundImage": null,
@@ -3249,7 +3249,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615146868470070fdc99",
+          "id": "6a8da25208fd6ff816a60986",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h2",
@@ -3258,7 +3258,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdc98",
+              "id": "6a8da25208fd6ff816a60985",
               "title": "Esplora il catalogo delle API",
               "paragraph": {
                 "root": {
@@ -3293,7 +3293,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdc97",
+                  "id": "6a8da25208fd6ff816a60984",
                   "label": "Vai al catalogo API",
                   "url": "https://api.gov.it/it/",
                   "description": "",
@@ -3306,14 +3306,14 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdc9c",
+          "id": "6a8da25208fd6ff816a60989",
           "bg": "dark",
           "showInline": false,
           "blockName": null,
           "blockType": "text-statistic",
           "text": [
             {
-              "id": "6a8c615146868470070fdc9a",
+              "id": "6a8da25208fd6ff816a60987",
               "title": "Come orientarti nel catalogo",
               "paragraph": {
                 "root": {
@@ -3457,7 +3457,7 @@
           ],
           "statistics": [
             {
-              "id": "6a8c615146868470070fdc9b",
+              "id": "6a8da25208fd6ff816a60988",
               "blockName": null,
               "blockType": "statistic-block",
               "kpiElement": [
@@ -3471,7 +3471,7 @@
           ]
         },
         {
-          "id": "6a8c615146868470070fdc9f",
+          "id": "6a8da25208fd6ff816a6098c",
           "variant": "variant-1",
           "bg": "primary-light",
           "heading": "h2",
@@ -3480,7 +3480,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdc9e",
+              "id": "6a8da25208fd6ff816a6098b",
               "title": "Esplora il catalogo delle risorse semantiche",
               "paragraph": {
                 "root": {
@@ -3515,7 +3515,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdc9d",
+                  "id": "6a8da25208fd6ff816a6098a",
                   "label": "Vai al catalogo Schema",
                   "url": "https://schema.gov.it/",
                   "description": "",
@@ -3528,7 +3528,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdca2",
+          "id": "6a8da25208fd6ff816a6098f",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h2",
@@ -3537,7 +3537,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdca1",
+              "id": "6a8da25208fd6ff816a6098e",
               "title": "Progettare e integrare servizi interoperabili",
               "paragraph": {
                 "root": {
@@ -3572,7 +3572,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdca0",
+                  "id": "6a8da25208fd6ff816a6098d",
                   "label": "Leggi le indicazioni",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -3587,7 +3587,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdca5",
+          "id": "6a8da25208fd6ff816a60992",
           "variant": "variant-1",
           "bg": "dark",
           "heading": "h2",
@@ -3596,7 +3596,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdca4",
+              "id": "6a8da25208fd6ff816a60991",
               "title": "Approfondisci",
               "paragraph": {
                 "root": {
@@ -3695,7 +3695,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdca3",
+                  "id": "6a8da25208fd6ff816a60990",
                   "label": "Consulta la normativa",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -3712,7 +3712,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615146868470070fdc86",
+          "id": "6a8da25208fd6ff816a60973",
           "variant": "small",
           "bg": "primary",
           "backgroundImage": null,
@@ -3753,7 +3753,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615146868470070fdc89",
+          "id": "6a8da25208fd6ff816a60976",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h2",
@@ -3762,7 +3762,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdc88",
+              "id": "6a8da25208fd6ff816a60975",
               "title": "Explore the API catalog",
               "paragraph": {
                 "root": {
@@ -3797,7 +3797,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdc87",
+                  "id": "6a8da25208fd6ff816a60974",
                   "label": "Go to the API Catalog",
                   "url": "https://api.gov.it/it/catalogo",
                   "description": "",
@@ -3810,14 +3810,14 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdc8c",
+          "id": "6a8da25208fd6ff816a60979",
           "bg": "dark",
           "showInline": false,
           "blockName": null,
           "blockType": "text-statistic",
           "text": [
             {
-              "id": "6a8c615146868470070fdc8a",
+              "id": "6a8da25208fd6ff816a60977",
               "title": "How to Navigate the Catalog",
               "paragraph": {
                 "root": {
@@ -3961,7 +3961,7 @@
           ],
           "statistics": [
             {
-              "id": "6a8c615146868470070fdc8b",
+              "id": "6a8da25208fd6ff816a60978",
               "blockName": null,
               "blockType": "statistic-block",
               "kpiElement": [
@@ -3975,7 +3975,7 @@
           ]
         },
         {
-          "id": "6a8c615146868470070fdc8f",
+          "id": "6a8da25208fd6ff816a6097c",
           "variant": "variant-1",
           "bg": "primary-light",
           "heading": "h2",
@@ -3984,7 +3984,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdc8e",
+              "id": "6a8da25208fd6ff816a6097b",
               "title": "Explore the semantic resources catalog",
               "paragraph": {
                 "root": {
@@ -4019,7 +4019,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdc8d",
+                  "id": "6a8da25208fd6ff816a6097a",
                   "label": "Go to the Schema catalog",
                   "url": "https://schema.gov.it/",
                   "description": "",
@@ -4032,7 +4032,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdc92",
+          "id": "6a8da25208fd6ff816a6097f",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h2",
@@ -4041,7 +4041,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdc91",
+              "id": "6a8da25208fd6ff816a6097e",
               "title": "Designing and Integrating Interoperable Services",
               "paragraph": {
                 "root": {
@@ -4076,7 +4076,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdc90",
+                  "id": "6a8da25208fd6ff816a6097d",
                   "label": "Read the instructions",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -4091,7 +4091,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdc95",
+          "id": "6a8da25208fd6ff816a60982",
           "variant": "variant-1",
           "bg": "dark",
           "heading": "h2",
@@ -4100,7 +4100,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdc94",
+              "id": "6a8da25208fd6ff816a60981",
               "title": "Learn More",
               "paragraph": {
                 "root": {
@@ -4199,7 +4199,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdc93",
+                  "id": "6a8da25208fd6ff816a60980",
                   "label": "View the regulations",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -4227,7 +4227,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"interoperabilita-e-api\",\"en\":\"interoperability-and-apis\"}",
-    "updatedAt": "2026-08-24T15:20:49.300Z",
+    "updatedAt": "2026-08-25T14:10:26.939Z",
     "createdAt": "2026-08-12T13:19:22.452Z"
   },
   {
@@ -4243,7 +4243,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615046868470070fdc3c",
+          "id": "6a8da25208fd6ff816a60929",
           "variant": "small",
           "bg": "primary",
           "backgroundImage": null,
@@ -4284,14 +4284,14 @@
           "cta": []
         },
         {
-          "id": "6a8c615046868470070fdc3e",
+          "id": "6a8da25208fd6ff816a6092b",
           "bg": "default",
           "heading": "h2",
           "blockName": null,
           "blockType": "text-only",
           "text": [
             {
-              "id": "6a8c615046868470070fdc3d",
+              "id": "6a8da25208fd6ff816a6092a",
               "title": "I principi normativi di riferimento",
               "paragraph": {
                 "root": {
@@ -4383,7 +4383,7 @@
           ]
         },
         {
-          "id": "6a8c615046868470070fdc41",
+          "id": "6a8da25208fd6ff816a6092e",
           "variant": "variant-1",
           "bg": "lighter",
           "heading": "h3",
@@ -4392,7 +4392,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615046868470070fdc40",
+              "id": "6a8da25208fd6ff816a6092d",
               "title": "Valutazione comparativa",
               "paragraph": {
                 "root": {
@@ -4427,7 +4427,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615046868470070fdc3f",
+                  "id": "6a8da25208fd6ff816a6092c",
                   "label": "Scopri la normativa sulla valutazione",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -4442,7 +4442,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615046868470070fdc44",
+          "id": "6a8da25208fd6ff816a60931",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h3",
@@ -4451,7 +4451,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615046868470070fdc43",
+              "id": "6a8da25208fd6ff816a60930",
               "title": "Riuso e open source",
               "paragraph": {
                 "root": {
@@ -4486,7 +4486,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615046868470070fdc42",
+                  "id": "6a8da25208fd6ff816a6092f",
                   "label": "Scopri la normativa sul riuso",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -4501,7 +4501,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615046868470070fdc47",
+          "id": "6a8da25208fd6ff816a60934",
           "variant": "variant-1",
           "bg": "lighter",
           "heading": "h3",
@@ -4510,7 +4510,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615046868470070fdc46",
+              "id": "6a8da25208fd6ff816a60933",
               "title": "Interoperabilità",
               "paragraph": {
                 "root": {
@@ -4545,7 +4545,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615046868470070fdc45",
+                  "id": "6a8da25208fd6ff816a60932",
                   "label": "Scopri la normativa sull'interoperabilità",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -4560,7 +4560,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615046868470070fdc4a",
+          "id": "6a8da25208fd6ff816a60937",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h3",
@@ -4569,7 +4569,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615046868470070fdc49",
+              "id": "6a8da25208fd6ff816a60936",
               "title": "Accessibilità",
               "paragraph": {
                 "root": {
@@ -4604,7 +4604,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615046868470070fdc48",
+                  "id": "6a8da25208fd6ff816a60935",
                   "label": "Scopri la normativa sull'accessibilità",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -4619,7 +4619,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615046868470070fdc4d",
+          "id": "6a8da25208fd6ff816a6093a",
           "variant": "variant-1",
           "bg": "lighter",
           "heading": "h3",
@@ -4628,7 +4628,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615046868470070fdc4c",
+              "id": "6a8da25208fd6ff816a60939",
               "title": "Privacy by design",
               "paragraph": {
                 "root": {
@@ -4663,7 +4663,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615046868470070fdc4b",
+                  "id": "6a8da25208fd6ff816a60938",
                   "label": "Scopri la normativa sulla privacy",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -4678,7 +4678,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615046868470070fdc50",
+          "id": "6a8da25208fd6ff816a6093d",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h3",
@@ -4687,7 +4687,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615046868470070fdc4f",
+              "id": "6a8da25208fd6ff816a6093c",
               "title": "Cybersecurity by design",
               "paragraph": {
                 "root": {
@@ -4722,7 +4722,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615046868470070fdc4e",
+                  "id": "6a8da25208fd6ff816a6093b",
                   "label": "Scopri la normativa sulla cybersecurity",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -4739,7 +4739,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615046868470070fdc27",
+          "id": "6a8da25208fd6ff816a60914",
           "variant": "small",
           "bg": "primary",
           "backgroundImage": null,
@@ -4780,14 +4780,14 @@
           "cta": []
         },
         {
-          "id": "6a8c615046868470070fdc29",
+          "id": "6a8da25208fd6ff816a60916",
           "bg": "default",
           "heading": "h2",
           "blockName": null,
           "blockType": "text-only",
           "text": [
             {
-              "id": "6a8c615046868470070fdc28",
+              "id": "6a8da25208fd6ff816a60915",
               "title": "The Governing Principles",
               "paragraph": {
                 "root": {
@@ -4879,7 +4879,7 @@
           ]
         },
         {
-          "id": "6a8c615046868470070fdc2c",
+          "id": "6a8da25208fd6ff816a60919",
           "variant": "variant-1",
           "bg": "lighter",
           "heading": "h3",
@@ -4888,7 +4888,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615046868470070fdc2b",
+              "id": "6a8da25208fd6ff816a60918",
               "title": "Comparative Evaluation",
               "paragraph": {
                 "root": {
@@ -4923,7 +4923,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615046868470070fdc2a",
+                  "id": "6a8da25208fd6ff816a60917",
                   "label": "Learn about the regulations on assessment",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -4938,7 +4938,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615046868470070fdc2f",
+          "id": "6a8da25208fd6ff816a6091c",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h3",
@@ -4947,7 +4947,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615046868470070fdc2e",
+              "id": "6a8da25208fd6ff816a6091b",
               "title": "Reuse and Open Source",
               "paragraph": {
                 "root": {
@@ -4982,7 +4982,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615046868470070fdc2d",
+                  "id": "6a8da25208fd6ff816a6091a",
                   "label": "Learn about the regulations on reuse",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -4997,7 +4997,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615046868470070fdc32",
+          "id": "6a8da25208fd6ff816a6091f",
           "variant": "variant-1",
           "bg": "lighter",
           "heading": "h3",
@@ -5006,7 +5006,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615046868470070fdc31",
+              "id": "6a8da25208fd6ff816a6091e",
               "title": "Interoperability",
               "paragraph": {
                 "root": {
@@ -5041,7 +5041,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615046868470070fdc30",
+                  "id": "6a8da25208fd6ff816a6091d",
                   "label": "Learn about the interoperability regulations",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -5056,7 +5056,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615046868470070fdc35",
+          "id": "6a8da25208fd6ff816a60922",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h3",
@@ -5065,7 +5065,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615046868470070fdc34",
+              "id": "6a8da25208fd6ff816a60921",
               "title": "Accessibility",
               "paragraph": {
                 "root": {
@@ -5100,7 +5100,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615046868470070fdc33",
+                  "id": "6a8da25208fd6ff816a60920",
                   "label": "Learn about accessibility regulations",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -5115,7 +5115,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615046868470070fdc38",
+          "id": "6a8da25208fd6ff816a60925",
           "variant": "variant-1",
           "bg": "lighter",
           "heading": "h3",
@@ -5124,7 +5124,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615046868470070fdc37",
+              "id": "6a8da25208fd6ff816a60924",
               "title": "Privacy by Design",
               "paragraph": {
                 "root": {
@@ -5159,7 +5159,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615046868470070fdc36",
+                  "id": "6a8da25208fd6ff816a60923",
                   "label": "Learn about our privacy policy",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -5174,7 +5174,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615046868470070fdc3b",
+          "id": "6a8da25208fd6ff816a60928",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h3",
@@ -5183,7 +5183,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615046868470070fdc3a",
+              "id": "6a8da25208fd6ff816a60927",
               "title": "Cybersecurity by Design",
               "paragraph": {
                 "root": {
@@ -5218,7 +5218,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615046868470070fdc39",
+                  "id": "6a8da25208fd6ff816a60926",
                   "label": "Learn about cybersecurity regulations",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -5246,7 +5246,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"normativa\",\"en\":\"regulations\"}",
-    "updatedAt": "2026-08-24T15:20:48.520Z",
+    "updatedAt": "2026-08-25T14:10:26.358Z",
     "createdAt": "2026-06-19T09:04:39.757Z"
   },
   {
@@ -5262,7 +5262,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615246868470070fdd0b",
+          "id": "6a8da25308fd6ff816a609fc",
           "variant": "small",
           "bg": "primary",
           "backgroundImage": null,
@@ -5303,14 +5303,14 @@
           "cta": []
         },
         {
-          "id": "6a8c615246868470070fdd0e",
+          "id": "6a8da25308fd6ff816a609ff",
           "bg": "default",
           "heading": "h2",
           "blockName": null,
           "blockType": "text-only",
           "text": [
             {
-              "id": "6a8c615246868470070fdd0d",
+              "id": "6a8da25308fd6ff816a609fe",
               "title": "Il software pubblico come patrimonio condiviso",
               "paragraph": {
                 "root": {
@@ -5381,7 +5381,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615246868470070fdd0c",
+                  "id": "6a8da25308fd6ff816a609fd",
                   "label": "Scopri visione e valori",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -5395,7 +5395,7 @@
           ]
         },
         {
-          "id": "6a8c615246868470070fdd11",
+          "id": "6a8da25308fd6ff816a60a02",
           "variant": "variant-1",
           "bg": "dark",
           "heading": "h2",
@@ -5404,7 +5404,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615246868470070fdd10",
+              "id": "6a8da25308fd6ff816a60a01",
               "title": "Al servizio della strategia digitale pubblica",
               "paragraph": {
                 "root": {
@@ -5511,7 +5511,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615246868470070fdd0f",
+                  "id": "6a8da25308fd6ff816a60a00",
                   "label": "Approfondisci la normativa",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -5526,14 +5526,14 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615246868470070fdd13",
+          "id": "6a8da25308fd6ff816a60a04",
           "bg": "lighter",
           "heading": "h2",
           "blockName": null,
           "blockType": "text-only",
           "text": [
             {
-              "id": "6a8c615246868470070fdd12",
+              "id": "6a8da25308fd6ff816a60a03",
               "title": "Un progetto in dialogo con l’Europa",
               "paragraph": {
                 "root": {
@@ -5739,7 +5739,7 @@
           ]
         },
         {
-          "id": "6a8c615246868470070fdd15",
+          "id": "6a8da25308fd6ff816a60a0a",
           "variant": "variant-3",
           "bg": "default",
           "heading": "h2",
@@ -5748,7 +5748,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615246868470070fdd14",
+              "id": "6a8da25308fd6ff816a60a05",
               "title": "Un approccio comune al software della PA",
               "paragraph": {
                 "root": {
@@ -5802,10 +5802,127 @@
               "cta": []
             }
           ],
-          "additionalContent": []
+          "additionalContent": [
+            {
+              "id": "6a8da25308fd6ff816a60a09",
+              "title": "",
+              "blockName": null,
+              "blockType": "additional-content",
+              "content": [
+                {
+                  "id": "6a8da25308fd6ff816a60a06",
+                  "title": "Governance pubblica e distribuita",
+                  "description": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "format": "",
+                          "indent": 0,
+                          "version": 1,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "Il coordinamento è pubblico e affidato alle istituzioni. Le amministrazioni, i fornitori e le community sviluppano e riusano i software in modo autonomo, seguendo linee guida e pratiche condivise.",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 0,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "iconSelect": "a095e001-2d25-4a1b-bfe8-caa45d6e559c",
+                  "blockName": null,
+                  "blockType": "card-editorial-with-icon"
+                },
+                {
+                  "id": "6a8da25308fd6ff816a60a07",
+                  "title": "Strumenti aperti e pratiche condivise",
+                  "description": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "format": "",
+                          "indent": 0,
+                          "version": 1,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "Il codice e la collaborazione avvengono su piattaforme aperte e diffuse, come repository pubblici e strumenti di lavoro condivisi. Developers Italia non impone ambienti proprietari né soluzioni chiuse.",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 0,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "iconSelect": "361c735b-ff3a-49c2-b7c8-3e67777e355d",
+                  "blockName": null,
+                  "blockType": "card-editorial-with-icon"
+                },
+                {
+                  "id": "6a8da25308fd6ff816a60a08",
+                  "title": "Responsabilità delle amministrazioni",
+                  "description": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "format": "",
+                          "indent": 0,
+                          "version": 1,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "Ogni amministrazione resta responsabile dei software che sviluppa o pubblica, inclusi manutenzione, aggiornamenti e sicurezza. Developers Italia fornisce supporto, indicazioni e modelli, ma non sostituisce le PA nella gestione dei progetti.",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 0,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "iconSelect": "9fe1bef6-6f23-406f-ac7d-36ceed78b6e5",
+                  "blockName": null,
+                  "blockType": "card-editorial-with-icon"
+                }
+              ]
+            }
+          ]
         },
         {
-          "id": "6a8c615246868470070fdd18",
+          "id": "6a8da25308fd6ff816a60a0d",
           "variant": "variant-1",
           "bg": "primary-light",
           "heading": "h2",
@@ -5814,7 +5931,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615246868470070fdd17",
+              "id": "6a8da25308fd6ff816a60a0c",
               "title": "Siamo uno spazio aperto al confronto",
               "paragraph": {
                 "root": {
@@ -5867,7 +5984,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615246868470070fdd16",
+                  "id": "6a8da25308fd6ff816a60a0b",
                   "label": "Partecipa alla community",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -5882,7 +5999,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615246868470070fdd1b",
+          "id": "6a8da25308fd6ff816a60a10",
           "variant": "variant-1",
           "bg": "lighter",
           "heading": "h2",
@@ -5891,7 +6008,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615246868470070fdd1a",
+              "id": "6a8da25308fd6ff816a60a0f",
               "title": "Due progetti complementari per la trasformazione digitale",
               "paragraph": {
                 "root": {
@@ -5926,7 +6043,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615246868470070fdd19",
+                  "id": "6a8da25308fd6ff816a60a0e",
                   "label": "Vai a Designers Italia",
                   "url": "https://designers.italia.it/",
                   "description": "",
@@ -5939,14 +6056,14 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615246868470070fdd1f",
+          "id": "6a8da25308fd6ff816a60a14",
           "bg": "dark",
           "showInline": false,
           "blockName": null,
           "blockType": "text-statistic",
           "text": [
             {
-              "id": "6a8c615246868470070fdd1d",
+              "id": "6a8da25308fd6ff816a60a12",
               "title": "Un progetto in continua evoluzione",
               "paragraph": {
                 "root": {
@@ -5981,7 +6098,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615246868470070fdd1c",
+                  "id": "6a8da25308fd6ff816a60a11",
                   "label": "Scopri i nostri numeri",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -5995,7 +6112,7 @@
           ],
           "statistics": [
             {
-              "id": "6a8c615246868470070fdd1e",
+              "id": "6a8da25308fd6ff816a60a13",
               "blockName": null,
               "blockType": "statistic-block",
               "kpiElement": [
@@ -6009,7 +6126,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615246868470070fdcf6",
+          "id": "6a8da25308fd6ff816a609e3",
           "variant": "small",
           "bg": "primary",
           "backgroundImage": null,
@@ -6050,14 +6167,14 @@
           "cta": []
         },
         {
-          "id": "6a8c615246868470070fdcf9",
+          "id": "6a8da25308fd6ff816a609e6",
           "bg": "default",
           "heading": "h2",
           "blockName": null,
           "blockType": "text-only",
           "text": [
             {
-              "id": "6a8c615246868470070fdcf8",
+              "id": "6a8da25308fd6ff816a609e5",
               "title": "Open-Source Software as a Shared Asset",
               "paragraph": {
                 "root": {
@@ -6119,7 +6236,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615246868470070fdcf7",
+                  "id": "6a8da25308fd6ff816a609e4",
                   "label": "Discover Our Vision and Values",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -6133,7 +6250,7 @@
           ]
         },
         {
-          "id": "6a8c615246868470070fdcfc",
+          "id": "6a8da25308fd6ff816a609e9",
           "variant": "variant-1",
           "bg": "dark",
           "heading": "h2",
@@ -6142,7 +6259,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615246868470070fdcfb",
+              "id": "6a8da25308fd6ff816a609e8",
               "title": "Supporting Public Digital Strategy",
               "paragraph": {
                 "root": {
@@ -6249,7 +6366,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615246868470070fdcfa",
+                  "id": "6a8da25308fd6ff816a609e7",
                   "label": "Learn More About the Regulations",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -6264,14 +6381,14 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615246868470070fdcfe",
+          "id": "6a8da25308fd6ff816a609eb",
           "bg": "lighter",
           "heading": "h2",
           "blockName": null,
           "blockType": "text-only",
           "text": [
             {
-              "id": "6a8c615246868470070fdcfd",
+              "id": "6a8da25308fd6ff816a609ea",
               "title": "A Project in Dialogue with Europe",
               "paragraph": {
                 "root": {
@@ -6423,7 +6540,7 @@
           ]
         },
         {
-          "id": "6a8c615246868470070fdd00",
+          "id": "6a8da25308fd6ff816a609f1",
           "variant": "variant-3",
           "bg": "default",
           "heading": "h2",
@@ -6432,7 +6549,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615246868470070fdcff",
+              "id": "6a8da25308fd6ff816a609ec",
               "title": "A Common Approach to Public Administration Software",
               "paragraph": {
                 "root": {
@@ -6468,10 +6585,127 @@
               "cta": []
             }
           ],
-          "additionalContent": []
+          "additionalContent": [
+            {
+              "id": "6a8da25308fd6ff816a609f0",
+              "title": "",
+              "blockName": null,
+              "blockType": "additional-content",
+              "content": [
+                {
+                  "id": "6a8da25308fd6ff816a609ed",
+                  "title": "Public and Distributed Governance",
+                  "description": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "format": "",
+                          "indent": 0,
+                          "version": 1,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "Coordination is public and entrusted to institutions. Government agencies, vendors, and communities develop and reuse software independently, following shared guidelines and best practices.",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 0,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "iconSelect": "a095e001-2d25-4a1b-bfe8-caa45d6e559c",
+                  "blockName": null,
+                  "blockType": "card-editorial-with-icon"
+                },
+                {
+                  "id": "6a8da25308fd6ff816a609ee",
+                  "title": "Open Tools and Shared Practices",
+                  "description": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "format": "",
+                          "indent": 0,
+                          "version": 1,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "Code development and collaboration take place on open, widely used platforms, such as public repositories and shared work tools. Developers Italia does not require the use of proprietary environments or closed-source solutions.",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 0,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "iconSelect": "361c735b-ff3a-49c2-b7c8-3e67777e355d",
+                  "blockName": null,
+                  "blockType": "card-editorial-with-icon"
+                },
+                {
+                  "id": "6a8da25308fd6ff816a609ef",
+                  "title": "Responsibilities of Government Agencies",
+                  "description": {
+                    "root": {
+                      "type": "root",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "format": "",
+                          "indent": 0,
+                          "version": 1,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "Each government agency remains responsible for the software it develops or publishes, including maintenance, updates, and security. Developers Italia provides support, guidance, and templates, but does not replace government agencies in managing projects.",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 0,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  },
+                  "iconSelect": "9fe1bef6-6f23-406f-ac7d-36ceed78b6e5",
+                  "blockName": null,
+                  "blockType": "card-editorial-with-icon"
+                }
+              ]
+            }
+          ]
         },
         {
-          "id": "6a8c615246868470070fdd03",
+          "id": "6a8da25308fd6ff816a609f4",
           "variant": "variant-1",
           "bg": "primary-light",
           "heading": "h2",
@@ -6480,7 +6714,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615246868470070fdd02",
+              "id": "6a8da25308fd6ff816a609f3",
               "title": "We are a space open to dialogue",
               "paragraph": {
                 "root": {
@@ -6515,7 +6749,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615246868470070fdd01",
+                  "id": "6a8da25308fd6ff816a609f2",
                   "label": "Join the community",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -6530,7 +6764,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615246868470070fdd06",
+          "id": "6a8da25308fd6ff816a609f7",
           "variant": "variant-1",
           "bg": "lighter",
           "heading": "h2",
@@ -6539,7 +6773,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615246868470070fdd05",
+              "id": "6a8da25308fd6ff816a609f6",
               "title": "Two Complementary Projects for Digital Transformation",
               "paragraph": {
                 "root": {
@@ -6574,7 +6808,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615246868470070fdd04",
+                  "id": "6a8da25308fd6ff816a609f5",
                   "label": "Discover Designers Italia",
                   "url": "https://designers.italia.it/",
                   "description": "",
@@ -6587,14 +6821,14 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615246868470070fdd0a",
+          "id": "6a8da25308fd6ff816a609fb",
           "bg": "dark",
           "showInline": false,
           "blockName": null,
           "blockType": "text-statistic",
           "text": [
             {
-              "id": "6a8c615246868470070fdd08",
+              "id": "6a8da25308fd6ff816a609f9",
               "title": "An ever-evolving project",
               "paragraph": {
                 "root": {
@@ -6629,7 +6863,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615246868470070fdd07",
+                  "id": "6a8da25308fd6ff816a609f8",
                   "label": "See all our milestones",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -6643,7 +6877,7 @@
           ],
           "statistics": [
             {
-              "id": "6a8c615246868470070fdd09",
+              "id": "6a8da25308fd6ff816a609fa",
               "blockName": null,
               "blockType": "statistic-block",
               "kpiElement": [
@@ -6668,7 +6902,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"progetto\",\"en\":\"project\"}",
-    "updatedAt": "2026-08-24T15:20:50.253Z",
+    "updatedAt": "2026-08-25T14:10:27.847Z",
     "createdAt": "2026-06-19T09:04:39.623Z"
   },
   {
@@ -6684,7 +6918,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615246868470070fdd24",
+          "id": "6a8da25408fd6ff816a60a19",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": null,
@@ -6725,7 +6959,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615246868470070fdd25",
+          "id": "6a8da25408fd6ff816a60a1a",
           "bg": "default",
           "content": {
             "root": {
@@ -7816,7 +8050,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615246868470070fdd22",
+          "id": "6a8da25408fd6ff816a60a17",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": null,
@@ -7857,7 +8091,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615246868470070fdd23",
+          "id": "6a8da25408fd6ff816a60a18",
           "bg": "default",
           "content": {
             "root": {
@@ -8959,7 +9193,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"privacy-policy\",\"en\":\"privacy-policy\"}",
-    "updatedAt": "2026-08-24T15:20:50.644Z",
+    "updatedAt": "2026-08-25T14:10:28.109Z",
     "createdAt": "2026-06-19T09:04:39.415Z"
   },
   {
@@ -8975,7 +9209,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615246868470070fdd21",
+          "id": "6a8da25408fd6ff816a60a16",
           "variant": "xsmall-compact",
           "bg": "primary",
           "backgroundImage": null,
@@ -9018,7 +9252,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615246868470070fdd20",
+          "id": "6a8da25308fd6ff816a60a15",
           "variant": "xsmall-compact",
           "bg": "primary",
           "backgroundImage": null,
@@ -9072,7 +9306,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"dashboard\",\"en\":\"dashboard\"}",
-    "updatedAt": "2026-08-24T15:20:50.474Z",
+    "updatedAt": "2026-08-25T14:10:28.012Z",
     "createdAt": "2026-06-19T09:04:39.342Z"
   },
   {
@@ -9088,7 +9322,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615046868470070fdc6a",
+          "id": "6a8da25208fd6ff816a60957",
           "variant": "small",
           "bg": "primary",
           "backgroundImage": null,
@@ -9129,14 +9363,14 @@
           "cta": []
         },
         {
-          "id": "6a8c615046868470070fdc6c",
+          "id": "6a8da25208fd6ff816a60959",
           "bg": "default",
           "heading": "h2",
           "blockName": null,
           "blockType": "text-only",
           "text": [
             {
-              "id": "6a8c615046868470070fdc6b",
+              "id": "6a8da25208fd6ff816a60958",
               "title": "La Pubblica Amministrazione cresce attraverso la collaborazione",
               "paragraph": {
                 "root": {
@@ -9246,7 +9480,7 @@
           ]
         },
         {
-          "id": "6a8c615046868470070fdc6f",
+          "id": "6a8da25208fd6ff816a6095c",
           "bg": "lighter",
           "title": "Notizie",
           "paragraph": {
@@ -9282,7 +9516,7 @@
           "blockType": "news-feed",
           "tabs": [
             {
-              "id": "6a8c615046868470070fdc6d",
+              "id": "6a8da25208fd6ff816a6095a",
               "title": "News",
               "blockName": null,
               "blockType": "story-tab",
@@ -9291,7 +9525,7 @@
           ],
           "cta": [
             {
-              "id": "6a8c615046868470070fdc6e",
+              "id": "6a8da25208fd6ff816a6095b",
               "label": "Esplora tutte le notizie",
               "blockName": null,
               "blockType": "internal-link",
@@ -9303,7 +9537,7 @@
           ]
         },
         {
-          "id": "6a8c615046868470070fdc72",
+          "id": "6a8da25208fd6ff816a6095f",
           "bg": "dark",
           "title": "Eventi",
           "paragraph": {
@@ -9339,7 +9573,7 @@
           "blockType": "news-feed",
           "tabs": [
             {
-              "id": "6a8c615046868470070fdc70",
+              "id": "6a8da25208fd6ff816a6095d",
               "title": "Eventi",
               "blockName": null,
               "blockType": "story-tab",
@@ -9348,7 +9582,7 @@
           ],
           "cta": [
             {
-              "id": "6a8c615046868470070fdc71",
+              "id": "6a8da25208fd6ff816a6095e",
               "label": "Esplora tutti gli eventi",
               "blockName": null,
               "blockType": "internal-link",
@@ -9360,7 +9594,7 @@
           ]
         },
         {
-          "id": "6a8c615046868470070fdc75",
+          "id": "6a8da25208fd6ff816a60962",
           "bg": "default",
           "title": "Articoli di approfondimento",
           "paragraph": {
@@ -9396,7 +9630,7 @@
           "blockType": "news-feed",
           "tabs": [
             {
-              "id": "6a8c615046868470070fdc73",
+              "id": "6a8da25208fd6ff816a60960",
               "title": "Approfondimenti",
               "blockName": null,
               "blockType": "news-tab",
@@ -9409,7 +9643,7 @@
           ],
           "cta": [
             {
-              "id": "6a8c615046868470070fdc74",
+              "id": "6a8da25208fd6ff816a60961",
               "label": "Esplora tutti",
               "blockName": null,
               "blockType": "internal-link",
@@ -9421,7 +9655,7 @@
           ]
         },
         {
-          "id": "6a8c615046868470070fdc78",
+          "id": "6a8da25208fd6ff816a60965",
           "variant": "variant-1",
           "bg": "primary-light",
           "heading": "h2",
@@ -9430,7 +9664,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615046868470070fdc77",
+              "id": "6a8da25208fd6ff816a60964",
               "title": "Segnala buoni esempi di progettazione e sviluppo nella PA",
               "paragraph": {
                 "root": {
@@ -9465,7 +9699,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615046868470070fdc76",
+                  "id": "6a8da25208fd6ff816a60963",
                   "label": "Inviaci un esempio",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -9480,7 +9714,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615046868470070fdc7d",
+          "id": "6a8da25208fd6ff816a6096a",
           "title": "I canali della community",
           "paragraph": {
             "root": {
@@ -9516,7 +9750,7 @@
           "blockType": "support-channels-section",
           "channels": [
             {
-              "id": "6a8c615046868470070fdc79",
+              "id": "6a8da25208fd6ff816a60966",
               "title": "Vai su Forum Italia",
               "description": {
                 "root": {
@@ -9562,7 +9796,7 @@
               "blockType": "channel"
             },
             {
-              "id": "6a8c615046868470070fdc7a",
+              "id": "6a8da25208fd6ff816a60967",
               "title": "Vai su Matrix",
               "description": {
                 "root": {
@@ -9631,7 +9865,7 @@
               "blockType": "channel"
             },
             {
-              "id": "6a8c615046868470070fdc7b",
+              "id": "6a8da25208fd6ff816a60968",
               "title": "Vai su Github",
               "description": {
                 "root": {
@@ -9677,7 +9911,7 @@
               "blockType": "channel"
             },
             {
-              "id": "6a8c615046868470070fdc7c",
+              "id": "6a8da25208fd6ff816a60969",
               "title": "Vai su Docs Italia",
               "description": {
                 "root": {
@@ -9725,7 +9959,7 @@
           ]
         },
         {
-          "id": "6a8c615046868470070fdc7f",
+          "id": "6a8da25208fd6ff816a6096c",
           "title": "Per tutte le altre informazioni",
           "paragraph": "Se non hai trovato risposta alle tue domande nei canali della community, puoi contattare direttamente il nostro team all'indirizzo contatti@developers.italia.it",
           "image": "6bb90b1e-aade-44df-a09f-2a6cdc3983cc",
@@ -9734,7 +9968,7 @@
           "blockType": "support-cta-section",
           "cta": [
             {
-              "id": "6a8c615046868470070fdc7e",
+              "id": "6a8da25208fd6ff816a6096b",
               "label": "Scrivici un'email",
               "url": "mailto:contatti@developers.italia.it",
               "description": "",
@@ -9744,7 +9978,7 @@
           ]
         },
         {
-          "id": "6a8c615046868470070fdc82",
+          "id": "6a8da25208fd6ff816a6096f",
           "variant": "variant-1",
           "bg": "primary-light",
           "heading": "h2",
@@ -9753,7 +9987,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615046868470070fdc81",
+              "id": "6a8da25208fd6ff816a6096e",
               "title": "Lo spazio dove design e sviluppo si incontrano",
               "paragraph": {
                 "root": {
@@ -9788,7 +10022,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615046868470070fdc80",
+                  "id": "6a8da25208fd6ff816a6096d",
                   "label": "Scopri la community di Designers Italia",
                   "url": "https://designers.italia.it/community/",
                   "description": "",
@@ -9801,14 +10035,14 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615046868470070fdc85",
+          "id": "6a8da25208fd6ff816a60972",
           "bg": "dark",
           "showInline": true,
           "blockName": null,
           "blockType": "text-statistic",
           "text": [
             {
-              "id": "6a8c615046868470070fdc83",
+              "id": "6a8da25208fd6ff816a60970",
               "title": "Diamo i numeri",
               "paragraph": {
                 "root": {
@@ -9846,7 +10080,7 @@
           ],
           "statistics": [
             {
-              "id": "6a8c615046868470070fdc84",
+              "id": "6a8da25208fd6ff816a60971",
               "blockName": null,
               "blockType": "statistic-block",
               "kpiElement": [
@@ -9859,7 +10093,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615046868470070fdc51",
+          "id": "6a8da25208fd6ff816a6093e",
           "variant": "small",
           "bg": "primary",
           "backgroundImage": null,
@@ -9900,14 +10134,14 @@
           "cta": []
         },
         {
-          "id": "6a8c615046868470070fdc53",
+          "id": "6a8da25208fd6ff816a60940",
           "bg": "default",
           "heading": "h2",
           "blockName": null,
           "blockType": "text-only",
           "text": [
             {
-              "id": "6a8c615046868470070fdc52",
+              "id": "6a8da25208fd6ff816a6093f",
               "title": "The Public Sector Grows Through Collaboration",
               "paragraph": {
                 "root": {
@@ -9981,7 +10215,7 @@
           ]
         },
         {
-          "id": "6a8c615046868470070fdc56",
+          "id": "6a8da25208fd6ff816a60943",
           "bg": "dark",
           "title": "Events",
           "paragraph": {
@@ -10017,7 +10251,7 @@
           "blockType": "news-feed",
           "tabs": [
             {
-              "id": "6a8c615046868470070fdc54",
+              "id": "6a8da25208fd6ff816a60941",
               "title": "Events",
               "blockName": null,
               "blockType": "story-tab",
@@ -10026,7 +10260,7 @@
           ],
           "cta": [
             {
-              "id": "6a8c615046868470070fdc55",
+              "id": "6a8da25208fd6ff816a60942",
               "label": "Explore all events",
               "blockName": null,
               "blockType": "internal-link",
@@ -10038,7 +10272,7 @@
           ]
         },
         {
-          "id": "6a8c615046868470070fdc59",
+          "id": "6a8da25208fd6ff816a60946",
           "bg": "default",
           "title": "In-Depth Articles",
           "paragraph": {
@@ -10074,7 +10308,7 @@
           "blockType": "news-feed",
           "tabs": [
             {
-              "id": "6a8c615046868470070fdc57",
+              "id": "6a8da25208fd6ff816a60944",
               "title": "Further Reading",
               "blockName": null,
               "blockType": "news-tab",
@@ -10087,7 +10321,7 @@
           ],
           "cta": [
             {
-              "id": "6a8c615046868470070fdc58",
+              "id": "6a8da25208fd6ff816a60945",
               "label": "Explore all",
               "blockName": null,
               "blockType": "internal-link",
@@ -10099,7 +10333,7 @@
           ]
         },
         {
-          "id": "6a8c615046868470070fdc5c",
+          "id": "6a8da25208fd6ff816a60949",
           "variant": "variant-1",
           "bg": "primary-light",
           "heading": "h2",
@@ -10108,7 +10342,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615046868470070fdc5b",
+              "id": "6a8da25208fd6ff816a60948",
               "title": "Report good examples of design and development in the public sector",
               "paragraph": {
                 "root": {
@@ -10143,7 +10377,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615046868470070fdc5a",
+                  "id": "6a8da25208fd6ff816a60947",
                   "label": "Send us an example",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -10158,7 +10392,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615046868470070fdc61",
+          "id": "6a8da25208fd6ff816a6094e",
           "title": "Community Channels",
           "paragraph": {
             "root": {
@@ -10194,7 +10428,7 @@
           "blockType": "support-channels-section",
           "channels": [
             {
-              "id": "6a8c615046868470070fdc5d",
+              "id": "6a8da25208fd6ff816a6094a",
               "title": "Go to the Italy Forum",
               "description": {
                 "root": {
@@ -10240,7 +10474,7 @@
               "blockType": "channel"
             },
             {
-              "id": "6a8c615046868470070fdc5e",
+              "id": "6a8da25208fd6ff816a6094b",
               "title": "Go to Matrix",
               "description": {
                 "root": {
@@ -10309,7 +10543,7 @@
               "blockType": "channel"
             },
             {
-              "id": "6a8c615046868470070fdc5f",
+              "id": "6a8da25208fd6ff816a6094c",
               "title": "Go to GitHub",
               "description": {
                 "root": {
@@ -10355,7 +10589,7 @@
               "blockType": "channel"
             },
             {
-              "id": "6a8c615046868470070fdc60",
+              "id": "6a8da25208fd6ff816a6094d",
               "title": "Go to Docs Italia",
               "description": {
                 "root": {
@@ -10403,7 +10637,7 @@
           ]
         },
         {
-          "id": "6a8c615046868470070fdc63",
+          "id": "6a8da25208fd6ff816a60950",
           "title": "For any other information",
           "paragraph": "If you haven't found answers to your questions in the community channels, you can contact our team directly at contatti@developers.italia.it",
           "image": "6bb90b1e-aade-44df-a09f-2a6cdc3983cc",
@@ -10412,7 +10646,7 @@
           "blockType": "support-cta-section",
           "cta": [
             {
-              "id": "6a8c615046868470070fdc62",
+              "id": "6a8da25208fd6ff816a6094f",
               "label": "Send us an email",
               "url": "mailto:contatti@developers.italia.it",
               "description": "",
@@ -10422,7 +10656,7 @@
           ]
         },
         {
-          "id": "6a8c615046868470070fdc66",
+          "id": "6a8da25208fd6ff816a60953",
           "variant": "variant-1",
           "bg": "primary-light",
           "heading": "h2",
@@ -10431,7 +10665,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615046868470070fdc65",
+              "id": "6a8da25208fd6ff816a60952",
               "title": "The space where design and development come together",
               "paragraph": {
                 "root": {
@@ -10466,7 +10700,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615046868470070fdc64",
+                  "id": "6a8da25208fd6ff816a60951",
                   "label": "Discover the Designers Italia community",
                   "url": "https://designers.italia.it/community/",
                   "description": "",
@@ -10479,14 +10713,14 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615046868470070fdc69",
+          "id": "6a8da25208fd6ff816a60956",
           "bg": "dark",
           "showInline": true,
           "blockName": null,
           "blockType": "text-statistic",
           "text": [
             {
-              "id": "6a8c615046868470070fdc67",
+              "id": "6a8da25208fd6ff816a60954",
               "title": "Let's Look at the Numbers",
               "paragraph": {
                 "root": {
@@ -10524,7 +10758,7 @@
           ],
           "statistics": [
             {
-              "id": "6a8c615046868470070fdc68",
+              "id": "6a8da25208fd6ff816a60955",
               "blockName": null,
               "blockType": "statistic-block",
               "kpiElement": [],
@@ -10546,7 +10780,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"community\",\"en\":\"community\"}",
-    "updatedAt": "2026-08-24T15:20:48.927Z",
+    "updatedAt": "2026-08-25T14:10:26.624Z",
     "createdAt": "2026-06-19T09:04:39.271Z"
   },
   {
@@ -10562,7 +10796,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615146868470070fdce1",
+          "id": "6a8da25308fd6ff816a609ce",
           "variant": "small",
           "bg": "primary",
           "backgroundImage": null,
@@ -10603,14 +10837,14 @@
           "cta": []
         },
         {
-          "id": "6a8c615146868470070fdce3",
+          "id": "6a8da25308fd6ff816a609d0",
           "bg": "default",
           "heading": "h2",
           "blockName": null,
           "blockType": "text-only",
           "text": [
             {
-              "id": "6a8c615146868470070fdce2",
+              "id": "6a8da25308fd6ff816a609cf",
               "title": "Un orientamento condiviso all’interno del ciclo di sviluppo del software",
               "paragraph": {
                 "root": {
@@ -10702,7 +10936,7 @@
           ]
         },
         {
-          "id": "6a8c615146868470070fdce6",
+          "id": "6a8da25308fd6ff816a609d3",
           "variant": "variant-1",
           "bg": "lighter",
           "heading": "h3",
@@ -10711,7 +10945,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdce5",
+              "id": "6a8da25308fd6ff816a609d2",
               "title": "Confrontare le soluzioni software",
               "paragraph": {
                 "root": {
@@ -10814,7 +11048,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdce4",
+                  "id": "6a8da25308fd6ff816a609d1",
                   "label": "Guida al confronto",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -10829,7 +11063,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdce9",
+          "id": "6a8da25308fd6ff816a609d6",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h3",
@@ -10838,7 +11072,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdce8",
+              "id": "6a8da25308fd6ff816a609d5",
               "title": "Adottare software a riuso",
               "paragraph": {
                 "root": {
@@ -10941,7 +11175,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdce7",
+                  "id": "6a8da25308fd6ff816a609d4",
                   "label": "Guida al riuso",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -10956,7 +11190,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdcec",
+          "id": "6a8da25308fd6ff816a609d9",
           "variant": "variant-1",
           "bg": "lighter",
           "heading": "h3",
@@ -10965,7 +11199,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdceb",
+              "id": "6a8da25308fd6ff816a609d8",
               "title": "Sviluppare e gestire software con licenza aperta",
               "paragraph": {
                 "root": {
@@ -11068,7 +11302,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdcea",
+                  "id": "6a8da25308fd6ff816a609d7",
                   "label": "Guida ai software con licenza aperta",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -11083,7 +11317,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdcef",
+          "id": "6a8da25308fd6ff816a609dc",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h3",
@@ -11092,7 +11326,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdcee",
+              "id": "6a8da25308fd6ff816a609db",
               "title": "Pubblicare software per la PA",
               "paragraph": {
                 "root": {
@@ -11195,7 +11429,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdced",
+                  "id": "6a8da25308fd6ff816a609da",
                   "label": "Guida alla pubblicazione",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -11210,7 +11444,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdcf2",
+          "id": "6a8da25308fd6ff816a609df",
           "variant": "variant-1",
           "bg": "lighter",
           "heading": "h3",
@@ -11219,7 +11453,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdcf1",
+              "id": "6a8da25308fd6ff816a609de",
               "title": "Progettare e integrare servizi interoperabili",
               "paragraph": {
                 "root": {
@@ -11322,7 +11556,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdcf0",
+                  "id": "6a8da25308fd6ff816a609dd",
                   "label": "Guida ai servizi interoperabili",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -11337,7 +11571,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdcf5",
+          "id": "6a8da25308fd6ff816a609e2",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h3",
@@ -11346,7 +11580,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdcf4",
+              "id": "6a8da25308fd6ff816a609e1",
               "title": "Implementare le pratiche DevOps",
               "paragraph": {
                 "root": {
@@ -11449,7 +11683,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdcf3",
+                  "id": "6a8da25308fd6ff816a609e0",
                   "label": "Guida alle pratiche DevOps",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -11466,7 +11700,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615146868470070fdccc",
+          "id": "6a8da25308fd6ff816a609b9",
           "variant": "small",
           "bg": "primary",
           "backgroundImage": null,
@@ -11507,14 +11741,14 @@
           "cta": []
         },
         {
-          "id": "6a8c615146868470070fdcce",
+          "id": "6a8da25308fd6ff816a609bb",
           "bg": "default",
           "heading": "h2",
           "blockName": null,
           "blockType": "text-only",
           "text": [
             {
-              "id": "6a8c615146868470070fdccd",
+              "id": "6a8da25308fd6ff816a609ba",
               "title": "A Shared Approach Within the Software Development Lifecycle",
               "paragraph": {
                 "root": {
@@ -11606,7 +11840,7 @@
           ]
         },
         {
-          "id": "6a8c615146868470070fdcd1",
+          "id": "6a8da25308fd6ff816a609be",
           "variant": "variant-1",
           "bg": "lighter",
           "heading": "h3",
@@ -11615,7 +11849,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdcd0",
+              "id": "6a8da25308fd6ff816a609bd",
               "title": "Compare Software Solutions",
               "paragraph": {
                 "root": {
@@ -11718,7 +11952,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdccf",
+                  "id": "6a8da25308fd6ff816a609bc",
                   "label": "Comparison Guide",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -11733,7 +11967,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdcd4",
+          "id": "6a8da25308fd6ff816a609c1",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h3",
@@ -11742,7 +11976,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdcd3",
+              "id": "6a8da25308fd6ff816a609c0",
               "title": "Adopt reusable software",
               "paragraph": {
                 "root": {
@@ -11845,7 +12079,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdcd2",
+                  "id": "6a8da25308fd6ff816a609bf",
                   "label": "Guide to Reuse",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -11860,7 +12094,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdcd7",
+          "id": "6a8da25308fd6ff816a609c4",
           "variant": "variant-1",
           "bg": "lighter",
           "heading": "h3",
@@ -11869,7 +12103,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdcd6",
+              "id": "6a8da25308fd6ff816a609c3",
               "title": "Developing and Managing Open-Source Software",
               "paragraph": {
                 "root": {
@@ -11972,7 +12206,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdcd5",
+                  "id": "6a8da25308fd6ff816a609c2",
                   "label": "Guide to Open-Source Software",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -11987,7 +12221,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdcda",
+          "id": "6a8da25308fd6ff816a609c7",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h3",
@@ -11996,7 +12230,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdcd9",
+              "id": "6a8da25308fd6ff816a609c6",
               "title": "Publishing Software for the Public Sector",
               "paragraph": {
                 "root": {
@@ -12099,7 +12333,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdcd8",
+                  "id": "6a8da25308fd6ff816a609c5",
                   "label": "Publication Guide",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -12114,7 +12348,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdcdd",
+          "id": "6a8da25308fd6ff816a609ca",
           "variant": "variant-1",
           "bg": "lighter",
           "heading": "h3",
@@ -12123,7 +12357,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdcdc",
+              "id": "6a8da25308fd6ff816a609c9",
               "title": "Designing and Integrating Interoperable Services",
               "paragraph": {
                 "root": {
@@ -12226,7 +12460,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdcdb",
+                  "id": "6a8da25308fd6ff816a609c8",
                   "label": "Guide to Interoperable Services",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -12241,7 +12475,7 @@
           "additionalContent": []
         },
         {
-          "id": "6a8c615146868470070fdce0",
+          "id": "6a8da25308fd6ff816a609cd",
           "variant": "variant-1",
           "bg": "default",
           "heading": "h3",
@@ -12250,7 +12484,7 @@
           "blockType": "text-image",
           "text": [
             {
-              "id": "6a8c615146868470070fdcdf",
+              "id": "6a8da25308fd6ff816a609cc",
               "title": "Implement DevOps Practices",
               "paragraph": {
                 "root": {
@@ -12353,7 +12587,7 @@
               "blockType": "text-block",
               "cta": [
                 {
-                  "id": "6a8c615146868470070fdcde",
+                  "id": "6a8da25308fd6ff816a609cb",
                   "label": "Guide to DevOps Practices",
                   "blockName": null,
                   "blockType": "internal-link",
@@ -12381,7 +12615,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"guide\",\"en\":\"guides\"}",
-    "updatedAt": "2026-08-24T15:20:49.931Z",
+    "updatedAt": "2026-08-25T14:10:27.471Z",
     "createdAt": "2026-06-19T09:04:39.180Z"
   }
 ]

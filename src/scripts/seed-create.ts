@@ -3,7 +3,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { getPayload } from 'payload'
 import config from '../payload.config'
-import { type IdMaps, remapForCreate, requireTargetConfig, targetGet, targetPost } from './seed-lib'
+import { type IdMaps, remapForCreate, requireTargetConfig, targetGet, targetPatch, targetPost } from './seed-lib'
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url))
 
@@ -85,8 +85,15 @@ if (fs.existsSync(mediaDumpFile)) {
 const payloadForOrder = await getPayload({ config })
 const declaredOrder = payloadForOrder.config.collections.map((c) => c.slug)
 
+// `users` (accounts + API keys) is never inserted on the target — dump-content.ts never dumps
+// it in the first place, but this is enforced here too, explicitly, so this script stays safe
+// even if a users.json ever ends up in the dump dir.
+const NEVER_SEED = new Set(['users.json'])
+
 const availableFiles = new Set(
-  fs.readdirSync(DUMP_DIR).filter((f) => f.endsWith('.json') && !f.startsWith('global-') && f !== 'media.json'),
+  fs
+    .readdirSync(DUMP_DIR)
+    .filter((f) => f.endsWith('.json') && !f.startsWith('global-') && f !== 'media.json' && !NEVER_SEED.has(f)),
 )
 const collectionFiles = declaredOrder
   .map((slug) => `${slug}.json`)
@@ -125,13 +132,9 @@ for (const file of collectionFiles) {
         }
         onlineId = res.data.doc.id
       } else {
-        const res = await fetch(`${url}/api/${slug}/${onlineId}?locale=${locale}`, {
-          method: 'PATCH',
-          headers: { Authorization: `users API-Key ${requireTargetConfig().apiKey}`, 'Content-Type': 'application/json' },
-          body: JSON.stringify(body),
-        })
+        const res = await targetPatch(`/api/${slug}/${onlineId}?locale=${locale}`, body)
         if (!res.ok) {
-          console.error(`  ✗ ${slug} [${localId}] (${locale}): ${res.status} ${JSON.stringify(await res.json())}`)
+          console.error(`  ✗ ${slug} [${localId}] (${locale}): ${res.status} ${JSON.stringify(res.data)}`)
         }
       }
     }

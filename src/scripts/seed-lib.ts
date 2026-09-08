@@ -22,22 +22,36 @@ const AUTH = () => ({
   'Content-Type': 'application/json',
 })
 
+// The target isn't always guaranteed to answer with JSON — an empty 204 body, an auth failure
+// or gateway timeout returning an HTML error page, etc. Parsing those with res.json() throws an
+// opaque "Failed to parse JSON" with no indication of what the target actually sent back, so
+// read the body as text first and fall back to surfacing it raw.
+async function readBody(res: Response): Promise<any> {
+  const text = await res.text()
+  if (!text) return null
+  try {
+    return JSON.parse(text)
+  } catch {
+    return { raw: text.slice(0, 2000) }
+  }
+}
+
 export async function targetGet(path: string): Promise<any> {
   const { url } = requireTargetConfig()
   const res = await fetch(`${url}${path}`, { headers: AUTH() })
-  return res.json()
+  return readBody(res)
 }
 
 export async function targetPost(path: string, body: object): Promise<{ ok: boolean; status: number; data: any }> {
   const { url } = requireTargetConfig()
   const res = await fetch(`${url}${path}`, { method: 'POST', headers: AUTH(), body: JSON.stringify(body) })
-  return { ok: res.ok, status: res.status, data: await res.json() }
+  return { ok: res.ok, status: res.status, data: await readBody(res) }
 }
 
 export async function targetPatch(path: string, body: object): Promise<{ ok: boolean; status: number; data: any }> {
   const { url } = requireTargetConfig()
   const res = await fetch(`${url}${path}`, { method: 'PATCH', headers: AUTH(), body: JSON.stringify(body) })
-  return { ok: res.ok, status: res.status, data: await res.json() }
+  return { ok: res.ok, status: res.status, data: await readBody(res) }
 }
 
 // Payload's REST API updates globals via POST, not PATCH (unlike collections) — see
@@ -49,7 +63,7 @@ export async function targetPostGlobal(slug: string, body: object, locale: strin
 export async function targetDelete(path: string): Promise<{ ok: boolean; status: number; data: any }> {
   const { url } = requireTargetConfig()
   const res = await fetch(`${url}${path}`, { method: 'DELETE', headers: AUTH() })
-  return { ok: res.ok, status: res.status, data: await res.json() }
+  return { ok: res.ok, status: res.status, data: await readBody(res) }
 }
 
 // ─── Id remapping ────────────────────────────────────────────────────────

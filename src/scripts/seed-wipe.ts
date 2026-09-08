@@ -12,16 +12,23 @@ const scriptDir = path.dirname(fileURLToPath(import.meta.url))
 // filename instead of wiped and recreated.
 const DUMP_DIR = path.join(scriptDir, '..', '..', 'data', 'dump')
 
+// `users` (which also carries each account's API key, via useAPIKey on the collection) is
+// never wiped on the target — dump-content.ts never dumps it in the first place, but this is
+// enforced here too, explicitly, so this script stays safe even if a users.json ever ends up
+// in the dump dir.
+const NEVER_WIPE = new Set(['users'])
+
 const { url } = requireTargetConfig()
 
 const slugs = fs
   .readdirSync(DUMP_DIR)
   .filter((f) => f.endsWith('.json') && !f.startsWith('global-') && f !== 'media.json')
   .map((f) => f.replace(/\.json$/, ''))
+  .filter((slug) => !NEVER_WIPE.has(slug))
 
 console.log(`Target: ${url}`)
 console.log(`About to permanently delete ALL docs in: ${slugs.join(', ')}`)
-console.log('(media, globals are left alone by this script)')
+console.log('(media, globals, users/api keys are left alone by this script)')
 
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
 const answer = await rl.question('Type "yes" to proceed: ')

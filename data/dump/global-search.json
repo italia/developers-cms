@@ -16,7 +16,7 @@
   "content": {
     "it": [
       {
-        "id": "6a8c615f46868470070fdf48",
+        "id": "6a8da25e08fd6ff816a60c41",
         "variant": "small",
         "bg": "default",
         "backgroundImage": null,
@@ -57,7 +57,7 @@
         "cta": []
       },
       {
-        "id": "6a8c615f46868470070fdf49",
+        "id": "6a8da25e08fd6ff816a60c42",
         "title": "Quale argomento stai cercando?",
         "labelButton": "Cerca",
         "labelForAllResult": "Tutti i risultati trovati per",
@@ -69,7 +69,7 @@
     ],
     "en": [
       {
-        "id": "6a8c615f46868470070fdf46",
+        "id": "6a8da25e08fd6ff816a60c3f",
         "variant": "small",
         "bg": "default",
         "backgroundImage": null,
@@ -110,7 +110,7 @@
         "cta": []
       },
       {
-        "id": "6a8c615f46868470070fdf47",
+        "id": "6a8da25e08fd6ff816a60c40",
         "title": "What topic are you looking for?",
         "labelButton": "Search",
         "labelForAllResult": "All results found for",
@@ -132,7 +132,7 @@
     },
     "image": null
   },
-  "updatedAt": "2026-08-24T15:21:03.117Z",
+  "updatedAt": "2026-08-25T14:10:38.230Z",
   "createdAt": "2026-08-17T14:56:38.319Z",
   "globalType": "search"
 }

@@ -1,5 +1,897 @@
 [
   {
+    "id": "5b2085b7-ade3-4d27-9cbc-b6d23d767a62",
+    "parent": {
+      "it": "0c6c27cc-7503-4927-b401-7c4197411a8a"
+    },
+    "title": {
+      "it": "Developers Italia si rinnova "
+    },
+    "paragraph": {
+      "it": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Online il nuovo sito dedicato alla community italiana dell’open source: informazioni, risorse e strumenti più chiari e reperibili sullo sviluppo di software pubblico ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "direction": "ltr"
+        }
+      }
+    },
+    "articleClassification": {
+      "it": "c19133c2-04fe-46cc-b2c8-b5ef52bc9a55"
+    },
+    "slug": {
+      "it": "developers-italia-si-rinnova"
+    },
+    "topic": {
+      "it": "a7f63403-de61-4aa7-a1d2-d81a1cc1ead9"
+    },
+    "dateOfPublication": {
+      "it": "2026-07-21T22:00:00.000Z"
+    },
+    "storyType": "news",
+    "image": "66b1627b-440f-4e11-abc1-921d992cd3d7",
+    "content": {
+      "it": [
+        {
+          "id": "6a8da25608fd6ff816a60ae7",
+          "blockName": null,
+          "blockType": "intro-article",
+          "text": [
+            {
+              "id": "6a8da25608fd6ff816a60ae5",
+              "title": "Developers Italia si rinnova ",
+              "paragraph": {
+                "root": {
+                  "type": "root",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Online il nuovo sito dedicato alla community italiana dell’open source: informazioni, risorse e strumenti più chiari e reperibili sullo sviluppo di software pubblico",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              },
+              "blockName": null,
+              "blockType": "text-block",
+              "cta": []
+            }
+          ],
+          "list": [
+            {
+              "id": "6a8da25608fd6ff816a60ae6",
+              "title": "",
+              "blockName": null,
+              "blockType": "icon-list-block",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "6a8da25608fd6ff816a60ae8",
+          "bg": "default",
+          "content": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Il punto di riferimento istituzionale per la community di chi sviluppa e gestisce progetti digitali per il settore pubblico si rinnova, aggiornandosi per rispondere al meglio alle esigenze di sviluppatori ed enti. Frutto di un lavoro di ascolto con rappresentanti di varie pubbliche amministrazioni e utenti abituali del sito, ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": "Developers Italia",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 1,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": " cambia veste grafica e si arricchisce di nuove aree e sezioni dedicate. ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Un rinnovamento fondamentale per continuare a far evolvere il progetto che dal 2017 mette a disposizione le risorse operative della ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": "comunità di pratica dell’open source e della trasformazione digitale italiani",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 1,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": " e che consentono alle amministrazioni di progettare, sviluppare e condividere software pubblico secondo i principi di apertura, riuso e interoperabilità.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": " ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": "Le novità",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 1,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": " ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Oltre alle migliorie apportate all’organizzazione e alla presentazione dei contenuti apportate alle sezioni esistenti, il nuovo sito ospita ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": "nuove sezioni",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 1,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": ": ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "tag": "ol",
+                  "type": "list",
+                  "start": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "listitem",
+                      "value": 1,
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "link",
+                          "fields": {
+                            "url": "https://developers.italia.it/it/progetto",
+                            "newTab": false,
+                            "linkType": "custom"
+                          },
+                          "format": "",
+                          "indent": 0,
+                          "version": 3,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "Progetto",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 1,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        },
+                        {
+                          "mode": "normal",
+                          "text": ".",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 1,
+                          "version": 1
+                        },
+                        {
+                          "mode": "normal",
+                          "text": " Racconta l’approccio strategico, aperto e condiviso per progettare, sviluppare e far evolvere il software della Pubblica Amministrazione. ",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    },
+                    {
+                      "type": "listitem",
+                      "value": 1,
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "link",
+                          "fields": {
+                            "url": "https://developers.italia.it/it/normativa",
+                            "newTab": false,
+                            "linkType": "custom"
+                          },
+                          "format": "",
+                          "indent": 0,
+                          "version": 3,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "Normativa",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 1,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        },
+                        {
+                          "mode": "normal",
+                          "text": ". ",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 1,
+                          "version": 1
+                        },
+                        {
+                          "mode": "normal",
+                          "text": "Approfondisce puntualmente il quadro di norme e linee guida che guidano lo sviluppo del software pubblico: ora gli utenti potranno avere un quadro chiaro dei principi normativi legati a temi quali valutazione comparativa, riuso e open source, interoperabilità, privacy e cybersecurity. ",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    },
+                    {
+                      "type": "listitem",
+                      "value": 1,
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "link",
+                          "fields": {
+                            "url": "https://developers.italia.it/it/guide",
+                            "newTab": false,
+                            "linkType": "custom"
+                          },
+                          "format": "",
+                          "indent": 0,
+                          "version": 3,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "Guide",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 1,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        },
+                        {
+                          "mode": "normal",
+                          "text": ". ",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 1,
+                          "version": 1
+                        },
+                        {
+                          "mode": "normal",
+                          "text": "Spiega concretamente come la norma di traduce in strumento operativo, a disposizione delle amministrazioni. Questa sezione contiene un elenco di manuali operativi per accompagnare passo per passo le fasi di gestione del software, dalla valutazione comparativa delle soluzioni per l’adozione di un software, fino alla pubblicazione per renderlo disponibile ad altre pubbliche amministrazioni. ",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    },
+                    {
+                      "type": "listitem",
+                      "value": 1,
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "link",
+                          "fields": {
+                            "url": "https://developers.italia.it/it/community",
+                            "newTab": false,
+                            "linkType": "custom"
+                          },
+                          "format": "",
+                          "indent": 0,
+                          "version": 3,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "Community",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 1,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        },
+                        {
+                          "mode": "normal",
+                          "text": ".",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 1,
+                          "version": 1
+                        },
+                        {
+                          "mode": "normal",
+                          "text": " Una novità importante è l’inserimento di una pagina dedicata alla community di chi sviluppa e progetta per la PA, vetrina degli aggiornamenti progettuali e della comunità di pratica che, in sinergia con il progetto ",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        },
+                        {
+                          "type": "link",
+                          "fields": {
+                            "url": "https://designers.italia.it/",
+                            "newTab": true,
+                            "linkType": "custom"
+                          },
+                          "format": "",
+                          "indent": 0,
+                          "version": 3,
+                          "children": [
+                            {
+                              "mode": "normal",
+                              "text": "Designers Italia",
+                              "type": "text",
+                              "style": "",
+                              "detail": 0,
+                              "format": 0,
+                              "version": 1
+                            }
+                          ],
+                          "direction": "ltr"
+                        },
+                        {
+                          "mode": "normal",
+                          "text": ", sostiene le e i professionisti del settore pubblico nella gestione dell’intero ciclo di vita dei servizi digitali, dalla progettazione allo sviluppo. In particolare, qui troverai: ",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "listType": "number",
+                  "direction": "ltr"
+                },
+                {
+                  "tag": "ul",
+                  "type": "list",
+                  "start": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "listitem",
+                      "value": 1,
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Novità ",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 1,
+                          "version": 1
+                        },
+                        {
+                          "mode": "normal",
+                          "text": "raccoglie tutti le notizie progettuali, dove trovare gli annunci di rilasci di nuovi strumenti, nuove iniziative o aggiornamenti. ",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    },
+                    {
+                      "type": "listitem",
+                      "value": 1,
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Approfondimenti ",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 1,
+                          "version": 1
+                        },
+                        {
+                          "mode": "normal",
+                          "text": "contiene articoli che trattano nel dettaglio i temi della progettazione e dello sviluppo, degli strumenti e delle risorse utilizzate, centrati sul racconto approfondito di casi studio e di princìpi tecnici o normativi. ",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    },
+                    {
+                      "type": "listitem",
+                      "value": 1,
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Eventi ",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 1,
+                          "version": 1
+                        },
+                        {
+                          "mode": "normal",
+                          "text": "è la vetrina dei cicli di eventi dedicati alla community (community lab, ovvero webinar frontali tenuti dai nostri esperti, o community call, in cui invitiamo ospiti a raccontare casi d’uso concreti), e degli eventi a cui partecipano gli esperti e le esperte del progetto. ",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    },
+                    {
+                      "type": "listitem",
+                      "value": 1,
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Tutti i canali della community",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 1,
+                          "version": 1
+                        },
+                        {
+                          "mode": "normal",
+                          "text": " dove confrontarsi, fare domande e contribuire alle attività di Developers Italia. ",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "listType": "bullet",
+                  "direction": "ltr"
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Il rinnovamento del sito costituisce il primo passo di un percorso più ampio, infatti il catalogo di software open source e a riuso sviluppati, condivisi e adottati dalle amministrazioni, previsto dalle ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": "Linee guida sull’acquisizione e il riuso di software per le pubbliche amministrazioni",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 1,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": " e dal ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": "Codice dell’Amministrazione Digitale",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 1,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": ", è attualmente in fase di rinnovamento e sarà disponibile nella sua versione aggiornata prossimamente. ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Una progettazione centrata sulle persone",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 1,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": " ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Il sito di Developers Italia è ora più semplice e usabile per tutte le persone, e coerente con gli strumenti messi a disposizione dal ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": "Dipartimento per la trasformazione digitale della Presidenza del Consiglio dei ministri",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 1,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": " nel design system nazionale, ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    },
+                    {
+                      "type": "link",
+                      "fields": {
+                        "url": "https://designers.italia.it/design-system/",
+                        "newTab": true,
+                        "linkType": "custom"
+                      },
+                      "format": "",
+                      "indent": 0,
+                      "version": 3,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": ".italia",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 1,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    },
+                    {
+                      "mode": "normal",
+                      "text": ". Il risultato è frutto di un processo di coinvolgimento continuo degli utenti finali tramite questionari e interviste, a partire dall’ascolto delle necessità e delle preferenze di chi utilizza regolarmente il sito per orientare le scelte di design, fino alla fase di validazione del prototipo insieme a un gruppo di addetti ai lavori.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Particolare attenzione è stata data all’accessibilità in tutta la progettazione e durante le verifiche tecniche del sito, in conformità con la normativa e le linee guida nazionali che prevedono la realizzazione di siti e servizi digitali pubblici fruibili da tutte le persone, senza discriminazioni. Il team ha inoltre realizzato test di usabilità finali con gli utenti durante gli ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": "Accessibility Days 2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 1,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": ", evento a tema accessibilità digitale che coinvolge chi progetta, sviluppa, crea o comunica contenuti digitali. ",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Approfondisci i test di usabilità realizzati nell’",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    },
+                    {
+                      "type": "link",
+                      "fields": {
+                        "url": "https://medium.com/designers-italia/test-di-usabilit%C3%A0-inclusivi-cosa-abbiamo-imparato-testando-developers-italia-88ffc7282a6c",
+                        "newTab": true,
+                        "linkType": "custom"
+                      },
+                      "format": "",
+                      "indent": 0,
+                      "version": 3,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "articolo di approfondimento",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    },
+                    {
+                      "mode": "normal",
+                      "text": ".",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr"
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "blockName": null,
+          "blockType": "structured-text-block"
+        }
+      ]
+    },
+    "seo": {
+      "title": {
+        "it": null
+      },
+      "description": {
+        "it": null
+      },
+      "image": null
+    },
+    "localizedSlugs": "{\"it\":\"developers-italia-si-rinnova\"}",
+    "updatedAt": "2026-08-25T14:10:30.713Z",
+    "createdAt": "2026-08-25T13:31:48.357Z"
+  },
+  {
     "id": "0c403ff5-94af-410c-bf70-a88510aabacb",
     "parent": {
       "it": null
@@ -55,7 +947,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615c46868470070fdedc",
+          "id": "6a8da25b08fd6ff816a60bd5",
           "bg": "default",
           "content": {
             "root": {
@@ -309,7 +1201,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"tutto-quello-che-avreste-voluto-sapere-sull-ecosistema-interoperabilita\"}",
-    "updatedAt": "2026-08-24T15:21:00.240Z",
+    "updatedAt": "2026-08-25T14:10:35.914Z",
     "createdAt": "2026-08-20T09:29:30.256Z"
   },
   {
@@ -368,7 +1260,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615c46868470070fdeda",
+          "id": "6a8da25b08fd6ff816a60bd3",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -409,7 +1301,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615c46868470070fded8",
+              "id": "6a8da25b08fd6ff816a60bd1",
               "title": "Developers Italia a Stoccolma per fare il punto sul futuro digitale dell’Europa",
               "paragraph": {
                 "root": {
@@ -447,7 +1339,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615c46868470070fded9",
+              "id": "6a8da25b08fd6ff816a60bd2",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -456,7 +1348,7 @@
           ]
         },
         {
-          "id": "6a8c615c46868470070fdedb",
+          "id": "6a8da25b08fd6ff816a60bd4",
           "bg": "default",
           "content": {
             "root": {
@@ -765,7 +1657,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"developers-italia-a-stoccolma-per-fare-il-punto-sul-futuro-digitale-delleuropa\"}",
-    "updatedAt": "2026-08-24T15:21:00.205Z",
+    "updatedAt": "2026-08-25T14:10:35.880Z",
     "createdAt": "2026-08-20T09:29:30.212Z"
   },
   {
@@ -824,7 +1716,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615c46868470070fded6",
+          "id": "6a8da25b08fd6ff816a60bcf",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -865,7 +1757,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615c46868470070fded4",
+              "id": "6a8da25b08fd6ff816a60bcd",
               "title": "Verso un’Europa digitale più autonoma e sovrana",
               "paragraph": {
                 "root": {
@@ -903,7 +1795,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615c46868470070fded5",
+              "id": "6a8da25b08fd6ff816a60bce",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -912,7 +1804,7 @@
           ]
         },
         {
-          "id": "6a8c615c46868470070fded7",
+          "id": "6a8da25b08fd6ff816a60bd0",
           "bg": "default",
           "content": {
             "root": {
@@ -1563,7 +2455,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"verso-uneuropa-digitale-piu-autonoma-e-sovrana\"}",
-    "updatedAt": "2026-08-24T15:21:00.106Z",
+    "updatedAt": "2026-08-25T14:10:35.801Z",
     "createdAt": "2026-08-20T09:29:30.174Z"
   },
   {
@@ -1622,7 +2514,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615c46868470070fded2",
+          "id": "6a8da25b08fd6ff816a60bcb",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -1663,7 +2555,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615c46868470070fded0",
+              "id": "6a8da25b08fd6ff816a60bc9",
               "title": "Design system .italia si aggiorna con le nuove versioni dei kit React e Angular",
               "paragraph": {
                 "root": {
@@ -1701,7 +2593,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615c46868470070fded1",
+              "id": "6a8da25b08fd6ff816a60bca",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -1710,7 +2602,7 @@
           ]
         },
         {
-          "id": "6a8c615c46868470070fded3",
+          "id": "6a8da25b08fd6ff816a60bcc",
           "bg": "default",
           "content": {
             "root": {
@@ -2100,7 +2992,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"design-system-italia-si-aggiorna-con-le-nuove-versioni-dei-kit-react-e-angular\"}",
-    "updatedAt": "2026-08-24T15:21:00.041Z",
+    "updatedAt": "2026-08-25T14:10:35.762Z",
     "createdAt": "2026-08-20T09:29:30.134Z"
   },
   {
@@ -2159,7 +3051,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615b46868470070fdece",
+          "id": "6a8da25b08fd6ff816a60bc7",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -2200,7 +3092,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615b46868470070fdecc",
+              "id": "6a8da25b08fd6ff816a60bc5",
               "title": "Un homeserver Matrix per la community di Developers Italia",
               "paragraph": {
                 "root": {
@@ -2238,7 +3130,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615b46868470070fdecd",
+              "id": "6a8da25b08fd6ff816a60bc6",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -2247,7 +3139,7 @@
           ]
         },
         {
-          "id": "6a8c615b46868470070fdecf",
+          "id": "6a8da25b08fd6ff816a60bc8",
           "bg": "default",
           "content": {
             "root": {
@@ -2861,7 +3753,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"un-homeserver-matrix-per-la-community-di-developers-italia\"}",
-    "updatedAt": "2026-08-24T15:20:59.995Z",
+    "updatedAt": "2026-08-25T14:10:35.722Z",
     "createdAt": "2026-08-20T09:29:30.069Z"
   },
   {
@@ -2920,7 +3812,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615b46868470070fdeca",
+          "id": "6a8da25b08fd6ff816a60bc3",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -2961,7 +3853,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615b46868470070fdec8",
+              "id": "6a8da25b08fd6ff816a60bc1",
               "title": "Benvenuti in Developers Italia!",
               "paragraph": {
                 "root": {
@@ -2999,7 +3891,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615b46868470070fdec9",
+              "id": "6a8da25b08fd6ff816a60bc2",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -3008,7 +3900,7 @@
           ]
         },
         {
-          "id": "6a8c615b46868470070fdecb",
+          "id": "6a8da25b08fd6ff816a60bc4",
           "bg": "default",
           "content": {
             "root": {
@@ -3333,7 +4225,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"benvenuti-in-developers-italia\"}",
-    "updatedAt": "2026-08-24T15:20:59.898Z",
+    "updatedAt": "2026-08-25T14:10:35.645Z",
     "createdAt": "2026-08-20T09:29:30.022Z"
   },
   {
@@ -3392,7 +4284,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615b46868470070fdec6",
+          "id": "6a8da25b08fd6ff816a60bbf",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -3433,7 +4325,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615b46868470070fdec4",
+              "id": "6a8da25b08fd6ff816a60bbd",
               "title": "Pubblicata la roadmap di SPID",
               "paragraph": {
                 "root": {
@@ -3471,7 +4363,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615b46868470070fdec5",
+              "id": "6a8da25b08fd6ff816a60bbe",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -3480,7 +4372,7 @@
           ]
         },
         {
-          "id": "6a8c615b46868470070fdec7",
+          "id": "6a8da25b08fd6ff816a60bc0",
           "bg": "default",
           "content": {
             "root": {
@@ -3612,7 +4504,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"pubblicata-la-roadmap-di-spid\"}",
-    "updatedAt": "2026-08-24T15:20:59.812Z",
+    "updatedAt": "2026-08-25T14:10:35.569Z",
     "createdAt": "2026-08-20T09:29:29.972Z"
   },
   {
@@ -3671,7 +4563,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615b46868470070fdec2",
+          "id": "6a8da25b08fd6ff816a60bbb",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -3712,7 +4604,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615b46868470070fdec0",
+              "id": "6a8da25b08fd6ff816a60bb9",
               "title": "Hack.Developers, ecco i vincitori della categoria Fast Rabbit",
               "paragraph": {
                 "root": {
@@ -3750,7 +4642,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615b46868470070fdec1",
+              "id": "6a8da25b08fd6ff816a60bba",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -3759,7 +4651,7 @@
           ]
         },
         {
-          "id": "6a8c615b46868470070fdec3",
+          "id": "6a8da25b08fd6ff816a60bbc",
           "bg": "default",
           "content": {
             "root": {
@@ -4432,7 +5324,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"hack-developers-ecco-i-vincitori-della-categoria-fast-rabbit\"}",
-    "updatedAt": "2026-08-24T15:20:59.682Z",
+    "updatedAt": "2026-08-25T14:10:35.492Z",
     "createdAt": "2026-08-20T09:29:29.931Z"
   },
   {
@@ -4491,7 +5383,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615b46868470070fdebe",
+          "id": "6a8da25b08fd6ff816a60bb7",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -4532,7 +5424,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615b46868470070fdebc",
+              "id": "6a8da25b08fd6ff816a60bb5",
               "title": "Nasce Hack.Developers, il più grande code sprint mai realizzato in Italia",
               "paragraph": {
                 "root": {
@@ -4570,7 +5462,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615b46868470070fdebd",
+              "id": "6a8da25b08fd6ff816a60bb6",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -4579,7 +5471,7 @@
           ]
         },
         {
-          "id": "6a8c615b46868470070fdebf",
+          "id": "6a8da25b08fd6ff816a60bb8",
           "bg": "default",
           "content": {
             "root": {
@@ -5174,7 +6066,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"nasce-hack-developers-il-piu-grande-code-sprint-mai-realizzato-in-italia\"}",
-    "updatedAt": "2026-08-24T15:20:59.597Z",
+    "updatedAt": "2026-08-25T14:10:35.409Z",
     "createdAt": "2026-08-20T09:29:29.894Z"
   },
   {
@@ -5233,7 +6125,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615b46868470070fdeba",
+          "id": "6a8da25b08fd6ff816a60bb3",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -5274,7 +6166,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615b46868470070fdeb8",
+              "id": "6a8da25b08fd6ff816a60bb1",
               "title": "Hack.Developers, ti aspettiamo tra pochi giorni",
               "paragraph": {
                 "root": {
@@ -5312,7 +6204,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615b46868470070fdeb9",
+              "id": "6a8da25b08fd6ff816a60bb2",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -5321,7 +6213,7 @@
           ]
         },
         {
-          "id": "6a8c615b46868470070fdebb",
+          "id": "6a8da25b08fd6ff816a60bb4",
           "bg": "default",
           "content": {
             "root": {
@@ -5630,7 +6522,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"hack-developers-ti-aspettiamo-tra-pochi-giorni\"}",
-    "updatedAt": "2026-08-24T15:20:59.506Z",
+    "updatedAt": "2026-08-25T14:10:35.328Z",
     "createdAt": "2026-08-20T09:29:29.842Z"
   },
   {
@@ -5689,7 +6581,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615b46868470070fdeb6",
+          "id": "6a8da25b08fd6ff816a60baf",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -5730,7 +6622,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615b46868470070fdeb4",
+              "id": "6a8da25b08fd6ff816a60bad",
               "title": "Hack.Developers, ecco come è andata",
               "paragraph": {
                 "root": {
@@ -5768,7 +6660,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615b46868470070fdeb5",
+              "id": "6a8da25b08fd6ff816a60bae",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -5777,7 +6669,7 @@
           ]
         },
         {
-          "id": "6a8c615b46868470070fdeb7",
+          "id": "6a8da25b08fd6ff816a60bb0",
           "bg": "default",
           "content": {
             "root": {
@@ -6209,7 +7101,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"hack-developers-ecco-come-e-andata\"}",
-    "updatedAt": "2026-08-24T15:20:59.422Z",
+    "updatedAt": "2026-08-25T14:10:35.246Z",
     "createdAt": "2026-08-20T09:29:29.796Z"
   },
   {
@@ -6268,7 +7160,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615b46868470070fdeb2",
+          "id": "6a8da25b08fd6ff816a60bab",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -6309,7 +7201,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615b46868470070fdeb0",
+              "id": "6a8da25b08fd6ff816a60ba9",
               "title": "Hack.Developers, tutti i progetti vincitori del code-sprint",
               "paragraph": {
                 "root": {
@@ -6347,7 +7239,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615b46868470070fdeb1",
+              "id": "6a8da25b08fd6ff816a60baa",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -6356,7 +7248,7 @@
           ]
         },
         {
-          "id": "6a8c615b46868470070fdeb3",
+          "id": "6a8da25b08fd6ff816a60bac",
           "bg": "default",
           "content": {
             "root": {
@@ -7433,7 +8325,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"hack-developers-tutti-i-progetti-vincitori-del-code-sprint\"}",
-    "updatedAt": "2026-08-24T15:20:59.330Z",
+    "updatedAt": "2026-08-25T14:10:35.163Z",
     "createdAt": "2026-08-20T09:29:29.761Z"
   },
   {
@@ -7492,7 +8384,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615b46868470070fdeae",
+          "id": "6a8da25b08fd6ff816a60ba7",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -7533,7 +8425,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615b46868470070fdeac",
+              "id": "6a8da25b08fd6ff816a60ba5",
               "title": "Developers Italia al Google Summer of Code 2018",
               "paragraph": {
                 "root": {
@@ -7571,7 +8463,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615b46868470070fdead",
+              "id": "6a8da25b08fd6ff816a60ba6",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -7580,7 +8472,7 @@
           ]
         },
         {
-          "id": "6a8c615b46868470070fdeaf",
+          "id": "6a8da25b08fd6ff816a60ba8",
           "bg": "default",
           "content": {
             "root": {
@@ -8194,7 +9086,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"developers-italia-al-google-summer-of-code-2018\"}",
-    "updatedAt": "2026-08-24T15:20:59.241Z",
+    "updatedAt": "2026-08-25T14:10:35.044Z",
     "createdAt": "2026-08-20T09:29:29.714Z"
   },
   {
@@ -8253,7 +9145,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615b46868470070fdeaa",
+          "id": "6a8da25a08fd6ff816a60ba3",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -8294,7 +9186,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615b46868470070fdea8",
+              "id": "6a8da25a08fd6ff816a60ba1",
               "title": "Ti presentiamo il nuovo Docs Italia!",
               "paragraph": {
                 "root": {
@@ -8332,7 +9224,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615b46868470070fdea9",
+              "id": "6a8da25a08fd6ff816a60ba2",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -8341,7 +9233,7 @@
           ]
         },
         {
-          "id": "6a8c615b46868470070fdeab",
+          "id": "6a8da25a08fd6ff816a60ba4",
           "bg": "default",
           "content": {
             "root": {
@@ -9118,7 +10010,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"ti-presentiamo-il-nuovo-docs-italia\"}",
-    "updatedAt": "2026-08-24T15:20:59.157Z",
+    "updatedAt": "2026-08-25T14:10:34.966Z",
     "createdAt": "2026-08-20T09:29:29.657Z"
   },
   {
@@ -9177,7 +10069,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615b46868470070fdea6",
+          "id": "6a8da25a08fd6ff816a60b9f",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -9218,7 +10110,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615b46868470070fdea4",
+              "id": "6a8da25a08fd6ff816a60b9d",
               "title": "Consultazione pubblica sulle linee guida per lo sviluppo e l'acquisizione del software",
               "paragraph": {
                 "root": {
@@ -9256,7 +10148,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615b46868470070fdea5",
+              "id": "6a8da25a08fd6ff816a60b9e",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -9265,7 +10157,7 @@
           ]
         },
         {
-          "id": "6a8c615b46868470070fdea7",
+          "id": "6a8da25a08fd6ff816a60ba0",
           "bg": "default",
           "content": {
             "root": {
@@ -9584,7 +10476,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"consultazione-pubblica-sulle-linee-guida-per-lo-sviluppo-e-l-acquisizione-del-software\"}",
-    "updatedAt": "2026-08-24T15:20:59.058Z",
+    "updatedAt": "2026-08-25T14:10:34.880Z",
     "createdAt": "2026-08-20T09:29:29.619Z"
   },
   {
@@ -9643,7 +10535,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615a46868470070fdea2",
+          "id": "6a8da25a08fd6ff816a60b9b",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -9684,7 +10576,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615a46868470070fdea0",
+              "id": "6a8da25a08fd6ff816a60b99",
               "title": "Linee guida sull’acquisizione e il riuso del software, aperta la consultazione",
               "paragraph": {
                 "root": {
@@ -9722,7 +10614,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615a46868470070fdea1",
+              "id": "6a8da25a08fd6ff816a60b9a",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -9731,7 +10623,7 @@
           ]
         },
         {
-          "id": "6a8c615a46868470070fdea3",
+          "id": "6a8da25a08fd6ff816a60b9c",
           "bg": "default",
           "content": {
             "root": {
@@ -10365,7 +11257,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"linee-guida-sull-acquisizione-e-il-riuso-del-software-aperta-la-consultazione\"}",
-    "updatedAt": "2026-08-24T15:20:58.954Z",
+    "updatedAt": "2026-08-25T14:10:34.793Z",
     "createdAt": "2026-08-20T09:29:29.559Z"
   },
   {
@@ -10424,7 +11316,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615a46868470070fde9e",
+          "id": "6a8da25a08fd6ff816a60b97",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -10465,7 +11357,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615a46868470070fde9c",
+              "id": "6a8da25a08fd6ff816a60b95",
               "title": "Un ambiente di test aperto a tutti per ANPR",
               "paragraph": {
                 "root": {
@@ -10503,7 +11395,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615a46868470070fde9d",
+              "id": "6a8da25a08fd6ff816a60b96",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -10512,7 +11404,7 @@
           ]
         },
         {
-          "id": "6a8c615a46868470070fde9f",
+          "id": "6a8da25a08fd6ff816a60b98",
           "bg": "default",
           "content": {
             "root": {
@@ -10895,7 +11787,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"un-ambiente-di-test-aperto-a-tutti-per-anpr\"}",
-    "updatedAt": "2026-08-24T15:20:58.866Z",
+    "updatedAt": "2026-08-25T14:10:34.713Z",
     "createdAt": "2026-08-20T09:29:29.523Z"
   },
   {
@@ -10954,7 +11846,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615a46868470070fde9a",
+          "id": "6a8da25a08fd6ff816a60b93",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -10995,7 +11887,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615a46868470070fde98",
+              "id": "6a8da25a08fd6ff816a60b91",
               "title": "Developers Italia al Google Summer of Code 2019",
               "paragraph": {
                 "root": {
@@ -11033,7 +11925,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615a46868470070fde99",
+              "id": "6a8da25a08fd6ff816a60b92",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -11042,7 +11934,7 @@
           ]
         },
         {
-          "id": "6a8c615a46868470070fde9b",
+          "id": "6a8da25a08fd6ff816a60b94",
           "bg": "default",
           "content": {
             "root": {
@@ -11698,7 +12590,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"developers-italia-al-google-summer-of-code-2019\"}",
-    "updatedAt": "2026-08-24T15:20:58.763Z",
+    "updatedAt": "2026-08-25T14:10:34.634Z",
     "createdAt": "2026-08-20T09:29:29.480Z"
   },
   {
@@ -11757,7 +12649,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615a46868470070fde96",
+          "id": "6a8da25a08fd6ff816a60b8f",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -11798,7 +12690,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615a46868470070fde94",
+              "id": "6a8da25a08fd6ff816a60b8d",
               "title": "I progetti di Developers Italia al Google Summer of Code",
               "paragraph": {
                 "root": {
@@ -11836,7 +12728,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615a46868470070fde95",
+              "id": "6a8da25a08fd6ff816a60b8e",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -11845,7 +12737,7 @@
           ]
         },
         {
-          "id": "6a8c615a46868470070fde97",
+          "id": "6a8da25a08fd6ff816a60b90",
           "bg": "default",
           "content": {
             "root": {
@@ -12543,7 +13435,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"i-progetti-di-developers-italia-al-google-summer-of-code\"}",
-    "updatedAt": "2026-08-24T15:20:58.663Z",
+    "updatedAt": "2026-08-25T14:10:34.555Z",
     "createdAt": "2026-08-20T09:29:29.434Z"
   },
   {
@@ -12602,7 +13494,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615a46868470070fde92",
+          "id": "6a8da25a08fd6ff816a60b8b",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -12643,7 +13535,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615a46868470070fde90",
+              "id": "6a8da25a08fd6ff816a60b89",
               "title": "Terminato l'Hacktoberfest 2019, tiriamo le somme",
               "paragraph": {
                 "root": {
@@ -12681,7 +13573,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615a46868470070fde91",
+              "id": "6a8da25a08fd6ff816a60b8a",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -12690,7 +13582,7 @@
           ]
         },
         {
-          "id": "6a8c615a46868470070fde93",
+          "id": "6a8da25a08fd6ff816a60b8c",
           "bg": "default",
           "content": {
             "root": {
@@ -13152,7 +14044,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"terminato-l-hacktoberfest-2019-tiriamo-le-somme\"}",
-    "updatedAt": "2026-08-24T15:20:58.575Z",
+    "updatedAt": "2026-08-25T14:10:34.476Z",
     "createdAt": "2026-08-20T09:29:29.394Z"
   },
   {
@@ -13211,7 +14103,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615a46868470070fde8e",
+          "id": "6a8da25a08fd6ff816a60b87",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -13252,7 +14144,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615a46868470070fde8c",
+              "id": "6a8da25a08fd6ff816a60b85",
               "title": "Inizia l'Hacktoberfest 2020",
               "paragraph": {
                 "root": {
@@ -13290,7 +14182,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615a46868470070fde8d",
+              "id": "6a8da25a08fd6ff816a60b86",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -13299,7 +14191,7 @@
           ]
         },
         {
-          "id": "6a8c615a46868470070fde8f",
+          "id": "6a8da25a08fd6ff816a60b88",
           "bg": "default",
           "content": {
             "root": {
@@ -13862,7 +14754,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"inizia-l-hacktoberfest-2020\"}",
-    "updatedAt": "2026-08-24T15:20:58.482Z",
+    "updatedAt": "2026-08-25T14:10:34.398Z",
     "createdAt": "2026-08-20T09:29:29.347Z"
   },
   {
@@ -13921,7 +14813,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615a46868470070fde8a",
+          "id": "6a8da25a08fd6ff816a60b83",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -13962,7 +14854,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615a46868470070fde88",
+              "id": "6a8da25a08fd6ff816a60b81",
               "title": "Hacktoberfest 2020, i traguardi raggiunti",
               "paragraph": {
                 "root": {
@@ -14000,7 +14892,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615a46868470070fde89",
+              "id": "6a8da25a08fd6ff816a60b82",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -14009,7 +14901,7 @@
           ]
         },
         {
-          "id": "6a8c615a46868470070fde8b",
+          "id": "6a8da25a08fd6ff816a60b84",
           "bg": "default",
           "content": {
             "root": {
@@ -14404,7 +15296,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"hacktoberfest-2020-i-traguardi-raggiunti\"}",
-    "updatedAt": "2026-08-24T15:20:58.378Z",
+    "updatedAt": "2026-08-25T14:10:34.320Z",
     "createdAt": "2026-08-20T09:29:29.318Z"
   },
   {
@@ -14463,7 +15355,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615a46868470070fde86",
+          "id": "6a8da25a08fd6ff816a60b7f",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -14504,7 +15396,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615a46868470070fde84",
+              "id": "6a8da25a08fd6ff816a60b7d",
               "title": "Disponibile la prima parte della “Guida allo sviluppo e gestione di software libero”",
               "paragraph": {
                 "root": {
@@ -14542,7 +15434,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615a46868470070fde85",
+              "id": "6a8da25a08fd6ff816a60b7e",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -14551,7 +15443,7 @@
           ]
         },
         {
-          "id": "6a8c615a46868470070fde87",
+          "id": "6a8da25a08fd6ff816a60b80",
           "bg": "default",
           "content": {
             "root": {
@@ -15150,7 +16042,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"disponibile-la-prima-parte-della-guida-allo-sviluppo-e-gestione-di-software-libero\"}",
-    "updatedAt": "2026-08-24T15:20:58.252Z",
+    "updatedAt": "2026-08-25T14:10:34.242Z",
     "createdAt": "2026-08-20T09:29:29.278Z"
   },
   {
@@ -15209,7 +16101,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615a46868470070fde82",
+          "id": "6a8da25a08fd6ff816a60b7b",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -15250,7 +16142,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615a46868470070fde80",
+              "id": "6a8da25a08fd6ff816a60b79",
               "title": "Dichiarazione di riuso, sempre più a portata di clic",
               "paragraph": {
                 "root": {
@@ -15288,7 +16180,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615a46868470070fde81",
+              "id": "6a8da25a08fd6ff816a60b7a",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -15297,7 +16189,7 @@
           ]
         },
         {
-          "id": "6a8c615a46868470070fde83",
+          "id": "6a8da25a08fd6ff816a60b7c",
           "bg": "default",
           "content": {
             "root": {
@@ -16012,7 +16904,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"dichiarazione-di-riuso-sempre-piu-a-portata-di-clic\"}",
-    "updatedAt": "2026-08-24T15:20:58.166Z",
+    "updatedAt": "2026-08-25T14:10:34.162Z",
     "createdAt": "2026-08-20T09:29:29.237Z"
   },
   {
@@ -16071,7 +16963,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615a46868470070fde7e",
+          "id": "6a8da25a08fd6ff816a60b77",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -16112,7 +17004,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615a46868470070fde7c",
+              "id": "6a8da25a08fd6ff816a60b75",
               "title": "Semplificazione e innovazione, ciclo di incontri promossi dal Dipartimento per la Trasformazione Digitale",
               "paragraph": {
                 "root": {
@@ -16150,7 +17042,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615a46868470070fde7d",
+              "id": "6a8da25a08fd6ff816a60b76",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -16159,7 +17051,7 @@
           ]
         },
         {
-          "id": "6a8c615a46868470070fde7f",
+          "id": "6a8da25a08fd6ff816a60b78",
           "bg": "default",
           "content": {
             "root": {
@@ -16880,7 +17772,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"semplificazione-e-innovazione-ciclo-di-incontri-promossi-dal-dipartimento-per-la-trasformazione-digitale\"}",
-    "updatedAt": "2026-08-24T15:20:58.074Z",
+    "updatedAt": "2026-08-25T14:10:34.080Z",
     "createdAt": "2026-08-20T09:29:29.193Z"
   },
   {
@@ -16939,7 +17831,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615946868470070fde7a",
+          "id": "6a8da25908fd6ff816a60b73",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -16980,7 +17872,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615946868470070fde78",
+              "id": "6a8da25908fd6ff816a60b71",
               "title": "SPID e CIE, disponibili nuove risorse open source",
               "paragraph": {
                 "root": {
@@ -17018,7 +17910,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615946868470070fde79",
+              "id": "6a8da25908fd6ff816a60b72",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -17027,7 +17919,7 @@
           ]
         },
         {
-          "id": "6a8c615946868470070fde7b",
+          "id": "6a8da25908fd6ff816a60b74",
           "bg": "default",
           "content": {
             "root": {
@@ -17742,7 +18634,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"spid-e-cie-disponibili-nuove-risorse-open-source\"}",
-    "updatedAt": "2026-08-24T15:20:57.984Z",
+    "updatedAt": "2026-08-25T14:10:33.998Z",
     "createdAt": "2026-08-20T09:29:29.147Z"
   },
   {
@@ -17801,7 +18693,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615946868470070fde76",
+          "id": "6a8da25908fd6ff816a60b6f",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -17842,7 +18734,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615946868470070fde74",
+              "id": "6a8da25908fd6ff816a60b6d",
               "title": "SPID sempre più facile da integrare sulle piattaforme mobili",
               "paragraph": {
                 "root": {
@@ -17880,7 +18772,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615946868470070fde75",
+              "id": "6a8da25908fd6ff816a60b6e",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -17889,7 +18781,7 @@
           ]
         },
         {
-          "id": "6a8c615946868470070fde77",
+          "id": "6a8da25908fd6ff816a60b70",
           "bg": "default",
           "content": {
             "root": {
@@ -18253,7 +19145,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"spid-sempre-piu-facile-da-integrare-sulle-piattaforme-mobili\"}",
-    "updatedAt": "2026-08-24T15:20:57.884Z",
+    "updatedAt": "2026-08-25T14:10:33.917Z",
     "createdAt": "2026-08-20T09:29:29.110Z"
   },
   {
@@ -18312,7 +19204,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615946868470070fde72",
+          "id": "6a8da25908fd6ff816a60b6b",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -18353,7 +19245,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615946868470070fde70",
+              "id": "6a8da25908fd6ff816a60b69",
               "title": "Obiettivo miglioramento continuo",
               "paragraph": {
                 "root": {
@@ -18391,7 +19283,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615946868470070fde71",
+              "id": "6a8da25908fd6ff816a60b6a",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -18400,7 +19292,7 @@
           ]
         },
         {
-          "id": "6a8c615946868470070fde73",
+          "id": "6a8da25908fd6ff816a60b6c",
           "bg": "default",
           "content": {
             "root": {
@@ -18706,7 +19598,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"obiettivo-miglioramento-continuo\"}",
-    "updatedAt": "2026-08-24T15:20:57.778Z",
+    "updatedAt": "2026-08-25T14:10:33.809Z",
     "createdAt": "2026-08-20T09:29:29.062Z"
   },
   {
@@ -18765,7 +19657,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615946868470070fde6e",
+          "id": "6a8da25908fd6ff816a60b67",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -18806,7 +19698,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615946868470070fde6c",
+              "id": "6a8da25908fd6ff816a60b65",
               "title": "Scopri come contribuire al miglioramento dei servizi pubblici digitali del Paese",
               "paragraph": {
                 "root": {
@@ -18844,7 +19736,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615946868470070fde6d",
+              "id": "6a8da25908fd6ff816a60b66",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -18853,7 +19745,7 @@
           ]
         },
         {
-          "id": "6a8c615946868470070fde6f",
+          "id": "6a8da25908fd6ff816a60b68",
           "bg": "default",
           "content": {
             "root": {
@@ -19326,7 +20218,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"scopri-come-contribuire-al-miglioramento-dei-servizi-pubblici-digitali-del-paese\"}",
-    "updatedAt": "2026-08-24T15:20:57.679Z",
+    "updatedAt": "2026-08-25T14:10:33.726Z",
     "createdAt": "2026-08-20T09:29:29.027Z"
   },
   {
@@ -19385,7 +20277,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615946868470070fde6a",
+          "id": "6a8da25908fd6ff816a60b63",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -19426,7 +20318,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615946868470070fde68",
+              "id": "6a8da25908fd6ff816a60b61",
               "title": "“Guida allo sviluppo e gestione di software libero”: disponibile il capitolo dedicato ai responsabili politici",
               "paragraph": {
                 "root": {
@@ -19464,7 +20356,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615946868470070fde69",
+              "id": "6a8da25908fd6ff816a60b62",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -19473,7 +20365,7 @@
           ]
         },
         {
-          "id": "6a8c615946868470070fde6b",
+          "id": "6a8da25908fd6ff816a60b64",
           "bg": "default",
           "content": {
             "root": {
@@ -20125,7 +21017,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"guida-allo-sviluppo-e-gestione-di-software-libero-disponibile-il-capitolo-dedicato-ai-responsabili-politici\"}",
-    "updatedAt": "2026-08-24T15:20:57.583Z",
+    "updatedAt": "2026-08-25T14:10:33.646Z",
     "createdAt": "2026-08-20T09:29:28.992Z"
   },
   {
@@ -20184,7 +21076,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615946868470070fde66",
+          "id": "6a8da25908fd6ff816a60b5f",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -20225,7 +21117,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615946868470070fde64",
+              "id": "6a8da25908fd6ff816a60b5d",
               "title": "Developers Italia: iniziativa pioniera per un’Europa digitale indipendente e competitiva",
               "paragraph": {
                 "root": {
@@ -20263,7 +21155,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615946868470070fde65",
+              "id": "6a8da25908fd6ff816a60b5e",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -20272,7 +21164,7 @@
           ]
         },
         {
-          "id": "6a8c615946868470070fde67",
+          "id": "6a8da25908fd6ff816a60b60",
           "bg": "default",
           "content": {
             "root": {
@@ -20644,7 +21536,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"developers-italia-iniziativa-pioniera-per-un-europa-digitale-indipendente-e-competitiva\"}",
-    "updatedAt": "2026-08-24T15:20:57.497Z",
+    "updatedAt": "2026-08-25T14:10:33.565Z",
     "createdAt": "2026-08-20T09:29:28.952Z"
   },
   {
@@ -20703,7 +21595,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615946868470070fde62",
+          "id": "6a8da25908fd6ff816a60b5b",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -20744,7 +21636,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615946868470070fde60",
+              "id": "6a8da25908fd6ff816a60b59",
               "title": "Progettare e realizzare il sito web di un Comune - 2ᵃ edizione",
               "paragraph": {
                 "root": {
@@ -20782,7 +21674,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615946868470070fde61",
+              "id": "6a8da25908fd6ff816a60b5a",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -20791,7 +21683,7 @@
           ]
         },
         {
-          "id": "6a8c615946868470070fde63",
+          "id": "6a8da25908fd6ff816a60b5c",
           "bg": "default",
           "content": {
             "root": {
@@ -21308,7 +22200,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"progettare-e-realizzare-il-sito-web-di-un-comune-2-edizione\"}",
-    "updatedAt": "2026-08-24T15:20:57.412Z",
+    "updatedAt": "2026-08-25T14:10:33.488Z",
     "createdAt": "2026-08-20T09:29:28.900Z"
   },
   {
@@ -21367,7 +22259,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615946868470070fde5e",
+          "id": "6a8da25908fd6ff816a60b57",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -21408,7 +22300,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615946868470070fde5c",
+              "id": "6a8da25908fd6ff816a60b55",
               "title": "Comincia l'Hacktoberfest 2021",
               "paragraph": {
                 "root": {
@@ -21446,7 +22338,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615946868470070fde5d",
+              "id": "6a8da25908fd6ff816a60b56",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -21455,7 +22347,7 @@
           ]
         },
         {
-          "id": "6a8c615946868470070fde5f",
+          "id": "6a8da25908fd6ff816a60b58",
           "bg": "default",
           "content": {
             "root": {
@@ -22059,7 +22951,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"comincia-l-hacktoberfest-2021\"}",
-    "updatedAt": "2026-08-24T15:20:57.322Z",
+    "updatedAt": "2026-08-25T14:10:33.408Z",
     "createdAt": "2026-08-20T09:29:28.857Z"
   },
   {
@@ -22118,7 +23010,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615946868470070fde5a",
+          "id": "6a8da25908fd6ff816a60b53",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -22159,7 +23051,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615946868470070fde58",
+              "id": "6a8da25908fd6ff816a60b51",
               "title": "Hacktoberfest 2021: i risultati",
               "paragraph": {
                 "root": {
@@ -22197,7 +23089,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615946868470070fde59",
+              "id": "6a8da25908fd6ff816a60b52",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -22206,7 +23098,7 @@
           ]
         },
         {
-          "id": "6a8c615946868470070fde5b",
+          "id": "6a8da25908fd6ff816a60b54",
           "bg": "default",
           "content": {
             "root": {
@@ -22739,7 +23631,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"hacktoberfest-2021-i-risultati\"}",
-    "updatedAt": "2026-08-24T15:20:57.235Z",
+    "updatedAt": "2026-08-25T14:10:33.327Z",
     "createdAt": "2026-08-20T09:29:28.816Z"
   },
   {
@@ -22798,7 +23690,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615946868470070fde56",
+          "id": "6a8da25908fd6ff816a60b4f",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -22839,7 +23731,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615946868470070fde54",
+              "id": "6a8da25908fd6ff816a60b4d",
               "title": "Al via l’aggiornamento del design system del Paese",
               "paragraph": {
                 "root": {
@@ -22877,7 +23769,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615946868470070fde55",
+              "id": "6a8da25908fd6ff816a60b4e",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -22886,7 +23778,7 @@
           ]
         },
         {
-          "id": "6a8c615946868470070fde57",
+          "id": "6a8da25908fd6ff816a60b50",
           "bg": "default",
           "content": {
             "root": {
@@ -23612,7 +24504,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"al-via-l-aggiornamento-del-design-system-del-paese\"}",
-    "updatedAt": "2026-08-24T15:20:57.149Z",
+    "updatedAt": "2026-08-25T14:10:33.249Z",
     "createdAt": "2026-08-20T09:29:28.784Z"
   },
   {
@@ -23671,7 +24563,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615946868470070fde52",
+          "id": "6a8da25908fd6ff816a60b4b",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -23712,7 +24604,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615946868470070fde50",
+              "id": "6a8da25908fd6ff816a60b49",
               "title": "La Commissione europea cerca cacciatori di bug",
               "paragraph": {
                 "root": {
@@ -23750,7 +24642,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615946868470070fde51",
+              "id": "6a8da25908fd6ff816a60b4a",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -23759,7 +24651,7 @@
           ]
         },
         {
-          "id": "6a8c615946868470070fde53",
+          "id": "6a8da25908fd6ff816a60b4c",
           "bg": "default",
           "content": {
             "root": {
@@ -24314,7 +25206,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"la-commissione-europea-cerca-cacciatori-di-bug\"}",
-    "updatedAt": "2026-08-24T15:20:57.053Z",
+    "updatedAt": "2026-08-25T14:10:33.171Z",
     "createdAt": "2026-08-20T09:29:28.759Z"
   },
   {
@@ -24373,7 +25265,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615846868470070fde4e",
+          "id": "6a8da25908fd6ff816a60b47",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -24414,7 +25306,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615846868470070fde4c",
+              "id": "6a8da25908fd6ff816a60b45",
               "title": "Iniziano i lavori per gli SDK OpenID Connect unificati di SPID e CIE",
               "paragraph": {
                 "root": {
@@ -24452,7 +25344,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615846868470070fde4d",
+              "id": "6a8da25908fd6ff816a60b46",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -24461,7 +25353,7 @@
           ]
         },
         {
-          "id": "6a8c615846868470070fde4f",
+          "id": "6a8da25908fd6ff816a60b48",
           "bg": "default",
           "content": {
             "root": {
@@ -25164,7 +26056,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"iniziano-i-lavori-per-gli-sdk-openid-connect-unificati-di-spid-e-cie\"}",
-    "updatedAt": "2026-08-24T15:20:56.965Z",
+    "updatedAt": "2026-08-25T14:10:33.088Z",
     "createdAt": "2026-08-20T09:29:28.724Z"
   },
   {
@@ -25223,7 +26115,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615846868470070fde4a",
+          "id": "6a8da25808fd6ff816a60b43",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -25264,7 +26156,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615846868470070fde48",
+              "id": "6a8da25808fd6ff816a60b41",
               "title": "Accessibilità migliorata con Bootstrap Italia 1.6, verso il rilascio di 2.0",
               "paragraph": {
                 "root": {
@@ -25302,7 +26194,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615846868470070fde49",
+              "id": "6a8da25808fd6ff816a60b42",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -25311,7 +26203,7 @@
           ]
         },
         {
-          "id": "6a8c615846868470070fde4b",
+          "id": "6a8da25808fd6ff816a60b44",
           "bg": "default",
           "content": {
             "root": {
@@ -26047,7 +26939,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"accessibilita-migliorata-con-bootstrap-italia-16-verso-il-rilascio-di-20\"}",
-    "updatedAt": "2026-08-24T15:20:56.838Z",
+    "updatedAt": "2026-08-25T14:10:33.001Z",
     "createdAt": "2026-08-20T09:29:28.684Z"
   },
   {
@@ -26106,7 +26998,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615846868470070fde47",
+          "id": "6a8da25808fd6ff816a60b40",
           "bg": "default",
           "content": {
             "root": {
@@ -26583,7 +27475,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"come-e-cambiata-la-community-di-developers-italia-e-designers-italia\"}",
-    "updatedAt": "2026-08-24T15:20:56.784Z",
+    "updatedAt": "2026-08-25T14:10:32.951Z",
     "createdAt": "2026-08-20T09:29:28.643Z"
   },
   {
@@ -26642,7 +27534,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615846868470070fde46",
+          "id": "6a8da25808fd6ff816a60b3f",
           "bg": "default",
           "content": {
             "root": {
@@ -26855,7 +27747,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"disponibile-il-video-del-workshop-guida-intergalattica-per-maintainer\"}",
-    "updatedAt": "2026-08-24T15:20:56.730Z",
+    "updatedAt": "2026-08-25T14:10:32.907Z",
     "createdAt": "2026-08-20T09:29:28.585Z"
   },
   {
@@ -26914,7 +27806,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615846868470070fde45",
+          "id": "6a8da25808fd6ff816a60b3e",
           "bg": "default",
           "content": {
             "root": {
@@ -27296,7 +28188,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"hacktoberfest-2023\"}",
-    "updatedAt": "2026-08-24T15:20:56.693Z",
+    "updatedAt": "2026-08-25T14:10:32.865Z",
     "createdAt": "2026-08-20T09:29:28.540Z"
   },
   {
@@ -27355,7 +28247,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615846868470070fde44",
+          "id": "6a8da25808fd6ff816a60b3d",
           "bg": "default",
           "content": {
             "root": {
@@ -28711,7 +29603,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"2023-facciamo-i-conti\"}",
-    "updatedAt": "2026-08-24T15:20:56.642Z",
+    "updatedAt": "2026-08-25T14:10:32.831Z",
     "createdAt": "2026-08-20T09:29:28.492Z"
   },
   {
@@ -28770,7 +29662,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615846868470070fde42",
+          "id": "6a8da25808fd6ff816a60b3b",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -28811,7 +29703,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615846868470070fde40",
+              "id": "6a8da25808fd6ff816a60b39",
               "title": "Premio OSOR 2023: publiccode.yml tra i progetti finalisti",
               "paragraph": {
                 "root": {
@@ -28849,7 +29741,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615846868470070fde41",
+              "id": "6a8da25808fd6ff816a60b3a",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -28858,7 +29750,7 @@
           ]
         },
         {
-          "id": "6a8c615846868470070fde43",
+          "id": "6a8da25808fd6ff816a60b3c",
           "bg": "default",
           "content": {
             "root": {
@@ -29258,7 +30150,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"premio-osor-2023-publiccode-yml-tra-i-progetti-finalisti\"}",
-    "updatedAt": "2026-08-24T15:20:56.583Z",
+    "updatedAt": "2026-08-25T14:10:32.792Z",
     "createdAt": "2026-08-20T09:29:28.432Z"
   },
   {
@@ -29317,7 +30209,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615846868470070fde3e",
+          "id": "6a8da25808fd6ff816a60b37",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -29358,7 +30250,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615846868470070fde3c",
+              "id": "6a8da25808fd6ff816a60b35",
               "title": "A tutto hacker: ecco i risultati dell’Hacktoberfest",
               "paragraph": {
                 "root": {
@@ -29396,7 +30288,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615846868470070fde3d",
+              "id": "6a8da25808fd6ff816a60b36",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -29405,7 +30297,7 @@
           ]
         },
         {
-          "id": "6a8c615846868470070fde3f",
+          "id": "6a8da25808fd6ff816a60b38",
           "bg": "default",
           "content": {
             "root": {
@@ -29891,7 +30783,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"a-tutto-hacker-ecco-i-risultati-dellhacktoberfest\"}",
-    "updatedAt": "2026-08-24T15:20:56.534Z",
+    "updatedAt": "2026-08-25T14:10:32.755Z",
     "createdAt": "2026-08-20T09:29:28.386Z"
   },
   {
@@ -29950,7 +30842,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615846868470070fde3a",
+          "id": "6a8da25808fd6ff816a60b33",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -29991,7 +30883,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615846868470070fde38",
+              "id": "6a8da25808fd6ff816a60b31",
               "title": "Community call: la sinergia possibile tra Università e Pubbliche amministrazioni",
               "paragraph": {
                 "root": {
@@ -30029,7 +30921,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615846868470070fde39",
+              "id": "6a8da25808fd6ff816a60b32",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -30038,7 +30930,7 @@
           ]
         },
         {
-          "id": "6a8c615846868470070fde3b",
+          "id": "6a8da25808fd6ff816a60b34",
           "bg": "default",
           "content": {
             "root": {
@@ -30355,7 +31247,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"community-call-la-sinergia-possibile-tra-universita-e-pubbliche-amministrazioni\"}",
-    "updatedAt": "2026-08-24T15:20:56.440Z",
+    "updatedAt": "2026-08-25T14:10:32.676Z",
     "createdAt": "2026-08-20T09:29:28.346Z"
   },
   {
@@ -30414,7 +31306,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615846868470070fde36",
+          "id": "6a8da25808fd6ff816a60b2f",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -30455,7 +31347,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615846868470070fde34",
+              "id": "6a8da25808fd6ff816a60b2d",
               "title": "Guida allo sviluppo e gestione di software libero",
               "paragraph": {
                 "root": {
@@ -30493,7 +31385,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615846868470070fde35",
+              "id": "6a8da25808fd6ff816a60b2e",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -30502,7 +31394,7 @@
           ]
         },
         {
-          "id": "6a8c615846868470070fde37",
+          "id": "6a8da25808fd6ff816a60b30",
           "bg": "default",
           "content": {
             "root": {
@@ -31197,7 +32089,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"guida-allo-sviluppo-e-gestione-di-software-libero\"}",
-    "updatedAt": "2026-08-24T15:20:56.356Z",
+    "updatedAt": "2026-08-25T14:10:32.564Z",
     "createdAt": "2026-08-20T09:29:28.309Z"
   },
   {
@@ -31256,7 +32148,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615846868470070fde32",
+          "id": "6a8da25808fd6ff816a60b2b",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -31297,7 +32189,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615846868470070fde30",
+              "id": "6a8da25808fd6ff816a60b29",
               "title": "Community lab: a che punto siamo con UI kit e design token?",
               "paragraph": {
                 "root": {
@@ -31335,7 +32227,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615846868470070fde31",
+              "id": "6a8da25808fd6ff816a60b2a",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -31344,7 +32236,7 @@
           ]
         },
         {
-          "id": "6a8c615846868470070fde33",
+          "id": "6a8da25808fd6ff816a60b2c",
           "bg": "default",
           "content": {
             "root": {
@@ -31966,7 +32858,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"community-lab-a-che-punto-siamo-con-ui-kit-e-design-token\"}",
-    "updatedAt": "2026-08-24T15:20:56.268Z",
+    "updatedAt": "2026-08-25T14:10:32.480Z",
     "createdAt": "2026-08-20T09:29:28.268Z"
   },
   {
@@ -32025,7 +32917,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615846868470070fde2e",
+          "id": "6a8da25808fd6ff816a60b27",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -32066,7 +32958,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615846868470070fde2c",
+              "id": "6a8da25808fd6ff816a60b25",
               "title": "Guida allo sviluppo e gestione di software libero: un documento in continuo miglioramento",
               "paragraph": {
                 "root": {
@@ -32104,7 +32996,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615846868470070fde2d",
+              "id": "6a8da25808fd6ff816a60b26",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -32113,7 +33005,7 @@
           ]
         },
         {
-          "id": "6a8c615846868470070fde2f",
+          "id": "6a8da25808fd6ff816a60b28",
           "bg": "default",
           "content": {
             "root": {
@@ -32468,7 +33360,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"guida-allo-sviluppo-e-gestione-di-software-libero-un-documento-in-continuo-miglio\"}",
-    "updatedAt": "2026-08-24T15:20:56.186Z",
+    "updatedAt": "2026-08-25T14:10:32.401Z",
     "createdAt": "2026-08-20T09:29:28.233Z"
   },
   {
@@ -32527,7 +33419,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615846868470070fde2a",
+          "id": "6a8da25808fd6ff816a60b23",
           "blockName": null,
           "blockType": "intro-article",
           "text": [
@@ -32568,7 +33460,7 @@
               "cta": []
             },
             {
-              "id": "6a8c615846868470070fde28",
+              "id": "6a8da25808fd6ff816a60b21",
               "title": "PNRR: aggiornato il catalogo del software della PA",
               "paragraph": {
                 "root": {
@@ -32606,7 +33498,7 @@
           ],
           "list": [
             {
-              "id": "6a8c615846868470070fde29",
+              "id": "6a8da25808fd6ff816a60b22",
               "title": "",
               "blockName": null,
               "blockType": "icon-list-block",
@@ -32615,7 +33507,7 @@
           ]
         },
         {
-          "id": "6a8c615846868470070fde2b",
+          "id": "6a8da25808fd6ff816a60b24",
           "bg": "default",
           "content": {
             "root": {
@@ -33725,7 +34617,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"pnrr-aggiornato-il-catalogo-del-software-della-pa\"}",
-    "updatedAt": "2026-08-24T15:20:56.093Z",
+    "updatedAt": "2026-08-25T14:10:32.312Z",
     "createdAt": "2026-08-20T09:29:28.194Z"
   },
   {
@@ -33763,7 +34655,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615846868470070fde26",
+          "id": "6a8da25808fd6ff816a60b1f",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "6d7c4e2d-7b47-4114-8ee1-597110fa1ba9",
@@ -33804,7 +34696,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615846868470070fde27",
+          "id": "6a8da25808fd6ff816a60b20",
           "bg": "default",
           "content": {
             "root": {
@@ -34111,7 +35003,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615746868470070fde24",
+          "id": "6a8da25808fd6ff816a60b1d",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "6d7c4e2d-7b47-4114-8ee1-597110fa1ba9",
@@ -34152,7 +35044,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615746868470070fde25",
+          "id": "6a8da25808fd6ff816a60b1e",
           "bg": "default",
           "content": {
             "root": {
@@ -34470,7 +35362,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"pagopa\",\"en\":\"pagopa\"}",
-    "updatedAt": "2026-08-24T15:20:56.027Z",
+    "updatedAt": "2026-08-25T14:10:32.270Z",
     "createdAt": "2026-08-20T09:29:28.051Z"
   },
   {
@@ -34508,7 +35400,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615746868470070fde22",
+          "id": "6a8da25808fd6ff816a60b1b",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "cb453e58-67b3-4c82-bca2-10bd494a8b8f",
@@ -34549,7 +35441,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615746868470070fde23",
+          "id": "6a8da25808fd6ff816a60b1c",
           "bg": "default",
           "content": {
             "root": {
@@ -34856,7 +35748,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615746868470070fde20",
+          "id": "6a8da25808fd6ff816a60b19",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "cb453e58-67b3-4c82-bca2-10bd494a8b8f",
@@ -34897,7 +35789,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615746868470070fde21",
+          "id": "6a8da25808fd6ff816a60b1a",
           "bg": "default",
           "content": {
             "root": {
@@ -35215,7 +36107,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"siope\",\"en\":\"silent\"}",
-    "updatedAt": "2026-08-24T15:20:55.883Z",
+    "updatedAt": "2026-08-25T14:10:32.161Z",
     "createdAt": "2026-08-20T09:29:27.951Z"
   },
   {
@@ -35253,7 +36145,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615746868470070fde1e",
+          "id": "6a8da25808fd6ff816a60b17",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "4b3127d3-0bbe-4777-9d74-220e6f6ad77f",
@@ -35294,7 +36186,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615746868470070fde1f",
+          "id": "6a8da25808fd6ff816a60b18",
           "bg": "default",
           "content": {
             "root": {
@@ -35583,7 +36475,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615746868470070fde1c",
+          "id": "6a8da25808fd6ff816a60b15",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "4b3127d3-0bbe-4777-9d74-220e6f6ad77f",
@@ -35624,7 +36516,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615746868470070fde1d",
+          "id": "6a8da25808fd6ff816a60b16",
           "bg": "default",
           "content": {
             "root": {
@@ -35924,7 +36816,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"noipa\",\"en\":\"noipa\"}",
-    "updatedAt": "2026-08-24T15:20:55.748Z",
+    "updatedAt": "2026-08-25T14:10:32.058Z",
     "createdAt": "2026-08-20T09:29:27.836Z"
   },
   {
@@ -35962,7 +36854,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615746868470070fde1a",
+          "id": "6a8da25708fd6ff816a60b13",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "1202c0ca-5940-45a5-8e4e-43e2acfe01cb",
@@ -36003,7 +36895,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615746868470070fde1b",
+          "id": "6a8da25708fd6ff816a60b14",
           "bg": "default",
           "content": {
             "root": {
@@ -36278,7 +37170,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615746868470070fde18",
+          "id": "6a8da25708fd6ff816a60b11",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "1202c0ca-5940-45a5-8e4e-43e2acfe01cb",
@@ -36319,7 +37211,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615746868470070fde19",
+          "id": "6a8da25708fd6ff816a60b12",
           "bg": "default",
           "content": {
             "root": {
@@ -36605,7 +37497,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"suap-e-sue\",\"en\":\"suap-e-sue\"}",
-    "updatedAt": "2026-08-24T15:20:55.606Z",
+    "updatedAt": "2026-08-25T14:10:31.940Z",
     "createdAt": "2026-08-20T09:29:27.729Z"
   },
   {
@@ -36643,7 +37535,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615746868470070fde16",
+          "id": "6a8da25708fd6ff816a60b0f",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "d3c9631a-543a-4be8-990b-300c9bba53b2",
@@ -36684,7 +37576,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615746868470070fde17",
+          "id": "6a8da25708fd6ff816a60b10",
           "bg": "default",
           "content": {
             "root": {
@@ -37052,7 +37944,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615746868470070fde14",
+          "id": "6a8da25708fd6ff816a60b0d",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "d3c9631a-543a-4be8-990b-300c9bba53b2",
@@ -37093,7 +37985,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615746868470070fde15",
+          "id": "6a8da25708fd6ff816a60b0e",
           "bg": "default",
           "content": {
             "root": {
@@ -37472,7 +38364,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"single-digital-gateway-sdg\",\"en\":\"single-digital-gateway-sdg\"}",
-    "updatedAt": "2026-08-24T15:20:55.410Z",
+    "updatedAt": "2026-08-25T14:10:31.819Z",
     "createdAt": "2026-08-20T09:29:27.599Z"
   },
   {
@@ -37510,7 +38402,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615746868470070fde12",
+          "id": "6a8da25708fd6ff816a60b0b",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "d5d777f5-de45-43c6-999a-78b0e0a92995",
@@ -37551,7 +38443,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615746868470070fde13",
+          "id": "6a8da25708fd6ff816a60b0c",
           "bg": "default",
           "content": {
             "root": {
@@ -38099,7 +38991,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615746868470070fde10",
+          "id": "6a8da25708fd6ff816a60b09",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "d5d777f5-de45-43c6-999a-78b0e0a92995",
@@ -38140,7 +39032,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615746868470070fde11",
+          "id": "6a8da25708fd6ff816a60b0a",
           "bg": "default",
           "content": {
             "root": {
@@ -38699,7 +39591,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"pdnd-piattaforma-digitale-nazionale-dati\",\"en\":\"pdnd-national-digital-data-platform\"}",
-    "updatedAt": "2026-08-24T15:20:55.251Z",
+    "updatedAt": "2026-08-25T14:10:31.707Z",
     "createdAt": "2026-08-20T09:29:27.501Z"
   },
   {
@@ -38737,7 +39629,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615746868470070fde0e",
+          "id": "6a8da25708fd6ff816a60b07",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "2c64ef9f-1800-413e-9567-52e4558c0cfb",
@@ -38778,7 +39670,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615746868470070fde0f",
+          "id": "6a8da25708fd6ff816a60b08",
           "bg": "default",
           "content": {
             "root": {
@@ -39136,7 +40028,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615746868470070fde0c",
+          "id": "6a8da25708fd6ff816a60b05",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "2c64ef9f-1800-413e-9567-52e4558c0cfb",
@@ -39177,7 +40069,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615746868470070fde0d",
+          "id": "6a8da25708fd6ff816a60b06",
           "bg": "default",
           "content": {
             "root": {
@@ -39546,7 +40438,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"inad-indice-nazionale-dei-domicili-digitali\",\"en\":\"inad-national-index-of-digital-residences\"}",
-    "updatedAt": "2026-08-24T15:20:55.116Z",
+    "updatedAt": "2026-08-25T14:10:31.600Z",
     "createdAt": "2026-08-20T09:29:27.390Z"
   },
   {
@@ -39584,7 +40476,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615646868470070fde0a",
+          "id": "6a8da25708fd6ff816a60b03",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "70b6ca6a-030a-45ef-8257-5f873cdb5332",
@@ -39625,7 +40517,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615646868470070fde0b",
+          "id": "6a8da25708fd6ff816a60b04",
           "bg": "default",
           "content": {
             "root": {
@@ -39983,7 +40875,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615646868470070fde08",
+          "id": "6a8da25708fd6ff816a60b01",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "70b6ca6a-030a-45ef-8257-5f873cdb5332",
@@ -40024,7 +40916,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615646868470070fde09",
+          "id": "6a8da25708fd6ff816a60b02",
           "bg": "default",
           "content": {
             "root": {
@@ -40393,7 +41285,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"anis-anagrafe-nazionale-dellistruzione-superiore\",\"en\":\"anis-national-registry-of-higher-education\"}",
-    "updatedAt": "2026-08-24T15:20:54.993Z",
+    "updatedAt": "2026-08-25T14:10:31.494Z",
     "createdAt": "2026-08-20T09:29:27.274Z"
   },
   {
@@ -40431,7 +41323,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615646868470070fde06",
+          "id": "6a8da25708fd6ff816a60aff",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "3451119d-42aa-4295-bbb8-3e88b5df1a7b",
@@ -40472,7 +41364,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615646868470070fde07",
+          "id": "6a8da25708fd6ff816a60b00",
           "bg": "default",
           "content": {
             "root": {
@@ -40798,7 +41690,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615646868470070fde04",
+          "id": "6a8da25708fd6ff816a60afd",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "3451119d-42aa-4295-bbb8-3e88b5df1a7b",
@@ -40839,7 +41731,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615646868470070fde05",
+          "id": "6a8da25708fd6ff816a60afe",
           "bg": "default",
           "content": {
             "root": {
@@ -41176,7 +42068,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"anist-anagrafe-nazionale-dellistruzione\",\"en\":\"anist-national-education-registry\"}",
-    "updatedAt": "2026-08-24T15:20:54.860Z",
+    "updatedAt": "2026-08-25T14:10:31.327Z",
     "createdAt": "2026-08-20T09:29:27.144Z"
   },
   {
@@ -41214,7 +42106,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615646868470070fde02",
+          "id": "6a8da25708fd6ff816a60afb",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "a93f2585-0dae-4edc-a2e8-8f0c16726ca0",
@@ -41255,7 +42147,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615646868470070fde03",
+          "id": "6a8da25708fd6ff816a60afc",
           "bg": "default",
           "content": {
             "root": {
@@ -41641,7 +42533,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615646868470070fde00",
+          "id": "6a8da25708fd6ff816a60af9",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "a93f2585-0dae-4edc-a2e8-8f0c16726ca0",
@@ -41682,7 +42574,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615646868470070fde01",
+          "id": "6a8da25708fd6ff816a60afa",
           "bg": "default",
           "content": {
             "root": {
@@ -42079,7 +42971,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"send\",\"en\":\"send\"}",
-    "updatedAt": "2026-08-24T15:20:54.717Z",
+    "updatedAt": "2026-08-25T14:10:31.232Z",
     "createdAt": "2026-08-20T09:29:27.002Z"
   },
   {
@@ -42117,7 +43009,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615646868470070fddfe",
+          "id": "6a8da25708fd6ff816a60af7",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "f62a8256-4f86-4a70-8249-50e8fca0ee54",
@@ -42158,7 +43050,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615646868470070fddff",
+          "id": "6a8da25708fd6ff816a60af8",
           "bg": "default",
           "content": {
             "root": {
@@ -42530,7 +43422,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615646868470070fddfc",
+          "id": "6a8da25708fd6ff816a60af5",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "f62a8256-4f86-4a70-8249-50e8fca0ee54",
@@ -42571,7 +43463,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615646868470070fddfd",
+          "id": "6a8da25708fd6ff816a60af6",
           "bg": "default",
           "content": {
             "root": {
@@ -42954,7 +43846,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"io-lapp-dei-servizi-pubblici\",\"en\":\"io-lapp-for-public-services\"}",
-    "updatedAt": "2026-08-24T15:20:54.588Z",
+    "updatedAt": "2026-08-25T14:10:31.136Z",
     "createdAt": "2026-08-20T09:29:26.885Z"
   },
   {
@@ -42992,7 +43884,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615646868470070fddfa",
+          "id": "6a8da25708fd6ff816a60af3",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "55306cb0-328f-4b80-992b-f858fe2c4c3e",
@@ -43033,7 +43925,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615646868470070fddfb",
+          "id": "6a8da25708fd6ff816a60af4",
           "bg": "default",
           "content": {
             "root": {
@@ -43477,7 +44369,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615646868470070fddf8",
+          "id": "6a8da25608fd6ff816a60af1",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "55306cb0-328f-4b80-992b-f858fe2c4c3e",
@@ -43518,7 +44410,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615646868470070fddf9",
+          "id": "6a8da25608fd6ff816a60af2",
           "bg": "default",
           "content": {
             "root": {
@@ -43973,7 +44865,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"anpr-anagrafe-nazionale-della-popolazione-residente\",\"en\":\"anpr-national-registry-of-the-resident-population\"}",
-    "updatedAt": "2026-08-24T15:20:54.463Z",
+    "updatedAt": "2026-08-25T14:10:31.037Z",
     "createdAt": "2026-08-20T09:29:26.755Z"
   },
   {
@@ -44011,7 +44903,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615646868470070fddf6",
+          "id": "6a8da25608fd6ff816a60aef",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "3cb7f460-cd95-42bd-8a11-d6cf1708d1f0",
@@ -44052,7 +44944,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615646868470070fddf7",
+          "id": "6a8da25608fd6ff816a60af0",
           "bg": "default",
           "content": {
             "root": {
@@ -44341,7 +45233,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615646868470070fddf4",
+          "id": "6a8da25608fd6ff816a60aed",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "3cb7f460-cd95-42bd-8a11-d6cf1708d1f0",
@@ -44382,7 +45274,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615646868470070fddf5",
+          "id": "6a8da25608fd6ff816a60aee",
           "bg": "default",
           "content": {
             "root": {
@@ -44682,7 +45574,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"fascicolo-sanitario-elettronico\",\"en\":\"electronic-health-record\"}",
-    "updatedAt": "2026-08-24T15:20:54.333Z",
+    "updatedAt": "2026-08-25T14:10:30.937Z",
     "createdAt": "2026-08-20T09:29:26.608Z"
   },
   {
@@ -44720,7 +45612,7 @@
     "content": {
       "it": [
         {
-          "id": "6a8c615646868470070fddf2",
+          "id": "6a8da25608fd6ff816a60aeb",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "0fb33d88-4205-4c15-b04e-0e2c1fa9323b",
@@ -44761,7 +45653,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615646868470070fddf3",
+          "id": "6a8da25608fd6ff816a60aec",
           "bg": "default",
           "content": {
             "root": {
@@ -45378,7 +46270,7 @@
       ],
       "en": [
         {
-          "id": "6a8c615646868470070fddf0",
+          "id": "6a8da25608fd6ff816a60ae9",
           "variant": "xsmall-compact",
           "bg": "lighter",
           "backgroundImage": "0fb33d88-4205-4c15-b04e-0e2c1fa9323b",
@@ -45419,7 +46311,7 @@
           "cta": []
         },
         {
-          "id": "6a8c615646868470070fddf1",
+          "id": "6a8da25608fd6ff816a60aea",
           "bg": "default",
           "content": {
             "root": {
@@ -46047,7 +46939,7 @@
       "image": null
     },
     "localizedSlugs": "{\"it\":\"schema\",\"en\":\"schema\"}",
-    "updatedAt": "2026-08-24T15:20:54.184Z",
+    "updatedAt": "2026-08-25T14:10:30.845Z",
     "createdAt": "2026-08-20T09:29:26.509Z"
   }
 ]
