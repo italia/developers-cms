@@ -29,11 +29,11 @@ export const migrations = [
   {
     up: migration_20260821_144711_article_content_blocks.up,
     down: migration_20260821_144711_article_content_blocks.down,
-    name: '20260821_144711_article_content_blocks'
+    name: '20260821_144711_article_content_blocks',
   },
   {
     up: migration_20260825_160500_card_editorial_icon_upload.up,
     down: migration_20260825_160500_card_editorial_icon_upload.down,
-    name: '20260825_160500_card_editorial_icon_upload'
+    name: '20260825_160500_card_editorial_icon_upload',
   },
 ];
