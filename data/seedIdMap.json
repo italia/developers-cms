@@ -1,54 +1,89 @@
 {
   "media": {
-    "dc5a4f60-04e1-4e4a-a185-82e062ede22e": "a52b6687-eeaa-4694-9fa4-73db98191e8a",
-    "d2815c08-4348-4e7b-a8c5-1a5f1d0e5470": "dd817313-17d1-46f2-a75e-f60d2dc8f0d8",
-    "885ad3cc-8b62-4f86-baf3-a6e0ca4364e9": "fcd90116-b3f6-4759-a726-d98acfd75168",
-    "66697314-933e-4461-935e-2faa3ce4eeda": "1e6841a4-b0d0-4667-a412-a84e67e267fd"
+    "dc5a4f60-04e1-4e4a-a185-82e062ede22e": "93112a75-46c5-4e62-ae9d-921d34082ba1",
+    "d2815c08-4348-4e7b-a8c5-1a5f1d0e5470": "7089b5c1-58ce-4a59-9af8-500247bbaa6b",
+    "885ad3cc-8b62-4f86-baf3-a6e0ca4364e9": "74b77bba-a18f-4f1c-b2b2-070fe67e8ffd",
+    "66697314-933e-4461-935e-2faa3ce4eeda": "cd23163f-8768-4722-9100-46e330588845"
   },
   "news-topics": {
-    "65c28f67-973b-4e99-9a36-c574dfa87410": "37ff43e0-5cb6-4555-98d6-e4a259722df4",
-    "4c057aa7-eb0a-472d-9a7c-9cd0e566b98a": "a3c46c2a-f4f9-4809-960c-f72c595a9ed8"
+    "65c28f67-973b-4e99-9a36-c574dfa87410": "fd275ef5-f547-42fd-ac31-a8bc27a665c6",
+    "4c057aa7-eb0a-472d-9a7c-9cd0e566b98a": "5136d3fc-1437-48ad-bf2a-2ea0f3628b57"
   },
   "story-topics": {
-    "a29a96df-5cf5-496a-b249-27879a1310f1": "12169113-827d-4363-93f8-7955c52b9115",
-    "ecd32c54-8e74-4ab8-badd-c643ad1adf17": "aa5c8a26-7451-4159-9a88-9f2bf2c90165",
-    "a7f63403-de61-4aa7-a1d2-d81a1cc1ead9": "f00d6460-1417-436d-bf82-90c7ce115943"
+    "a29a96df-5cf5-496a-b249-27879a1310f1": "35fed769-fe57-4a90-aa65-7f86c9f07860",
+    "ecd32c54-8e74-4ab8-badd-c643ad1adf17": "3f1d0f80-cb88-4275-8f34-c12ee65fdcff",
+    "a7f63403-de61-4aa7-a1d2-d81a1cc1ead9": "8d733b3a-cc67-45b6-82ce-456d6e42639a"
   },
   "webinar-topics": {
-    "f88a189a-1b55-4053-adcb-2bc84f1b30da": "64cb1ec8-7363-401e-8467-a97081bc3230",
-    "2f52fe5e-71f6-44fd-8902-55259fe0b340": "96c98c40-c832-4ca3-a0a6-ce124fa1bb41",
-    "e9b18e7e-545b-4da2-8ea6-8b7906e3e286": "657bb538-96ca-49f6-968f-b274d5050e1c",
-    "5aa86423-e5c0-425e-9c0d-7cfa43b47520": "4315e86f-1836-433a-883f-cc64a08b44c1",
-    "db93167f-2c28-4bf2-97a8-52ca9e4b1db4": "a803d0e2-4632-455c-b2b7-239e7addb045"
+    "f88a189a-1b55-4053-adcb-2bc84f1b30da": "245356eb-0e06-444f-a71f-4a0b025fc4b5",
+    "2f52fe5e-71f6-44fd-8902-55259fe0b340": "2755eee1-f529-496f-af78-9be5690906cb",
+    "e9b18e7e-545b-4da2-8ea6-8b7906e3e286": "4c800b00-06ca-4cd3-a0df-46d392dc2a0a",
+    "5aa86423-e5c0-425e-9c0d-7cfa43b47520": "aa55eecc-f96f-4720-b118-48993b32b5f8",
+    "db93167f-2c28-4bf2-97a8-52ca9e4b1db4": "4c21c153-30b0-4ada-83fb-d7b72235a9a3"
   },
   "story-classes": {
-    "c19133c2-04fe-46cc-b2c8-b5ef52bc9a55": "9a77936a-8171-4e67-a172-6f2daa50c1b5",
-    "ae159bcf-450a-428d-af9f-a701451166b3": "ed47ffcf-b961-4e0d-ab04-497d92486ca5"
+    "c19133c2-04fe-46cc-b2c8-b5ef52bc9a55": "cb9495f5-764e-402d-a17b-43e55a8adec7",
+    "ae159bcf-450a-428d-af9f-a701451166b3": "ad2e36a2-cb22-45f4-9450-00c3d030922d"
   },
   "webinar-authors": {},
   "chart-elements": {
-    "9ddadedd-4226-4235-ba89-7f4882fed1c0": "31a2c5db-fd37-456e-b0af-e51cac0e7e1f",
-    "3fee93e5-fc18-4736-b65b-d317b4236898": "2697d307-7f10-4f23-8d7d-da456f82821c"
+    "9ddadedd-4226-4235-ba89-7f4882fed1c0": "d7205620-dc75-4fb3-a9c0-4ac1514797bb",
+    "3fee93e5-fc18-4736-b65b-d317b4236898": "8ad4731b-3347-4a1a-a1da-95983f6b996e"
   },
   "kpi-elements": {
-    "4f43d703-c758-447b-9ac0-172fc7f130d8": "1f6c6a63-774d-411e-81c1-be369b6aabab",
-    "74f09762-ea65-458f-8dc8-b9e71cc8a698": "434a75ab-4f72-46ae-983d-c7d8cd566c3f",
-    "93f2c6de-34cb-4f8f-9892-8c6b1e49bf46": "01b17a7c-53ff-468e-a263-50e40b20d200",
-    "38b06ff5-92b1-4bcb-89f1-f79b46cd87db": "ce8cfb76-be81-446a-aefa-3da1c65c6240",
-    "1ffcca4a-1cf9-4064-9bd2-3bac370d96a2": "0d89e891-9c23-4733-8d31-aa1e224efdb2",
-    "f956f0b4-00f4-41c6-8e89-86fa882a882b": "63ee48f4-8e8d-4492-a1e5-840609034c03",
-    "b4925db1-00ab-4256-8618-61e8be639609": "5472b608-dc07-4587-bbc1-fcb03ff33761",
-    "c6e7511c-5367-4db7-a653-fde9cfec87c7": "311aad2c-92ef-41e3-a498-b476e7b2c3fd",
-    "17250f74-b3e5-4a69-b7b3-0dd1e5eab9af": "e0e02516-8f40-41db-86c8-2106d1ad4dd7",
-    "bd092ec8-2a5c-4422-b830-a9ec669bdef3": "e3397437-76bf-4d9f-a63a-3402e65736ee",
-    "43265eba-8eba-45b3-9503-ba2b555d745a": "57a1ab31-9282-48db-bd31-963942571f6c",
-    "f9a6cb16-8ea0-407d-bf7d-baa2535e9fd9": "ac36e36c-8496-44eb-b337-9f29d9973de8"
+    "4f43d703-c758-447b-9ac0-172fc7f130d8": "d41ee9ce-a239-45e0-811d-7e7a03b71a0b",
+    "74f09762-ea65-458f-8dc8-b9e71cc8a698": "a3c3e752-f591-40ae-9937-76893230c07f",
+    "93f2c6de-34cb-4f8f-9892-8c6b1e49bf46": "11cdcb28-dcf5-4223-8c0e-d4df22fc29bf",
+    "38b06ff5-92b1-4bcb-89f1-f79b46cd87db": "0ba2042f-523d-44d8-b46d-37ff757bbcdf",
+    "1ffcca4a-1cf9-4064-9bd2-3bac370d96a2": "4aeb5bf3-a949-4584-bb39-633a0f73a8e7",
+    "f956f0b4-00f4-41c6-8e89-86fa882a882b": "8cbc8298-3884-4aae-8574-24c4585183c1",
+    "b4925db1-00ab-4256-8618-61e8be639609": "622a96d6-30a2-4c9a-ae7e-8e1635366b0e",
+    "c6e7511c-5367-4db7-a653-fde9cfec87c7": "3e372067-a7c0-4df1-8dde-08e244cc5fe7",
+    "17250f74-b3e5-4a69-b7b3-0dd1e5eab9af": "fcaf9638-634b-42db-9328-21510454d65e",
+    "bd092ec8-2a5c-4422-b830-a9ec669bdef3": "6a4187b6-91cd-4eb3-936d-b35ec8a2fe63",
+    "43265eba-8eba-45b3-9503-ba2b555d745a": "e0dd18c8-f348-48a5-bee1-76135b9342eb",
+    "f9a6cb16-8ea0-407d-bf7d-baa2535e9fd9": "febd4ffe-8909-46af-a500-cf811cb06a22"
   },
   "news-items": {},
-  "pages": {},
-  "articles": {},
+  "pages": {
+    "a0d6b11f-9d46-428b-a542-49120e7fe165": "d42696d9-36b9-4850-b33c-cb8ad4d175f0",
+    "1e7d6c7d-8464-44d6-9e4c-982038053ede": "68437105-11d0-4908-a010-31d10a9e070d",
+    "7889d1fd-762c-485c-b24f-e26759f8a09f": "b716092a-68c3-4f38-88cc-213cc79605af"
+  },
+  "articles": {
+    "3f1f66f7-e914-49ee-97f8-fd086ad9f9e8": "4d97073b-85e9-4a4e-8bda-5cf375d021ad",
+    "b885d2e6-e73a-4915-a61e-1db58d302ff3": "ee4c909d-eb39-4af4-b344-c3d15783d5b6",
+    "3324f242-7d6d-4e3e-a042-67e7bdae402e": "9370025d-97aa-4179-b7d8-bb293558d952"
+  },
   "insights": {},
   "webinar-items": {},
-  "story-items": {},
-  "catalogues": {}
+  "story-items": {
+    "5b2085b7-ade3-4d27-9cbc-b6d23d767a62": "9676ed5e-88f7-4e35-bc6f-26a22ef9acd4",
+    "0c403ff5-94af-410c-bf70-a88510aabacb": "45faead0-93aa-4efb-ad74-7bd4ec22d70b",
+    "ea529b93-dc5a-404e-a70a-ff44176a96bf": "7058410e-8c20-4c8b-b7a4-7eaeaff95618",
+    "f62e6009-276f-4f00-9fa5-8aa41a8e96a6": "19b2d15a-75d9-4a8d-bf0e-c9dce6fea4eb",
+    "1b9ac225-1f12-4c90-9081-2f4b2c9d9073": "7b8af8b0-d075-4314-8bba-35be1e26ab35",
+    "c88817c1-80b1-4929-82be-e722a03522e9": "2da0f46a-0915-4ddd-a0cd-dfad632d1289",
+    "05cf3d3a-fe7a-4724-8d2e-b36d6d2b5175": "96c2b884-48e7-458f-aea3-e75108884072",
+    "a3a57cf5-3e84-4032-9f42-39fc6497a7fe": "3d6d3f25-f19a-4c65-8afb-ee9a63a1b240",
+    "c05113a0-1cc0-464a-b0ef-cbff473a228e": "b810e7b1-ef58-4bcc-aecc-46b948bf0f46",
+    "0027fe32-4731-4e98-9c0e-09f495d64163": "ef57b9c5-59e2-405c-b814-e6fbb0ade7ce",
+    "781b505e-8c47-421a-8e19-e64f72e5e15d": "e3c5152a-c751-44f9-8b5a-2ea1c5bf484f",
+    "6c03c1b6-5ae8-4bcb-9cee-73e653adcb3e": "99e2769d-97cf-4e05-b2e5-fa4bb81902b3",
+    "24a7ad44-b420-4678-ab38-d393c4cab544": "54f75865-8ddf-4768-8ffa-057a8118220b",
+    "916a4464-4362-4997-ae1f-044c6d35089c": "10fd59e0-710b-4687-a1cd-585da60ef377",
+    "888bc2d7-6080-40b1-b7ac-9c0822a94a23": "f0d11d05-ccc7-49ac-ac5b-ab912e447076",
+    "6f1633d1-e6d6-4ec4-a45a-52160e4ea705": "045271a5-1e0c-41de-955a-3a81369e1099",
+    "1433d305-8824-42c4-8c4c-5a90ac6f8e35": "7b5a17d1-9caa-4e52-8b6f-f0330f390506",
+    "ad029b7c-19d9-42bc-a756-9c312fee6373": "3d368189-1748-43e4-bd1a-7edd10e81c33",
+    "fa246ddd-aaf0-452d-a0e7-70adc70bf682": "818165e1-fc1a-44c3-bc55-1e0520ee4f81",
+    "9ea5f80f-757f-408e-b305-b8f607f1685d": "9ba32a5b-69e5-43b1-b603-b19c4f1bd653"
+  },
+  "catalogues": {
+    "ad147107-9814-414f-ae04-920bb43a0db7": "e7e28d0a-3b3c-41df-b890-161771a82b3d",
+    "e70dd15b-36ae-46d8-b723-4faef6db09eb": "2a51403c-ba9e-476e-8fe9-bf7874f8cebf",
+    "888467e3-2531-4134-b500-327be9a8780f": "b956c1bb-d9ed-4852-b65d-7cec51c16e79",
+    "af16c6db-2830-4b96-832c-3a9a32b63129": "519be14e-b268-406e-9094-aaa2c894bb9f",
+    "bf23aecd-1e5d-49e5-b190-f490518582e4": "b3211148-6016-4c61-9d9d-f1777ab3df4b"
+  }
 }
