@@ -1,4 +1,5 @@
 import { postgresAdapter } from '@payloadcms/db-postgres'
+import { nodemailerAdapter } from '@payloadcms/email-nodemailer'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import path from 'path'
 import { buildConfig } from 'payload'
@@ -45,6 +46,32 @@ import { SeoDefault } from './globals/SeoDefault'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
+
+// Adapter email (Mailgun SMTP EU). Senza, Payload logga le mail in console e il reset
+// password non funziona: gli account vanno creati a mano da un admin.
+//
+// Configurato solo se SMTP_HOST e' valorizzato, cosi' dev locale e CI partono senza SMTP.
+//
+// ATTENZIONE al mittente (post-mortem 12/06/2026, vedi helm/videocall/prod/values.yaml nel
+// gitops): developers.italia.it ha DMARC p=reject, e Mailgun firma col dominio del suo
+// account (org innovazione.gov.it). Un From @developers.italia.it NON si allinea, DMARC
+// fallisce e le mail vengono RIFIUTATE — risultando "SENT" lato Mailgun ma senza mai
+// arrivare. EMAIL_FROM_ADDRESS deve quindi restare su innovazione.gov.it.
+const email = process.env.SMTP_HOST
+  ? nodemailerAdapter({
+      defaultFromAddress: process.env.EMAIL_FROM_ADDRESS || 'no-reply@innovazione.gov.it',
+      defaultFromName: process.env.EMAIL_FROM_NAME || 'Developers Italia CMS',
+      transportOptions: {
+        host: process.env.SMTP_HOST,
+        port: Number(process.env.SMTP_PORT || 587),
+        secure: false, // STARTTLS sulla 587
+        auth: {
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASSWORD,
+        },
+      },
+    })
+  : undefined
 
 const allowedOrigins = [
   'http://localhost:3000',
@@ -116,5 +143,6 @@ export default buildConfig({
     },
   }),
   sharp,
+  ...(email ? { email } : {}),
   plugins: [],
 })

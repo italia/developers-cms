@@ -19,6 +19,8 @@
     "generate:graphQLSchema": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload-graphql generate:schema"
   },
   "dependencies": {
+    "@payloadcms/db-postgres": "3.83.0",
+    "@payloadcms/email-nodemailer": "3.83.0",
     "@payloadcms/next": "3.83.0",
     "@payloadcms/richtext-lexical": "3.83.0",
     "@payloadcms/ui": "3.83.0",
@@ -29,8 +31,7 @@
     "payload": "3.83.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "sharp": "0.34.2",
-    "@payloadcms/db-postgres": "3.83.0"
+    "sharp": "0.34.2"
   },
   "devDependencies": {
     "@payloadcms/graphql": "3.83.0",

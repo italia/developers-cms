@@ -30,6 +30,20 @@ app:
   # Se vuoto e ingress abilitato, viene derivato da https://<primo host ingress>.
   siteUrl: ""
 
+  # Adapter email (Mailgun SMTP EU). Se smtpHost e' vuoto, Payload non configura nessun
+  # adapter: le mail finiscono in console e il reset password NON funziona.
+  #
+  # fromAddress deve restare su un dominio con org innovazione.gov.it: developers.italia.it
+  # ha DMARC p=reject e Mailgun firma col dominio del proprio account, quindi un From
+  # @developers.italia.it non si allinea e le mail vengono rifiutate silenziosamente.
+  email:
+    smtpHost: ""
+    smtpPort: 587
+    smtpUser: ""
+    smtpPassword: ""
+    fromAddress: "no-reply@innovazione.gov.it"
+    fromName: "Developers Italia CMS"
+
   # Env aggiuntive non sensibili: [{ name: FOO, value: "bar" }]
   extraEnv: []
 
