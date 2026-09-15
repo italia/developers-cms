@@ -920,6 +920,13 @@ export interface Page {
                       blockName?: string | null;
                       blockType: 'Webinar-tab';
                     }
+                  | {
+                      title: string;
+                      Insights?: (string | Insight)[] | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'insight-tab';
+                    }
                 )[]
               | null;
             cta?:
@@ -1938,6 +1945,13 @@ export interface Insight {
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 'Webinar-tab';
+                    }
+                  | {
+                      title: string;
+                      Insights?: (string | Insight)[] | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'insight-tab';
                     }
                 )[]
               | null;
@@ -4749,6 +4763,14 @@ export interface PagesSelect<T extends boolean = true> {
                           id?: T;
                           blockName?: T;
                         };
+                    'insight-tab'?:
+                      | T
+                      | {
+                          title?: T;
+                          Insights?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
                   };
               cta?:
                 | T
@@ -5306,6 +5328,14 @@ export interface InsightsSelect<T extends boolean = true> {
                       | {
                           title?: T;
                           Webinars?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    'insight-tab'?:
+                      | T
+                      | {
+                          title?: T;
+                          Insights?: T;
                           id?: T;
                           blockName?: T;
                         };
@@ -7293,6 +7323,13 @@ export interface Homepage {
                       blockName?: string | null;
                       blockType: 'Webinar-tab';
                     }
+                  | {
+                      title: string;
+                      Insights?: (string | Insight)[] | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'insight-tab';
+                    }
                 )[]
               | null;
             cta?:
@@ -8308,6 +8345,14 @@ export interface HomepageSelect<T extends boolean = true> {
                       | {
                           title?: T;
                           Webinars?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    'insight-tab'?:
+                      | T
+                      | {
+                          title?: T;
+                          Insights?: T;
                           id?: T;
                           blockName?: T;
                         };

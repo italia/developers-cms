@@ -2,6 +2,7 @@ import type { Block } from 'payload'
 import { NewsTab } from './NewsTab'
 import { StoryTab } from './StoryTab'
 import { WebinarTab } from './WebinarTab'
+import { InsightTab } from './InsightTab'
 import { InternalLink } from './InternalLink'
 import { ExternalLink } from './ExternalLink'
 
@@ -35,7 +36,7 @@ export const NewsFeed: Block = {
     {
       name: 'tabs',
       type: 'blocks',
-      blocks: [NewsTab, StoryTab, WebinarTab],
+      blocks: [NewsTab, StoryTab, WebinarTab, InsightTab],
     },
     {
       name: 'cta',
