@@ -44,6 +44,12 @@ app:
     fromAddress: "no-reply@innovazione.gov.it"
     fromName: "Developers Italia CMS"
 
+  # Deploy Hook di Vercel del sito (Settings -> Git -> Deploy Hooks, branch main).
+  # Lo chiama il pulsante "Pubblica il sito" della dashboard (POST /api/deploy-site).
+  # E' un segreto: chi conosce l'URL puo' far partire una build. Va valorizzato solo nel
+  # values esterno in k8s-configuration. Se vuoto il pulsante risponde "non configurata".
+  vercelDeployHookUrl: ""
+
   # Env aggiuntive non sensibili: [{ name: FOO, value: "bar" }]
   extraEnv: []
 

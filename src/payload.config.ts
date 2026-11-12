@@ -44,6 +44,8 @@ import { GlobalSetting } from './globals/GlobalSetting'
 import { SidebarForArticle } from './globals/SidebarForArticle'
 import { SeoDefault } from './globals/SeoDefault'
 
+import { deploySite } from './endpoints/deploySite'
+
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
@@ -87,7 +89,11 @@ export default buildConfig({
     importMap: {
       baseDir: path.resolve(dirname),
     },
+    components: {
+      beforeDashboard: ['/components/DeploySiteButton#DeploySiteButton'],
+    },
   },
+  endpoints: [deploySite],
   localization: {
     locales: [
       { label: 'Italiano', code: 'it' },
