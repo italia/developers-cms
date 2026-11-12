@@ -100,5 +100,6 @@ app.kubernetes.io/instance: {{ .Release.Name }}
 {{- include "dcms.databaseUrl" . -}}
 {{- include "dcms.payloadSecret" . -}}
 {{- include "dcms.siteUrl" . -}}
+{{- .Values.app.vercelDeployHookUrl -}}
 {{- end -}}
 {{- end }}
