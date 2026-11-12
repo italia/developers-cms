@@ -1,5 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { seoField } from '../fields/seoField'
+import { lastPublishedAtField } from '../fields/lastPublishedAtField'
+import { setLastPublishedAt } from '../hooks/setLastPublishedAt'
 import { Hero } from '../blocks/Hero'
 import { FaqSection } from '../blocks/FaqSection'
 import { TextOnly } from '../blocks/TextOnly'
@@ -14,6 +16,7 @@ import { TextStatistic } from '../blocks/TextStatistic'
 import { TopicFilter } from '../blocks/TopicFilter'
 import { CardLinkList } from '../blocks/CardLinkList'
 import { UseCaseContainer } from '../blocks/UseCaseContainer'
+import { GraphitaliaDashboard } from '../blocks/GraphitaliaDashboard'
 
 export const Page: CollectionConfig = {
   slug: 'pages',
@@ -22,6 +25,7 @@ export const Page: CollectionConfig = {
     defaultColumns: ['title', 'slug', 'updatedAt'],
   },
   hooks: {
+    beforeChange: [setLastPublishedAt],
     beforeRead: [
       ({ doc }) => {
         doc.localizedSlugs = JSON.stringify(doc.slug);
@@ -50,10 +54,12 @@ export const Page: CollectionConfig = {
         Hero, FaqSection, TextOnly, StructuredTextBlock, DataSection, TextImage,
         NewsFeed, SupportChannelsSection, TextAccordion, SupportCtaSection,
         TextStatistic, TopicFilter, CardLinkList, UseCaseContainer,
+        GraphitaliaDashboard,
       ],
       localized: true,
     },
     seoField(),
+    lastPublishedAtField(),
     {
       name: 'localizedSlugs',
       type: 'json',

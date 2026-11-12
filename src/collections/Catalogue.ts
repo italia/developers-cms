@@ -1,5 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { seoField } from '../fields/seoField'
+import { lastPublishedAtField } from '../fields/lastPublishedAtField'
+import { setLastPublishedAt } from '../hooks/setLastPublishedAt'
 import { Hero } from '../blocks/Hero'
 import { TextOnly } from '../blocks/TextOnly'
 import { CalloutLink } from '../blocks/CalloutLink'
@@ -12,6 +14,7 @@ export const Catalogue: CollectionConfig = {
     defaultColumns: ['title', 'slug', 'updatedAt'],
   },
   hooks: {
+    beforeChange: [setLastPublishedAt],
     beforeRead: [
       ({ doc }) => {
         doc.localizedSlugs = JSON.stringify(doc.slug);
@@ -46,6 +49,7 @@ export const Catalogue: CollectionConfig = {
       localized: true,
     },
     seoField(),
+    lastPublishedAtField(),
     {
       name: 'localizedSlugs',
       type: 'json',

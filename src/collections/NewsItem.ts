@@ -38,7 +38,6 @@ export const NewsItem: CollectionConfig = {
       name: 'dateOfPublication',
       type: 'date',
       required: true,
-      localized: true,
     },
     {
       name: 'image',

@@ -296,6 +296,7 @@ export interface StoryClass {
   id: string;
   label: string;
   sort?: string | null;
+  key?: ('news' | 'platforms') | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -927,6 +928,36 @@ export interface Page {
                       blockName?: string | null;
                       blockType: 'insight-tab';
                     }
+                  | {
+                      title: string;
+                      items?:
+                        | (
+                            | {
+                                relationTo: 'story-items';
+                                value: string | StoryItem;
+                              }
+                            | {
+                                relationTo: 'webinar-items';
+                                value: string | WebinarItem;
+                              }
+                            | {
+                                relationTo: 'insights';
+                                value: string | Insight;
+                              }
+                            | {
+                                relationTo: 'articles';
+                                value: string | Article;
+                              }
+                            | {
+                                relationTo: 'news-items';
+                                value: string | NewsItem;
+                              }
+                          )[]
+                        | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'mixed-tab';
+                    }
                 )[]
               | null;
             cta?:
@@ -1443,6 +1474,13 @@ export interface Page {
             blockName?: string | null;
             blockType: 'use-case-container';
           }
+        | {
+            title?: string | null;
+            dashboardId: string;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'graphitalia-dashboard';
+          }
       )[]
     | null;
   seo?: {
@@ -1450,6 +1488,10 @@ export interface Page {
     description?: string | null;
     image?: (string | null) | Media;
   };
+  /**
+   * Mostrata sul sito come "Ultimo aggiornamento". Si aggiorna da sola a ogni salvataggio, a meno che non venga modificata a mano.
+   */
+  lastPublishedAt?: string | null;
   localizedSlugs?:
     | {
         [k: string]: unknown;
@@ -1621,6 +1663,10 @@ export interface Article {
     description?: string | null;
     image?: (string | null) | Media;
   };
+  /**
+   * Mostrata sul sito come "Ultimo aggiornamento". Si aggiorna da sola a ogni salvataggio, a meno che non venga modificata a mano.
+   */
+  lastPublishedAt?: string | null;
   localizedSlugs?:
     | {
         [k: string]: unknown;
@@ -1952,6 +1998,36 @@ export interface Insight {
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 'insight-tab';
+                    }
+                  | {
+                      title: string;
+                      items?:
+                        | (
+                            | {
+                                relationTo: 'story-items';
+                                value: string | StoryItem;
+                              }
+                            | {
+                                relationTo: 'webinar-items';
+                                value: string | WebinarItem;
+                              }
+                            | {
+                                relationTo: 'insights';
+                                value: string | Insight;
+                              }
+                            | {
+                                relationTo: 'articles';
+                                value: string | Article;
+                              }
+                            | {
+                                relationTo: 'news-items';
+                                value: string | NewsItem;
+                              }
+                          )[]
+                        | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'mixed-tab';
                     }
                 )[]
               | null;
@@ -2491,6 +2567,10 @@ export interface Insight {
     description?: string | null;
     image?: (string | null) | Media;
   };
+  /**
+   * Mostrata sul sito come "Ultimo aggiornamento". Si aggiorna da sola a ogni salvataggio, a meno che non venga modificata a mano.
+   */
+  lastPublishedAt?: string | null;
   localizedSlugs?:
     | {
         [k: string]: unknown;
@@ -2864,6 +2944,10 @@ export interface WebinarItem {
     description?: string | null;
     image?: (string | null) | Media;
   };
+  /**
+   * Mostrata sul sito come "Ultimo aggiornamento". Si aggiorna da sola a ogni salvataggio, a meno che non venga modificata a mano.
+   */
+  lastPublishedAt?: string | null;
   localizedSlugs?:
     | {
         [k: string]: unknown;
@@ -3825,6 +3909,10 @@ export interface StoryItem {
     description?: string | null;
     image?: (string | null) | Media;
   };
+  /**
+   * Mostrata sul sito come "Ultimo aggiornamento". Si aggiorna da sola a ogni salvataggio, a meno che non venga modificata a mano.
+   */
+  lastPublishedAt?: string | null;
   localizedSlugs?:
     | {
         [k: string]: unknown;
@@ -4058,6 +4146,10 @@ export interface Catalogue {
     description?: string | null;
     image?: (string | null) | Media;
   };
+  /**
+   * Mostrata sul sito come "Ultimo aggiornamento". Si aggiorna da sola a ogni salvataggio, a meno che non venga modificata a mano.
+   */
+  lastPublishedAt?: string | null;
   localizedSlugs?:
     | {
         [k: string]: unknown;
@@ -4337,6 +4429,7 @@ export interface MacroTopicsSelect<T extends boolean = true> {
 export interface StoryClassesSelect<T extends boolean = true> {
   label?: T;
   sort?: T;
+  key?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -4771,6 +4864,14 @@ export interface PagesSelect<T extends boolean = true> {
                           id?: T;
                           blockName?: T;
                         };
+                    'mixed-tab'?:
+                      | T
+                      | {
+                          title?: T;
+                          items?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
                   };
               cta?:
                 | T
@@ -5053,6 +5154,14 @@ export interface PagesSelect<T extends boolean = true> {
               id?: T;
               blockName?: T;
             };
+        'graphitalia-dashboard'?:
+          | T
+          | {
+              title?: T;
+              dashboardId?: T;
+              id?: T;
+              blockName?: T;
+            };
       };
   seo?:
     | T
@@ -5061,6 +5170,7 @@ export interface PagesSelect<T extends boolean = true> {
         description?: T;
         image?: T;
       };
+  lastPublishedAt?: T;
   localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -5139,6 +5249,7 @@ export interface ArticlesSelect<T extends boolean = true> {
         description?: T;
         image?: T;
       };
+  lastPublishedAt?: T;
   localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -5336,6 +5447,14 @@ export interface InsightsSelect<T extends boolean = true> {
                       | {
                           title?: T;
                           Insights?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    'mixed-tab'?:
+                      | T
+                      | {
+                          title?: T;
+                          items?: T;
                           id?: T;
                           blockName?: T;
                         };
@@ -5622,6 +5741,7 @@ export interface InsightsSelect<T extends boolean = true> {
         description?: T;
         image?: T;
       };
+  lastPublishedAt?: T;
   localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -5833,6 +5953,7 @@ export interface WebinarItemsSelect<T extends boolean = true> {
         description?: T;
         image?: T;
       };
+  lastPublishedAt?: T;
   localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -6413,6 +6534,7 @@ export interface StoryItemsSelect<T extends boolean = true> {
         description?: T;
         image?: T;
       };
+  lastPublishedAt?: T;
   localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -6556,6 +6678,7 @@ export interface CataloguesSelect<T extends boolean = true> {
         description?: T;
         image?: T;
       };
+  lastPublishedAt?: T;
   localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -7330,6 +7453,36 @@ export interface Homepage {
                       blockName?: string | null;
                       blockType: 'insight-tab';
                     }
+                  | {
+                      title: string;
+                      items?:
+                        | (
+                            | {
+                                relationTo: 'story-items';
+                                value: string | StoryItem;
+                              }
+                            | {
+                                relationTo: 'webinar-items';
+                                value: string | WebinarItem;
+                              }
+                            | {
+                                relationTo: 'insights';
+                                value: string | Insight;
+                              }
+                            | {
+                                relationTo: 'articles';
+                                value: string | Article;
+                              }
+                            | {
+                                relationTo: 'news-items';
+                                value: string | NewsItem;
+                              }
+                          )[]
+                        | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'mixed-tab';
+                    }
                 )[]
               | null;
             cta?:
@@ -7698,6 +7851,10 @@ export interface Homepage {
     description?: string | null;
     image?: (string | null) | Media;
   };
+  /**
+   * Mostrata sul sito come "Ultimo aggiornamento". Si aggiorna da sola a ogni salvataggio, a meno che non venga modificata a mano.
+   */
+  lastPublishedAt?: string | null;
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -8356,6 +8513,14 @@ export interface HomepageSelect<T extends boolean = true> {
                           id?: T;
                           blockName?: T;
                         };
+                    'mixed-tab'?:
+                      | T
+                      | {
+                          title?: T;
+                          items?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
                   };
               cta?:
                 | T
@@ -8564,6 +8729,7 @@ export interface HomepageSelect<T extends boolean = true> {
         description?: T;
         image?: T;
       };
+  lastPublishedAt?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;
