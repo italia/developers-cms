@@ -1,6 +1,7 @@
 import type { Block } from 'payload'
 import { BlocksFeature, lexicalEditor } from '@payloadcms/richtext-lexical'
 import { ExternalLink } from './ExternalLink'
+import { InternalLink } from './InternalLink'
 import { ListExternalLink } from './ListExternalLink'
 
 const bgColors = [
@@ -24,12 +25,12 @@ export const StructuredTextBlock: Block = {
       name: 'content',
       type: 'richText',
       // Dentro il testo si possono inserire gli elenchi di link esterni (con
-      // etichetta, es. "Sito:") e i singoli link esterni, come nel sito
-      // precedente: il frontend li disegna come card di collegamento.
+      // etichetta, es. "Sito:") e i singoli link esterni o interni, come nel
+      // sito precedente: il frontend li disegna come card di collegamento.
       editor: lexicalEditor({
         features: ({ defaultFeatures }) => [
           ...defaultFeatures,
-          BlocksFeature({ blocks: [ListExternalLink, ExternalLink] }),
+          BlocksFeature({ blocks: [ListExternalLink, ExternalLink, InternalLink] }),
         ],
       }),
       required: true,
