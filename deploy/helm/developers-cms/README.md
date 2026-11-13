@@ -18,12 +18,49 @@ I valori reali per ogni ambiente (DATABASE_URL, PAYLOAD_SECRET, seed/apiKey, ing
 | Job `-migrate` | hook **pre-install/pre-upgrade**: esegue `payload migrate`. |
 | Job `-seed` | hook **post-install/post-upgrade**: crea il primo utente e gli assegna una **API key** deterministica. Idempotente. |
 
-## Installazione
+## Installazione (prima volta, a mano)
 
 ```sh
 helm upgrade --install developers-cms-test deploy/helm/developers-cms \
   -n developers-cms-test --create-namespace \
   -f /path/to/k8s-configuration/helm/developers-cms/test/values.yaml
+```
+
+## Deploy automatico (CI)
+
+Dopo la prima installazione i deploy li fa la CI (`.github/workflows/ci.yml`):
+
+| Evento | Ambiente | Release / namespace | Immagine |
+|---|---|---|---|
+| push su `main` (merge di una PR) | test — https://cms-test.developers.italia.it | `developers-cms-test` | `sha-<commit>` |
+| tag `vX.Y.Z` | produzione — https://cms.developers.italia.it | `developers-cms` | `X.Y.Z` |
+
+Per rilasciare in produzione basta il tag:
+
+```sh
+git tag v1.2.3 && git push origin v1.2.3
+```
+
+Il deploy parte solo se integration ed E2E passano. La CI esegue
+`helm upgrade --reset-then-reuse-values --set-string app.image.tag=...` con il chart
+pubblicato su `oci://ghcr.io/italia/charts/developers-cms`: cambia solo l'immagine,
+i values dell'ambiente restano quelli applicati a mano da `k8s-configuration`. Il job
+`-migrate` gira a ogni deploy; se fallisce l'upgrade si ferma (`--atomic`) e il
+Deployment resta sulla versione precedente.
+
+Credenziali: secret `KUBECONFIG_DEVELOPERS_CMS_TEST` e `KUBECONFIG_DEVELOPERS_CMS` negli
+environment GitHub `test` (solo branch `main`) e `production` (solo tag `v*`), kubeconfig
+del ServiceAccount `gh-deployer` con ruolo `admin` sul solo namespace
+(`k8s-configuration/manifests/developers-cms-rbac-ci.yaml`).
+
+Per cambiare i values di un ambiente si rifà l'upgrade a mano con `-f`, mantenendo
+l'immagine in esercizio (altrimenti si torna al tag scritto nel file):
+
+```sh
+TAG=$(helm get values developers-cms -n developers-cms -o json | jq -r .app.image.tag)
+helm upgrade developers-cms oci://ghcr.io/italia/charts/developers-cms --version "$TAG" \
+  -n developers-cms -f /path/to/k8s-configuration/helm/developers-cms/prod/values.yaml \
+  --set-string app.image.tag="$TAG"
 ```
 
 ## Seed: utente + API key
