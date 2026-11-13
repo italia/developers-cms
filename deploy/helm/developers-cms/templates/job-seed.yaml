@@ -105,7 +105,7 @@ spec:
   template:
     metadata:
       labels:
-        {{- include "dcms.selectorLabels" . | nindent 8 }}
+        {{- include "dcms.hookPodLabels" (dict "ctx" . "component" "seed") | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
