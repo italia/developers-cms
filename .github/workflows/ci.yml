@@ -9,7 +9,15 @@ on:
 
 concurrency:
   group: ci-${{ github.ref }}
-  cancel-in-progress: true
+  # Si annullano solo le run di PR. Su main e sui tag NO: la run contiene un
+  # `helm upgrade`, e annullarla a metà lascia la release in `pending-upgrade`,
+  # per cui ogni deploy successivo fallisce con "another operation
+  # (install/upgrade/rollback) is in progress" finché qualcuno non esegue a mano
+  # `helm rollback <release> <ultima-revisione-deployed> -n <ns>`.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
 
 env:
   REGISTRY: ghcr.io
@@ -149,6 +157,8 @@ jobs:
     permissions:
       contents: read
       packages: write
+    outputs:
+      chart-version: ${{ steps.ver.outputs.chart }}
     steps:
       - uses: actions/checkout@v4
       - uses: azure/setup-helm@v4
@@ -181,3 +191,126 @@ jobs:
             --version "${{ steps.ver.outputs.chart }}" \
             --app-version "${{ steps.ver.outputs.app }}"
           helm push "developers-cms-${{ steps.ver.outputs.chart }}.tgz" "$CHART_REGISTRY"
+
+  # ── Deploy test (push su main → ns developers-cms-test) ─────────────────────
+  # Ogni merge su main va live su test con l'immagine `sha-<commit>`. La CI
+  # cambia solo l'immagine: i values dell'ambiente stanno in k8s-configuration
+  # (helm/developers-cms/test/values.yaml) e restano quelli dell'ultimo deploy
+  # manuale. --reset-then-reuse-values, non --reuse-values: il secondo riusa i
+  # valori *calcolati* della release precedente, quindi i default nuovi del
+  # chart non arriverebbero mai in cluster. Così si parte dai default del chart
+  # e sopra si riapplicano i values impostati a mano sulla release.
+  # Solo `upgrade`, mai `--install`: senza i values dell'ambiente il chart
+  # partirebbe senza DATABASE_URL né PAYLOAD_SECRET.
+  # Credenziali: ServiceAccount gh-deployer, ruolo `admin` sul solo namespace
+  # (k8s-configuration/manifests/developers-cms-rbac-ci.yaml).
+  deploy-test:
+    name: Deploy to test
+    runs-on: ubuntu-latest
+    # Largo apposta: `helm upgrade` ha già il suo --timeout=10m e con --atomic
+    # può aggiungerci un rollback. Troncarlo a metà lascerebbe la release in
+    # `pending-upgrade` (vedi la concurrency in testa).
+    timeout-minutes: 30
+    needs: [build-push, helm]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    environment:
+      name: test
+      url: https://cms-test.developers.italia.it
+    concurrency:
+      group: deploy-test
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      packages: read
+    env:
+      KUBECONFIG: ${{ github.workspace }}/.kubeconfig
+      NAMESPACE: developers-cms-test
+      RELEASE: developers-cms-test
+    steps:
+      - uses: azure/setup-helm@v4
+        with:
+          version: v3.16.2
+      - uses: azure/setup-kubectl@v4
+      - name: Write kubeconfig
+        run: |
+          umask 077
+          printf '%s' "$KUBECONFIG_DATA" > "$KUBECONFIG"
+          kubectl auth whoami
+        env:
+          KUBECONFIG_DATA: ${{ secrets.KUBECONFIG_DEVELOPERS_CMS_TEST }}
+      - name: Helm registry login
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" | \
+            helm registry login ghcr.io -u "${{ github.actor }}" --password-stdin
+      # Il job migrate (hook pre-upgrade) esegue `payload migrate` sul DB di
+      # test: se fallisce, l'upgrade si ferma prima di toccare il Deployment.
+      - name: Deploy
+        run: |
+          helm upgrade "$RELEASE" "$CHART_REGISTRY/developers-cms" \
+            --version "${{ needs.helm.outputs.chart-version }}" \
+            --namespace "$NAMESPACE" \
+            --reset-then-reuse-values \
+            --set-string "app.image.tag=sha-${GITHUB_SHA}" \
+            --wait --timeout=10m --atomic
+      - name: Verify
+        run: |
+          kubectl rollout status "deployment/$RELEASE" -n "$NAMESPACE" --timeout=5m
+          curl -fsS --retry 10 --retry-delay 6 --retry-all-errors \
+            https://cms-test.developers.italia.it/api/access -o /dev/null
+          echo "Deploy di ${GITHUB_SHA} su test completato"
+
+  # ── Deploy produzione (tag v* → ns developers-cms) ──────────────────────────
+  # Stesso meccanismo di deploy-test, con l'immagine semver del tag (v1.2.3 →
+  # 1.2.3). È gated dai test: build-push dipende da integration ed E2E.
+  deploy-prod:
+    name: Deploy to production
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    needs: [build-push, helm]
+    if: startsWith(github.ref, 'refs/tags/v')
+    environment:
+      name: production
+      url: https://cms.developers.italia.it
+    # Due tag ravvicinati non devono fare upgrade in parallelo sulla stessa release.
+    concurrency:
+      group: deploy-production
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      packages: read
+    env:
+      KUBECONFIG: ${{ github.workspace }}/.kubeconfig
+      NAMESPACE: developers-cms
+      RELEASE: developers-cms
+    steps:
+      - uses: azure/setup-helm@v4
+        with:
+          version: v3.16.2
+      - uses: azure/setup-kubectl@v4
+      - name: Write kubeconfig
+        run: |
+          umask 077
+          printf '%s' "$KUBECONFIG_DATA" > "$KUBECONFIG"
+          kubectl auth whoami
+        env:
+          KUBECONFIG_DATA: ${{ secrets.KUBECONFIG_DEVELOPERS_CMS }}
+      - name: Helm registry login
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" | \
+            helm registry login ghcr.io -u "${{ github.actor }}" --password-stdin
+      # ⚠️ Il job migrate (hook pre-upgrade) esegue `payload migrate` sul DB di
+      # PRODUZIONE. Se fallisce, l'upgrade si ferma prima di toccare il Deployment.
+      - name: Deploy
+        run: |
+          helm upgrade "$RELEASE" "$CHART_REGISTRY/developers-cms" \
+            --version "${{ needs.helm.outputs.chart-version }}" \
+            --namespace "$NAMESPACE" \
+            --reset-then-reuse-values \
+            --set-string "app.image.tag=${GITHUB_REF_NAME#v}" \
+            --wait --timeout=10m --atomic
+      - name: Verify
+        run: |
+          kubectl rollout status "deployment/$RELEASE" -n "$NAMESPACE" --timeout=5m
+          curl -fsS --retry 10 --retry-delay 6 --retry-all-errors \
+            https://cms.developers.italia.it/api/access -o /dev/null
+          echo "Deploy di ${GITHUB_REF_NAME} in produzione completato"
