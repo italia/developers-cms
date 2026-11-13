@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       labels:
-        {{- include "dcms.selectorLabels" . | nindent 8 }}
+        {{- include "dcms.hookPodLabels" (dict "ctx" . "component" "migrate") | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:

@@ -33,6 +33,20 @@ app.kubernetes.io/name: {{ include "dcms.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
+{{/*
+  Label dei pod dei Job hook (migrate, seed). Volutamente senza la coppia
+  name+instance di dcms.selectorLabels: altrimenti il pod rientra nel selector
+  del Deployment (kubectl logs/exec deploy/... può prendere il Job) e in quello
+  del Service, dove oggi resta fuori dal traffico solo perché targetPort è la
+  porta con nome "http" che i Job non dichiarano.
+  Uso: include "dcms.hookPodLabels" (dict "ctx" . "component" "migrate")
+*/}}
+{{- define "dcms.hookPodLabels" -}}
+app.kubernetes.io/part-of: {{ include "dcms.name" .ctx }}
+app.kubernetes.io/instance: {{ .ctx.Release.Name }}
+app.kubernetes.io/component: {{ .component }}
+{{- end }}
+
 {{- define "dcms.databaseUrl" -}}
 {{- if .Values.app.databaseUrl }}
 {{- .Values.app.databaseUrl }}
