@@ -17,6 +17,7 @@ import { TopicFilter } from '../blocks/TopicFilter'
 import { CardLinkList } from '../blocks/CardLinkList'
 import { UseCaseContainer } from '../blocks/UseCaseContainer'
 import { GraphitaliaDashboard } from '../blocks/GraphitaliaDashboard'
+import { ThirdPartyCookie } from '../blocks/ThirdPartyCookie'
 
 export const Page: CollectionConfig = {
   slug: 'pages',
@@ -55,6 +56,7 @@ export const Page: CollectionConfig = {
         NewsFeed, SupportChannelsSection, TextAccordion, SupportCtaSection,
         TextStatistic, TopicFilter, CardLinkList, UseCaseContainer,
         GraphitaliaDashboard,
+        ThirdPartyCookie,
       ],
       localized: true,
     },

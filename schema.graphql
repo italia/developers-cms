@@ -4955,7 +4955,7 @@ type Page {
   createdAt: DateTime
 }
 
-union Page_Content = Hero | FaqSection | TextOnly | StructuredTextBlock | DataSection | TextImage | NewsFeed | SupportChannelsSection | TextAccordion | SupportCtaSection | TextStatistic | TopicFilter | CardLinkList | UseCaseContainer | GraphitaliaDashboard
+union Page_Content = Hero | FaqSection | TextOnly | StructuredTextBlock | DataSection | TextImage | NewsFeed | SupportChannelsSection | TextAccordion | SupportCtaSection | TextStatistic | TopicFilter | CardLinkList | UseCaseContainer | GraphitaliaDashboard | ThirdPartyCookie
 
 type Hero {
   variant: Hero_variant
@@ -5942,6 +5942,15 @@ union UseCaseContainer_UseCases = Article | Insight | WebinarItem | StoryItem | 
 type GraphitaliaDashboard {
   title: String
   dashboardId: String!
+  id: String
+  blockName: String
+  blockType: String
+}
+
+type ThirdPartyCookie {
+  title: String
+  description: String
+  cookiePrefix: String
   id: String
   blockName: String
   blockType: String

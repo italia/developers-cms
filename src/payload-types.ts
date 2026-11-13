@@ -1481,6 +1481,23 @@ export interface Page {
             blockName?: string | null;
             blockType: 'graphitalia-dashboard';
           }
+        | {
+            /**
+             * Nome del servizio, es. "YouTube".
+             */
+            title?: string | null;
+            /**
+             * Dettaglio del servizio, es. "per la visualizzazione di video".
+             */
+            description?: string | null;
+            /**
+             * Chiave del servizio usata dal sito per ricordare il consenso (predefinita: "youtube").
+             */
+            cookiePrefix?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'third-party-cookie';
+          }
       )[]
     | null;
   seo?: {
@@ -5159,6 +5176,15 @@ export interface PagesSelect<T extends boolean = true> {
           | {
               title?: T;
               dashboardId?: T;
+              id?: T;
+              blockName?: T;
+            };
+        'third-party-cookie'?:
+          | T
+          | {
+              title?: T;
+              description?: T;
+              cookiePrefix?: T;
               id?: T;
               blockName?: T;
             };

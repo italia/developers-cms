@@ -7,6 +7,7 @@ import * as migration_20260825_160500_card_editorial_icon_upload from './2026082
 import * as migration_20260909_084539_insights_ordered_list_block from './20260909_084539_insights_ordered_list_block';
 import * as migration_20261112_123609_news_feed_insight_tab_block from './20261112_123609_news_feed_insight_tab_block';
 import * as migration_20261112_172258_site_parity from './20261112_172258_site_parity';
+import * as migration_20261113_121548_third_party_cookie_block from './20261113_121548_third_party_cookie_block';
 
 export const migrations = [
   {
@@ -52,6 +53,11 @@ export const migrations = [
   {
     up: migration_20261112_172258_site_parity.up,
     down: migration_20261112_172258_site_parity.down,
-    name: '20261112_172258_site_parity'
+    name: '20261112_172258_site_parity',
+  },
+  {
+    up: migration_20261113_121548_third_party_cookie_block.up,
+    down: migration_20261113_121548_third_party_cookie_block.down,
+    name: '20261113_121548_third_party_cookie_block',
   },
 ];
