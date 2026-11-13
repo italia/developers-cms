@@ -79,6 +79,9 @@ media:
 migrate:
   enabled: true
   command: ["node", "node_modules/.bin/payload", "migrate"]
+  # Dopo il migrate verifica che tutte le migration di src/migrations risultino
+  # applicate nel DB, e fa fallire il Job altrimenti (vedi templates/job-migrate.yaml).
+  verify: true
   # Attesa TCP opzionale del DB prima di migrare (utile per DB esterni non subito raggiungibili)
   waitForTcp:
     enabled: false

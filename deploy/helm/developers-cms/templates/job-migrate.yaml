@@ -53,7 +53,38 @@ spec:
               done
               echo "DB raggiungibile"
               {{- end }}
-              exec {{ join " " .Values.migrate.command }}
+              {{ join " " .Values.migrate.command }}
+              {{- if .Values.migrate.verify }}
+              # `payload migrate` puo' uscire con 0 senza aver migrato niente: la CLI
+              # avvia tutto con `void start()`, e se una promise resta appesa Node
+              # termina in silenzio con exit 0. E' successo in prod con la 1.0.7
+              # (13/11/2026): Job "Completed" in 25s senza output, app nuova su schema
+              # vecchio. Qui si controlla che ogni file di src/migrations sia
+              # registrato in payload_migrations; se no exit 1, il Job riprova
+              # (backoffLimit) e alla fine --atomic lascia il Deployment com'era.
+              node - <<'VERIFY'
+              process.exitCode = 1
+              const fs = require('fs')
+              const { Client } = require('pg')
+              const dir = process.env.MIGRATIONS_DIR || 'src/migrations'
+              const expected = fs.readdirSync(dir).filter((f) => /^\d{8}_\d{6}_.+\.ts$/.test(f)).map((f) => f.slice(0, -3))
+              const c = new Client({ connectionString: process.env.DATABASE_URL })
+              c.connect()
+                .then(() => c.query('select name from payload_migrations'))
+                .then((r) => {
+                  const done = new Set(r.rows.map((x) => x.name))
+                  const missing = expected.filter((n) => !done.has(n))
+                  if (missing.length) {
+                    console.error('Migration NON applicate: ' + missing.join(', '))
+                  } else {
+                    console.log('Migration verificate: ' + expected.length + '/' + expected.length + ' registrate nel DB')
+                    process.exitCode = 0
+                  }
+                  return c.end()
+                })
+                .catch((e) => { console.error(e); return c.end().catch(() => {}) })
+              VERIFY
+              {{- end }}
           resources:
             requests:
               cpu: 100m
