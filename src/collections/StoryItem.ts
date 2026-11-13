@@ -1,6 +1,8 @@
 import type { CollectionConfig } from 'payload'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { seoField } from '../fields/seoField'
+import { lastPublishedAtField } from '../fields/lastPublishedAtField'
+import { setLastPublishedAt } from '../hooks/setLastPublishedAt'
 import { Hero } from '../blocks/Hero'
 import { FaqSection } from '../blocks/FaqSection'
 import { TextOnly } from '../blocks/TextOnly'
@@ -22,6 +24,7 @@ export const StoryItem: CollectionConfig = {
     defaultColumns: ['title', 'slug', 'topic', 'dateOfPublication', 'updatedAt'],
   },
   hooks: {
+    beforeChange: [setLastPublishedAt],
     beforeRead: [
       ({ doc }) => {
         doc.localizedSlugs = JSON.stringify(doc.slug);
@@ -71,7 +74,6 @@ export const StoryItem: CollectionConfig = {
     {
       name: 'dateOfPublication',
       type: 'date',
-      localized: true,
     },
     {
       name: 'storyType',
@@ -93,6 +95,7 @@ export const StoryItem: CollectionConfig = {
       localized: true,
     },
     seoField(),
+    lastPublishedAtField(),
     {
       name: 'localizedSlugs',
       type: 'json',

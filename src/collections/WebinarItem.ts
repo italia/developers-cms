@@ -1,6 +1,8 @@
 import type { CollectionConfig } from 'payload'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { seoField } from '../fields/seoField'
+import { lastPublishedAtField } from '../fields/lastPublishedAtField'
+import { setLastPublishedAt } from '../hooks/setLastPublishedAt'
 import { Hero } from '../blocks/Hero'
 import { ActionCard } from '../blocks/ActionCard'
 import { Speaker } from '../blocks/Speaker'
@@ -13,6 +15,7 @@ export const WebinarItem: CollectionConfig = {
     defaultColumns: ['title', 'slug', 'date', 'updatedAt'],
   },
   hooks: {
+    beforeChange: [setLastPublishedAt],
     beforeRead: [
       ({ doc }) => {
         doc.localizedSlugs = JSON.stringify(doc.slug);
@@ -51,7 +54,6 @@ export const WebinarItem: CollectionConfig = {
       name: 'date',
       type: 'date',
       required: true,
-      localized: true,
     },
     {
       name: 'content',
@@ -78,6 +80,7 @@ export const WebinarItem: CollectionConfig = {
       localized: true,
     },
     seoField(),
+    lastPublishedAtField(),
     {
       name: 'localizedSlugs',
       type: 'json',

@@ -1,5 +1,7 @@
 import type { GlobalConfig } from 'payload'
 import { seoField } from '../fields/seoField'
+import { lastPublishedAtField } from '../fields/lastPublishedAtField'
+import { setLastPublishedAt } from '../hooks/setLastPublishedAt'
 import { Hero } from '../blocks/Hero'
 import { TextOnly } from '../blocks/TextOnly'
 import { TextImage } from '../blocks/TextImage'
@@ -12,6 +14,9 @@ import { CardLinkList } from '../blocks/CardLinkList'
 export const Homepage: GlobalConfig = {
   slug: 'homepage',
   admin: { group: 'Singletons' },
+  hooks: {
+    beforeChange: [setLastPublishedAt],
+  },
   fields: [
     {
       name: 'title',
@@ -26,5 +31,6 @@ export const Homepage: GlobalConfig = {
       localized: true,
     },
     seoField(),
+    lastPublishedAtField(),
   ],
 }

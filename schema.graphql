@@ -2515,8 +2515,14 @@ type StoryClass {
   id: String!
   label: String
   sort: String
+  key: StoryClass_key
   updatedAt: DateTime
   createdAt: DateTime
+}
+
+enum StoryClass_key {
+  news
+  platforms
 }
 
 type StoryClasses {
@@ -2536,6 +2542,7 @@ type StoryClasses {
 input StoryClass_where {
   label: StoryClass_label_operator
   sort: StoryClass_sort_operator
+  key: StoryClass_key_operator
   updatedAt: StoryClass_updatedAt_operator
   createdAt: StoryClass_createdAt_operator
   id: StoryClass_id_operator
@@ -2562,6 +2569,20 @@ input StoryClass_sort_operator {
   not_in: [String]
   all: [String]
   exists: Boolean
+}
+
+input StoryClass_key_operator {
+  equals: StoryClass_key_Input
+  not_equals: StoryClass_key_Input
+  in: [StoryClass_key_Input]
+  not_in: [StoryClass_key_Input]
+  all: [StoryClass_key_Input]
+  exists: Boolean
+}
+
+enum StoryClass_key_Input {
+  news
+  platforms
 }
 
 input StoryClass_updatedAt_operator {
@@ -2600,6 +2621,7 @@ input StoryClass_id_operator {
 input StoryClass_where_and {
   label: StoryClass_label_operator
   sort: StoryClass_sort_operator
+  key: StoryClass_key_operator
   updatedAt: StoryClass_updatedAt_operator
   createdAt: StoryClass_createdAt_operator
   id: StoryClass_id_operator
@@ -2610,6 +2632,7 @@ input StoryClass_where_and {
 input StoryClass_where_or {
   label: StoryClass_label_operator
   sort: StoryClass_sort_operator
+  key: StoryClass_key_operator
   updatedAt: StoryClass_updatedAt_operator
   createdAt: StoryClass_createdAt_operator
   id: StoryClass_id_operator
@@ -2632,6 +2655,7 @@ type story_classesDocAccess {
 type StoryClassesDocAccessFields {
   label: StoryClassesDocAccessFields_label
   sort: StoryClassesDocAccessFields_sort
+  key: StoryClassesDocAccessFields_key
   updatedAt: StoryClassesDocAccessFields_updatedAt
   createdAt: StoryClassesDocAccessFields_createdAt
 }
@@ -2679,6 +2703,29 @@ type StoryClassesDocAccessFields_sort_Update {
 }
 
 type StoryClassesDocAccessFields_sort_Delete {
+  permission: Boolean!
+}
+
+type StoryClassesDocAccessFields_key {
+  create: StoryClassesDocAccessFields_key_Create
+  read: StoryClassesDocAccessFields_key_Read
+  update: StoryClassesDocAccessFields_key_Update
+  delete: StoryClassesDocAccessFields_key_Delete
+}
+
+type StoryClassesDocAccessFields_key_Create {
+  permission: Boolean!
+}
+
+type StoryClassesDocAccessFields_key_Read {
+  permission: Boolean!
+}
+
+type StoryClassesDocAccessFields_key_Update {
+  permission: Boolean!
+}
+
+type StoryClassesDocAccessFields_key_Delete {
   permission: Boolean!
 }
 
@@ -3890,7 +3937,7 @@ type NewsItem {
   link: String
   paragraph(depth: Int): JSON
   topic(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): NewsTopic
-  dateOfPublication: DateTime
+  dateOfPublication: DateTime!
   image(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
   updatedAt: DateTime
   createdAt: DateTime
@@ -4902,12 +4949,13 @@ type Page {
   slug: String
   content: [Page_Content!]
   seo: Page_Seo
+  lastPublishedAt: DateTime
   localizedSlugs: JSON
   updatedAt: DateTime
   createdAt: DateTime
 }
 
-union Page_Content = Hero | FaqSection | TextOnly | StructuredTextBlock | DataSection | TextImage | NewsFeed | SupportChannelsSection | TextAccordion | SupportCtaSection | TextStatistic | TopicFilter | CardLinkList | UseCaseContainer
+union Page_Content = Hero | FaqSection | TextOnly | StructuredTextBlock | DataSection | TextImage | NewsFeed | SupportChannelsSection | TextAccordion | SupportCtaSection | TextStatistic | TopicFilter | CardLinkList | UseCaseContainer | GraphitaliaDashboard
 
 type Hero {
   variant: Hero_variant
@@ -4974,6 +5022,7 @@ type Article {
   descriptionTitle: String
   description(depth: Int): JSON
   seo: Article_Seo
+  lastPublishedAt: DateTime
   localizedSlugs: JSON
   updatedAt: DateTime
   createdAt: DateTime
@@ -5060,6 +5109,7 @@ type Insight {
   content: [Insight_Content!]
   topic(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): InsightTopic
   seo: Insight_Seo
+  lastPublishedAt: DateTime
   localizedSlugs: JSON
   updatedAt: DateTime
   createdAt: DateTime
@@ -5179,7 +5229,7 @@ enum NewsFeed_bg {
   dark
 }
 
-union NewsFeed_Tabs = NewsTab | StoryTab | WebinarTab | InsightTab
+union NewsFeed_Tabs = NewsTab | StoryTab | WebinarTab | InsightTab | MixedTab
 
 type NewsTab {
   title: String!
@@ -5210,6 +5260,7 @@ type StoryItem {
   image(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
   content: [StoryItem_Content!]
   seo: StoryItem_Seo
+  lastPublishedAt: DateTime
   localizedSlugs: JSON
   updatedAt: DateTime
   createdAt: DateTime
@@ -5344,12 +5395,13 @@ type WebinarItem {
   title: String
   paragraph(depth: Int): JSON
   parent(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Page
-  date: DateTime
+  date: DateTime!
   content: [WebinarItem_Content!]
   image(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): Media
   eventBody(depth: Int): JSON
   topic(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): WebinarTopic
   seo: WebinarItem_Seo
+  lastPublishedAt: DateTime
   localizedSlugs: JSON
   updatedAt: DateTime
   createdAt: DateTime
@@ -5602,6 +5654,7 @@ type Catalogue {
   slug: String
   content: [Catalogue_Content!]
   seo: Catalogue_Seo
+  lastPublishedAt: DateTime
   localizedSlugs: JSON
   updatedAt: DateTime
   createdAt: DateTime
@@ -5717,6 +5770,29 @@ type InsightTab {
   blockName: String
   blockType: String
 }
+
+type MixedTab {
+  title: String!
+  items(locale: LocaleInputType, fallbackLocale: FallbackLocaleInputType): [MixedTab_Items_Relationship!]
+  id: String
+  blockName: String
+  blockType: String
+}
+
+type MixedTab_Items_Relationship {
+  relationTo: MixedTab_Items_RelationTo
+  value: MixedTab_Items
+}
+
+enum MixedTab_Items_RelationTo {
+  story_items
+  webinar_items
+  insights
+  articles
+  news_items
+}
+
+union MixedTab_Items = StoryItem | WebinarItem | Insight | Article | NewsItem
 
 union NewsFeed_Cta = InternalLink | ExternalLink
 
@@ -5863,6 +5939,14 @@ enum UseCaseContainer_UseCases_RelationTo {
 
 union UseCaseContainer_UseCases = Article | Insight | WebinarItem | StoryItem | Page
 
+type GraphitaliaDashboard {
+  title: String
+  dashboardId: String!
+  id: String
+  blockName: String
+  blockType: String
+}
+
 type Page_Seo {
   title: String
   description: String
@@ -5889,6 +5973,7 @@ input Page_where {
   seo__title: Page_seo__title_operator
   seo__description: Page_seo__description_operator
   seo__image: Page_seo__image_operator
+  lastPublishedAt: Page_lastPublishedAt_operator
   localizedSlugs: Page_localizedSlugs_operator
   updatedAt: Page_updatedAt_operator
   createdAt: Page_createdAt_operator
@@ -5945,6 +6030,17 @@ input Page_seo__image_operator {
   exists: Boolean
 }
 
+input Page_lastPublishedAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
 input Page_localizedSlugs_operator {
   equals: JSON
   not_equals: JSON
@@ -5994,6 +6090,7 @@ input Page_where_and {
   seo__title: Page_seo__title_operator
   seo__description: Page_seo__description_operator
   seo__image: Page_seo__image_operator
+  lastPublishedAt: Page_lastPublishedAt_operator
   localizedSlugs: Page_localizedSlugs_operator
   updatedAt: Page_updatedAt_operator
   createdAt: Page_createdAt_operator
@@ -6008,6 +6105,7 @@ input Page_where_or {
   seo__title: Page_seo__title_operator
   seo__description: Page_seo__description_operator
   seo__image: Page_seo__image_operator
+  lastPublishedAt: Page_lastPublishedAt_operator
   localizedSlugs: Page_localizedSlugs_operator
   updatedAt: Page_updatedAt_operator
   createdAt: Page_createdAt_operator
@@ -6033,6 +6131,7 @@ type PagesDocAccessFields {
   slug: PagesDocAccessFields_slug
   content: PagesDocAccessFields_content
   seo: PagesDocAccessFields_seo
+  lastPublishedAt: PagesDocAccessFields_lastPublishedAt
   localizedSlugs: PagesDocAccessFields_localizedSlugs
   updatedAt: PagesDocAccessFields_updatedAt
   createdAt: PagesDocAccessFields_createdAt
@@ -6206,6 +6305,29 @@ type PagesDocAccessFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type PagesDocAccessFields_lastPublishedAt {
+  create: PagesDocAccessFields_lastPublishedAt_Create
+  read: PagesDocAccessFields_lastPublishedAt_Read
+  update: PagesDocAccessFields_lastPublishedAt_Update
+  delete: PagesDocAccessFields_lastPublishedAt_Delete
+}
+
+type PagesDocAccessFields_lastPublishedAt_Create {
+  permission: Boolean!
+}
+
+type PagesDocAccessFields_lastPublishedAt_Read {
+  permission: Boolean!
+}
+
+type PagesDocAccessFields_lastPublishedAt_Update {
+  permission: Boolean!
+}
+
+type PagesDocAccessFields_lastPublishedAt_Delete {
+  permission: Boolean!
+}
+
 type PagesDocAccessFields_localizedSlugs {
   create: PagesDocAccessFields_localizedSlugs_Create
   read: PagesDocAccessFields_localizedSlugs_Read
@@ -6320,6 +6442,7 @@ input Article_where {
   seo__title: Article_seo__title_operator
   seo__description: Article_seo__description_operator
   seo__image: Article_seo__image_operator
+  lastPublishedAt: Article_lastPublishedAt_operator
   localizedSlugs: Article_localizedSlugs_operator
   updatedAt: Article_updatedAt_operator
   createdAt: Article_createdAt_operator
@@ -6421,6 +6544,17 @@ input Article_seo__image_operator {
   exists: Boolean
 }
 
+input Article_lastPublishedAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
 input Article_localizedSlugs_operator {
   equals: JSON
   not_equals: JSON
@@ -6475,6 +6609,7 @@ input Article_where_and {
   seo__title: Article_seo__title_operator
   seo__description: Article_seo__description_operator
   seo__image: Article_seo__image_operator
+  lastPublishedAt: Article_lastPublishedAt_operator
   localizedSlugs: Article_localizedSlugs_operator
   updatedAt: Article_updatedAt_operator
   createdAt: Article_createdAt_operator
@@ -6494,6 +6629,7 @@ input Article_where_or {
   seo__title: Article_seo__title_operator
   seo__description: Article_seo__description_operator
   seo__image: Article_seo__image_operator
+  lastPublishedAt: Article_lastPublishedAt_operator
   localizedSlugs: Article_localizedSlugs_operator
   updatedAt: Article_updatedAt_operator
   createdAt: Article_createdAt_operator
@@ -6525,6 +6661,7 @@ type ArticlesDocAccessFields {
   descriptionTitle: ArticlesDocAccessFields_descriptionTitle
   description: ArticlesDocAccessFields_description
   seo: ArticlesDocAccessFields_seo
+  lastPublishedAt: ArticlesDocAccessFields_lastPublishedAt
   localizedSlugs: ArticlesDocAccessFields_localizedSlugs
   updatedAt: ArticlesDocAccessFields_updatedAt
   createdAt: ArticlesDocAccessFields_createdAt
@@ -6836,6 +6973,29 @@ type ArticlesDocAccessFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type ArticlesDocAccessFields_lastPublishedAt {
+  create: ArticlesDocAccessFields_lastPublishedAt_Create
+  read: ArticlesDocAccessFields_lastPublishedAt_Read
+  update: ArticlesDocAccessFields_lastPublishedAt_Update
+  delete: ArticlesDocAccessFields_lastPublishedAt_Delete
+}
+
+type ArticlesDocAccessFields_lastPublishedAt_Create {
+  permission: Boolean!
+}
+
+type ArticlesDocAccessFields_lastPublishedAt_Read {
+  permission: Boolean!
+}
+
+type ArticlesDocAccessFields_lastPublishedAt_Update {
+  permission: Boolean!
+}
+
+type ArticlesDocAccessFields_lastPublishedAt_Delete {
+  permission: Boolean!
+}
+
 type ArticlesDocAccessFields_localizedSlugs {
   create: ArticlesDocAccessFields_localizedSlugs_Create
   read: ArticlesDocAccessFields_localizedSlugs_Read
@@ -6949,6 +7109,7 @@ input Insight_where {
   seo__title: Insight_seo__title_operator
   seo__description: Insight_seo__description_operator
   seo__image: Insight_seo__image_operator
+  lastPublishedAt: Insight_lastPublishedAt_operator
   localizedSlugs: Insight_localizedSlugs_operator
   updatedAt: Insight_updatedAt_operator
   createdAt: Insight_createdAt_operator
@@ -7038,6 +7199,17 @@ input Insight_seo__image_operator {
   exists: Boolean
 }
 
+input Insight_lastPublishedAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
 input Insight_localizedSlugs_operator {
   equals: JSON
   not_equals: JSON
@@ -7091,6 +7263,7 @@ input Insight_where_and {
   seo__title: Insight_seo__title_operator
   seo__description: Insight_seo__description_operator
   seo__image: Insight_seo__image_operator
+  lastPublishedAt: Insight_lastPublishedAt_operator
   localizedSlugs: Insight_localizedSlugs_operator
   updatedAt: Insight_updatedAt_operator
   createdAt: Insight_createdAt_operator
@@ -7109,6 +7282,7 @@ input Insight_where_or {
   seo__title: Insight_seo__title_operator
   seo__description: Insight_seo__description_operator
   seo__image: Insight_seo__image_operator
+  lastPublishedAt: Insight_lastPublishedAt_operator
   localizedSlugs: Insight_localizedSlugs_operator
   updatedAt: Insight_updatedAt_operator
   createdAt: Insight_createdAt_operator
@@ -7138,6 +7312,7 @@ type InsightsDocAccessFields {
   content: InsightsDocAccessFields_content
   topic: InsightsDocAccessFields_topic
   seo: InsightsDocAccessFields_seo
+  lastPublishedAt: InsightsDocAccessFields_lastPublishedAt
   localizedSlugs: InsightsDocAccessFields_localizedSlugs
   updatedAt: InsightsDocAccessFields_updatedAt
   createdAt: InsightsDocAccessFields_createdAt
@@ -7403,6 +7578,29 @@ type InsightsDocAccessFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type InsightsDocAccessFields_lastPublishedAt {
+  create: InsightsDocAccessFields_lastPublishedAt_Create
+  read: InsightsDocAccessFields_lastPublishedAt_Read
+  update: InsightsDocAccessFields_lastPublishedAt_Update
+  delete: InsightsDocAccessFields_lastPublishedAt_Delete
+}
+
+type InsightsDocAccessFields_lastPublishedAt_Create {
+  permission: Boolean!
+}
+
+type InsightsDocAccessFields_lastPublishedAt_Read {
+  permission: Boolean!
+}
+
+type InsightsDocAccessFields_lastPublishedAt_Update {
+  permission: Boolean!
+}
+
+type InsightsDocAccessFields_lastPublishedAt_Delete {
+  permission: Boolean!
+}
+
 type InsightsDocAccessFields_localizedSlugs {
   create: InsightsDocAccessFields_localizedSlugs_Create
   read: InsightsDocAccessFields_localizedSlugs_Read
@@ -7518,6 +7716,7 @@ input WebinarItem_where {
   seo__title: WebinarItem_seo__title_operator
   seo__description: WebinarItem_seo__description_operator
   seo__image: WebinarItem_seo__image_operator
+  lastPublishedAt: WebinarItem_lastPublishedAt_operator
   localizedSlugs: WebinarItem_localizedSlugs_operator
   updatedAt: WebinarItem_updatedAt_operator
   createdAt: WebinarItem_createdAt_operator
@@ -7624,6 +7823,17 @@ input WebinarItem_seo__image_operator {
   exists: Boolean
 }
 
+input WebinarItem_lastPublishedAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
 input WebinarItem_localizedSlugs_operator {
   equals: JSON
   not_equals: JSON
@@ -7679,6 +7889,7 @@ input WebinarItem_where_and {
   seo__title: WebinarItem_seo__title_operator
   seo__description: WebinarItem_seo__description_operator
   seo__image: WebinarItem_seo__image_operator
+  lastPublishedAt: WebinarItem_lastPublishedAt_operator
   localizedSlugs: WebinarItem_localizedSlugs_operator
   updatedAt: WebinarItem_updatedAt_operator
   createdAt: WebinarItem_createdAt_operator
@@ -7699,6 +7910,7 @@ input WebinarItem_where_or {
   seo__title: WebinarItem_seo__title_operator
   seo__description: WebinarItem_seo__description_operator
   seo__image: WebinarItem_seo__image_operator
+  lastPublishedAt: WebinarItem_lastPublishedAt_operator
   localizedSlugs: WebinarItem_localizedSlugs_operator
   updatedAt: WebinarItem_updatedAt_operator
   createdAt: WebinarItem_createdAt_operator
@@ -7730,6 +7942,7 @@ type WebinarItemsDocAccessFields {
   eventBody: WebinarItemsDocAccessFields_eventBody
   topic: WebinarItemsDocAccessFields_topic
   seo: WebinarItemsDocAccessFields_seo
+  lastPublishedAt: WebinarItemsDocAccessFields_lastPublishedAt
   localizedSlugs: WebinarItemsDocAccessFields_localizedSlugs
   updatedAt: WebinarItemsDocAccessFields_updatedAt
   createdAt: WebinarItemsDocAccessFields_createdAt
@@ -8041,6 +8254,29 @@ type WebinarItemsDocAccessFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type WebinarItemsDocAccessFields_lastPublishedAt {
+  create: WebinarItemsDocAccessFields_lastPublishedAt_Create
+  read: WebinarItemsDocAccessFields_lastPublishedAt_Read
+  update: WebinarItemsDocAccessFields_lastPublishedAt_Update
+  delete: WebinarItemsDocAccessFields_lastPublishedAt_Delete
+}
+
+type WebinarItemsDocAccessFields_lastPublishedAt_Create {
+  permission: Boolean!
+}
+
+type WebinarItemsDocAccessFields_lastPublishedAt_Read {
+  permission: Boolean!
+}
+
+type WebinarItemsDocAccessFields_lastPublishedAt_Update {
+  permission: Boolean!
+}
+
+type WebinarItemsDocAccessFields_lastPublishedAt_Delete {
+  permission: Boolean!
+}
+
 type WebinarItemsDocAccessFields_localizedSlugs {
   create: WebinarItemsDocAccessFields_localizedSlugs_Create
   read: WebinarItemsDocAccessFields_localizedSlugs_Read
@@ -8157,6 +8393,7 @@ input StoryItem_where {
   seo__title: StoryItem_seo__title_operator
   seo__description: StoryItem_seo__description_operator
   seo__image: StoryItem_seo__image_operator
+  lastPublishedAt: StoryItem_lastPublishedAt_operator
   localizedSlugs: StoryItem_localizedSlugs_operator
   updatedAt: StoryItem_updatedAt_operator
   createdAt: StoryItem_createdAt_operator
@@ -8278,6 +8515,17 @@ input StoryItem_seo__image_operator {
   exists: Boolean
 }
 
+input StoryItem_lastPublishedAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
 input StoryItem_localizedSlugs_operator {
   equals: JSON
   not_equals: JSON
@@ -8334,6 +8582,7 @@ input StoryItem_where_and {
   seo__title: StoryItem_seo__title_operator
   seo__description: StoryItem_seo__description_operator
   seo__image: StoryItem_seo__image_operator
+  lastPublishedAt: StoryItem_lastPublishedAt_operator
   localizedSlugs: StoryItem_localizedSlugs_operator
   updatedAt: StoryItem_updatedAt_operator
   createdAt: StoryItem_createdAt_operator
@@ -8355,6 +8604,7 @@ input StoryItem_where_or {
   seo__title: StoryItem_seo__title_operator
   seo__description: StoryItem_seo__description_operator
   seo__image: StoryItem_seo__image_operator
+  lastPublishedAt: StoryItem_lastPublishedAt_operator
   localizedSlugs: StoryItem_localizedSlugs_operator
   updatedAt: StoryItem_updatedAt_operator
   createdAt: StoryItem_createdAt_operator
@@ -8387,6 +8637,7 @@ type StoryItemsDocAccessFields {
   image: StoryItemsDocAccessFields_image
   content: StoryItemsDocAccessFields_content
   seo: StoryItemsDocAccessFields_seo
+  lastPublishedAt: StoryItemsDocAccessFields_lastPublishedAt
   localizedSlugs: StoryItemsDocAccessFields_localizedSlugs
   updatedAt: StoryItemsDocAccessFields_updatedAt
   createdAt: StoryItemsDocAccessFields_createdAt
@@ -8721,6 +8972,29 @@ type StoryItemsDocAccessFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type StoryItemsDocAccessFields_lastPublishedAt {
+  create: StoryItemsDocAccessFields_lastPublishedAt_Create
+  read: StoryItemsDocAccessFields_lastPublishedAt_Read
+  update: StoryItemsDocAccessFields_lastPublishedAt_Update
+  delete: StoryItemsDocAccessFields_lastPublishedAt_Delete
+}
+
+type StoryItemsDocAccessFields_lastPublishedAt_Create {
+  permission: Boolean!
+}
+
+type StoryItemsDocAccessFields_lastPublishedAt_Read {
+  permission: Boolean!
+}
+
+type StoryItemsDocAccessFields_lastPublishedAt_Update {
+  permission: Boolean!
+}
+
+type StoryItemsDocAccessFields_lastPublishedAt_Delete {
+  permission: Boolean!
+}
+
 type StoryItemsDocAccessFields_localizedSlugs {
   create: StoryItemsDocAccessFields_localizedSlugs_Create
   read: StoryItemsDocAccessFields_localizedSlugs_Read
@@ -8831,6 +9105,7 @@ input Catalogue_where {
   seo__title: Catalogue_seo__title_operator
   seo__description: Catalogue_seo__description_operator
   seo__image: Catalogue_seo__image_operator
+  lastPublishedAt: Catalogue_lastPublishedAt_operator
   localizedSlugs: Catalogue_localizedSlugs_operator
   updatedAt: Catalogue_updatedAt_operator
   createdAt: Catalogue_createdAt_operator
@@ -8896,6 +9171,17 @@ input Catalogue_seo__image_operator {
   exists: Boolean
 }
 
+input Catalogue_lastPublishedAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
 input Catalogue_localizedSlugs_operator {
   equals: JSON
   not_equals: JSON
@@ -8946,6 +9232,7 @@ input Catalogue_where_and {
   seo__title: Catalogue_seo__title_operator
   seo__description: Catalogue_seo__description_operator
   seo__image: Catalogue_seo__image_operator
+  lastPublishedAt: Catalogue_lastPublishedAt_operator
   localizedSlugs: Catalogue_localizedSlugs_operator
   updatedAt: Catalogue_updatedAt_operator
   createdAt: Catalogue_createdAt_operator
@@ -8961,6 +9248,7 @@ input Catalogue_where_or {
   seo__title: Catalogue_seo__title_operator
   seo__description: Catalogue_seo__description_operator
   seo__image: Catalogue_seo__image_operator
+  lastPublishedAt: Catalogue_lastPublishedAt_operator
   localizedSlugs: Catalogue_localizedSlugs_operator
   updatedAt: Catalogue_updatedAt_operator
   createdAt: Catalogue_createdAt_operator
@@ -8987,6 +9275,7 @@ type CataloguesDocAccessFields {
   slug: CataloguesDocAccessFields_slug
   content: CataloguesDocAccessFields_content
   seo: CataloguesDocAccessFields_seo
+  lastPublishedAt: CataloguesDocAccessFields_lastPublishedAt
   localizedSlugs: CataloguesDocAccessFields_localizedSlugs
   updatedAt: CataloguesDocAccessFields_updatedAt
   createdAt: CataloguesDocAccessFields_createdAt
@@ -9180,6 +9469,29 @@ type CataloguesDocAccessFields_seo_image_Update {
 }
 
 type CataloguesDocAccessFields_seo_image_Delete {
+  permission: Boolean!
+}
+
+type CataloguesDocAccessFields_lastPublishedAt {
+  create: CataloguesDocAccessFields_lastPublishedAt_Create
+  read: CataloguesDocAccessFields_lastPublishedAt_Read
+  update: CataloguesDocAccessFields_lastPublishedAt_Update
+  delete: CataloguesDocAccessFields_lastPublishedAt_Delete
+}
+
+type CataloguesDocAccessFields_lastPublishedAt_Create {
+  permission: Boolean!
+}
+
+type CataloguesDocAccessFields_lastPublishedAt_Read {
+  permission: Boolean!
+}
+
+type CataloguesDocAccessFields_lastPublishedAt_Update {
+  permission: Boolean!
+}
+
+type CataloguesDocAccessFields_lastPublishedAt_Delete {
   permission: Boolean!
 }
 
@@ -10661,6 +10973,7 @@ type Homepage {
   title: String
   content: [Homepage_Content!]
   seo: Homepage_Seo
+  lastPublishedAt: DateTime
   updatedAt: DateTime
   createdAt: DateTime
 }
@@ -10683,6 +10996,7 @@ type HomepageDocAccessFields {
   title: HomepageDocAccessFields_title
   content: HomepageDocAccessFields_content
   seo: HomepageDocAccessFields_seo
+  lastPublishedAt: HomepageDocAccessFields_lastPublishedAt
   updatedAt: HomepageDocAccessFields_updatedAt
   createdAt: HomepageDocAccessFields_createdAt
 }
@@ -10829,6 +11143,29 @@ type HomepageDocAccessFields_seo_image_Update {
 }
 
 type HomepageDocAccessFields_seo_image_Delete {
+  permission: Boolean!
+}
+
+type HomepageDocAccessFields_lastPublishedAt {
+  create: HomepageDocAccessFields_lastPublishedAt_Create
+  read: HomepageDocAccessFields_lastPublishedAt_Read
+  update: HomepageDocAccessFields_lastPublishedAt_Update
+  delete: HomepageDocAccessFields_lastPublishedAt_Delete
+}
+
+type HomepageDocAccessFields_lastPublishedAt_Create {
+  permission: Boolean!
+}
+
+type HomepageDocAccessFields_lastPublishedAt_Read {
+  permission: Boolean!
+}
+
+type HomepageDocAccessFields_lastPublishedAt_Update {
+  permission: Boolean!
+}
+
+type HomepageDocAccessFields_lastPublishedAt_Delete {
   permission: Boolean!
 }
 
@@ -13227,6 +13564,7 @@ type story_classesAccess {
 type StoryClassesFields {
   label: StoryClassesFields_label
   sort: StoryClassesFields_sort
+  key: StoryClassesFields_key
   updatedAt: StoryClassesFields_updatedAt
   createdAt: StoryClassesFields_createdAt
 }
@@ -13274,6 +13612,29 @@ type StoryClassesFields_sort_Update {
 }
 
 type StoryClassesFields_sort_Delete {
+  permission: Boolean!
+}
+
+type StoryClassesFields_key {
+  create: StoryClassesFields_key_Create
+  read: StoryClassesFields_key_Read
+  update: StoryClassesFields_key_Update
+  delete: StoryClassesFields_key_Delete
+}
+
+type StoryClassesFields_key_Create {
+  permission: Boolean!
+}
+
+type StoryClassesFields_key_Read {
+  permission: Boolean!
+}
+
+type StoryClassesFields_key_Update {
+  permission: Boolean!
+}
+
+type StoryClassesFields_key_Delete {
   permission: Boolean!
 }
 
@@ -14574,6 +14935,7 @@ type PagesFields {
   slug: PagesFields_slug
   content: PagesFields_content
   seo: PagesFields_seo
+  lastPublishedAt: PagesFields_lastPublishedAt
   localizedSlugs: PagesFields_localizedSlugs
   updatedAt: PagesFields_updatedAt
   createdAt: PagesFields_createdAt
@@ -14747,6 +15109,29 @@ type PagesFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type PagesFields_lastPublishedAt {
+  create: PagesFields_lastPublishedAt_Create
+  read: PagesFields_lastPublishedAt_Read
+  update: PagesFields_lastPublishedAt_Update
+  delete: PagesFields_lastPublishedAt_Delete
+}
+
+type PagesFields_lastPublishedAt_Create {
+  permission: Boolean!
+}
+
+type PagesFields_lastPublishedAt_Read {
+  permission: Boolean!
+}
+
+type PagesFields_lastPublishedAt_Update {
+  permission: Boolean!
+}
+
+type PagesFields_lastPublishedAt_Delete {
+  permission: Boolean!
+}
+
 type PagesFields_localizedSlugs {
   create: PagesFields_localizedSlugs_Create
   read: PagesFields_localizedSlugs_Read
@@ -14855,6 +15240,7 @@ type ArticlesFields {
   descriptionTitle: ArticlesFields_descriptionTitle
   description: ArticlesFields_description
   seo: ArticlesFields_seo
+  lastPublishedAt: ArticlesFields_lastPublishedAt
   localizedSlugs: ArticlesFields_localizedSlugs
   updatedAt: ArticlesFields_updatedAt
   createdAt: ArticlesFields_createdAt
@@ -15166,6 +15552,29 @@ type ArticlesFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type ArticlesFields_lastPublishedAt {
+  create: ArticlesFields_lastPublishedAt_Create
+  read: ArticlesFields_lastPublishedAt_Read
+  update: ArticlesFields_lastPublishedAt_Update
+  delete: ArticlesFields_lastPublishedAt_Delete
+}
+
+type ArticlesFields_lastPublishedAt_Create {
+  permission: Boolean!
+}
+
+type ArticlesFields_lastPublishedAt_Read {
+  permission: Boolean!
+}
+
+type ArticlesFields_lastPublishedAt_Update {
+  permission: Boolean!
+}
+
+type ArticlesFields_lastPublishedAt_Delete {
+  permission: Boolean!
+}
+
 type ArticlesFields_localizedSlugs {
   create: ArticlesFields_localizedSlugs_Create
   read: ArticlesFields_localizedSlugs_Read
@@ -15272,6 +15681,7 @@ type InsightsFields {
   content: InsightsFields_content
   topic: InsightsFields_topic
   seo: InsightsFields_seo
+  lastPublishedAt: InsightsFields_lastPublishedAt
   localizedSlugs: InsightsFields_localizedSlugs
   updatedAt: InsightsFields_updatedAt
   createdAt: InsightsFields_createdAt
@@ -15537,6 +15947,29 @@ type InsightsFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type InsightsFields_lastPublishedAt {
+  create: InsightsFields_lastPublishedAt_Create
+  read: InsightsFields_lastPublishedAt_Read
+  update: InsightsFields_lastPublishedAt_Update
+  delete: InsightsFields_lastPublishedAt_Delete
+}
+
+type InsightsFields_lastPublishedAt_Create {
+  permission: Boolean!
+}
+
+type InsightsFields_lastPublishedAt_Read {
+  permission: Boolean!
+}
+
+type InsightsFields_lastPublishedAt_Update {
+  permission: Boolean!
+}
+
+type InsightsFields_lastPublishedAt_Delete {
+  permission: Boolean!
+}
+
 type InsightsFields_localizedSlugs {
   create: InsightsFields_localizedSlugs_Create
   read: InsightsFields_localizedSlugs_Read
@@ -15645,6 +16078,7 @@ type WebinarItemsFields {
   eventBody: WebinarItemsFields_eventBody
   topic: WebinarItemsFields_topic
   seo: WebinarItemsFields_seo
+  lastPublishedAt: WebinarItemsFields_lastPublishedAt
   localizedSlugs: WebinarItemsFields_localizedSlugs
   updatedAt: WebinarItemsFields_updatedAt
   createdAt: WebinarItemsFields_createdAt
@@ -15956,6 +16390,29 @@ type WebinarItemsFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type WebinarItemsFields_lastPublishedAt {
+  create: WebinarItemsFields_lastPublishedAt_Create
+  read: WebinarItemsFields_lastPublishedAt_Read
+  update: WebinarItemsFields_lastPublishedAt_Update
+  delete: WebinarItemsFields_lastPublishedAt_Delete
+}
+
+type WebinarItemsFields_lastPublishedAt_Create {
+  permission: Boolean!
+}
+
+type WebinarItemsFields_lastPublishedAt_Read {
+  permission: Boolean!
+}
+
+type WebinarItemsFields_lastPublishedAt_Update {
+  permission: Boolean!
+}
+
+type WebinarItemsFields_lastPublishedAt_Delete {
+  permission: Boolean!
+}
+
 type WebinarItemsFields_localizedSlugs {
   create: WebinarItemsFields_localizedSlugs_Create
   read: WebinarItemsFields_localizedSlugs_Read
@@ -16065,6 +16522,7 @@ type StoryItemsFields {
   image: StoryItemsFields_image
   content: StoryItemsFields_content
   seo: StoryItemsFields_seo
+  lastPublishedAt: StoryItemsFields_lastPublishedAt
   localizedSlugs: StoryItemsFields_localizedSlugs
   updatedAt: StoryItemsFields_updatedAt
   createdAt: StoryItemsFields_createdAt
@@ -16399,6 +16857,29 @@ type StoryItemsFields_seo_image_Delete {
   permission: Boolean!
 }
 
+type StoryItemsFields_lastPublishedAt {
+  create: StoryItemsFields_lastPublishedAt_Create
+  read: StoryItemsFields_lastPublishedAt_Read
+  update: StoryItemsFields_lastPublishedAt_Update
+  delete: StoryItemsFields_lastPublishedAt_Delete
+}
+
+type StoryItemsFields_lastPublishedAt_Create {
+  permission: Boolean!
+}
+
+type StoryItemsFields_lastPublishedAt_Read {
+  permission: Boolean!
+}
+
+type StoryItemsFields_lastPublishedAt_Update {
+  permission: Boolean!
+}
+
+type StoryItemsFields_lastPublishedAt_Delete {
+  permission: Boolean!
+}
+
 type StoryItemsFields_localizedSlugs {
   create: StoryItemsFields_localizedSlugs_Create
   read: StoryItemsFields_localizedSlugs_Read
@@ -16502,6 +16983,7 @@ type CataloguesFields {
   slug: CataloguesFields_slug
   content: CataloguesFields_content
   seo: CataloguesFields_seo
+  lastPublishedAt: CataloguesFields_lastPublishedAt
   localizedSlugs: CataloguesFields_localizedSlugs
   updatedAt: CataloguesFields_updatedAt
   createdAt: CataloguesFields_createdAt
@@ -16695,6 +17177,29 @@ type CataloguesFields_seo_image_Update {
 }
 
 type CataloguesFields_seo_image_Delete {
+  permission: Boolean!
+}
+
+type CataloguesFields_lastPublishedAt {
+  create: CataloguesFields_lastPublishedAt_Create
+  read: CataloguesFields_lastPublishedAt_Read
+  update: CataloguesFields_lastPublishedAt_Update
+  delete: CataloguesFields_lastPublishedAt_Delete
+}
+
+type CataloguesFields_lastPublishedAt_Create {
+  permission: Boolean!
+}
+
+type CataloguesFields_lastPublishedAt_Read {
+  permission: Boolean!
+}
+
+type CataloguesFields_lastPublishedAt_Update {
+  permission: Boolean!
+}
+
+type CataloguesFields_lastPublishedAt_Delete {
   permission: Boolean!
 }
 
@@ -17653,6 +18158,7 @@ type HomepageFields {
   title: HomepageFields_title
   content: HomepageFields_content
   seo: HomepageFields_seo
+  lastPublishedAt: HomepageFields_lastPublishedAt
   updatedAt: HomepageFields_updatedAt
   createdAt: HomepageFields_createdAt
 }
@@ -17799,6 +18305,29 @@ type HomepageFields_seo_image_Update {
 }
 
 type HomepageFields_seo_image_Delete {
+  permission: Boolean!
+}
+
+type HomepageFields_lastPublishedAt {
+  create: HomepageFields_lastPublishedAt_Create
+  read: HomepageFields_lastPublishedAt_Read
+  update: HomepageFields_lastPublishedAt_Update
+  delete: HomepageFields_lastPublishedAt_Delete
+}
+
+type HomepageFields_lastPublishedAt_Create {
+  permission: Boolean!
+}
+
+type HomepageFields_lastPublishedAt_Read {
+  permission: Boolean!
+}
+
+type HomepageFields_lastPublishedAt_Update {
+  permission: Boolean!
+}
+
+type HomepageFields_lastPublishedAt_Delete {
   permission: Boolean!
 }
 
@@ -19055,15 +19584,27 @@ input mutationMacroTopicUpdateInput {
 input mutationStoryClassInput {
   label: String
   sort: String
+  key: StoryClass_key_MutationInput
   updatedAt: String
   createdAt: String
+}
+
+enum StoryClass_key_MutationInput {
+  news
+  platforms
 }
 
 input mutationStoryClassUpdateInput {
   label: String
   sort: String
+  key: StoryClassUpdate_key_MutationInput
   updatedAt: String
   createdAt: String
+}
+
+enum StoryClassUpdate_key_MutationInput {
+  news
+  platforms
 }
 
 input mutationWebinarAuthorInput {
@@ -19135,7 +19676,7 @@ input mutationNewsItemInput {
   link: String
   paragraph: JSON
   topic: String
-  dateOfPublication: String
+  dateOfPublication: String!
   image: String
   updatedAt: String
   createdAt: String
@@ -19193,6 +19734,7 @@ input mutationPageInput {
   slug: String
   content: JSON
   seo: mutationPage_SeoInput
+  lastPublishedAt: String
   localizedSlugs: JSON
   updatedAt: String
   createdAt: String
@@ -19209,6 +19751,7 @@ input mutationPageUpdateInput {
   slug: String
   content: JSON
   seo: mutationPageUpdate_SeoInput
+  lastPublishedAt: String
   localizedSlugs: JSON
   updatedAt: String
   createdAt: String
@@ -19231,6 +19774,7 @@ input mutationArticleInput {
   descriptionTitle: String
   description: JSON
   seo: mutationArticle_SeoInput
+  lastPublishedAt: String
   localizedSlugs: JSON
   updatedAt: String
   createdAt: String
@@ -19253,6 +19797,7 @@ input mutationArticleUpdateInput {
   descriptionTitle: String
   description: JSON
   seo: mutationArticleUpdate_SeoInput
+  lastPublishedAt: String
   localizedSlugs: JSON
   updatedAt: String
   createdAt: String
@@ -19273,6 +19818,7 @@ input mutationInsightInput {
   content: JSON
   topic: String
   seo: mutationInsight_SeoInput
+  lastPublishedAt: String
   localizedSlugs: JSON
   updatedAt: String
   createdAt: String
@@ -19293,6 +19839,7 @@ input mutationInsightUpdateInput {
   content: JSON
   topic: String
   seo: mutationInsightUpdate_SeoInput
+  lastPublishedAt: String
   localizedSlugs: JSON
   updatedAt: String
   createdAt: String
@@ -19309,12 +19856,13 @@ input mutationWebinarItemInput {
   title: String
   paragraph: JSON
   parent: String
-  date: String
+  date: String!
   content: JSON
   image: String
   eventBody: JSON
   topic: String
   seo: mutationWebinarItem_SeoInput
+  lastPublishedAt: String
   localizedSlugs: JSON
   updatedAt: String
   createdAt: String
@@ -19337,6 +19885,7 @@ input mutationWebinarItemUpdateInput {
   eventBody: JSON
   topic: String
   seo: mutationWebinarItemUpdate_SeoInput
+  lastPublishedAt: String
   localizedSlugs: JSON
   updatedAt: String
   createdAt: String
@@ -19360,6 +19909,7 @@ input mutationStoryItemInput {
   image: String
   content: JSON
   seo: mutationStoryItem_SeoInput
+  lastPublishedAt: String
   localizedSlugs: JSON
   updatedAt: String
   createdAt: String
@@ -19383,6 +19933,7 @@ input mutationStoryItemUpdateInput {
   image: String
   content: JSON
   seo: mutationStoryItemUpdate_SeoInput
+  lastPublishedAt: String
   localizedSlugs: JSON
   updatedAt: String
   createdAt: String
@@ -19400,6 +19951,7 @@ input mutationCatalogueInput {
   slug: String
   content: JSON
   seo: mutationCatalogue_SeoInput
+  lastPublishedAt: String
   localizedSlugs: JSON
   updatedAt: String
   createdAt: String
@@ -19417,6 +19969,7 @@ input mutationCatalogueUpdateInput {
   slug: String
   content: JSON
   seo: mutationCatalogueUpdate_SeoInput
+  lastPublishedAt: String
   localizedSlugs: JSON
   updatedAt: String
   createdAt: String
@@ -19592,6 +20145,7 @@ input mutationHomepageInput {
   title: String
   content: JSON
   seo: mutationHomepage_SeoInput
+  lastPublishedAt: String
   updatedAt: String
   createdAt: String
 }
