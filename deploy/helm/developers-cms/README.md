@@ -15,7 +15,7 @@ I valori reali per ogni ambiente (DATABASE_URL, PAYLOAD_SECRET, seed/apiKey, ing
 | Ingress | opzionale, con annotazioni cert-manager (HTTP-01). |
 | Secret `-env` | `DATABASE_URL`, `PAYLOAD_SECRET` (hook pre-install, montato come `envFrom`). |
 | PVC `-media` | persistenza dei media (`upload: true`). `resource-policy: keep`. |
-| Job `-migrate` | hook **pre-install/pre-upgrade**: esegue `payload migrate`. |
+| Job `-migrate` | hook **pre-install/pre-upgrade**: esegue `payload migrate`, poi verifica che ogni file di `src/migrations` sia registrato in `payload_migrations` (altrimenti il Job fallisce e l'upgrade si ferma). |
 | Job `-seed` | hook **post-install/post-upgrade**: crea il primo utente e gli assegna una **API key** deterministica. Idempotente. |
 
 ## Installazione (prima volta, a mano)
