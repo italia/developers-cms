@@ -1509,6 +1509,10 @@ export interface Page {
    * Mostrata sul sito come "Ultimo aggiornamento". Si aggiorna da sola a ogni salvataggio, a meno che non venga modificata a mano.
    */
   lastPublishedAt?: string | null;
+  /**
+   * Se attiva, il documento non ha una pagina sul sito e non compare in elenchi, ricerca e sitemap.
+   */
+  hideFromSite?: boolean | null;
   localizedSlugs?:
     | {
         [k: string]: unknown;
@@ -1684,6 +1688,10 @@ export interface Article {
    * Mostrata sul sito come "Ultimo aggiornamento". Si aggiorna da sola a ogni salvataggio, a meno che non venga modificata a mano.
    */
   lastPublishedAt?: string | null;
+  /**
+   * Se attiva, il documento non ha una pagina sul sito e non compare in elenchi, ricerca e sitemap.
+   */
+  hideFromSite?: boolean | null;
   localizedSlugs?:
     | {
         [k: string]: unknown;
@@ -2588,6 +2596,10 @@ export interface Insight {
    * Mostrata sul sito come "Ultimo aggiornamento". Si aggiorna da sola a ogni salvataggio, a meno che non venga modificata a mano.
    */
   lastPublishedAt?: string | null;
+  /**
+   * Se attiva, il documento non ha una pagina sul sito e non compare in elenchi, ricerca e sitemap.
+   */
+  hideFromSite?: boolean | null;
   localizedSlugs?:
     | {
         [k: string]: unknown;
@@ -2965,6 +2977,10 @@ export interface WebinarItem {
    * Mostrata sul sito come "Ultimo aggiornamento". Si aggiorna da sola a ogni salvataggio, a meno che non venga modificata a mano.
    */
   lastPublishedAt?: string | null;
+  /**
+   * Se attiva, il documento non ha una pagina sul sito e non compare in elenchi, ricerca e sitemap.
+   */
+  hideFromSite?: boolean | null;
   localizedSlugs?:
     | {
         [k: string]: unknown;
@@ -3930,6 +3946,10 @@ export interface StoryItem {
    * Mostrata sul sito come "Ultimo aggiornamento". Si aggiorna da sola a ogni salvataggio, a meno che non venga modificata a mano.
    */
   lastPublishedAt?: string | null;
+  /**
+   * Se attiva, il documento non ha una pagina sul sito e non compare in elenchi, ricerca e sitemap.
+   */
+  hideFromSite?: boolean | null;
   localizedSlugs?:
     | {
         [k: string]: unknown;
@@ -5197,6 +5217,7 @@ export interface PagesSelect<T extends boolean = true> {
         image?: T;
       };
   lastPublishedAt?: T;
+  hideFromSite?: T;
   localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -5276,6 +5297,7 @@ export interface ArticlesSelect<T extends boolean = true> {
         image?: T;
       };
   lastPublishedAt?: T;
+  hideFromSite?: T;
   localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -5768,6 +5790,7 @@ export interface InsightsSelect<T extends boolean = true> {
         image?: T;
       };
   lastPublishedAt?: T;
+  hideFromSite?: T;
   localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -5980,6 +6003,7 @@ export interface WebinarItemsSelect<T extends boolean = true> {
         image?: T;
       };
   lastPublishedAt?: T;
+  hideFromSite?: T;
   localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -6561,6 +6585,7 @@ export interface StoryItemsSelect<T extends boolean = true> {
         image?: T;
       };
   lastPublishedAt?: T;
+  hideFromSite?: T;
   localizedSlugs?: T;
   updatedAt?: T;
   createdAt?: T;

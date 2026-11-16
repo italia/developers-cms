@@ -2,6 +2,7 @@ import type { CollectionConfig } from 'payload'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { seoField } from '../fields/seoField'
 import { lastPublishedAtField } from '../fields/lastPublishedAtField'
+import { hideFromSiteField } from '../fields/hideFromSiteField'
 import { setLastPublishedAt } from '../hooks/setLastPublishedAt'
 import { Hero } from '../blocks/Hero'
 import { FaqSection } from '../blocks/FaqSection'
@@ -96,6 +97,7 @@ export const StoryItem: CollectionConfig = {
     },
     seoField(),
     lastPublishedAtField(),
+    hideFromSiteField(),
     {
       name: 'localizedSlugs',
       type: 'json',
